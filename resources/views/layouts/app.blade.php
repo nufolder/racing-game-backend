@@ -27,9 +27,6 @@
 </head>
 
 <body>
-
-
-
     <nav class="navbar navbar-expand-lg navbar-light bg-light" aria-label="Ninth navbar example">
         <div class="container col-md-7">
             <a class="navbar-brand" href="{{ url('home') }}">Amazing Race</a>

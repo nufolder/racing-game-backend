@@ -9,6 +9,35 @@ use App\Race;
 
 class ChanceToPlayRacingController extends Controller
 {
+    public function addHealPage()
+    {
+        $checkT = ChanceToPlayRacing::where('user_id', Auth::user()->id)
+            ->where('type', 'trivia')->first();
+        if ($checkT->last_date == null || $checkT->last_date != \Carbon\Carbon::now()->format('Y-m-d')) {
+            $statusT = true;
+        } else {
+            $statusT = false;
+        }
+
+        $checkM = ChanceToPlayRacing::where('user_id', Auth::user()->id)
+            ->where('type', 'memorygame')->first();
+        if ($checkM->last_date == null || $checkM->last_date != \Carbon\Carbon::now()->format('Y-m-d')) {
+            $statusM = true;
+        } else {
+            $statusM = false;
+        }
+
+        $checkV = ChanceToPlayRacing::where('user_id', Auth::user()->id)
+            ->where('type', 'video')->first();
+        if ($checkV->last_date == null || $checkV->last_date != \Carbon\Carbon::now()->format('Y-m-d')) {
+            $statusV = true;
+        } else {
+            $statusV = false;
+        }
+
+        return view('user.add-heal', compact('statusT', 'statusM', 'statusV'));
+    }
+
     public function getMemoryGame()
     {
         $check = ChanceToPlayRacing::where('user_id', Auth::user()->id)

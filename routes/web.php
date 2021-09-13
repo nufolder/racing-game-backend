@@ -43,9 +43,8 @@ Route::middleware(['auth'])->group(function () {
 
         Route::get('unlock/class/{class}', 'UnlockClassController@unlock');
 
-        Route::get('add-heal', function () {
-            return view('user.add-heal');
-        });
+        Route::get('add-heal', 'ChanceToPlayRacingController@addHealPage');
+
         Route::get('memory-game', function () {
             return view('user.memory-game');
         });

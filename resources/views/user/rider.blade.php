@@ -26,7 +26,7 @@
 
                             @if ($ttc == false)
                             <div class="card text-white bg-secondary mb-3">
-                                <div class="card-header text-center">TTC</div>
+                                <div class="card-header text-center">TTC 20 Koin</div>
                                 <div class="card-body">
                                     <p class="card-text text-center small">
                                         Rider kelas "Thailand Talent Cup"
@@ -59,7 +59,7 @@
                         <div class="col-6">
                             @if ($atc == false)
                             <div class="card text-white bg-secondary mb-3">
-                                <div class="card-header text-center">ATC</div>
+                                <div class="card-header text-center">ATC 40 Koin</div>
                                 <div class="card-body">
                                     <p class="card-text text-center small">
                                         Rider kelas "Asian Talent Cup"
@@ -89,7 +89,7 @@
                         <div class="col-6">
                             @if ($arrc == false)
                             <div class="card h-100 text-white bg-secondary mb-3">
-                                <div class="card-header text-center">ARRC</div>
+                                <div class="card-header text-center">ARRC 60 Koin</div>
                                 <div class="card-body">
                                     <p class="card-text text-center small">
                                         Rider kelas "Asia Road Racing Championship"
@@ -119,7 +119,7 @@
                         <div class="col-6">
                             @if ($cev == false)
                             <div class="card h-100 text-white bg-secondary mb-3">
-                                <div class="card-header text-center">CEV</div>
+                                <div class="card-header text-center">CEV 80 Koin</div>
                                 <div class="card-body">
                                     <p class="card-text text-center small">
                                         Rider di kelas "Junior Moto3 CEV"

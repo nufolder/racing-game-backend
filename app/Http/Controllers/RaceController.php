@@ -49,35 +49,25 @@ class RaceController extends Controller
 
         $character = json_decode($race->character, true);
         $uses_rider = $this->searchRacer($rider, $character);
-        // return $uses_rider;
         // $coin_value = $uses_rider['coin_value'];
 
         if ($uses_rider != null) {
-            $race->update(
-                [
-                    'last_rider' => $rider,
-                ]
-            );
-            return view('user.race-rider', compact('uses_rider'));
+            if ($race->heal != 0) {
+                $race->update(
+                    [
+                        'last_rider' => $rider,
+                    ]
+                );
+                return view('user.race-rider', compact('uses_rider'));
+            } else {
+                $message = 'Heal anda tidak mencukupi !';
+                session()->flash('message', $message);
+                return back()->with(['message', $message]);
+            }
         } else {
-            abort(403);
+            $message = 'Anda belum memiliki rider ' . $rider . ' !';
+            session()->flash('message', $message);
+            return back()->with(['message', $message]);
         }
-    }
-
-    public function checkHeal()
-    {
-        $race = Race::where('user_id', Auth::user()->id)->first();
-
-        if ($race->heal != 0) {
-            $check = 'go';
-        } else {
-            $check = 'stop';
-        }
-
-        return response()->json(
-            [
-                'response' => $check,
-            ]
-        );
     }
 }
