@@ -248,22 +248,40 @@ function buildGameCanvas(){
 	resultTitleShadowTxt.y = resultTitleTxt.y;
 	
 	resultScoreTxt = new createjs.Text();
-	resultScoreTxt.font = "120px dimitriregular";
+	resultScoreTxt.font = "60px dimitriregular";
 	resultScoreTxt.color = "#fada06";
 	resultScoreTxt.textAlign = "center";
 	resultScoreTxt.textBaseline='alphabetic';
 	resultScoreTxt.text = '1500PTS';
 	resultScoreTxt.x = canvasW/2;
-	resultScoreTxt.y = canvasH/100 * 48;
+	resultScoreTxt.y = canvasH/100 * 40;
 	
-	resultScoreShadowTxt = new createjs.Text();
-	resultScoreShadowTxt.font = "120px dimitri_swankregular";
+	resultCoinTxt = new createjs.Text();
+	resultCoinTxt.font = "60px dimitriregular";
+	resultCoinTxt.color = "#fada06";
+	resultCoinTxt.textAlign = "center";
+	resultCoinTxt.textBaseline='alphabetic';
+	resultCoinTxt.text = '1500PTS';
+	resultCoinTxt.x = canvasW/2;
+	resultCoinTxt.y = canvasH/100 * 50;
+
+    resultScoreShadowTxt = new createjs.Text();
+	resultScoreShadowTxt.font = "60px dimitri_swankregular";
 	resultScoreShadowTxt.color = "#2f2f2f";
 	resultScoreShadowTxt.textAlign = "center";
 	resultScoreShadowTxt.textBaseline='alphabetic';
 	resultScoreShadowTxt.text = '1500PTS';
 	resultScoreShadowTxt.x = resultScoreTxt.x+1;
 	resultScoreShadowTxt.y = resultScoreTxt.y;
+		
+	resultCoinShadowTxt = new createjs.Text();
+	resultCoinShadowTxt.font = "60px dimitri_swankregular";
+	resultCoinShadowTxt.color = "#2f2f2f";
+	resultCoinShadowTxt.textAlign = "center";
+	resultCoinShadowTxt.textBaseline='alphabetic';
+	resultCoinShadowTxt.text = '1500PTS';
+	resultCoinShadowTxt.x = resultCoinTxt.x+1;
+	resultCoinShadowTxt.y = resultCoinTxt.y;
 	
 	resultScoreDescTxt = new createjs.Text();
 	resultScoreDescTxt.font = "60px dimitriregular";
@@ -274,7 +292,16 @@ function buildGameCanvas(){
 	resultScoreDescTxt.x = canvasW/2;
 	resultScoreDescTxt.y = canvasH/100 * 38;
 	
-	resultScoreDescShadowTxt = new createjs.Text();
+	resultCoinDescTxt = new createjs.Text();
+	resultCoinDescTxt.font = "60px dimitriregular";
+	resultCoinDescTxt.color = "#fada06";
+	resultCoinDescTxt.textAlign = "center";
+	resultCoinDescTxt.textBaseline='alphabetic';
+	resultCoinDescTxt.text = resultCoinText;
+	resultCoinDescTxt.x = canvasW/2;
+	resultCoinDescTxt.y = canvasH/100 * 48;
+
+    resultScoreDescShadowTxt = new createjs.Text();
 	resultScoreDescShadowTxt.font = "60px dimitri_swankregular";
 	resultScoreDescShadowTxt.color = "#2f2f2f";
 	resultScoreDescShadowTxt.textAlign = "center";
@@ -282,6 +309,15 @@ function buildGameCanvas(){
 	resultScoreDescShadowTxt.text = resultScoreText;
 	resultScoreDescShadowTxt.x = resultScoreDescTxt.x+1;
 	resultScoreDescShadowTxt.y = resultScoreDescTxt.y;
+		
+	resultCoinDescShadowTxt = new createjs.Text();
+	resultCoinDescShadowTxt.font = "60px dimitri_swankregular";
+	resultCoinDescShadowTxt.color = "#2f2f2f";
+	resultCoinDescShadowTxt.textAlign = "center";
+	resultCoinDescShadowTxt.textBaseline='alphabetic';
+	resultCoinDescShadowTxt.text = resultCoinText;
+	resultCoinDescShadowTxt.x = resultCoinDescTxt.x+1;
+	resultCoinDescShadowTxt.y = resultCoinDescTxt.y;
 	
 	resultShareTxt = new createjs.Text();
 	resultShareTxt.font = "25px dimitriregular";
@@ -377,7 +413,7 @@ function buildGameCanvas(){
 	gameStatusContainer.addChild(gameStatusShadowTxt, gameStatusTxt);
 	gameContainer.addChild(smokeAnimate, fireAnimate, gameStatusContainer, statusContainer, instructionShadowTxt, instructionTxt, itemTouchUp, itemTouchDown, itemTouchLeft, itemTouchRight);
 	statusContainer.addChild(scoreShadowTxt, scoreTxt, fuelShadowTxt, fuelTxt, fuelBarBackground, fuelBarEmpty, fuelBarFill);
-	resultContainer.addChild(resultTitleShadowTxt, resultTitleTxt, resultScoreDescShadowTxt, resultScoreDescTxt, resultScoreShadowTxt, resultScoreTxt, buttonRestart);
+	resultContainer.addChild(resultTitleShadowTxt, resultTitleTxt, resultScoreDescShadowTxt, resultCoinDescShadowTxt, resultScoreDescTxt, resultCoinDescTxt, resultScoreShadowTxt, resultCoinShadowTxt, resultScoreTxt, resultCoinTxt, buttonRestart);
 	
 	if(shareEnable){
 		resultContainer.addChild(resultShareShadowTxt, resultShareTxt, buttonFacebook, buttonTwitter, buttonWhatsapp);
