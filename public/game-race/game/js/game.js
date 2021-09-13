@@ -630,7 +630,7 @@ function updateWorld() {
 
 function updateSprites() {
     var n, car, carW, sprite, spriteW;
-    var dt = (1 / 30);
+    var dt = (1 / 60);
     var playerSegment = findSegment((defaultData.position + defaultData.playerZ));
     var playerW = playerCarData.straight.w * defaultData.scale;
     var speedPercent = defaultData.speed / worldData.maxSpeed;
@@ -1020,7 +1020,7 @@ function resetGame() {
 }
 
 function resetWorld() {
-    defaultData.maxSpeed = defaultData.segmentLength / (1 / 60);
+    defaultData.maxSpeed = defaultData.segmentLength / (1 / 30);
     defaultData.accel = defaultData.maxSpeed / 5;
     defaultData.breaking = -defaultData.maxSpeed;
     defaultData.decel = -defaultData.maxSpeed / 5;
