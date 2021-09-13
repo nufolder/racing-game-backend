@@ -1020,7 +1020,7 @@ function resetGame() {
 }
 
 function resetWorld() {
-    defaultData.maxSpeed = defaultData.segmentLength / (1 / 30);
+    defaultData.maxSpeed = defaultData.segmentLength / (1 / 60);
     defaultData.accel = defaultData.maxSpeed / 5;
     defaultData.breaking = -defaultData.maxSpeed;
     defaultData.decel = -defaultData.maxSpeed / 5;
