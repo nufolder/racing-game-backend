@@ -103,9 +103,8 @@
     </div>
 
     <script>
-        var coin_value = parseInt({{ $coin_value }});
+        var coin_value = parseInt("{{ $uses_rider['coin_value'] }}");
         console.log(coin_value);
-        console.log(playerData.score);
     </script>
 
     <script src="//ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
