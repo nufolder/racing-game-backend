@@ -40,7 +40,7 @@ class UnlockClassController extends Controller
                                 'straight'      => 'assets/assets-ttc/car_straight.png',
                                 'up_left'       => 'assets/assets-ttc/car_up_left.png',
                                 'up_right'      => 'assets/assets-ttc/car_up_right.png',
-                                'up_straight'   => 'assets/assets-ttc/car_up_staight.png',
+                                'up_straight'   => 'assets/assets-ttc/car_up_straight.png',
                             ],
                             [
                                 'racer'         => 'veda',
@@ -53,7 +53,7 @@ class UnlockClassController extends Controller
                                 'straight'      => 'assets/assets-ttc/car_straight.png',
                                 'up_left'       => 'assets/assets-ttc/car_up_left.png',
                                 'up_right'      => 'assets/assets-ttc/car_up_right.png',
-                                'up_straight'   => 'assets/assets-ttc/car_up_staight.png',
+                                'up_straight'   => 'assets/assets-ttc/car_up_straight.png',
                             ]
                         );
                         $coinLeft = $race->coin - 20;
@@ -98,7 +98,7 @@ class UnlockClassController extends Controller
                                 'straight'      => 'assets/assets-atc/car_straight.png',
                                 'up_left'       => 'assets/assets-atc/car_up_left.png',
                                 'up_right'      => 'assets/assets-atc/car_up_right.png',
-                                'up_straight'   => 'assets/assets-atc/car_up_staight.png',
+                                'up_straight'   => 'assets/assets-atc/car_up_straight.png',
                             ],
                             [
                                 'racer'         => 'azryan',
@@ -111,7 +111,7 @@ class UnlockClassController extends Controller
                                 'straight'      => 'assets/assets-atc/car_straight.png',
                                 'up_left'       => 'assets/assets-atc/car_up_left.png',
                                 'up_right'      => 'assets/assets-atc/car_up_right.png',
-                                'up_straight'   => 'assets/assets-atc/car_up_staight.png',
+                                'up_straight'   => 'assets/assets-atc/car_up_straight.png',
                             ],
                             [
                                 'racer'         => 'herlian',
@@ -124,7 +124,7 @@ class UnlockClassController extends Controller
                                 'straight'      => 'assets/assets-atc/car_straight.png',
                                 'up_left'       => 'assets/assets-atc/car_up_left.png',
                                 'up_right'      => 'assets/assets-atc/car_up_right.png',
-                                'up_straight'   => 'assets/assets-atc/car_up_staight.png',
+                                'up_straight'   => 'assets/assets-atc/car_up_straight.png',
                             ],
                             [
                                 'racer'         => 'herjun',
@@ -137,7 +137,7 @@ class UnlockClassController extends Controller
                                 'straight'      => 'assets/assets-atc/car_straight.png',
                                 'up_left'       => 'assets/assets-atc/car_up_left.png',
                                 'up_right'      => 'assets/assets-atc/car_up_right.png',
-                                'up_straight'   => 'assets/assets-atc/car_up_staight.png',
+                                'up_straight'   => 'assets/assets-atc/car_up_straight.png',
                             ]
                         );
                         $coinLeft = $race->coin - 20;
@@ -182,7 +182,7 @@ class UnlockClassController extends Controller
                                 'straight'      => 'assets/assets-arrc/car_straight.png',
                                 'up_left'       => 'assets/assets-arrc/car_up_left.png',
                                 'up_right'      => 'assets/assets-arrc/car_up_right.png',
-                                'up_straight'   => 'assets/assets-arrc/car_up_staight.png',
+                                'up_straight'   => 'assets/assets-arrc/car_up_straight.png',
                             ],
                             [
                                 'racer'         => 'lucky',
@@ -195,7 +195,7 @@ class UnlockClassController extends Controller
                                 'straight'      => 'assets/assets-arrc/car_straight.png',
                                 'up_left'       => 'assets/assets-arrc/car_up_left.png',
                                 'up_right'      => 'assets/assets-arrc/car_up_right.png',
-                                'up_straight'   => 'assets/assets-arrc/car_up_staight.png',
+                                'up_straight'   => 'assets/assets-arrc/car_up_straight.png',
                             ],
                             [
                                 'racer'         => 'irfan',
@@ -208,7 +208,7 @@ class UnlockClassController extends Controller
                                 'straight'      => 'assets/assets-arrc/car_straight.png',
                                 'up_left'       => 'assets/assets-arrc/car_up_left.png',
                                 'up_right'      => 'assets/assets-arrc/car_up_right.png',
-                                'up_straight'   => 'assets/assets-arrc/car_up_staight.png',
+                                'up_straight'   => 'assets/assets-arrc/car_up_straight.png',
                             ],
                             [
                                 'racer'         => 'rheza',
@@ -221,7 +221,7 @@ class UnlockClassController extends Controller
                                 'straight'      => 'assets/assets-arrc/car_straight.png',
                                 'up_left'       => 'assets/assets-arrc/car_up_left.png',
                                 'up_right'      => 'assets/assets-arrc/car_up_right.png',
-                                'up_straight'   => 'assets/assets-arrc/car_up_staight.png',
+                                'up_straight'   => 'assets/assets-arrc/car_up_straight.png',
                             ]
                         );
                         $coinLeft = $race->coin - 60;
@@ -266,7 +266,7 @@ class UnlockClassController extends Controller
                                 'straight'      => 'assets/assets-cev/car_straight.png',
                                 'up_left'       => 'assets/assets-cev/car_up_left.png',
                                 'up_right'      => 'assets/assets-cev/car_up_right.png',
-                                'up_straight'   => 'assets/assets-cev/car_up_staight.png',
+                                'up_straight'   => 'assets/assets-cev/car_up_straight.png',
                             ]
                         );
                         $coinLeft = $race->coin - 80;

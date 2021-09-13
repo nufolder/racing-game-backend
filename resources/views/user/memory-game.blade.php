@@ -16,7 +16,7 @@
 
                     <div class="modal fade" id="memorygameid" tabindex="-1" aria-labelledby="myModal"
                         aria-hidden="true">
-                        <div class="modal-dialog">
+                        <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
                             <div class="modal-content">
                                 <div class="modal-header">
                                     <h5 class="modal-title modaltitlememorygame" id="exampleModalLabel">

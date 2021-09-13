@@ -10,9 +10,9 @@
 
 //background assets
 var backgroundData = {
-    hills: { src: 'assets/background_hills.png' },
-    sky: { src: 'assets/background_sky.png' },
-    trees: { src: 'assets/background_trees.png' }
+    hills: { src: hills_data },
+    sky: { src: sky_data },
+    trees: { src: trees_data }
 };
 
 //road assets
@@ -28,12 +28,12 @@ var roadData = {
 
 //player assets
 var playerCarData = {
-    left: { src: 'assets/car_left.png' },
-    right: { src: 'assets/car_right.png' },
-    straight: { src: 'assets/car_straight.png' },
-    up_left: { src: 'assets/car_up_left.png' },
-    up_right: { src: 'assets/car_up_right.png' },
-    up_straight: { src: 'assets/car_up_straight.png' }
+    left: { src: left_data },
+    right: { src: right_data },
+    straight: { src: straight_data },
+    up_left: { src: up_left_data },
+    up_right: { src: up_right_data },
+    up_straight: { src: up_straight_data }
 };
 
 //world assets
@@ -84,7 +84,7 @@ var scoreData = {
     } //collect coin score
 var coinData = {
         text: 'KOIN: [NUMBER]', //score display text
-        coin: coin_value
+        coin: coin_value_data
     } //collect coin score
 
 var fuelData = {

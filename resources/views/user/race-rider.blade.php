@@ -103,7 +103,17 @@
     </div>
 
     <script>
-        var coin_value = parseInt("{{ $uses_rider['coin_value'] }}");
+        var coin_value_data = parseInt("{{ $uses_rider['coin_value'] }}");
+        var racer_data = "{{ $uses_rider['racer'] }}";
+        var hills_data = "{{ $uses_rider['hills'] }}";
+        var sky_data = "{{ $uses_rider['sky'] }}";
+        var trees_data = "{{ $uses_rider['trees'] }}";
+        var left_data = "{{ $uses_rider['left'] }}";
+        var right_data = "{{ $uses_rider['right'] }}";
+        var straight_data = "{{ $uses_rider['straight'] }}";
+        var up_left_data = "{{ $uses_rider['up_left'] }}";
+        var up_right_data = "{{ $uses_rider['up_right'] }}";
+        var up_straight_data = "{{ $uses_rider['up_straight'] }}";
         console.log(coin_value);
     </script>
 

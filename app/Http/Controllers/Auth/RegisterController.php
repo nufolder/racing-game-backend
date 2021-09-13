@@ -65,7 +65,7 @@ class RegisterController extends Controller
                     'straight'      => 'assets/assets-default/car_straight.png',
                     'up_left'       => 'assets/assets-default/car_up_left.png',
                     'up_right'      => 'assets/assets-default/car_up_right.png',
-                    'up_straight'   => 'assets/assets-default/car_up_staight.png',
+                    'up_straight'   => 'assets/assets-default/car_up_straight.png',
                 ]
             ]
         );

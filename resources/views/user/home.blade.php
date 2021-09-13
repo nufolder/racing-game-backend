@@ -63,7 +63,7 @@
                     </div>
                     <div>
                         <a href="{{ url('rider') }}" class="btn btn-lg btn-primary">
-                            Beli Riders <i class="fa fa-list" aria-hidden="true"></i>
+                            Pilih Riders <i class="fa fa-list" aria-hidden="true"></i>
                         </a>
                     </div>
                 </div>

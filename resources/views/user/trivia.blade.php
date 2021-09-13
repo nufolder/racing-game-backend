@@ -14,23 +14,10 @@
                             <h4 class="text-center">Trivia</h4>
                         </div>
                         <main>
-                            <!-- creating a modal for when quiz ends -->
-                            {{-- <div class="modal-container" id="score-modal">
-                                <div class="modal-content-container">
-                                    <h1>Congratulations</h1>
-                                    <div class="grade-details">
-                                        <p>Wrong Answers : <span id="wrong-answers"></span></p>
-                                        <p>Right Answers : <span id="right-answers"></span></p>
-                                        <p class="textfinishtrivia"></p>
-                                    </div>
-                                    <div class="modal-button-container">
-                                        <button onclick="closeScoreModal()">Continue</button>
-                                    </div>
-                                </div>
-                            </div> --}}
+
                             <div class="modal fade" id="score-modal" tabindex="-1" aria-labelledby="myModal"
                                 aria-hidden="true">
-                                <div class="modal-dialog">
+                                <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
                                     <div class="modal-content">
                                         <div class="modal-header">
                                             <h5 class="modal-title modaltitletrivia" id="exampleModalLabel">
