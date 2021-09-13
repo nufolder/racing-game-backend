@@ -56,7 +56,7 @@
 <body>
     <!-- PERCENT LOADER START-->
     <div id="mainLoader">
-        <img src="{{ asset('game-race/game/assets/loader.png') }}" /><br />
+        <img src="{{ asset('race/assets/loader.png') }}" /><br />
         <span>0</span>
     </div>
     <!-- PERCENT LOADER END-->
@@ -74,7 +74,7 @@
         <!-- ROTATE INSTRUCTION START-->
         <div id="rotateHolder">
             <div class="mobileRotate">
-                <div class="rotateImg"><img src="{{ asset('game-race/game/assets/rotate.png') }}" /></div>
+                <div class="rotateImg"><img src="{{ asset('race/assets/rotate.png') }}" /></div>
                 <div class="rotateDesc">Rotate your device <br />to portrait</div>
             </div>
         </div>
@@ -89,9 +89,23 @@
     </div>
     <!-- CONTENT END-->
 
+    <div class="modal fade" id="myModal" tabindex="-1" aria-labelledby="myModal" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <p class="textcheckheal"></p>
+                </div>
+            </div>
+        </div>
+    </div>
+
     <script>
         var coin_value = parseInt({{ $coin_value }});
         console.log(coin_value);
+        console.log(playerData.score);
     </script>
 
     <script src="//ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
@@ -118,30 +132,8 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"
         integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous">
     </script>
-    {{-- <script src="https://code.jquery.com/jquery-3.6.0.min.js"
-        integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script> --}}
-
-    <div class="modal fade" id="myModal" tabindex="-1" aria-labelledby="myModal" aria-hidden="true">
-        <div class="modal-dialog">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h5 class="modal-title" id="exampleModalLabel">Congratulations</h5>
-                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                </div>
-                <div class="modal-body">
-                    <p class="textcheckheak"></p>
-                </div>
-            </div>
-        </div>
-    </div>
 
 
 </body>
-
-<script>
-    console.log(playerData.score);
-</script>
-
-
 
 </html>
