@@ -60,7 +60,7 @@ class RaceController extends Controller
                 );
                 return view('user.race-rider', compact('uses_rider'));
             } else {
-                $message = 'Heal anda tidak mencukupi !';
+                $message = 'Heal anda 0 !';
                 session()->flash('message', $message);
                 return back()->with(['message', $message]);
             }
@@ -69,5 +69,52 @@ class RaceController extends Controller
             session()->flash('message', $message);
             return back()->with(['message', $message]);
         }
+    }
+
+    public function startGameCheck()
+    {
+        $race = Race::where('user_id', Auth::user()->id)->first();
+
+        if ($race->heal != 0) {
+            $min = $race->heal - 1;
+            $race->update(
+                [
+                    'heal' => $min,
+                ]
+            );
+            return response()->json(['response' => 'heal - 1', 'status' => 'ok']);
+        } else {
+            $redirect = url('user');
+            $message = 'Heal anda 0 !';
+            session()->flash('message', $message);
+            return response()->json(['response' => $redirect, 'status' => 'no', 'message' => $message]);
+        }
+    }
+
+    public function endGameCheck($get_ticket, $get_coin)
+    {
+        $race = Race::where('user_id', Auth::user()->id)->first();
+        $plusticket = $get_ticket / 1000;
+        if ($plusticket < 1) {
+            $result_ticket = 0;
+        } else {
+            $result_ticket = $plusticket;
+        }
+
+        $check_ticket   = $race->ticket;
+        $check_coin     = $race->coin;
+
+        $sum_ticket     = $check_ticket + $result_ticket;
+        $sum_coin       = $check_coin + $get_coin;
+        $summary_play   = $race->summary_play + 1;
+
+        $race->update(
+            [
+                'ticket'        => $sum_ticket,
+                'coin'          => $sum_coin,
+                'summary_play'  => $summary_play,
+            ]
+        );
+        return response()->json(['response' => 'end game']);
     }
 }

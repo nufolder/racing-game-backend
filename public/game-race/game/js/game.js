@@ -467,7 +467,31 @@ function toggleConfirm(con) {
  * 
  */
 
+function startGameCheck() {
+    $.ajax({
+        method: 'GET',
+        crossDomain: true,
+        crossOrigin: true,
+        async: true,
+        contentType: 'application/json',
+        url: "/start-game-check",
+        success: function(resp) {
+            console.log("Respond was: ", resp)
+            if (resp.status == 'no') {
+                location.href = resp.response;
+            }
+        },
+        error: function(resp, status, error) {
+            console.log("Respond was: ", resp.response);
+        }
+    });
+}
+
 function startGame() {
+
+    alert('stat game');
+    startGameCheck();
+
     playerData.score = 0;
     playerData.coin = 0;
     gameData.nitroMode = false;
@@ -511,14 +535,21 @@ function stopGame() {
  * 
  */
 function saveGame(score, coin) {
-    /*$.ajax({
-      type: "POST",
-      url: 'saveResults.php',
-      data: {score:score},
-      success: function (result) {
-          console.log(result);
-      }
-    });*/
+    $.ajax({
+        method: 'GET',
+        crossDomain: true,
+        crossOrigin: true,
+        async: true,
+        contentType: 'application/json',
+        url: '/end-game-check/' +
+            score + '/' + coin,
+        success: function(resp) {
+            console.log("Respond was: ", resp);
+        },
+        error: function(resp, status, error) {
+            console.log("Respond was: ", resp.response);
+        }
+    });
     console.log(score);
     console.log(coin);
 }

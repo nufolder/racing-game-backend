@@ -114,7 +114,6 @@
         var up_left_data = "{{ $uses_rider['up_left'] }}";
         var up_right_data = "{{ $uses_rider['up_right'] }}";
         var up_straight_data = "{{ $uses_rider['up_straight'] }}";
-        console.log(coin_value);
     </script>
 
     <script src="//ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
