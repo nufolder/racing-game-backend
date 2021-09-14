@@ -489,7 +489,7 @@ function startGameCheck() {
 
 function startGame() {
 
-    alert('stat game');
+    // alert('stat game');
     startGameCheck();
 
     playerData.score = 0;
