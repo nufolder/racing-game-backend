@@ -58,7 +58,7 @@
                                 <div class="card h-100 text-white bg-primary mb-3">
                                     <div class="card-body">
                                         <h5 class="card-title text-center">Memory Game</h5>
-                                        <small>Cari Persamman, akan mendapatkan 1 Heal !</small>
+                                        <small>Cari Persamaan, akan mendapatkan 1 Heal !</small>
                                     </div>
                                 </div>
                             </a>
@@ -66,7 +66,6 @@
 
                         </div>
                         <div class="col-6 pb-4">
-
                             @if ($statusV == false)
                             <a class="disable">
                                 <div class="card h-100 text-dark bg-light mb-3">
@@ -77,7 +76,7 @@
                                 </div>
                             </a>
                             @else
-                            <a class="disable">
+                            <a href="{{ url('video') }}">
                                 <div class="card h-100 text-white bg-primary mb-3">
                                     <div class="card-body">
                                         <h5 class="card-title text-center">Video</h5>
@@ -85,6 +84,7 @@
                                     </div>
                                 </div>
                             </a>
+                            asd
                             @endif
 
                         </div>
