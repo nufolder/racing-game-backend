@@ -9,7 +9,7 @@
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Speed Racer</title>
+    <title>Amazing Race</title>
 
     <meta name="Title" content="Speed Racer" />
     <meta name="description"
@@ -19,8 +19,8 @@
     <!-- for Facebook -->
     <meta property="og:title" content="Speed Racer" />
     <meta property="og:site_name" content="Speed Racer" />
-    <meta property="og:image" content="http://demonisblack.com/code/2017/speedracer/game/share.jpg" />
-    <meta property="og:url" content="http://demonisblack.com/code/2017/speedracer/game/" />
+    <meta property="og:image" content="{{ asset('game-race/game/share.jpg') }}" />
+    <meta property="og:url" content="{{ url('/') }}" />
     <meta property="og:description"
         content="Speed Racer is a HTML5 game where you can drive through the forest world, collecting the powers along the road to help extend the fuel, race with turbo mode and collect coin to get high score!">
 
@@ -29,7 +29,7 @@
     <meta name="twitter:title" content="Speed Racer" />
     <meta name="twitter:description"
         content="Speed Racer is a HTML5 game where you can drive through the forest world, collecting the powers along the road to help extend the fuel, race with turbo mode and collect coin to get high score!" />
-    <meta name="twitter:image" content="http://demonisblack.com/code/2017/speedracer/game/share.jpg" />
+    <meta name="twitter:image" content="{{ asset('game-race/game/share.jpg') }}" />
 
     <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
@@ -118,7 +118,8 @@
 
     <script src="//ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <script>
-        window.jQuery || document.write('<script src="https://127.0.0.1:8000/game-race/game/js/vendor/jquery.min.js"><\/script>')
+        var jqueryLocal = "{{ asset('game-race/game/js/vendor/jquery.min.js') }}";
+        window.jQuery || document.write('<script src="'+jqueryLocal+'"><\/script>')
     </script>
 
     <script src="{{ asset('game-race/game/js/vendor/detectmobilebrowser.js') }}"></script>

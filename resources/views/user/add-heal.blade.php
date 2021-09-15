@@ -84,21 +84,28 @@
                                     </div>
                                 </div>
                             </a>
-                            asd
                             @endif
 
                         </div>
                         <div class="col-6 pb-4">
-                            <a href="">
-                                <div class="card h-100 text-dark bg-light mb-3">
-                                    <div class="card-body">
-                                        <h5 class="card-title text-center">Share</h5>
-                                        <small>Share event ke facebook atau twitter, akan mendapatkan 1
-                                            Heal !
-                                        </small>
-                                    </div>
+                            <div class="card h-100 text-dark bg-light mb-3">
+                                <div class="card-body">
+                                    <h5 class="card-title text-center">Share</h5>
+                                    <small>Share event ke facebook atau twitter, akan mendapatkan 1
+                                        Heal !
+                                    </small>
+                                    {{-- <div class="fb-share-button" data-href="https://racing.nufolder.xyz/"
+                                        data-layout="button_count" data-size="small">
+                                        <a target="_blank"
+                                            href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fdevelopers.facebook.com%2Fdocs%2Fplugins%2F&amp;src=sdkpreparse"
+                                            class="fb-xfbml-parse-ignore">
+                                            Bagikan
+                                        </a>
+                                    </div> --}}
+                                    <div id="shareBtn" class="btn btn-success clearfix">Share Facebook</div>
                                 </div>
-                            </a>
+                            </div>
+
                         </div>
                     </div>
                 </div>
@@ -108,7 +115,20 @@
     </div>
 </div>
 
-
-</div>
+<script>
+    document.getElementById('shareBtn').onclick = function() {
+    FB.ui({
+        method: 'share',
+        href: 'https://developers.facebook.com/docs/',
+        },
+        function(response) {
+            if (response && !response.error_message) {
+            alert('Posting completed.');
+            } else {
+            alert('Error while posting.');
+            }
+        });
+    }
+</script>
 
 @endsection
