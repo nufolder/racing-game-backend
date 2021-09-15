@@ -59,16 +59,14 @@ resize:vertical;
    ========================================================================== */
 @font-face {
     font-family: 'dimitri_swankregular';
-    src: url('fonts/dimis___-webfont.woff2') format('woff2'),
-         url('fonts/dimis___-webfont.woff') format('woff');
+    src: url('fonts/RussoOne-Regular.ttf') format('truetype');
     font-weight: normal;
     font-style: normal;
 }
 
 @font-face {
     font-family: 'dimitriregular';
-    src: url('fonts/dimitri_-webfont.woff2') format('woff2'),
-         url('fonts/dimitri_-webfont.woff') format('woff');
+    src: url('fonts/RussoOne-Regular.ttf') format('truetype');
     font-weight: normal;
     font-style: normal;
 }

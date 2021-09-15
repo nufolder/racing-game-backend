@@ -59,15 +59,13 @@ var spritesData = {
     NITRO: { src: 'assets/item_power_nitro.png' },
     COIN: { src: 'assets/item_power_coin.png' },
     FUEL: { src: 'assets/item_power_fuel.png' },
-    TRIBUNE: { src: 'assets/podium.png' }
 };
 
 spritesData.PLANTS = [spritesData.TREE1, spritesData.TREE2, spritesData.TREE3, spritesData.TREE4, spritesData.TREE5, spritesData.ROCK1, spritesData.ROCK2, spritesData.ROCK3];
 spritesData.CARS = [spritesData.CAR01, spritesData.CAR02, spritesData.CAR03, spritesData.CAR04, spritesData.JEEP01, spritesData.TRUCK01, spritesData.TRUCK02];
 spritesData.BILLBOARDS = [spritesData.BILLBOARD01, spritesData.BILLBOARD02, spritesData.BILLBOARD03];
-spritesData.CROWD = [spritesData.TRIBUNE];
 
-var intructionDisplayText = 'Hindari motor lawan, tempuh jarak sejauh-jauhnya'; //instruction display text
+var intructionDisplayText = 'Hindari motor lawan,\n tempuh jarak sejauh-jauhnya, \n dan dapatkan koin untuk \n unlock rider'; //instruction display text
 
 //keyboard keycode
 var keyboard_arr = {
@@ -124,7 +122,7 @@ var resultCoinText = 'KOIN :'; //result text display
 var shareEnable = true; //toggle share
 var shareText = 'SHARE SKOR KAMU '; //social share message
 var shareTitle = 'Highscore on Speed Racer Game is [SCORE]PTS.'; //social share score title
-var shareMessage = 'Saya menapatkan [SCORE], ikutan untuk memenangkan CBR Sport '; //social share score message
+var shareMessage = 'Saya mendapatkan [SCORE], ikutan untuk memenangkan CBR Sport '; //social share score message
 
 /*!
  *
@@ -561,7 +559,7 @@ function saveGame(score, coin) {
  */
 function updateGame() {
     updateWorld();
-    updateFuel();
+    // updateFuel();
 
     if (!gameData.paused) {
         if (defaultData.speed > 0) {
@@ -1435,6 +1433,7 @@ function addFuel() {
 function updateGameStatus() {
     //score
     scoreTxt.text = scoreShadowTxt.text = scoreData.text.replace('[NUMBER]', addCommas(playerData.score));
+    coinTxt.text = coinShadowTxt.text = coinData.text.replace('[NUMBER]', addCommas(playerData.coin));
 
     //fuel
     var fuelPercent = (gameData.fuel / fuelData.total) * fuelData.bar.width - (fuelData.bar.space * 2);
