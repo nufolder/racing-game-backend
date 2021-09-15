@@ -127,8 +127,8 @@ function buildGameCanvas(){
 	fireAnimate.x = -200;
 	
 	scoreTxt = new createjs.Text();
-	scoreTxt.font = "50px dimitriregular";
-	scoreTxt.color = "#ffda00";
+	scoreTxt.font = "30px dimitriregular";
+	scoreTxt.color = "#FFFFFF";
 	scoreTxt.textAlign = "left";
 	scoreTxt.textBaseline='alphabetic';
 	scoreTxt.text = scoreData.text;
@@ -136,13 +136,31 @@ function buildGameCanvas(){
 	scoreTxt.y = canvasH/100 * 5;
 	
 	scoreShadowTxt = new createjs.Text();
-	scoreShadowTxt.font = "50px dimitri_swankregular";
-	scoreShadowTxt.color = "#2f2f2f";
+	scoreShadowTxt.font = "30px dimitri_swankregular";
+	scoreShadowTxt.color = "#ed2633";
 	scoreShadowTxt.textAlign = "left";
 	scoreShadowTxt.textBaseline='alphabetic';
 	scoreShadowTxt.text = scoreData.text;
 	scoreShadowTxt.x = scoreTxt.x+1;
-	scoreShadowTxt.y = scoreTxt.y;
+	scoreShadowTxt.y = scoreTxt.y+1;
+	
+	coinTxt = new createjs.Text();
+	coinTxt.font = "30px dimitriregular";
+	coinTxt.color = "#FFFFFF";
+	coinTxt.textAlign = "left";
+	coinTxt.textBaseline='alphabetic';
+	coinTxt.text = coinData.text;
+	coinTxt.x = canvasW/100 * 2;
+	coinTxt.y = canvasH/100 * 10;
+	
+	coinShadowTxt = new createjs.Text();
+	coinShadowTxt.font = "30px dimitri_swankregular";
+	coinShadowTxt.color = "#ed2633";
+	coinShadowTxt.textAlign = "left";
+	coinShadowTxt.textBaseline='alphabetic';
+	coinShadowTxt.text = coinData.text;
+	coinShadowTxt.x = coinTxt.x+1;
+	coinShadowTxt.y = coinTxt.y+1;
 	
 	fuelTxt = new createjs.Text();
 	fuelTxt.font = "30px dimitriregular";
@@ -192,25 +210,25 @@ function buildGameCanvas(){
 	gameStatusShadowTxt.textBaseline='alphabetic';
 	gameStatusShadowTxt.text = '';
 	gameStatusShadowTxt.x = gameStatusTxt.x+1;
-	gameStatusShadowTxt.y = gameStatusTxt.y;
+	gameStatusShadowTxt.y = gameStatusTxt.y+10;
 	
 	instructionTxt = new createjs.Text();
-	instructionTxt.font = "50px dimitriregular";
+	instructionTxt.font = "30px dimitriregular";
 	instructionTxt.color = "#fff";
 	instructionTxt.textAlign = "center";
 	instructionTxt.textBaseline='alphabetic';
 	instructionTxt.text = intructionDisplayText;
 	instructionTxt.x = canvasW/2;
-	instructionTxt.y = canvasH/100 * 40;
+	instructionTxt.y = canvasH/100 * 75;
 	
 	instructionShadowTxt = new createjs.Text();
-	instructionShadowTxt.font = "50px dimitri_swankregular";
+	instructionShadowTxt.font = "30px dimitri_swankregular";
 	instructionShadowTxt.color = "#2f2f2f";
 	instructionShadowTxt.textAlign = "center";
 	instructionShadowTxt.textBaseline='alphabetic';
 	instructionShadowTxt.text = intructionDisplayText;
 	instructionShadowTxt.x = instructionTxt.x+1;
-	instructionShadowTxt.y = instructionTxt.y;
+	instructionShadowTxt.y = instructionTxt.y+5;
 	
 	//key
 	itemTouchUp = new createjs.Bitmap(loader.getResult('itemTouchUp'));
@@ -240,84 +258,84 @@ function buildGameCanvas(){
 	
 	resultTitleShadowTxt = new createjs.Text();
 	resultTitleShadowTxt.font = "90px dimitri_swankregular";
-	resultTitleShadowTxt.color = "#2f2f2f";
+	resultTitleShadowTxt.color = "#b31e24";
 	resultTitleShadowTxt.textAlign = "center";
 	resultTitleShadowTxt.textBaseline='alphabetic';
 	resultTitleShadowTxt.text = resultTitleText;
-	resultTitleShadowTxt.x = resultTitleTxt.x+1;
-	resultTitleShadowTxt.y = resultTitleTxt.y;
+	resultTitleShadowTxt.x = resultTitleTxt.x+5;
+	resultTitleShadowTxt.y = resultTitleTxt.y+5;
 	
 	resultScoreTxt = new createjs.Text();
 	resultScoreTxt.font = "60px dimitriregular";
-	resultScoreTxt.color = "#fada06";
+	resultScoreTxt.color = "#FFFFFF";
 	resultScoreTxt.textAlign = "center";
 	resultScoreTxt.textBaseline='alphabetic';
 	resultScoreTxt.text = '1500PTS';
-	resultScoreTxt.x = canvasW/2;
+	resultScoreTxt.x = canvasW/1.5;
 	resultScoreTxt.y = canvasH/100 * 40;
 	
 	resultCoinTxt = new createjs.Text();
 	resultCoinTxt.font = "60px dimitriregular";
-	resultCoinTxt.color = "#fada06";
+	resultCoinTxt.color = "#FFFFFF";
 	resultCoinTxt.textAlign = "center";
 	resultCoinTxt.textBaseline='alphabetic';
 	resultCoinTxt.text = '1500PTS';
-	resultCoinTxt.x = canvasW/2;
-	resultCoinTxt.y = canvasH/100 * 50;
+	resultCoinTxt.x = canvasW/1.5;
+	resultCoinTxt.y = canvasH/100 * 48;
 
     resultScoreShadowTxt = new createjs.Text();
 	resultScoreShadowTxt.font = "60px dimitri_swankregular";
-	resultScoreShadowTxt.color = "#2f2f2f";
+	resultScoreShadowTxt.color = "#b31e24";
 	resultScoreShadowTxt.textAlign = "center";
 	resultScoreShadowTxt.textBaseline='alphabetic';
 	resultScoreShadowTxt.text = '1500PTS';
 	resultScoreShadowTxt.x = resultScoreTxt.x+1;
-	resultScoreShadowTxt.y = resultScoreTxt.y;
+	resultScoreShadowTxt.y = resultScoreTxt.y+7;
 		
 	resultCoinShadowTxt = new createjs.Text();
 	resultCoinShadowTxt.font = "60px dimitri_swankregular";
-	resultCoinShadowTxt.color = "#2f2f2f";
+	resultCoinShadowTxt.color = "#b31e24";
 	resultCoinShadowTxt.textAlign = "center";
 	resultCoinShadowTxt.textBaseline='alphabetic';
 	resultCoinShadowTxt.text = '1500PTS';
 	resultCoinShadowTxt.x = resultCoinTxt.x+1;
-	resultCoinShadowTxt.y = resultCoinTxt.y;
+	resultCoinShadowTxt.y = resultCoinTxt.y+7;
 	
 	resultScoreDescTxt = new createjs.Text();
 	resultScoreDescTxt.font = "60px dimitriregular";
-	resultScoreDescTxt.color = "#fada06";
+	resultScoreDescTxt.color = "#FFFFFF";
 	resultScoreDescTxt.textAlign = "center";
 	resultScoreDescTxt.textBaseline='alphabetic';
 	resultScoreDescTxt.text = resultScoreText;
-	resultScoreDescTxt.x = canvasW/2;
-	resultScoreDescTxt.y = canvasH/100 * 38;
+	resultScoreDescTxt.x = canvasW/2.5;
+	resultScoreDescTxt.y = canvasH/100 * 40;
 	
 	resultCoinDescTxt = new createjs.Text();
 	resultCoinDescTxt.font = "60px dimitriregular";
-	resultCoinDescTxt.color = "#fada06";
+	resultCoinDescTxt.color = "#FFFFFF";
 	resultCoinDescTxt.textAlign = "center";
 	resultCoinDescTxt.textBaseline='alphabetic';
 	resultCoinDescTxt.text = resultCoinText;
-	resultCoinDescTxt.x = canvasW/2;
+	resultCoinDescTxt.x = canvasW/2.5;
 	resultCoinDescTxt.y = canvasH/100 * 48;
 
     resultScoreDescShadowTxt = new createjs.Text();
 	resultScoreDescShadowTxt.font = "60px dimitri_swankregular";
-	resultScoreDescShadowTxt.color = "#2f2f2f";
+	resultScoreDescShadowTxt.color = "#b31e24";
 	resultScoreDescShadowTxt.textAlign = "center";
 	resultScoreDescShadowTxt.textBaseline='alphabetic';
 	resultScoreDescShadowTxt.text = resultScoreText;
 	resultScoreDescShadowTxt.x = resultScoreDescTxt.x+1;
-	resultScoreDescShadowTxt.y = resultScoreDescTxt.y;
+	resultScoreDescShadowTxt.y = resultScoreDescTxt.y+7;
 		
 	resultCoinDescShadowTxt = new createjs.Text();
 	resultCoinDescShadowTxt.font = "60px dimitri_swankregular";
-	resultCoinDescShadowTxt.color = "#2f2f2f";
+	resultCoinDescShadowTxt.color = "#b31e24";
 	resultCoinDescShadowTxt.textAlign = "center";
 	resultCoinDescShadowTxt.textBaseline='alphabetic';
 	resultCoinDescShadowTxt.text = resultCoinText;
 	resultCoinDescShadowTxt.x = resultCoinDescTxt.x+1;
-	resultCoinDescShadowTxt.y = resultCoinDescTxt.y;
+	resultCoinDescShadowTxt.y = resultCoinDescTxt.y+7;
 	
 	resultShareTxt = new createjs.Text();
 	resultShareTxt.font = "25px dimitriregular";
@@ -412,7 +430,7 @@ function buildGameCanvas(){
 	mainContainer.addChild(logo, buttonStart);
 	gameStatusContainer.addChild(gameStatusShadowTxt, gameStatusTxt);
 	gameContainer.addChild(smokeAnimate, fireAnimate, gameStatusContainer, statusContainer, instructionShadowTxt, instructionTxt, itemTouchUp, itemTouchDown, itemTouchLeft, itemTouchRight);
-	statusContainer.addChild(scoreShadowTxt, scoreTxt, fuelShadowTxt, fuelTxt, fuelBarBackground, fuelBarEmpty, fuelBarFill);
+	statusContainer.addChild(scoreShadowTxt, scoreTxt, coinShadowTxt, coinTxt);
 	resultContainer.addChild(resultTitleShadowTxt, resultTitleTxt, resultScoreDescShadowTxt, resultCoinDescShadowTxt, resultScoreDescTxt, resultCoinDescTxt, resultScoreShadowTxt, resultCoinShadowTxt, resultScoreTxt, resultCoinTxt, buttonRestart);
 	
 	if(shareEnable){
