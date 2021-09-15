@@ -115,18 +115,53 @@
     </div>
 </div>
 
+<!-- Modal -->
+<div class="modal fade" id="shareid" tabindex="-1" aria-labelledby="shareid" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="textfinishshare">Congratulations</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <p class="textfinishshare"></p>
+            </div>
+        </div>
+    </div>
+</div>
+
 <script>
     document.getElementById('shareBtn').onclick = function() {
-    FB.ui({
-        method: 'share',
-        href: 'https://developers.facebook.com/docs/',
-        },
-        function(response) {
-            if (response && !response.error_message) {
-            alert('Posting completed.');
-            } else {
-            alert('Error while posting.');
-            }
+        FB.ui({
+            method: 'share',
+            href: '{{ url("/") }}',
+            },
+            function(response) {
+                if (response && !response.error_message) {
+                    $.ajax({
+                    method: 'GET',
+                    crossDomain: true,
+                    crossOrigin: true,
+                    async: true,
+                    contentType: 'application/json',
+                    url: "/get-share",
+                    success: function(resp) {
+                        console.log("Respond was: ", resp)
+                        $('.modaltitleshare').text('Selamat !!');
+                        $('.textfinishshare').text(resp.response);
+                        var shareModal = new bootstrap.Modal(document.getElementById('shareid'), {
+                        keyboard: false
+                        });
+                        shareModal.show();
+                    },
+                    error: function(request, status, error) {
+                        console.log("Respond was: ", resp);
+                        $('.modaltitleshare').text(resp.response);
+                        }
+                    });
+                } else {
+                alert('Error while posting.');
+                }
         });
     }
 </script>

@@ -76,6 +76,13 @@ class UserSeeder extends Seeder
         $admin_login->summary_count   = null;
         $admin_login->save();
 
+        $admin_share                  = new ChanceToPlayRacing;
+        $admin_share->user_id         = $admin->id;
+        $admin_share->type            = 'login';
+        $admin_share->last_date       = null;
+        $admin_share->summary_count   = null;
+        $admin_share->save();
+
         //---------------------------------------------------------------
 
         $user                      = new User;
@@ -143,5 +150,12 @@ class UserSeeder extends Seeder
         $user_login->last_date       = null;
         $user_login->summary_count   = null;
         $user_login->save();
+
+        $user_share                  = new ChanceToPlayRacing;
+        $user_share->user_id         = $user->id;
+        $user_share->type            = 'share';
+        $user_share->last_date       = null;
+        $user_share->summary_count   = null;
+        $user_share->save();
     }
 }
