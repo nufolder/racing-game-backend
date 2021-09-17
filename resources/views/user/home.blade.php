@@ -45,14 +45,10 @@
                         <div class="col-6">
                             <div class="card">
                                 <div class="card-body">
-                                    {{-- <a href="" class="btn btn-sm btn-outline-primary ">
+                                    <button type="button" class="btn btn-sm btn-outline-primary" data-bs-toggle="modal"
+                                        data-bs-target="#exampleModal">
                                         <i class="fa fa-trophy" aria-hidden="true"></i> Leaderboard
-                                    </a> --}}
-
-                                    <button type="button" class="btn btn-sm btn-outline-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
-                                        <i class="fa fa-trophy" aria-hidden="true"></i> Leaderboard
-                                      </button>
-
+                                    </button>
                                 </div>
                             </div>
                         </div>
@@ -83,28 +79,23 @@
 
         </div>
     </div>
-        <!-- Modal -->
-        <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-            <div class="modal-dialog">
+    <!-- Modal -->
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
             <div class="modal-content">
                 <div class="modal-header">
-                    <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+                    <h5 class="modal-title" id="exampleModalLabel">Leaderboard</h5>
                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
                 <div class="modal-body">
                     <div class="content-list">
                         <div class="table-responsive">
                             <table class="table table-bordered">
-
                                 <thead>
                                     <tr>
-                                        <th scope="col" class="text-right" width="50">#</th>
+                                        <th scope="col" width="50">#</th>
                                         <th scope="col">Name</th>
                                         <th scope="col">Ticket</th>
-                                        {{-- <th scope="col">No. HP</th>
-                                        <th scope="col">Kota Domisili</th>
-                                        <th scope="col">Ketertarikan Pembiayaan</th>
-                                        <th width="150" class="text-left" scope="col">Created At</th> --}}
                                     </tr>
                                 </thead>
 
@@ -118,20 +109,6 @@
                                         <td width="10%" class="text-left">
                                             <b>{{ $value->ticket }}</b>
                                         </td>
-                                        {{-- <td width="10%" class="text-left">
-                                            <b>{{ $value->phone }}</b>
-                                        </td>
-                                        <td width="10%" class="text-left">
-                                            <b>{{ $value->domisili }}</b>
-                                        </td>
-                                        <td width="10%" class="text-left">
-                                            <b>{{ $value->lob }}</b>
-                                        </td>
-
-                                        <td width="10%" class="text-left">
-                                            {{ $value->created_at }}
-                                        </td> --}}
-
                                     </tr>
                                     @endforeach
 
@@ -143,13 +120,9 @@
 
                     </div>
                 </div>
-                <div class="modal-footer">
-                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                    {{-- <button type="button" class="btn btn-primary">Save changes</button> --}}
-                </div>
-            </div>
             </div>
         </div>
+    </div>
 
 </div>
 
