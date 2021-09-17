@@ -10,8 +10,9 @@
     <div class="row d-flex justify-content-center">
         <div class="col-md-8">
             @if (session('message'))
-            <div class="alert alert-success" role="alert">
+            <div class="alert alert-success alert-dismissible fade show" role="alert">
                 {{ session('message') }}
+                <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
             </div>
             @endif
             <div class="card">

@@ -30,22 +30,27 @@
                         <div class="pb-2">
                             <h4 class="text-center">Login AHRT</h4>
                         </div>
-
                         <form method="POST" action="{{ route('login') }}">
                             @csrf
+
+                            @if(session('error'))
+                            <div class="alert alert-danger alert-dismissible fade show" role="alert">
+                                {{ session('error') }}
+                            </div>
+                            @endif
 
                             <div class="mb-3">
                                 <label for="exampleInputEmail1" class="">
                                     Email
                                 </label>
                                 <input type="email"
-                                    class="form-control form-control-sm @error('email') is-invalid @enderror"
+                                    class="form-control form-control-sm @if($errors->first('email')) is-invalid @endif"
                                     name="email" value="{{ old('email') }}" required autocomplete="off" autofocus>
-                                @error('email')
+                                @if ($errors->first('email'))
                                 <span class="invalid-feedback" role="alert">
-                                    <strong>{{ $message }}</strong>
+                                    <strong>{{ $errors->first('email') }}}</strong>
                                 </span>
-                                @enderror
+                                @endif
                             </div>
 
                             <div class="mb-3">
