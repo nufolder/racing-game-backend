@@ -61,6 +61,8 @@ Route::middleware(['auth'])->group(function () {
             return view('user.video');
         });
         Route::get('get-video', 'ChanceToPlayRacingController@getVideo');
+
+        Route::get('get-share', 'ChanceToPlayRacingController@shareSosmed');
     });
 
     Route::get('logout', function () {
