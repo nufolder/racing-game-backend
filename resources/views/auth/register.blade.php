@@ -16,155 +16,138 @@
 
     <!-- Styles -->
     <!-- Bootstrap CSS -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-    <script src="https://use.fontawesome.com/be9f755eb3.js">
-    </script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://use.fontawesome.com/be9f755eb3.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Questrial&family=Russo+One&display=swap" rel="stylesheet">    
+    <link rel="stylesheet" href="{{ asset('css/custom.css') }}">
 </head>
 
 <body>
-    <div class="container p-5 bg-white">
+    <div class="container p-3 auth-area">
         <div class="row justify-content-center">
-            <div class="col-md-6">
+            <div class="col-md-4">  
                 <div class="card">
-                    <div class="card-body">
+                    <div class="card-body p-5 pb-3">
                         <div class="pb-2">
-                            <h4 class="text-center">Register AHRT</h4>
+                            <center><img src="{{ asset('images/ahrt-logo.png') }}"></center>
+                            <h1 class="text-center pt-4">Welcome To Amazing Race</h1>
                         </div>
                         <form method="POST" action="{{ route('register') }}">
                             @csrf
                             <div class="row">
 
 
-                                <div class="col-md-6">
-                                    <div class="mb-3">
-                                        <label for="exampleInputName" class="">
-                                            Nama
-                                        </label>
-                                        <input id="name" type="text"
-                                            class="form-control form-control-sm @error('name') is-invalid @enderror"
-                                            name="name" value="{{ old('name') }}" required autocomplete="off" autofocus>
+                                        <div class="form-group pb-2">
+                                            <label class="" for="name">Nama</label>
+                                            <input id="name" type="text"
+                                                class="form-control form-control-sm @error('name') is-invalid @enderror"
+                                                name="name" value="{{ old('name') }}" required autocomplete="off" autofocus placeholder="Nama">
 
-                                        @error('name')
-                                        <span class="invalid-feedback" role="alert">
-                                            <strong>{{ $message }}</strong>
-                                        </span>
-                                        @enderror
-                                    </div>
+                                            @error('name')
+                                            <span class="invalid-feedback" role="alert">
+                                                <strong>{{ $message }}</strong>
+                                            </span>
+                                            @enderror
+                                        </div>
 
-                                    <div class="mb-3">
-                                        <label for="exampleInputEmail1" class="">
-                                            Email
-                                        </label>
-                                        <input type="email"
-                                            class="form-control form-control-sm @error('email') is-invalid @enderror"
-                                            name="email" value="{{ old('email') }}" required autocomplete="off"
-                                            autofocus>
-                                        @error('email')
-                                        <span class="invalid-feedback" role="alert">
-                                            <strong>{{ $message }}</strong>
-                                        </span>
-                                        @enderror
-                                    </div>
+                                        <div class="form-group pb-2">
+                                            <label class="" for="email">Email</label>
+                                            <input type="email"
+                                                class="form-control form-control-sm @error('email') is-invalid @enderror"
+                                                name="email" value="{{ old('email') }}" required autocomplete="off"
+                                                autofocus placeholder="Email">
+                                            @error('email')
+                                            <span class="invalid-feedback" role="alert">
+                                                <strong>{{ $message }}</strong>
+                                            </span>
+                                            @enderror
+                                        </div>
 
-                                    <div class="mb-3">
-                                        <label class="" for="autoSizingSelect">
-                                            Motor
-                                        </label>
-                                        <select
-                                            class="form-select form-select-sm @error('motor_cycle') is-invalid @enderror"
-                                            name="motor_cycle" id="autoSizingSelect">
-                                            <option value="Vario" {{ old('title') == 'Vario' ? 'selected' : '' }}>
-                                                Vario
-                                            </option>
-                                            <option value="Beat" {{ old('title') == 'Beat' ? 'selected' : '' }}>
-                                                Beat
-                                            </option>
-                                            <option value="CBR 150" {{ old('title') == 'CBR 150' ? 'selected' : '' }}>
-                                                CBR 150
-                                            </option>
-                                        </select>
-                                        @error('password')
-                                        <span class="invalid-feedback" role="alert">
-                                            <strong>{{ $message }}</strong>
-                                        </span>
-                                        @enderror
-                                    </div>
+                                        <div class="form-group pb-2">
+                                            <label class="" for="password">Password</label>
+                                            <input type="password"
+                                                class="form-control form-control-sm @error('password') is-invalid @enderror"
+                                                name="password" required autocomplete="off" id="exampleInputPassword1" placeholder="Password">
+                                            @error('password')
+                                            <span class="invalid-feedback" role="alert">
+                                                <strong>{{ $message }}</strong>
+                                            </span>
+                                            @enderror
+                                        </div>
 
-                                </div>
+                                        <div class="form-group pb-2">
+                                            <label class="" for="password-confirm">Konfirmasi Password</label>
+                                            <input id="password-confirm" type="password"
+                                                class="form-control form-control-sm @error('password') is-invalid @enderror"
+                                                name="password_confirmation" required autocomplete="off" placeholder="Konfirmasi Password">
+                                            @error('password')
+                                            <span class="invalid-feedback" role="alert">
+                                                <strong>{{ $message }}</strong>
+                                            </span>
+                                            @enderror
+                                        </div>
 
-                                <div class="col-md-6">
-                                    <div class="mb-3">
-                                        <label for="exampleInputPassword1" class="">Password</label>
-                                        <input type="password"
-                                            class="form-control form-control-sm @error('password') is-invalid @enderror"
-                                            name="password" required autocomplete="off" id="exampleInputPassword1">
-                                        @error('password')
-                                        <span class="invalid-feedback" role="alert">
-                                            <strong>{{ $message }}</strong>
-                                        </span>
-                                        @enderror
-                                    </div>
+                                        <div class="form-group pb-2">
+                                            <label class="" for="autoSizingSelect">Tipe Motor Kamu Sekarang</label>
+                                            <select
+                                                class="form-select form-select-sm @error('motor_cycle') is-invalid @enderror"
+                                                name="motor_cycle" id="autoSizingSelect">
+                                                <option value="Vario" {{ old('title') == 'Vario' ? 'selected' : '' }}>
+                                                    Vario
+                                                </option>
+                                                <option value="Beat" {{ old('title') == 'Beat' ? 'selected' : '' }}>
+                                                    Beat
+                                                </option>
+                                                <option value="CBR 150" {{ old('title') == 'CBR 150' ? 'selected' : '' }}>
+                                                    CBR 150
+                                                </option>
+                                            </select>
+                                            @error('password')
+                                            <span class="invalid-feedback" role="alert">
+                                                <strong>{{ $message }}</strong>
+                                            </span>
+                                            @enderror
+                                        </div>
 
-                                    <div class="mb-3">
-                                        <label for="exampleInputPassword1" class="">
-                                            Konfirmasi Password
-                                        </label>
-                                        <input id="password-confirm" type="password"
-                                            class="form-control form-control-sm @error('password') is-invalid @enderror"
-                                            name="password_confirmation" required autocomplete="off">
-                                        @error('password')
-                                        <span class="invalid-feedback" role="alert">
-                                            <strong>{{ $message }}</strong>
-                                        </span>
-                                        @enderror
-                                    </div>
-
-                                    <div class="mb-3">
-                                        <label class="" for="autoSizingSelect">
-                                            Tahun Motor
-                                        </label>
-                                        <select
-                                            class="form-select form-select-sm @error('year_motor_cycle') is-invalid @enderror"
-                                            name="year_motor_cycle" id="autoSizingSelect">
-                                            <option value="2015" {{ old('title') == '2015' ? 'selected' : '' }}>
-                                                2015
-                                            </option>
-                                            <option value="2016" {{ old('title') == '2016' ? 'selected' : '' }}>
-                                                2016
-                                            </option>
-                                            <option value="2017" {{ old('title') == '2017' ? 'selected' : '' }}>
-                                                2017
-                                            </option>
-                                        </select>
-                                        @error('year_motor_cycle')
-                                        <span class="invalid-feedback" role="alert">
-                                            <strong>{{ $message }}</strong>
-                                        </span>
-                                        @enderror
-                                    </div>
-                                </div>
+                                        <div class="form-group pb-2">
+                                            <label class="" for="autoSizingSelect">Tahun Motor Kamu</label>
+                                            <select
+                                                class="form-select form-select-sm @error('year_motor_cycle') is-invalid @enderror"
+                                                name="year_motor_cycle" id="autoSizingSelect">
+                                                <option value="2015" {{ old('title') == '2015' ? 'selected' : '' }}>
+                                                    2015
+                                                </option>
+                                                <option value="2016" {{ old('title') == '2016' ? 'selected' : '' }}>
+                                                    2016
+                                                </option>
+                                                <option value="2017" {{ old('title') == '2017' ? 'selected' : '' }}>
+                                                    2017
+                                                </option>
+                                            </select>
+                                            @error('year_motor_cycle')
+                                            <span class="invalid-feedback" role="alert">
+                                                <strong>{{ $message }}</strong>
+                                            </span>
+                                            @enderror
+                                        </div>
                             </div>
 
 
 
-                            <div class="d-grid gap-2">
-                                <button type="submit" class="btn btn-sm btn-primary">
-                                    <i class="fa fa-arrow-circle-o-right" aria-hidden="true"></i> Register
-                                </button>
+                            <div class="cta-area">
+                                <button type="submit" class="pushable">Register</button>
                             </div>
 
                         </form>
                     </div>
                 </div>
 
-                <div class="d-grid gap-2">
-                    {{-- <button class="btn btn-sm btn-primary" type="button"><i class="bi bi-google"></i> Register
-                                with
-                                google</button> --}}
-                    <a href="{{ url('login') }}" class="nav-link">
-                        Sudah punya aku? Login
-                    </a>
+                <div class="text-center pb-5">
+                    {{-- <button class="btn btn-sm btn-primary" type="button"><i class="bi bi-google"></i> Register with google</button> --}}                    
+                        Sudah punya akun? <a href="{{ url('login') }}">Login</a>
+                    
                 </div>
 
 
