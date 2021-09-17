@@ -96,8 +96,8 @@ class RegisterController extends Controller
         $user_login                  = new ChanceToPlayRacing;
         $user_login->user_id         = $user->id;
         $user_login->type            = 'login';
-        $user_login->last_date       = null;
-        $user_login->summary_count   = null;
+        $user_login->last_date       = \Carbon\Carbon::now()->format('Y-m-d');
+        $user_login->summary_count   = 1;
         $user_login->save();
 
         $user_share                  = new ChanceToPlayRacing;

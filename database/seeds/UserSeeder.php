@@ -72,8 +72,8 @@ class UserSeeder extends Seeder
         $admin_login                  = new ChanceToPlayRacing;
         $admin_login->user_id         = $admin->id;
         $admin_login->type            = 'login';
-        $admin_login->last_date       = null;
-        $admin_login->summary_count   = null;
+        $admin_login->last_date       = \Carbon\Carbon::now()->format('Y-m-d');;
+        $admin_login->summary_count   = 1;
         $admin_login->save();
 
         $admin_share                  = new ChanceToPlayRacing;
@@ -147,8 +147,8 @@ class UserSeeder extends Seeder
         $user_login                  = new ChanceToPlayRacing;
         $user_login->user_id         = $user->id;
         $user_login->type            = 'login';
-        $user_login->last_date       = null;
-        $user_login->summary_count   = null;
+        $user_login->last_date       = \Carbon\Carbon::now()->format('Y-m-d');;
+        $user_login->summary_count   = 1;
         $user_login->save();
 
         $user_share                  = new ChanceToPlayRacing;
