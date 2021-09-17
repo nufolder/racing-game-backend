@@ -13,8 +13,7 @@ class UserController extends Controller
     public function index()
     {
         $user = User::with('race')->find(Auth::id());
-        $leaderboard= Race::with('user')->orderBy('ticket', 'desc')->limit(5)->get();
-        // dd($leaderboard);
+        $leaderboard = Race::with('user')->orderBy('ticket', 'desc')->limit(5)->get();
         $last_rider = $user->race->last_rider;
 
         return view('user.home', compact('user', 'last_rider', 'leaderboard'));

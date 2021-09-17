@@ -93,7 +93,7 @@
                             <table class="table table-bordered">
                                 <thead>
                                     <tr>
-                                        <th scope="col" width="50">#</th>
+                                        <th scope="co" width="50" style="text-align: center;">#</th>
                                         <th scope="col">Name</th>
                                         <th scope="col">Ticket</th>
                                     </tr>
