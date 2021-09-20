@@ -1,0 +1,18 @@
+html, body{padding:0px; margin:0px; height:100%; width:100%; font-family: 'Questrial', sans-serif;}
+
+h1, h2, h3, h4{font-family: 'Russo One', sans-serif;}
+
+.mw-800{max-width: 800px;}
+.homepage{background-color: #ea2117;}
+.homepage h1{text-align: center; color: #FFF; padding-top: 30px; font-weight: bolder;}
+.homepage p{color: #FFF;}
+.homepage .cta-area{padding: 0px 30px;}
+.homepage .cta-area a{background-color: #FFC312; font-family: 'Russo One', sans-serif; color: #000; font-size: 1.5rem; border: 5px solid #000; border-radius: 8px; padding-top: 8px; padding-bottom: 8px;display: block; width: 100%;}
+
+.auth-area{background-color: #ea2117; color: #FFFFFF; min-height: 100%;}
+.auth-area .card{border: 0px;}
+.auth-area .card .card-body{border: 0px;background-color: #ea2117;}
+.auth-area .card .card-body .form-group label{font-size: 12px;}
+.auth-area .card .card-body .cta-area{margin-top: 30px; text-align: center;}
+.auth-area .card .card-body .cta-area button{background-color: #FFC312;	font-family: 'Russo One', sans-serif; color: #000; font-size: 1.5rem; border: 5px solid #000; border-radius: 8px; padding-top: 8px; padding-bottom: 8px;display: block; width: 100%;}  
+.auth-area a{color: #FFF; text-decoration: underline;}

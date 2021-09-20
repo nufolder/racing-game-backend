@@ -16,33 +16,34 @@
 
     <!-- Styles -->
     <!-- Bootstrap CSS -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" ntegrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <script src="https://use.fontawesome.com/be9f755eb3.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Questrial&family=Russo+One&display=swap" rel="stylesheet">    
+    <link rel="stylesheet" href="{{ asset('css/custom.css') }}">
 </head>
 
 <body>
-    <div class="container p-5 bg-white">
+    <div class="container p-3 auth-area">
         <div class="row justify-content-center">
             <div class="col-md-4">
                 <div class="card">
-                    <div class="card-body">
+                    <div class="card-body p-5 pb-3">
                         <div class="pb-2">
-                            <h4 class="text-center">Login AHRT</h4>
+                            <center><img src="{{ asset('images/ahrt-logo.png') }}"></center>
+                            <h1 class="text-center pt-4">Welcome to Amazing Race</h1>
                         </div>
                         <form method="POST" action="{{ route('login') }}">
                             @csrf
 
-                            @if(session('error'))
-                            <div class="alert alert-danger alert-dismissible fade show" role="alert">
-                                {{ session('error') }}
-                            </div>
-                            @endif
-
-                            <div class="mb-3">
-                                <label for="exampleInputEmail1" class="">
-                                    Email
-                                </label>
+                            <div class="form-group pb-2">
+                                <label for="exampleInputEmail1" class="">Email</label>
+                                @if(session('error'))
+                                   <div class="alert alert-danger alert-dismissible fade show" role="alert">
+                                      {{ session('error') }}
+                                   </div>
+                                @endif
                                 <input type="email"
                                     class="form-control form-control-sm @if($errors->first('email')) is-invalid @endif"
                                     name="email" value="{{ old('email') }}" required autocomplete="off" autofocus>
@@ -53,7 +54,7 @@
                                 @endif
                             </div>
 
-                            <div class="mb-3">
+                            <div class="form-group pb-2">
                                 <label for="exampleInputPassword1" class="">Password</label>
                                 <input type="password"
                                     class="form-control form-control-sm @error('password') is-invalid @enderror"
@@ -65,21 +66,21 @@
                                 @enderror
                             </div>
 
-                            <div class="mb-3 form-check">
+                            <div class="form-group pb-2 form-check">
                                 <input type="checkbox" class="form-check-input" id="exampleCheck1">
                                 <label class="form-check-label" for="exampleCheck1" name="remember" id="remember"
                                     {{ old('remember') ? 'checked' : '' }} style="font-size: 14px;">
                                     Remember me
                                 </label>
                             </div>
-                            <div class="d-grid gap-2">
+                            <div class="cta-area">
                                 <button type="submit" class="btn btn-sm btn-primary">
-                                    <i class="fa fa-sign-in" aria-hidden="true"></i> Login
+                                    Login <i class="fa fa-sign-in" aria-hidden="true"></i> 
                                 </button>
                                 @if (Route::has('password.request'))
-                                <a class="text-mute" style="font-size: 12px;" href="{{ route('password.request') }}">
-                                    Lupa Password?
-                                </a>
+                                <div class="pt-3">
+                                <a class="text-mute pt-3" style="font-size: 12px;" href="{{ route('password.request') }}">Lupa Password?</a>
+                                </div>
                                 @endif
                             </div>
 
@@ -87,13 +88,11 @@
                     </div>
                 </div>
 
-                <div class="d-grid gap-2 pt-2">
+                <div class="text-center pb-5">
                     {{-- <button class="btn btn-sm btn-primary" type="button"><i class="bi bi-google"></i> Login
                         with
                         google</button> --}}
-                    <a href="{{ url('register') }}" class="nav-link">
-                        Belum punya akun? Register
-                    </a>
+                    Belum punya akun? <a href="{{ url('register') }}">Register</a>
                 </div>
 
 
