@@ -1,4 +1,8 @@
-@extends('layouts.app')
+@extends('layouts.app-user')
+
+@section('title')
+<title>Video</title>
+@endsection
 
 @section('content')
 

@@ -1,4 +1,8 @@
-@extends('layouts.app')
+@extends('layouts.app-user')
+
+@section('title')
+<title>Trivia</title>
+@endsection
 
 @section('content')
 
