@@ -1,4 +1,4 @@
-html, body{padding:0px; margin:0px; height:100%; width:100%; font-family: 'Questrial', sans-serif;}
+html, body{padding:0px; margin:0px; height:100%; width:100%; font-family: 'Questrial', sans-serif; }
 
 h1, h2, h3, h4{font-family: 'Russo One', sans-serif;}
 
@@ -16,3 +16,5 @@ h1, h2, h3, h4{font-family: 'Russo One', sans-serif;}
 .auth-area .card .card-body .cta-area{margin-top: 30px; text-align: center;}
 .auth-area .card .card-body .cta-area button{background-color: #FFC312;	font-family: 'Russo One', sans-serif; color: #000; font-size: 1.5rem; border: 5px solid #000; border-radius: 8px; padding-top: 8px; padding-bottom: 8px;display: block; width: 100%;}  
 .auth-area a{color: #FFF; text-decoration: underline;}
+
+.dashboard{ background-color: #ea2117;}

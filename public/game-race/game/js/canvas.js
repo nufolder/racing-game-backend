@@ -29,7 +29,7 @@ function initGameCanvas(w,h){
 
 var guide = false;
 var canvasContainer, mainContainer, gameContainer, statusContainer, gameStatusContainer, worldContainer, resultContainer, confirmContainer;
-var guideline, bg, logo, buttonStart, buttonRestart, buttonFacebook, buttonTwitter, buttonWhatsapp, buttonFullscreen, buttonSoundOn, buttonSoundOff;
+var guideline, bg, logo, buttonStart, buttonRestart, buttonOut, buttonFacebook, buttonTwitter, buttonWhatsapp, buttonFullscreen, buttonSoundOn, buttonSoundOff;
 
 $.sprites = {};
 $.background = {};
@@ -248,95 +248,45 @@ function buildGameCanvas(){
 	
 	//result
 	resultTitleTxt = new createjs.Text();
-	resultTitleTxt.font = "90px dimitriregular";
-	resultTitleTxt.color = "#fff";
+	resultTitleTxt.font = "120px dimitriregular";
+	resultTitleTxt.color = "#333333";
 	resultTitleTxt.textAlign = "center";
 	resultTitleTxt.textBaseline='alphabetic';
 	resultTitleTxt.text = resultTitleText;
 	resultTitleTxt.x = canvasW/2;
-	resultTitleTxt.y = canvasH/100 * 30;
+	resultTitleTxt.y = canvasH/100 * 20;
+	resultTitleTxt.outline = 4;
+	resultTitleTxt.lineHeight = 100;
 	
 	resultTitleShadowTxt = new createjs.Text();
-	resultTitleShadowTxt.font = "90px dimitri_swankregular";
-	resultTitleShadowTxt.color = "#b31e24";
+	resultTitleShadowTxt.font = "120px dimitri_swankregular";
+	resultTitleShadowTxt.color = "#FFC312";
 	resultTitleShadowTxt.textAlign = "center";
 	resultTitleShadowTxt.textBaseline='alphabetic';
 	resultTitleShadowTxt.text = resultTitleText;
-	resultTitleShadowTxt.x = resultTitleTxt.x+5;
-	resultTitleShadowTxt.y = resultTitleTxt.y+5;
+	resultTitleShadowTxt.x = resultTitleTxt.x;
+	resultTitleShadowTxt.y = resultTitleTxt.y;
+	resultTitleShadowTxt.lineHeight = 100;
 	
 	resultScoreTxt = new createjs.Text();
-	resultScoreTxt.font = "60px dimitriregular";
+	resultScoreTxt.font = "25px dimitriregular";
 	resultScoreTxt.color = "#FFFFFF";
 	resultScoreTxt.textAlign = "center";
 	resultScoreTxt.textBaseline='alphabetic';
 	resultScoreTxt.text = '1500PTS';
-	resultScoreTxt.x = canvasW/1.5;
-	resultScoreTxt.y = canvasH/100 * 40;
+	resultScoreTxt.x = canvasW/2;
+	resultScoreTxt.y = canvasH/100 * 37;
+	resultScoreTxt.lineHeight = 30;
 	
 	resultCoinTxt = new createjs.Text();
-	resultCoinTxt.font = "60px dimitriregular";
+	resultCoinTxt.font = "20px dimitriregular";
 	resultCoinTxt.color = "#FFFFFF";
 	resultCoinTxt.textAlign = "center";
 	resultCoinTxt.textBaseline='alphabetic';
 	resultCoinTxt.text = '1500PTS';
-	resultCoinTxt.x = canvasW/1.5;
-	resultCoinTxt.y = canvasH/100 * 48;
-
-    resultScoreShadowTxt = new createjs.Text();
-	resultScoreShadowTxt.font = "60px dimitri_swankregular";
-	resultScoreShadowTxt.color = "#b31e24";
-	resultScoreShadowTxt.textAlign = "center";
-	resultScoreShadowTxt.textBaseline='alphabetic';
-	resultScoreShadowTxt.text = '1500PTS';
-	resultScoreShadowTxt.x = resultScoreTxt.x+1;
-	resultScoreShadowTxt.y = resultScoreTxt.y+7;
+	resultCoinTxt.x = canvasW/2;
+	resultCoinTxt.y = canvasH/100 * 52;
 		
-	resultCoinShadowTxt = new createjs.Text();
-	resultCoinShadowTxt.font = "60px dimitri_swankregular";
-	resultCoinShadowTxt.color = "#b31e24";
-	resultCoinShadowTxt.textAlign = "center";
-	resultCoinShadowTxt.textBaseline='alphabetic';
-	resultCoinShadowTxt.text = '1500PTS';
-	resultCoinShadowTxt.x = resultCoinTxt.x+1;
-	resultCoinShadowTxt.y = resultCoinTxt.y+7;
-	
-	resultScoreDescTxt = new createjs.Text();
-	resultScoreDescTxt.font = "60px dimitriregular";
-	resultScoreDescTxt.color = "#FFFFFF";
-	resultScoreDescTxt.textAlign = "center";
-	resultScoreDescTxt.textBaseline='alphabetic';
-	resultScoreDescTxt.text = resultScoreText;
-	resultScoreDescTxt.x = canvasW/2.5;
-	resultScoreDescTxt.y = canvasH/100 * 40;
-	
-	resultCoinDescTxt = new createjs.Text();
-	resultCoinDescTxt.font = "60px dimitriregular";
-	resultCoinDescTxt.color = "#FFFFFF";
-	resultCoinDescTxt.textAlign = "center";
-	resultCoinDescTxt.textBaseline='alphabetic';
-	resultCoinDescTxt.text = resultCoinText;
-	resultCoinDescTxt.x = canvasW/2.5;
-	resultCoinDescTxt.y = canvasH/100 * 48;
-
-    resultScoreDescShadowTxt = new createjs.Text();
-	resultScoreDescShadowTxt.font = "60px dimitri_swankregular";
-	resultScoreDescShadowTxt.color = "#b31e24";
-	resultScoreDescShadowTxt.textAlign = "center";
-	resultScoreDescShadowTxt.textBaseline='alphabetic';
-	resultScoreDescShadowTxt.text = resultScoreText;
-	resultScoreDescShadowTxt.x = resultScoreDescTxt.x+1;
-	resultScoreDescShadowTxt.y = resultScoreDescTxt.y+7;
-		
-	resultCoinDescShadowTxt = new createjs.Text();
-	resultCoinDescShadowTxt.font = "60px dimitri_swankregular";
-	resultCoinDescShadowTxt.color = "#b31e24";
-	resultCoinDescShadowTxt.textAlign = "center";
-	resultCoinDescShadowTxt.textBaseline='alphabetic';
-	resultCoinDescShadowTxt.text = resultCoinText;
-	resultCoinDescShadowTxt.x = resultCoinDescTxt.x+1;
-	resultCoinDescShadowTxt.y = resultCoinDescTxt.y+7;
-	
 	resultShareTxt = new createjs.Text();
 	resultShareTxt.font = "25px dimitriregular";
 	resultShareTxt.color = "#fff";
@@ -344,16 +294,18 @@ function buildGameCanvas(){
 	resultShareTxt.textBaseline='alphabetic';
 	resultShareTxt.text = shareText;
 	resultShareTxt.x = canvasW/2;
-	resultShareTxt.y = canvasH/100 * 63;
+	resultShareTxt.y = canvasH/100 * 73;
 	
-	resultShareShadowTxt = new createjs.Text();
-	resultShareShadowTxt.font = "25px dimitri_swankregular";
-	resultShareShadowTxt.color = "#2f2f2f";
-	resultShareShadowTxt.textAlign = "center";
-	resultShareShadowTxt.textBaseline='alphabetic';
-	resultShareShadowTxt.text = shareText;
-	resultShareShadowTxt.x = resultShareTxt.x+1;
-	resultShareShadowTxt.y = resultShareTxt.y;
+    var resultBackground = new createjs.Shape();
+    resultBackground.graphics.beginFill('red')
+        .beginStroke()
+        .moveTo(0, 0)
+        .lineTo(canvasW, 1)
+        .lineTo(canvasW, canvasH)
+        .lineTo(1, canvasH)
+        .endStroke();
+    resultBackground.alpha = 0.75;
+
 	
 	buttonFacebook = new createjs.Bitmap(loader.getResult('buttonFacebook'));
 	buttonTwitter = new createjs.Bitmap(loader.getResult('buttonTwitter'));
@@ -367,13 +319,19 @@ function buildGameCanvas(){
 	buttonFacebook.x = canvasW/100 * 36;
 	buttonTwitter.x = canvasW/2;
 	buttonWhatsapp.x = canvasW/100 * 64;
-	buttonFacebook.y = buttonTwitter.y = buttonWhatsapp.y = canvasH/100*69;
+	buttonFacebook.y = buttonTwitter.y = buttonWhatsapp.y = canvasH/100*80;
 	
 	buttonRestart = new createjs.Bitmap(loader.getResult('buttonRestart'));
 	centerReg(buttonRestart);
 	createHitarea(buttonRestart);
-	buttonRestart.x = canvasW/2;
-	buttonRestart.y = canvasH/100 * 55;
+	buttonRestart.x = canvasW/2 + 110;
+	buttonRestart.y = canvasH/100 * 60;
+	
+	buttonOut = new createjs.Bitmap(loader.getResult('buttonOut'));
+	centerReg(buttonOut);
+	createHitarea(buttonOut);
+	buttonOut.x = canvasW/2 - 110;
+	buttonOut.y = canvasH/100 * 60;
 	
 	//option
 	buttonFullscreen = new createjs.Bitmap(loader.getResult('buttonFullscreen'));
@@ -429,12 +387,12 @@ function buildGameCanvas(){
 	
 	mainContainer.addChild(logo, buttonStart);
 	gameStatusContainer.addChild(gameStatusShadowTxt, gameStatusTxt);
-	gameContainer.addChild(smokeAnimate, fireAnimate, gameStatusContainer, statusContainer, instructionShadowTxt, instructionTxt, itemTouchUp, itemTouchDown, itemTouchLeft, itemTouchRight);
+	gameContainer.addChild(smokeAnimate, fireAnimate, gameStatusContainer, statusContainer, instructionShadowTxt, instructionTxt, itemTouchLeft, itemTouchRight);
 	statusContainer.addChild(scoreShadowTxt, scoreTxt, coinShadowTxt, coinTxt);
-	resultContainer.addChild(resultTitleShadowTxt, resultTitleTxt, resultScoreDescShadowTxt, resultCoinDescShadowTxt, resultScoreDescTxt, resultCoinDescTxt, resultScoreShadowTxt, resultCoinShadowTxt, resultScoreTxt, resultCoinTxt, buttonRestart);
+	resultContainer.addChild(resultBackground, resultTitleShadowTxt, resultTitleTxt, resultScoreTxt, resultCoinTxt, buttonRestart, buttonOut);
 	
 	if(shareEnable){
-		resultContainer.addChild(resultShareShadowTxt, resultShareTxt, buttonFacebook, buttonTwitter, buttonWhatsapp);
+		resultContainer.addChild(resultShareTxt, buttonFacebook, buttonTwitter, buttonWhatsapp);
 	}
 	
 	canvasContainer.addChild(bg, worldContainer, mainContainer, gameContainer, resultContainer, confirmContainer, optionsContainer, buttonSettings, guideline);
@@ -493,8 +451,8 @@ function resizeCanvas(){
 		
 		itemTouchRight.x = canvasW - (offset.x + 90)
 		itemTouchRight.y = canvasH - (offset.y + 90);
-		itemTouchLeft.x = itemTouchRight.x - 110;
-		itemTouchLeft.y = itemTouchRight.y;
+		itemTouchLeft.x = (offset.x + 90)
+		itemTouchLeft.y = canvasH - (offset.y + 90);
 	}
 }
 
