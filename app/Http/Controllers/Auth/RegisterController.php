@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers\Auth;
 
+use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
 use App\Providers\RouteServiceProvider;
 use App\User;
@@ -10,6 +11,7 @@ use Illuminate\Support\Facades\Hash;
 use Illuminate\Support\Facades\Validator;
 use App\ChanceToPlayRacing;
 use App\Race;
+use GuzzleHttp\Client;
 
 class RegisterController extends Controller
 {
@@ -33,9 +35,24 @@ class RegisterController extends Controller
         ]);
     }
 
+    public function register(Request $request)
+    {
+        if ($request->email) {
+            $check_email = new Client();
+            $res = $check_email->get('https://api.debounce.io/v1?api=5f51d3981735e&email=' . $request->email)->getBody();
+            $res_decode = json_decode($res);
+            $result_check = $res_decode->debounce->send_transactional;
+            if ($result_check == '0') {
+                $message = 'Email kamu tidak valid, periksa kembali email kamu!';
+                session()->flash('message', $message);
+                return back()->with(['message', $message]);
+            }
+        }
+    }
+
     protected function create(array $data)
     {
-        // dd($data);
+        // dd($data['email']);
         $user =  User::create([
             'name'              => $data['name'],
             'email'             => $data['email'],
