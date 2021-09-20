@@ -112,16 +112,16 @@ var statusData = {
     nitro: { text: 'TURBO', color: '#f68b1f', size: 70 },
     fuel: { text: '+FUEL', color: '#39b54a', size: 70 },
     score: { text: '+[NUMBER]', color: '#fcdb05', size: 70 },
-    coin: { text: '+[NUMBER]', color: '#fcdb05', size: 70 },
+    coin: { text: 'KOIN +[NUMBER]', color: '#fcdb05', size: 70 },
     penalty: { text: 'TIMEOUT:\n[NUMBER]', color: '#ec3e34', size: 70 },
     lowFuel: { text: 'LOW FUEL', color: '#ff7f00', size: 70 },
     noFuel: { text: 'OUT OF FUEL', color: '#ec3e34', size: 70 },
 }
 
 var exitMessage = 'Are you sure\nyou want to quit?'; //go to main page message
-var resultTitleText = 'GAME OVER'; //result text display
-var resultScoreText = 'SKOR :'; //result text display
-var resultCoinText = 'KOIN :'; //result text display
+var resultTitleText = 'GAME\nOVER'; //result text display
+var resultScoreText = 'KAMU MENEMPUH '; //result text display
+var resultCoinText = 'KAMU MENDAPATKAN KOIN :'; //result text display
 
 //Social share, [SCORE] will replace with game score
 var shareEnable = true; //toggle share
@@ -305,6 +305,12 @@ function buildGameButton() {
         toggleConfirm(true);
     });
 
+    buttonOut.cursor = "pointer";
+    buttonOut.addEventListener("click", function(evt) {
+        playSound('soundClick');
+        toggleConfirm(true);
+    });
+
     buttonSettings.cursor = "pointer";
     buttonSettings.addEventListener("click", function(evt) {
         toggleOption();
@@ -315,7 +321,8 @@ function buildGameButton() {
         playSound('soundClick');
         toggleConfirm(false);
         stopGame(true);
-        goPage('main');
+        // window.location.pathname = ('/user');
+        window.location.pathname = ('racing-game-backend/public/user');
     });
 
     buttonCancel.cursor = "pointer";
@@ -430,10 +437,8 @@ function goPage(page) {
                 displayCoin: playerData.coin,
                 overwrite: true,
                 onUpdate: function() {
-                    resultScoreTxt.text = addCommas(Math.floor(playerData.displayScore));
-                    resultScoreShadowTxt.text = addCommas(Math.floor(playerData.displayScore));
-                    resultCoinTxt.text = addCommas(Math.floor(playerData.displayCoin));
-                    resultCoinShadowTxt.text = addCommas(Math.floor(playerData.displayCoin));
+                    resultScoreTxt.text = "SKOR KAMU " + addCommas(Math.floor(playerData.displayScore)) + "\nDAN MENDAPATKAN TAMBAHAN\n" + Math.floor(playerData.displayScore/1000) + " TIKET YANG AKAN DIUNDI UNTUK\nMENDAPATKAN CBR 150RR";
+                    resultCoinTxt.text = "+" + addCommas(Math.floor(playerData.displayCoin)) + " KOIN BISA DIGUNAKAN UNTUK UNLOCK RIDER";
                 }
             });
 

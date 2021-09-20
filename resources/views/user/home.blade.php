@@ -6,29 +6,27 @@
 
 @section('content')
 
-<div class="container p-3 bg-white">
+<div class="container p-3">
     <div class="row justify-content-center">
-        <div class="col-md-8">
+        <div class="col-md-6">
+            <center><img src="{{ asset('images/logo-smol.png') }}" class="w-50"></center>
             @if (session('message'))
             <div class="alert alert-success alert-dismissible fade show" role="alert">
                 {{ session('message') }}
                 <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
             </div>
             @endif
-            <div class="card">
+            <div class="card dashboard">
                 <div class="card-body text-center">
                     <div class="pb-2">
-                        <h4 class="text-center">
-                            Profil
-                        </h4>
                     </div>
-                    <div class="row">
-                        <div class="col-6">
-                            <div class="card">
+                            <div class="card mb-3">
                                 <div class="card-body">
                                     <div class="">
-                                        <h5 class="text-center"><i class="fa fa-user" aria-hidden="true"></i>
-                                            {{ $user->name }} </h5>
+                                        <h1 class="text-center">
+                                            <i class="fa fa-user" aria-hidden="true"></i>
+                                            {{ $user->name }} 
+                                        </h1>
                                     </div>
                                     <span class=" badge bg-secondary">
                                         <i class="fa fa-ticket" aria-hidden="true"></i> Tiket:
@@ -45,14 +43,15 @@
 
                                 </div>
                             </div>
-                        </div>
-                        <div class="col-6">
-                            <button type="button" class="btn  btn-primary" data-bs-toggle="modal"
-                                data-bs-target="#exampleModal">
-                                <i class="fa fa-trophy" aria-hidden="true"></i> Leaderboard
-                            </button>
-                        </div>
-                    </div>
+
+                            <div class="card">
+                                <div class="card-body">
+                                    <button type="button" class="btn btn-sm btn-outline-primary" data-bs-toggle="modal"
+                                        data-bs-target="#exampleModal">
+                                        <i class="fa fa-trophy" aria-hidden="true"></i> Leaderboard
+                                    </button>
+                                </div>
+                            </div>
 
                     <hr>
                     <div class="pb-2">
