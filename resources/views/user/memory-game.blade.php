@@ -1,4 +1,4 @@
-@extends('layouts.app')
+@extends('layouts.app-user')
 
 @section('content')
 {{-- <script src="https://use.fontawesome.com/be9f755eb3.js"></script> --}}
