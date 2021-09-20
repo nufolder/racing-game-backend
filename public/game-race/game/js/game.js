@@ -42,28 +42,33 @@ var spritesData = {
     BILLBOARD02: { src: 'assets/billboard_02.png' },
     BILLBOARD03: { src: 'assets/billboard_03.png' },
     TREE1: { src: 'assets/tree_01.png' },
-    TREE2: { src: 'assets/tree_02.png' },
-    TREE3: { src: 'assets/tree_03.png' },
-    TREE4: { src: 'assets/tree_04.png' },
-    TREE5: { src: 'assets/tree_05.png' },
+    // TREE2: { src: 'assets/tree_02.png' },
+    // TREE3: { src: 'assets/tree_03.png' },
+    // TREE4: { src: 'assets/tree_04.png' },
+    // TREE5: { src: 'assets/tree_05.png' },
     ROCK1: { src: 'assets/rock_01.png' },
     ROCK2: { src: 'assets/rock_02.png' },
     ROCK3: { src: 'assets/rock_03.png' },
-    TRUCK01: { src: 'assets/truck_01.png' },
-    TRUCK02: { src: 'assets/truck_02.png' },
+    // TRUCK01: { src: 'assets/truck_01.png' },
+    // TRUCK02: { src: 'assets/truck_02.png' },
     JEEP01: { src: 'assets/jeep_01.png' },
-    CAR04: { src: 'assets/car_04.png' },
-    CAR03: { src: 'assets/car_03.png' },
-    CAR02: { src: 'assets/car_02.png' },
+    // CAR04: { src: 'assets/car_04.png' },
+    // CAR03: { src: 'assets/car_03.png' },
+    // CAR02: { src: 'assets/car_02.png' },
     CAR01: { src: 'assets/car_01.png' },
     NITRO: { src: 'assets/item_power_nitro.png' },
     COIN: { src: 'assets/item_power_coin.png' },
     FUEL: { src: 'assets/item_power_fuel.png' },
 };
 
-spritesData.PLANTS = [spritesData.TREE1, spritesData.TREE2, spritesData.TREE3, spritesData.TREE4, spritesData.TREE5, spritesData.ROCK1, spritesData.ROCK2, spritesData.ROCK3];
-spritesData.CARS = [spritesData.CAR01, spritesData.CAR02, spritesData.CAR03, spritesData.CAR04, spritesData.JEEP01, spritesData.TRUCK01, spritesData.TRUCK02];
+spritesData.PLANTS = [spritesData.TREE1, spritesData.ROCK1, spritesData.ROCK2, spritesData.ROCK3];
+spritesData.CARS = [spritesData.CAR01, spritesData.JEEP01];
 spritesData.BILLBOARDS = [spritesData.BILLBOARD01, spritesData.BILLBOARD02, spritesData.BILLBOARD03];
+
+//ORIGINAL
+// spritesData.PLANTS = [spritesData.TREE1, spritesData.TREE2, spritesData.TREE3, spritesData.TREE4, spritesData.TREE5, spritesData.ROCK1, spritesData.ROCK2, spritesData.ROCK3];
+// spritesData.CARS = [spritesData.CAR01, spritesData.CAR02, spritesData.CAR03, spritesData.CAR04, spritesData.JEEP01, spritesData.TRUCK01, spritesData.TRUCK02];
+// spritesData.BILLBOARDS = [spritesData.BILLBOARD01, spritesData.BILLBOARD02, spritesData.BILLBOARD03];
 
 var intructionDisplayText = 'Hindari motor lawan,\n tempuh jarak sejauh-jauhnya, \n dan dapatkan koin untuk \n unlock rider'; //instruction display text
 

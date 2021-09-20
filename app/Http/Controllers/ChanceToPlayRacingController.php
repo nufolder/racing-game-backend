@@ -9,6 +9,8 @@ use App\Race;
 
 class ChanceToPlayRacingController extends Controller
 {
+
+
     public function addHealPage()
     {
         $checkT = ChanceToPlayRacing::where('user_id', Auth::user()->id)
@@ -38,6 +40,7 @@ class ChanceToPlayRacingController extends Controller
         return view('user.add-heal', compact('statusT', 'statusM', 'statusV'));
     }
 
+
     public function getMemoryGame()
     {
         $check = ChanceToPlayRacing::where('user_id', Auth::user()->id)
@@ -55,7 +58,7 @@ class ChanceToPlayRacingController extends Controller
                     'heal' => $race->heal + 1
                 ]
             );
-            return response()->json(['response' => 'Kamu Mendapatkan 1 Game!!']);
+            return response()->json(['response' => 'Kamu Mendapatkan 1 Heal !!']);
         } else {
             return response()->json(['response' => 'Kamu Telah Memainkan Game ini, Hari ini!!']);
         }
@@ -78,7 +81,7 @@ class ChanceToPlayRacingController extends Controller
                     'heal' => $race->heal + 1
                 ]
             );
-            return response()->json(['response' => 'Kamu Mendapatkan 1 Game!!']);
+            return response()->json(['response' => 'Kamu Mendapatkan 1 Heal !!']);
         } else {
             return response()->json(['response' => 'Kamu Telah Memainkan Game ini, Hari ini!!']);
         }
@@ -104,6 +107,29 @@ class ChanceToPlayRacingController extends Controller
             return response()->json(['response' => 'Kamu Mendapatkan 1 Game!!']);
         } else {
             return response()->json(['response' => 'Kamu Telah Menonton Video ini, Hari ini!!']);
+        }
+    }
+
+    public function shareSosmed()
+    {
+        $check = ChanceToPlayRacing::where('user_id', Auth::user()->id)
+            ->where('type', 'share')->first();
+        if ($check->last_date == null || $check->last_date != \Carbon\Carbon::now()->format('Y-m-d')) {
+            $check->update(
+                [
+                    'last_date' => \Carbon\Carbon::now()->format('Y-m-d'),
+                    'summary_count' => $check->summary_count + 1
+                ]
+            );
+            $race = Race::where('user_id', Auth::user()->id)->first();
+            $race->update(
+                [
+                    'heal' => $race->heal + 1
+                ]
+            );
+            return response()->json(['response' => 'Kamu Mendapatkan 1 Game!!']);
+        } else {
+            return response()->json(['response' => 'Kamu share game ini, Hari ini!!']);
         }
     }
 }
