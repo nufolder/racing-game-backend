@@ -321,8 +321,8 @@ function buildGameButton() {
         playSound('soundClick');
         toggleConfirm(false);
         stopGame(true);
-        // window.location.pathname = ('/user');
-        window.location.pathname = ('racing-game-backend/public/user');
+        window.location.pathname = ('/user');
+        // window.location.pathname = ('racing-game-backend/public/user');
     });
 
     buttonCancel.cursor = "pointer";
