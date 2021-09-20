@@ -1,4 +1,8 @@
-@extends('layouts.app')
+@extends('layouts.app-user')
+
+@section('title')
+<title>Profile</title>
+@endsection
 
 @section('content')
 
@@ -39,6 +43,7 @@
 
                                 </div>
                             </div>
+
                             <div class="card">
                                 <div class="card-body">
                                     <button type="button" class="btn btn-sm btn-outline-primary" data-bs-toggle="modal"

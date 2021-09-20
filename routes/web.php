@@ -25,12 +25,14 @@ Auth::routes();
 Route::get('google', 'GoogleController@redirect');
 Route::get('google/callback', 'GoogleController@callback');
 
-Route::get('/home', 'HomeController@index')->name('home');
 
 Route::middleware(['auth'])->group(function () {
 
+    Route::get('/home', 'HomeController@index')->name('home');
+
+
     Route::middleware(['admin'])->group(function () {
-        Route::get('admin', 'AdminController@index');
+        Route::get('admin', 'Admin\AdminController@index');
     });
 
     Route::middleware(['user'])->group(function () {
