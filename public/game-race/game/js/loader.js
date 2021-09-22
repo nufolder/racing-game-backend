@@ -36,6 +36,7 @@ function initPreload(){
 			{src:'assets/touch_right.png', id:'itemTouchRight'},
 			
 			{src:'assets/button_restart.png', id:'buttonRestart'},
+			{src:'assets/exit-button.png', id:'buttonOut'},
 			{src:'assets/button_facebook.png', id:'buttonFacebook'},
 			{src:'assets/button_twitter.png', id:'buttonTwitter'},
 			{src:'assets/button_whatsapp.png', id:'buttonWhatsapp'},
@@ -43,7 +44,7 @@ function initPreload(){
 			{src:'assets/button_sound_on.png', id:'buttonSoundOn'},
 			{src:'assets/button_sound_off.png', id:'buttonSoundOff'},
 			{src:'assets/button_exit.png', id:'buttonExit'},
-		{src:'assets/button_settings.png', id:'buttonSettings'}];
+			{src:'assets/button_settings.png', id:'buttonSettings'}];
 	
 	for(var key in spritesData) {
 		if(spritesData[key].src != undefined)
