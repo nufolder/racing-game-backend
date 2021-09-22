@@ -28,8 +28,8 @@
 
 <body>
     <nav class="navbar navbar-expand-lg navbar-light bg-light" aria-label="Ninth navbar example">
-        <div class="container col-md-7">
-            <a class="navbar-brand" href="{{ url('home') }}">Amazing Race</a>
+        <div class="container col-md-12">
+            <a class="navbar-brand" href="{{ url('home') }}">Admin Amazing Race</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarsExample07XL"
                 aria-controls="navbarsExample07XL" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
@@ -39,23 +39,23 @@
 
                 <ul class="navbar-nav mr-auto">
                     <li class="nav-item">
-                        <a href="" class="nav-link">
-                            User
+                        <a href="{{ url('admin/users') }}" class="nav-link">
+                            Users
                         </a>
                     </li>
                     <li class="nav-item">
-                        <a href="" class="nav-link">
+                        <a href="{{ url('admin/minigames') }}" class="nav-link">
                             Minigames
                         </a>
                     </li>
                     <li class="nav-item">
-                        <a href="" class="nav-link">
+                        <a href="{{ url('admin/race') }}" class="nav-link">
                             Race
                         </a>
                     </li>
                     <li class="nav-item">
-                        <a href="" class="nav-link">
-                            Top 50
+                        <a href="{{ url('admin/top50') }}" class="nav-link">
+                            Player Top50
                         </a>
                     </li>
                 </ul>

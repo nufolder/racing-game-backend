@@ -7,19 +7,10 @@ use Illuminate\Support\Facades\Auth;
 
 class HomeController extends Controller
 {
-    /**
-     * Create a new controller instance.
-     *
-     * @return void
-     */
-    public function __construct()
-    {
-        $this->middleware('auth');
-    }
-
     public function index()
     {
         $role = Auth::user()->role;
+        return $role;
         if ($role == "admin") {
             return redirect()->to('admin');
         } else if ($role == "user") {
