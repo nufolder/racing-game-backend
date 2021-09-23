@@ -95,9 +95,9 @@
 
                             <p style="align-content: center; justify-content: center" class="mt-5">
                                 Bingung??? Klik Disini untuk mendapatkan Petunjuk!
-                                <a href="" id="clue-link-label">
-                                    {{-- <label for="clue-link" class="option" id="clue-link-label"></label> --}}
-                                </a>
+                                <button type="button" class="btn btn-sm btn-outline-primary" data-bs-toggle="modal"
+                                    data-bs-target="#exampleModal"> Show Clue
+                                </button>
                             </p>
                         </main>
                     </div>
@@ -105,6 +105,39 @@
             </div>
         </div>
     </div>
+
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Clue Jawaban</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="content-list">
+                        <div class="table-responsive">
+                            <div class="modal-header">
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                                <h4 class="modal-title" id="myModalLabel">Ganti Foto Pegawai</h4>
+                              </div>
+                              <div class="modal-body">
+                                <iframe frameborder="0" width="100%" scrolling="no" id="iframe"></iframe>
+                              </div>
+                              <div class="modal-footer">
+                                {{-- <button type="button" class="btn btn-default" data-dismiss="modal">Close</button> --}}
+                              </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        $('#exampleModal').on('shown.bs.modal', function () {
+            $(this).find('iframe').href('src','#clue-link-label')
+        })
+    </script>
     <script src="{{ asset('minigames/trivia.js') }}"></script>
 </body>
 @endsection
