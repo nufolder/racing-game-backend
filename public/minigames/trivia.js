@@ -4,7 +4,8 @@ const questions = [{
         optionB: "Honda Racing Team",
         optionC: "Astra Honda Racing Team",
         optionD: "Astra Honda Racing",
-        correctOption: "optionC"
+        correctOption: "optionC",
+        clueLink:"https://www.astra-honda.com/article/pembinaan-berjenjang-ahm-siap-antar-pembalap-muda-harumkan-bangsa-di-2021"
     },
 
     {
@@ -13,7 +14,8 @@ const questions = [{
         optionB: "15 Pebalap",
         optionC: "13 Pebalap",
         optionD: "12 Pebalap",
-        correctOption: "optionD"
+        correctOption: "optionD",
+        clueLink:"https://www.astra-honda.com/article/pembinaan-berjenjang-ahm-siap-antar-pembalap-muda-harumkan-bangsa-di-2021"
     },
 
     {
@@ -22,7 +24,8 @@ const questions = [{
         optionB: "Kejuaraan Eropa, Asia dan Nasional",
         optionC: "Kejuaraan Nasional",
         optionD: "Kejuaraan Asia dan Nasional",
-        correctOption: "optionB"
+        correctOption: "optionB",
+        clueLink:"https://www.astra-honda.com/article/pembinaan-berjenjang-ahm-siap-antar-pembalap-muda-harumkan-bangsa-di-2021"
     },
 
     {
@@ -31,7 +34,8 @@ const questions = [{
         optionB: "Astra Honda Talent Academy",
         optionC: "Astra Honda Racing Academy",
         optionD: "Honda Junior Talent",
-        correctOption: "optionA"
+        correctOption: "optionA",
+        clueLink:"https://www.astra-honda.com/article/pembinaan-berjenjang-ahm-siap-antar-pembalap-muda-harumkan-bangsa-di-2021"
     },
 
     {
@@ -40,7 +44,8 @@ const questions = [{
         optionB: "Mario Suryo Aji",
         optionC: "Irfan Ardiansyah",
         optionD: "Rheza Danica",
-        correctOption: "optionB"
+        correctOption: "optionB",
+        clueLink:"https://www.astra-honda.com/article/pembinaan-berjenjang-ahm-siap-antar-pembalap-muda-harumkan-bangsa-di-2021"
     },
 
     {
@@ -49,7 +54,8 @@ const questions = [{
         optionB: "Mario Suryo Aji",
         optionC: "Rheza Danica",
         optionD: "Lucky Hendriansya",
-        correctOption: "optionA"
+        correctOption: "optionA",
+        clueLink:"https://www.astra-honda.com/article/pembinaan-berjenjang-ahm-siap-antar-pembalap-muda-harumkan-bangsa-di-2021"
     },
 
     {
@@ -58,7 +64,8 @@ const questions = [{
         optionB: "Veda Ega Pratama & Herlian Dandi",
         optionC: "Chessy Meilandri & Veda Ega Pratama",
         optionD: "Herlian Dandi & Arzyan Dheyo",
-        correctOption: "optionC"
+        correctOption: "optionC",
+        clueLink:"https://www.astra-honda.com/article/pembinaan-berjenjang-ahm-siap-antar-pembalap-muda-harumkan-bangsa-di-2021"
     },
 
     {
@@ -67,7 +74,8 @@ const questions = [{
         optionB: "Azryan Dheyo & Herlian Dandi",
         optionC: "Fadillah Arbi Aditama",
         optionD: "Semua benar",
-        correctOption: "optionD"
+        correctOption: "optionD",
+        clueLink:"https://www.astra-honda.com/article/pembinaan-berjenjang-ahm-siap-antar-pembalap-muda-harumkan-bangsa-di-2021"
     },
 
     {
@@ -76,7 +84,8 @@ const questions = [{
         optionB: "Lucky Hendriansya & Rheza Danica",
         optionC: "Mario Suryo Aji & Irfan Ardiansya",
         optionD: "Semua salah",
-        correctOption: "optionA"
+        correctOption: "optionA",
+        clueLink:"https://www.astra-honda.com/article/pembinaan-berjenjang-ahm-siap-antar-pembalap-muda-harumkan-bangsa-di-2021"
     },
 
     {
@@ -85,7 +94,8 @@ const questions = [{
         optionB: "Lucky Hendriansya",
         optionC: "Herjun Atna Firdaus",
         optionD: "Semua benar",
-        correctOption: "optionD"
+        correctOption: "optionD",
+        clueLink:"https://www.astra-honda.com/article/pembinaan-berjenjang-ahm-siap-antar-pembalap-muda-harumkan-bangsa-di-2021"
     },
 
     {
@@ -94,7 +104,8 @@ const questions = [{
         optionB: "Super Mario",
         optionC: "Mario Man",
         optionD: "Amazing Mario",
-        correctOption: "optionC"
+        correctOption: "optionC",
+        clueLink:"https://www.astra-honda.com/article/pembinaan-berjenjang-ahm-siap-antar-pembalap-muda-harumkan-bangsa-di-2021"
     },
 
     {
@@ -103,7 +114,8 @@ const questions = [{
         optionB: "Ke-7",
         optionC: "Ke-4",
         optionD: "Ke-6",
-        correctOption: "optionC"
+        correctOption: "optionC",
+        clueLink:"https://www.astra-honda.com/article/pembinaan-berjenjang-ahm-siap-antar-pembalap-muda-harumkan-bangsa-di-2021"
     },
 
 
@@ -113,7 +125,8 @@ const questions = [{
         optionB: "Sirkuit Aragon",
         optionC: "Sirkuit Jerez",
         optionD: "Sirkuit Catalunya",
-        correctOption: "optionD"
+        correctOption: "optionD",
+        clueLink:"https://www.astra-honda.com/article/pembinaan-berjenjang-ahm-siap-antar-pembalap-muda-harumkan-bangsa-di-2021"
     },
 
     {
@@ -122,7 +135,8 @@ const questions = [{
         optionB: "2 Musim",
         optionC: "3 Musim",
         optionD: "4 Musim",
-        correctOption: "optionC"
+        correctOption: "optionC",
+        clueLink:"https://www.astra-honda.com/article/pembinaan-berjenjang-ahm-siap-antar-pembalap-muda-harumkan-bangsa-di-2021"
     },
 
     {
@@ -131,7 +145,8 @@ const questions = [{
         optionB: "Gerry Salim",
         optionC: "Mario Suryo Aji ",
         optionD: "Semua Benar",
-        correctOption: "optionA"
+        correctOption: "optionA",
+        clueLink:"https://www.astra-honda.com/article/pembinaan-berjenjang-ahm-siap-antar-pembalap-muda-harumkan-bangsa-di-2021"
     },
 
     {
@@ -140,7 +155,8 @@ const questions = [{
         optionB: "Tiga kali juara umum team AP250",
         optionC: "Dua kali juara umum team AP250",
         optionD: "Semua Salah",
-        correctOption: "optionB"
+        correctOption: "optionB",
+        clueLink:"https://www.astra-honda.com/article/pembinaan-berjenjang-ahm-siap-antar-pembalap-muda-harumkan-bangsa-di-2021"
     },
 
     {
@@ -149,7 +165,8 @@ const questions = [{
         optionB: "Irfan Ardiansyah",
         optionC: "Rheza Danica",
         optionD: "Gerry Salim",
-        correctOption: "optionC"
+        correctOption: "optionC",
+        clueLink:"https://www.astra-honda.com/article/pembinaan-berjenjang-ahm-siap-antar-pembalap-muda-harumkan-bangsa-di-2021"
     },
 
     {
@@ -158,7 +175,8 @@ const questions = [{
         optionB: "Mario Suryo Aji",
         optionC: "Andi Gilang",
         optionD: "Rheza Danica",
-        correctOption: "optionA"
+        correctOption: "optionA",
+        clueLink:"https://www.astra-honda.com/article/pembinaan-berjenjang-ahm-siap-antar-pembalap-muda-harumkan-bangsa-di-2021"
     },
 
     {
@@ -167,7 +185,8 @@ const questions = [{
         optionB: "Delvintor Alfarizi",
         optionC: "Irfan Ardiansyah",
         optionD: "Rheza Danica",
-        correctOption: "optionB"
+        correctOption: "optionB",
+        clueLink:"https://www.astra-honda.com/article/pembinaan-berjenjang-ahm-siap-antar-pembalap-muda-harumkan-bangsa-di-2021"
     },
 
     {
@@ -176,7 +195,8 @@ const questions = [{
         optionB: "CB150R",
         optionC: "CBR250RR",
         optionD: "CBR1000RR",
-        correctOption: "optionC"
+        correctOption: "optionC",
+        clueLink:"https://www.astra-honda.com/article/pembinaan-berjenjang-ahm-siap-antar-pembalap-muda-harumkan-bangsa-di-2021"
     },
 
     {
@@ -185,7 +205,8 @@ const questions = [{
         optionB: "CRF250 RALLY",
         optionC: "CRF1000L",
         optionD: "CRF250R",
-        correctOption: "optionD"
+        correctOption: "optionD",
+        clueLink:"https://www.astra-honda.com/article/pembinaan-berjenjang-ahm-siap-antar-pembalap-muda-harumkan-bangsa-di-2021"
     }
 ]
 
@@ -219,7 +240,7 @@ function NextQuestion(index) {
     document.getElementById("option-two-label").innerHTML = currentQuestion.optionB;
     document.getElementById("option-three-label").innerHTML = currentQuestion.optionC;
     document.getElementById("option-four-label").innerHTML = currentQuestion.optionD;
-
+    document.getElementById("clue-link-label").innerHTML = currentQuestion.clueLink;
 }
 
 
