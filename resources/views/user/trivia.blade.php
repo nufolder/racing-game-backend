@@ -34,6 +34,8 @@
                                             <p>Jawaban yang benar: <span id="right-answers"></span></p>
                                             <p class="textfinishtrivia"></p>
                                         </div>
+                                        <div id="triviaredirect" class="modal-footer">
+                                        </div>
                                     </div>
                                 </div>
                             </div>
@@ -87,13 +89,18 @@
                                 </div>
 
                                 {{-- <div class="col-12"> --}}
-                                <div class="next-button-container">
+                                <div class="next-button-container mt-3">
                                     <button onclick="handleNextQuestion()">Next Question</button>
                                 </div>
                                 {{-- </div> --}}
-
-
                             </div>
+
+                            <p style="align-content: center; justify-content: center" class="mt-5">
+                                Bingung??? Klik Disini untuk mendapatkan Petunjuk!
+                                <a href="" id="clue-link-label">
+                                    {{-- <label for="clue-link" class="option" id="clue-link-label"></label> --}}
+                                </a>
+                            </p>
                         </main>
                     </div>
                 </div>

@@ -124,6 +124,11 @@ const gameFinished = () => {
             console.log("Respond was: ", resp)
             $('.modaltitlememorygame').text('Selamat !!');
             $('.textfinishmemorygame').text(resp.response);
+            if (resp.status == 1) {
+                document.getElementById('memorygameredirect').innerHTML = `<a href="user" type="button" class="btn btn-secondary">Oke</a>`;
+            } else {
+                document.getElementById('memorygameredirect').innerHTML = `<a type="button" class="btn btn-secondary" data-bs-dismiss="modal">Oke</a>`;
+            }
             var myModal = new bootstrap.Modal(document.getElementById('memorygameid'), {
                 keyboard: false
             });
