@@ -1,229 +1,213 @@
 const questions = [{
-        question: "How many days makes a week ?",
-        optionA: "10 days",
-        optionB: "14 days",
-        optionC: "5 days",
-        optionD: "7 days",
-        correctOption: "optionD"
+        question: "Apa nama tim balap binaan PT Astra Honda Motor?",
+        optionA: "Astra Racing Team",
+        optionB: "Honda Racing Team",
+        optionC: "Astra Honda Racing Team",
+        optionD: "Astra Honda Racing",
+        correctOption: "optionC",
+        clueLink:"https://www.astra-honda.com/article/pembinaan-berjenjang-ahm-siap-antar-pembalap-muda-harumkan-bangsa-di-2021"
     },
 
     {
-        question: "How many players are allowed on a soccer pitch ?",
-        optionA: "10 players",
-        optionB: "11 players",
-        optionC: "9 players",
-        optionD: "12 players",
-        correctOption: "optionB"
+        question: "Berapa jumlah pebalap Astra Honda Racing Team di tahun 2021?",
+        optionA: "11 Pebalap",
+        optionB: "15 Pebalap",
+        optionC: "13 Pebalap",
+        optionD: "12 Pebalap",
+        correctOption: "optionD",
+        clueLink:"https://www.astra-honda.com/article/pembinaan-berjenjang-ahm-siap-antar-pembalap-muda-harumkan-bangsa-di-2021"
     },
 
     {
-        question: "Who was the first President of USA ?",
-        optionA: "Donald Trump",
-        optionB: "Barack Obama",
-        optionC: "Abraham Lincoln",
-        optionD: "George Washington",
-        correctOption: "optionD"
+        question: "Dimana saja pebalap Astra Honda Racing Team akan berlaga?",
+        optionA: "Kejuaraan Eropa",
+        optionB: "Kejuaraan Eropa, Asia dan Nasional",
+        optionC: "Kejuaraan Nasional",
+        optionD: "Kejuaraan Asia dan Nasional",
+        correctOption: "optionB",
+        clueLink:"https://www.astra-honda.com/article/pembinaan-berjenjang-ahm-siap-antar-pembalap-muda-harumkan-bangsa-di-2021"
     },
 
     {
-        question: "30 days has ______ ?",
-        optionA: "January",
-        optionB: "December",
-        optionC: "June",
-        optionD: "August",
-        correctOption: "optionC"
+        question: "Apa nama program pelatihan pebalap muda (dibawah 14 tahun) yang dilakukan PT Astra Honda Motor?",
+        optionA: "Astra Honda Racing School",
+        optionB: "Astra Honda Talent Academy",
+        optionC: "Astra Honda Racing Academy",
+        optionD: "Honda Junior Talent",
+        correctOption: "optionA",
+        clueLink:"https://www.astra-honda.com/article/pembinaan-berjenjang-ahm-siap-antar-pembalap-muda-harumkan-bangsa-di-2021"
     },
 
     {
-        question: "How manay hours can be found in a day ?",
-        optionA: "30 hours",
-        optionB: "38 hours",
-        optionC: "48 hours",
-        optionD: "24 hours",
-        correctOption: "optionD"
+        question: "Siapa pebalap AHRT yang berkompetisi di CEV Moto 3 Junior World Championship 2021?",
+        optionA: "Adenanta Putra",
+        optionB: "Mario Suryo Aji",
+        optionC: "Irfan Ardiansyah",
+        optionD: "Rheza Danica",
+        correctOption: "optionB",
+        clueLink:"https://www.astra-honda.com/article/pembinaan-berjenjang-ahm-siap-antar-pembalap-muda-harumkan-bangsa-di-2021"
     },
 
     {
-        question: "Which is the longest river in the world ?",
-        optionA: "River Nile",
-        optionB: "Long River",
-        optionC: "River Niger",
-        optionD: "Lake Chad",
-        correctOption: "optionA"
+        question: "Siapa pebalap AHRT yang berkompetisi di kejurnas motocross kelas MX2 2021?",
+        optionA: "Delvintor Alfarizi",
+        optionB: "Mario Suryo Aji",
+        optionC: "Rheza Danica",
+        optionD: "Lucky Hendriansya",
+        correctOption: "optionA",
+        clueLink:"https://www.astra-honda.com/article/pembinaan-berjenjang-ahm-siap-antar-pembalap-muda-harumkan-bangsa-di-2021"
     },
 
     {
-        question: "_____ is the hottest Continent on Earth ?",
-        optionA: "Oceania",
-        optionB: "Antarctica",
-        optionC: "Africa",
-        optionD: "North America",
-        correctOption: "optionC"
+        question: "Siapa pebalap AHRT yang berkompetisi di Thailand Talent Cup 2021?",
+        optionA: "Chessy Meilandri & Mario Suryo Aji",
+        optionB: "Veda Ega Pratama & Herlian Dandi",
+        optionC: "Chessy Meilandri & Veda Ega Pratama",
+        optionD: "Herlian Dandi & Arzyan Dheyo",
+        correctOption: "optionC",
+        clueLink:"https://www.astra-honda.com/article/pembinaan-berjenjang-ahm-siap-antar-pembalap-muda-harumkan-bangsa-di-2021"
     },
 
     {
-        question: "Which country is the largest in the world ?",
-        optionA: "Russia",
-        optionB: "Canada",
-        optionC: "Africa",
-        optionD: "Egypt",
-        correctOption: "optionA"
+        question: "Siapa pebalap AHRT yang berkompetisi di Asia Talent Cup 2021?",
+        optionA: "Herjun Atna Firdaus",
+        optionB: "Azryan Dheyo & Herlian Dandi",
+        optionC: "Fadillah Arbi Aditama",
+        optionD: "Semua benar",
+        correctOption: "optionD",
+        clueLink:"https://www.astra-honda.com/article/pembinaan-berjenjang-ahm-siap-antar-pembalap-muda-harumkan-bangsa-di-2021"
     },
 
     {
-        question: "Which of these numbers is an odd number ?",
-        optionA: "Ten",
-        optionB: "Twelve",
-        optionC: "Eight",
-        optionD: "Eleven",
-        correctOption: "optionD"
+        question: "Siapa pebalap AHRT yang berkompetisi di Asia Road Racing Champhionship Kelas SS600 2021?",
+        optionA: "Rheza Danica & Irfan Ardiansya",
+        optionB: "Lucky Hendriansya & Rheza Danica",
+        optionC: "Mario Suryo Aji & Irfan Ardiansya",
+        optionD: "Semua salah",
+        correctOption: "optionA",
+        clueLink:"https://www.astra-honda.com/article/pembinaan-berjenjang-ahm-siap-antar-pembalap-muda-harumkan-bangsa-di-2021"
     },
 
     {
-        question: `"You Can't see me" is a popular saying by`,
-        optionA: "Eminem",
-        optionB: "Bill Gates",
-        optionC: "Chris Brown",
-        optionD: "John Cena",
-        correctOption: "optionD"
+        question: "Siapa pebalap AHRT yang berkompetisi di Asia Road Racing Champhionship Kelas AP250 2021?",
+        optionA: "M. Adenanta Putra",
+        optionB: "Lucky Hendriansya",
+        optionC: "Herjun Atna Firdaus",
+        optionD: "Semua benar",
+        correctOption: "optionD",
+        clueLink:"https://www.astra-honda.com/article/pembinaan-berjenjang-ahm-siap-antar-pembalap-muda-harumkan-bangsa-di-2021"
     },
 
     {
-        question: "Where is the world tallest building located ?",
-        optionA: "Africa",
-        optionB: "California",
-        optionC: "Dubai",
-        optionD: "Italy",
-        correctOption: "optionC"
+        question: "Apa julukan yang dimiliki Mario Suryo Aji?",
+        optionA: "Fantastic Mario",
+        optionB: "Super Mario",
+        optionC: "Mario Man",
+        optionD: "Amazing Mario",
+        correctOption: "optionC",
+        clueLink:"https://www.astra-honda.com/article/pembinaan-berjenjang-ahm-siap-antar-pembalap-muda-harumkan-bangsa-di-2021"
     },
 
     {
-        question: "The longest river in the United Kingdom is ?",
-        optionA: "River Severn",
-        optionB: "River Mersey",
-        optionC: "River Trent",
-        optionD: "River Tweed",
-        correctOption: "optionA"
+        question: "Berapa posisi yang diraih Mario Suryo Aji pada balap seri perdana CEV Moto3 Junior World Championship 2021?",
+        optionA: "Ke-2",
+        optionB: "Ke-7",
+        optionC: "Ke-4",
+        optionD: "Ke-6",
+        correctOption: "optionC",
+        clueLink:"https://www.astra-honda.com/article/pembinaan-berjenjang-ahm-siap-antar-pembalap-muda-harumkan-bangsa-di-2021"
     },
 
 
     {
-        question: "How many permanent teeth does a dog have ?",
-        optionA: "38",
-        optionB: "42",
-        optionC: "40",
-        optionD: "36",
-        correctOption: "optionB"
+        question: "Di Sirkuit apa Mario Suryo Aji untuk pertama kali mendapatkan pole position pada ajang CEV Moto3 2021?",
+        optionA: "Sirkuit Le Mans",
+        optionB: "Sirkuit Aragon",
+        optionC: "Sirkuit Jerez",
+        optionD: "Sirkuit Catalunya",
+        correctOption: "optionD",
+        clueLink:"https://www.astra-honda.com/article/pembinaan-berjenjang-ahm-siap-antar-pembalap-muda-harumkan-bangsa-di-2021"
     },
 
     {
-        question: "Which national team won the football World cup in 2018 ?",
-        optionA: "England",
-        optionB: "Brazil",
-        optionC: "Germany",
-        optionD: "France",
-        correctOption: "optionD"
+        question: "Berapa jumlah musim yang sudah dijalani Mario Suryo Aji di kompetisi CEV Moto3 Junior World Championsip?",
+        optionA: "1 Musim",
+        optionB: "2 Musim",
+        optionC: "3 Musim",
+        optionD: "4 Musim",
+        correctOption: "optionC",
+        clueLink:"https://www.astra-honda.com/article/pembinaan-berjenjang-ahm-siap-antar-pembalap-muda-harumkan-bangsa-di-2021"
     },
 
     {
-        question: "Which US state was Donald Trump Born ?",
-        optionA: "New York",
-        optionB: "California",
-        optionC: "New Jersey",
-        optionD: "Los Angeles",
-        correctOption: "optionA"
+        question: "Siapa pebalap AHRT yang berhasil mewakili Indonesia di Grand Prix Moto2 pada tahun 2020?",
+        optionA: "Andi Gilang",
+        optionB: "Gerry Salim",
+        optionC: "Mario Suryo Aji ",
+        optionD: "Semua Benar",
+        correctOption: "optionA",
+        clueLink:"https://www.astra-honda.com/article/pembinaan-berjenjang-ahm-siap-antar-pembalap-muda-harumkan-bangsa-di-2021"
     },
 
     {
-        question: "How man states does Nigeria have ?",
-        optionA: "24",
-        optionB: "30",
-        optionC: "36",
-        optionD: "37",
-        correctOption: "optionC"
+        question: "Rekor apa yang berhasil diraih AHRT dalam kompetisi ARRC tahun 2019?",
+        optionA: "Empat kali juara umum team AP250",
+        optionB: "Tiga kali juara umum team AP250",
+        optionC: "Dua kali juara umum team AP250",
+        optionD: "Semua Salah",
+        correctOption: "optionB",
+        clueLink:"https://www.astra-honda.com/article/pembinaan-berjenjang-ahm-siap-antar-pembalap-muda-harumkan-bangsa-di-2021"
     },
 
     {
-        question: "____ is the capital of Nigeria ?",
-        optionA: "Abuja",
-        optionB: "Lagos",
-        optionC: "Calabar",
-        optionD: "Kano",
-        correctOption: "optionA"
+        question: "Siapa pebalap AHRT yang meraih juara di kompetisi ARRC AP250 pada tahun 2018?",
+        optionA: "Andi Gilang",
+        optionB: "Irfan Ardiansyah",
+        optionC: "Rheza Danica",
+        optionD: "Gerry Salim",
+        correctOption: "optionC",
+        clueLink:"https://www.astra-honda.com/article/pembinaan-berjenjang-ahm-siap-antar-pembalap-muda-harumkan-bangsa-di-2021"
     },
 
     {
-        question: "Los Angeles is also known as ?",
-        optionA: "Angels City",
-        optionB: "Shining city",
-        optionC: "City of Angels",
-        optionD: "Lost Angels",
-        correctOption: "optionC"
+        question: "Siapa pebalap AHRT yang sekaligus menjadi pebalap Indonesia pertama yang menjadi juara di ARRC AP250 ?",
+        optionA: "Gerry Salim",
+        optionB: "Mario Suryo Aji",
+        optionC: "Andi Gilang",
+        optionD: "Rheza Danica",
+        correctOption: "optionA",
+        clueLink:"https://www.astra-honda.com/article/pembinaan-berjenjang-ahm-siap-antar-pembalap-muda-harumkan-bangsa-di-2021"
     },
 
     {
-        question: "What is the capital of Germany ?",
-        optionA: "Georgia",
-        optionB: "Missouri",
-        optionC: "Oklahoma",
-        optionD: "Berlin",
-        correctOption: "optionD"
+        question: "Siapa pebalap AHRT yang meraih juara di kompetisi nasional Motocross MX2 2019?",
+        optionA: "Andi Gilang",
+        optionB: "Delvintor Alfarizi",
+        optionC: "Irfan Ardiansyah",
+        optionD: "Rheza Danica",
+        correctOption: "optionB",
+        clueLink:"https://www.astra-honda.com/article/pembinaan-berjenjang-ahm-siap-antar-pembalap-muda-harumkan-bangsa-di-2021"
     },
 
     {
-        question: "How many sides does an hexagon have ?",
-        optionA: "Six",
-        optionB: "Sevene",
-        optionC: "Four",
-        optionD: "Five",
-        correctOption: "optionA"
+        question: "Apa tipe motor yang digunakan pembalap AHRT dalam menjuarai kompetisi ARRC AP250 tahun 2017 dan 2018?",
+        optionA: "CBR150R",
+        optionB: "CB150R",
+        optionC: "CBR250RR",
+        optionD: "CBR1000RR",
+        correctOption: "optionC",
+        clueLink:"https://www.astra-honda.com/article/pembinaan-berjenjang-ahm-siap-antar-pembalap-muda-harumkan-bangsa-di-2021"
     },
 
     {
-        question: "How many planets are currently in the solar system ?",
-        optionA: "Eleven",
-        optionB: "Seven",
-        optionC: "Nine",
-        optionD: "Eight",
-        correctOption: "optionD"
-    },
-
-    {
-        question: "Which Planet is the hottest ?",
-        optionA: "Jupitar",
-        optionB: "Mercury",
-        optionC: "Earth",
-        optionD: "Venus",
-        correctOption: "optionB"
-    },
-
-    {
-        question: "where is the smallest bone in human body located?",
-        optionA: "Toes",
-        optionB: "Ears",
-        optionC: "Fingers",
-        optionD: "Nose",
-        correctOption: "optionB"
-    },
-
-    {
-        question: "How many hearts does an Octopus have ?",
-        optionA: "One",
-        optionB: "Two",
-        optionC: "Three",
-        optionD: "Four",
-        correctOption: "optionC"
-    },
-
-    {
-        question: "How many teeth does an adult human have ?",
-        optionA: "28",
-        optionB: "30",
-        optionC: "32",
-        optionD: "36",
-        correctOption: "optionC"
+        question: "Apa tipe motor yang digunakan Delvintor Alfarizi dalam menjuarai kompetisi nasional Motocross MX2 2019?",
+        optionA: "CRF150L",
+        optionB: "CRF250 RALLY",
+        optionC: "CRF1000L",
+        optionD: "CRF250R",
+        correctOption: "optionD",
+        clueLink:"https://www.astra-honda.com/article/pembinaan-berjenjang-ahm-siap-antar-pembalap-muda-harumkan-bangsa-di-2021"
     }
-
 ]
 
 
@@ -256,12 +240,12 @@ function NextQuestion(index) {
     document.getElementById("option-two-label").innerHTML = currentQuestion.optionB;
     document.getElementById("option-three-label").innerHTML = currentQuestion.optionC;
     document.getElementById("option-four-label").innerHTML = currentQuestion.optionD;
-
+    document.getElementById("clue-link-label").innerHTML = currentQuestion.clueLink;
 }
 
 
 function checkForAnswer() {
-    const currentQuestion = shuffledQuestions[indexNumber] //gets current Question 
+    const currentQuestion = shuffledQuestions[indexNumber] //gets current Question
     const currentQuestionAnswer = currentQuestion.correctOption //gets current Question's answer
     const options = document.getElementsByName("option"); //gets all elements in dom with name of 'option' (in this the radio inputs)
     let correctOption = null

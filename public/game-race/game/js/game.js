@@ -3,9 +3,9 @@
 ////////////////////////////////////////////////////////////
 
 /*!
- * 
+ *
  * GAME SETTING CUSTOMIZATION START
- * 
+ *
  */
 
 //background assets
@@ -106,7 +106,7 @@ var nitroData = {
     timer: 5
 }; //total nitro time
 
-//game status (text, color and font size)				
+//game status (text, color and font size)
 var statusData = {
     start: { text: 'GO', color: '#fff', size: 120 },
     nitro: { text: 'TURBO', color: '#f68b1f', size: 70 },
@@ -188,9 +188,9 @@ var gameData = { paused: true, nitroMode: false, nitroTimer: 0, fuel: 0, fuelUpd
 var keyData = { left: false, right: false, accelerate: false, brake: false };
 
 /*!
- * 
+ *
  * GAME BUTTONS - This is the function that runs to setup button event
- * 
+ *
  */
 function buildGameButton() {
     itemTouchUp.visible = itemTouchDown.visible = itemTouchLeft.visible = itemTouchRight.visible = false;
@@ -347,9 +347,9 @@ function appendFocusFrame() {
 }
 
 /*!
- * 
+ *
  * KEYBOARD EVENTS - This is the function that runs for keyboard events
- * 
+ *
  */
 function keydown(event) {
     if (gameData.paused) {
@@ -400,9 +400,9 @@ function keyup(event) {
 }
 
 /*!
- * 
+ *
  * DISPLAY PAGES - This is the function that runs to display pages
- * 
+ *
  */
 var curPage = ''
 
@@ -470,9 +470,9 @@ function toggleConfirm(con) {
 }
 
 /*!
- * 
+ *
  * START GAME - This is the function that runs to start play game
- * 
+ *
  */
 
 function startGameCheck() {
@@ -528,9 +528,9 @@ function startGame() {
 }
 
 /*!
- * 
+ *
  * STOP GAME - This is the function that runs to stop play game
- * 
+ *
  */
 function stopGame() {
     gameData.paused = true;
@@ -538,9 +538,9 @@ function stopGame() {
 }
 
 /*!
- * 
+ *
  * SAVE GAME - This is the function that runs to save game
- * 
+ *
  */
 function saveGame(score, coin) {
     $.ajax({
@@ -563,9 +563,9 @@ function saveGame(score, coin) {
 }
 
 /*!
- * 
+ *
  * LOOP UPDATE GAME - This is the function that runs to update game loop
- * 
+ *
  */
 function updateGame() {
     updateWorld();
@@ -600,9 +600,9 @@ function updateGame() {
 }
 
 /*!
- * 
+ *
  * UPDATE FUEL - This is the function that runs to update game fuel
- * 
+ *
  */
 function updateFuel() {
     if (defaultData.speed > 0 && !gameData.fuelUpdate) {
@@ -621,9 +621,9 @@ function updateFuel() {
 }
 
 /*!
- * 
+ *
  * TOGGLE GAME PENALTY - This is the function that runs to toggle game penalty
- * 
+ *
  */
 function togglePenaltyTimer(con) {
     if (con) {
@@ -661,9 +661,9 @@ function updatePenaltyTimer() {
 }
 
 /*!
- * 
+ *
  * UPDATE WORLD - This is the function that runs to update game world
- * 
+ *
  */
 function updateWorld() {
     updateSprites();
@@ -862,9 +862,9 @@ function updateCarOffset(car, carSegment, playerSegment, playerW) {
 }
 
 /*!
- * 
+ *
  * RENDER WORLD - This is the function that runs to update render world
- * 
+ *
  */
 function renderWorld() {
     var baseSegment = findSegment(defaultData.position);
@@ -955,9 +955,9 @@ function findSegment(z) {
 
 
 /*!
- * 
+ *
  * BUILD ROAD - This is the function that runs to build road
- * 
+ *
  */
 function getLastY() {
     return (segments.length == 0) ? 0 : segments[segments.length - 1].p2.world.y;
@@ -1052,9 +1052,9 @@ function addRoadType(type, num, height, curve) {
 }
 
 /*!
- * 
+ *
  * RESET WORLD - This is the function that runs to reset game world
- * 
+ *
  */
 function resetGame() {
     resetWorld();
@@ -1087,14 +1087,14 @@ function resetRoad() {
     addRoadType('bumps');
     addRoadType('lowRollingHills');
     addRoadType('curve', roadLengthData.length.long*2, roadLengthData.hill.medium, roadLengthData.curve.medium);
-	
+
     addRoadType('straight', '');
     addRoadType('hill', roadLengthData.length.medium, roadLengthData.hill.hight);
     addRoadType('sCurves');
     addRoadType('curve', roadLengthData.length.long, roadLengthData.hill.none, -roadLengthData.curve.medium);
     addRoadType('bumps');
     addRoadType('hill', roadLengthData.length.long, -roadLengthData.hill.medium);
-	
+
     addRoadType('straight', '');
     addRoadType('bumps');
     addRoadType('sCurves');*/
@@ -1103,7 +1103,7 @@ function resetRoad() {
         var roadTypeNum = Math.floor(Math.random() * 8) + 1;
         if (roadTypeNum == 1) {
             addRoadType('straight', '');
-            //			addRoadType('lowRollingHills');	
+            //			addRoadType('lowRollingHills');
         } else if (roadTypeNum == 2) {
             addRoadType('straight', '');
             //			addRoadType('sCurves');
@@ -1192,9 +1192,9 @@ function resetCars() {
 }
 
 /*!
- * 
+ *
  * RENDER MISC - This is the function that runs for render misc
- * 
+ *
  */
 function renderPolygon(x1, y1, x2, y2, x3, y3, x4, y4, color) {
     var shape = new createjs.Shape();
@@ -1374,9 +1374,9 @@ function renderFog(x, y, width, height, fog) {
 
 
 /*!
- * 
+ *
  * ROAD BUILD MISC - This is the function that runs for road build misc
- * 
+ *
  */
 function rumbleWidth(projectedRoadWidth, lanes) {
     return projectedRoadWidth / Math.max(6, 2 * lanes);
@@ -1388,9 +1388,9 @@ function laneMarkerWidth(projectedRoadWidth, lanes) {
 
 
 /*!
- * 
+ *
  * COLLECT ITEMS - This is the function that runs for collect items
- * 
+ *
  */
 function startNitro() {
     if (!gameData.nitroMode) {
@@ -1439,9 +1439,9 @@ function addFuel() {
 }
 
 /*!
- * 
+ *
  * GAME STATUS - This is the function that runs for game status
- * 
+ *
  */
 function updateGameStatus() {
     //score
@@ -1500,9 +1500,9 @@ function endGame() {
 }
 
 /*!
- * 
+ *
  * OPTIONS - This is the function that runs to mute and fullscreen
- * 
+ *
  */
 function toggleGameMute(con) {
     buttonSoundOff.visible = false;
@@ -1541,9 +1541,9 @@ function toggleFullScreen() {
 }
 
 /*!
- * 
+ *
  * OPTIONS - This is the function that runs to toggle options
- * 
+ *
  */
 
 function toggleOption() {
@@ -1556,9 +1556,9 @@ function toggleOption() {
 
 
 /*!
- * 
+ *
  * SHARE - This is the function that runs to open share url
- * 
+ *
  */
 function share(action) {
     gtag('event', 'click', { 'event_category': 'share', 'event_label': action });
