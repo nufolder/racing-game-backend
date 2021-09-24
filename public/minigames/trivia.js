@@ -361,6 +361,11 @@ function handleEndGame() {
                 console.log("Respond was: ", resp)
                 $('.modaltitletrivia').text('Selamat !!');
                 $('.textfinishtrivia').text(resp.response);
+                if (resp.status == 1) {
+                    document.getElementById('triviaredirect').innerHTML = `<a href="user" type="button" class="btn btn-secondary">Oke</a>`;
+                } else {
+                    document.getElementById('triviaredirect').innerHTML = `<a type="button" class="btn btn-secondary" data-bs-dismiss="modal">Oke</a>`;
+                }
             },
             error: function(request, status, error) {
                 console.log("Respond was: ", resp);

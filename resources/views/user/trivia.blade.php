@@ -34,6 +34,8 @@
                                             <p>Jawaban yang benar: <span id="right-answers"></span></p>
                                             <p class="textfinishtrivia"></p>
                                         </div>
+                                        <div id="triviaredirect" class="modal-footer">
+                                        </div>
                                     </div>
                                 </div>
                             </div>

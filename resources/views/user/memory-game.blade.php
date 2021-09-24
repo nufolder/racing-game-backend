@@ -27,6 +27,8 @@
                                 <div class="modal-body">
                                     <p class="textfinishmemorygame"></p>
                                 </div>
+                                <div id="memorygameredirect" class="modal-footer">
+                                </div>
                             </div>
                         </div>
                     </div>

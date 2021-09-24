@@ -59,7 +59,7 @@ class LoginController extends Controller
             $race = Race::where('user_id', Auth::user()->id)->first();
             $race->update(
                 [
-                    'heal' => $race->heal + 3
+                    'heal' => 3
                 ]
             );
             return 'Kamu Mendapatkan 3 Heal !!';
