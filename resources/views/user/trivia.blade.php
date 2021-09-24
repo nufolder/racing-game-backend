@@ -96,10 +96,11 @@
                             </div>
 
                             <p style="align-content: center; justify-content: center" class="mt-5">
-                                Bingung??? Klik Disini untuk mendapatkan Petunjuk!
-                                <a href="" id="clue-link-label">
-                                    {{-- <label for="clue-link" class="option" id="clue-link-label"></label> --}}
-                                </a>
+                                Bingung??? Klik untuk mendapatkan Petunjuk!
+
+                                <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#clueModal">
+                                    Klik Disini
+                                </button>
                             </p>
                         </main>
                     </div>
@@ -107,6 +108,35 @@
             </div>
         </div>
     </div>
+
+    {{-- modal --}}
+    <div class="modal fade" id="clueModal"  aria-labelledby="clueModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-fullscreen">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="exampleModalLabel">Clue Jawaban</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                    {{-- <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/v64KOxKVLVg" allowfullscreen></iframe> --}}
+                    <iframe src="https://www.astra-honda.com/article/pembinaan-berjenjang-ahm-siap-antar-pembalap-muda-harumkan-bangsa-di-2021"
+                    style="display: block;
+                    width: 100%;
+                    border: none;
+                    overflow-y: auto;
+                    overflow-x: hidden;"
+
+                    frameborder="0" marginheight="0" marginwidth="0"
+                        width="100%" height="100%" scrolling="auto">
+                    </iframe>
+                    {{-- <div id="clue-iframe-label"></div> --}}
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+            </div>
+          </div>
+        </div>
+      </div>
     <script src="{{ asset('minigames/trivia.js') }}"></script>
 </body>
 @endsection
