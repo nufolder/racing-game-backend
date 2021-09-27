@@ -5,6 +5,8 @@ namespace App\Http\Controllers\Auth;
 use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
 use App\Providers\RouteServiceProvider;
+use Illuminate\Auth\Events\Registered;
+use Illuminate\Http\JsonResponse;
 use App\User;
 use Illuminate\Foundation\Auth\RegistersUsers;
 use Illuminate\Support\Facades\Hash;
@@ -42,12 +44,30 @@ class RegisterController extends Controller
             $res = $check_email->get('https://api.debounce.io/v1?api=5f51d3981735e&email=' . $request->email)->getBody();
             $res_decode = json_decode($res);
             $result_check = $res_decode->debounce->send_transactional;
+            // return $result_check;
             if ($result_check == '0') {
                 $message = 'Email kamu tidak valid, periksa kembali email kamu!';
                 session()->flash('message', $message);
                 return back()->with(['message', $message]);
             }
         }
+
+        $this->validator($request->all())->validate();
+
+        event(new Registered($user = $this->create($request->all())));
+
+        $this->guard()->login($user);
+
+        if ($response = $this->registered($request, $user)) {
+            return $response;
+        }
+
+        // $message = 'Kamu mendapatkan 3 Heal !!';
+        // session()->flash('message', $message);
+
+        return $request->wantsJson()
+            ? new JsonResponse([], 201)
+            : redirect($this->redirectPath());
     }
 
     protected function create(array $data)

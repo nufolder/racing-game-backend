@@ -62,43 +62,42 @@
 
                                     </div>
                                     <span>
-                                        <input type="radio" id="option-one" name="option" class="radio"
-                                            value="optionA" />
+                                        <input type="radio" id="option-one" name="option" class="radio" value="optionA"
+                                            onclick="handleNextQuestion()" />
                                         <label for="option-one" class="option" id="option-one-label"></label>
                                     </span>
 
 
                                     <span>
-                                        <input type="radio" id="option-two" name="option" class="radio"
-                                            value="optionB" />
+                                        <input type="radio" id="option-two" name="option" class="radio" value="optionB"
+                                            onclick="handleNextQuestion()" />
                                         <label for="option-two" class="option" id="option-two-label"></label>
                                     </span>
 
                                     <span>
                                         <input type="radio" id="option-three" name="option" class="radio"
-                                            value="optionC" />
+                                            value="optionC" onclick="handleNextQuestion()" />
                                         <label for="option-three" class="option" id="option-three-label"></label>
                                     </span>
 
 
                                     <span>
-                                        <input type="radio" id="option-four" name="option" class="radio"
-                                            value="optionD" />
+                                        <input type="radio" id="option-four" name="option" class="radio" value="optionD"
+                                            onclick="handleNextQuestion()" />
                                         <label for="option-four" class="option" id="option-four-label"></label>
                                     </span>
                                 </div>
 
-                                {{-- <div class="col-12"> --}}
-                                <div class="next-button-container mt-3">
+                                {{-- <div class="next-button-container mt-3">
                                     <button onclick="handleNextQuestion()">Next Question</button>
-                                </div>
-                                {{-- </div> --}}
+                                </div> --}}
                             </div>
 
                             <p style="align-content: center; justify-content: center" class="mt-5">
                                 Bingung??? Klik untuk mendapatkan Petunjuk!
 
-                                <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#clueModal">
+                                <button type="button" class="btn btn-primary" data-bs-toggle="modal"
+                                    data-bs-target="#clueModal">
                                     Klik Disini
                                 </button>
                             </p>
@@ -110,33 +109,32 @@
     </div>
 
     {{-- modal --}}
-    <div class="modal fade" id="clueModal"  aria-labelledby="clueModalLabel" aria-hidden="true">
+    <div class="modal fade" id="clueModal" aria-labelledby="clueModalLabel" aria-hidden="true">
         <div class="modal-dialog modal-fullscreen">
-          <div class="modal-content">
-            <div class="modal-header">
-              <h5 class="modal-title" id="exampleModalLabel">Clue Jawaban</h5>
-              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-            </div>
-            <div class="modal-body">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Clue Jawaban</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
                     {{-- <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/v64KOxKVLVg" allowfullscreen></iframe> --}}
-                    <iframe src="https://www.astra-honda.com/article/pembinaan-berjenjang-ahm-siap-antar-pembalap-muda-harumkan-bangsa-di-2021"
-                    style="display: block;
+                    <iframe
+                        src="https://www.astra-honda.com/article/pembinaan-berjenjang-ahm-siap-antar-pembalap-muda-harumkan-bangsa-di-2021"
+                        style="display: block;
                     width: 100%;
                     border: none;
                     overflow-y: auto;
-                    overflow-x: hidden;"
-
-                    frameborder="0" marginheight="0" marginwidth="0"
-                        width="100%" height="100%" scrolling="auto">
+                    overflow-x: hidden;" frameborder="0" marginheight="0" marginwidth="0" width="100%" height="100%"
+                        scrolling="auto">
                     </iframe>
                     {{-- <div id="clue-iframe-label"></div> --}}
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                </div>
             </div>
-            <div class="modal-footer">
-              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-            </div>
-          </div>
         </div>
-      </div>
+    </div>
     <script src="{{ asset('minigames/trivia.js') }}"></script>
 </body>
 @endsection

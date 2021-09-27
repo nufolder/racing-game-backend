@@ -329,6 +329,7 @@ function handleNextQuestion() {
 function resetOptionBackground() {
     const options = document.getElementsByName("option");
     options.forEach((option) => {
+        console.log(option);
         document.getElementById(option.labels[0].id).style.backgroundColor = ""
     })
 }
