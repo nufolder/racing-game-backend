@@ -19,8 +19,6 @@ const cardsArray = [{
 
 // Grab the div with an id of root
 const game = document.getElementById('game');
-const header = document.getElementById('header');
-const message = document.getElementById('message');
 
 //Only allow two cards to be selected at a time
 let count = 0;
@@ -34,14 +32,6 @@ let previousTarget = null;
 
 //Add delay
 let delay = 800;
-
-//reset button
-// const reset = document.createElement('button');
-// reset.setAttribute('class', 'reset');
-// const resetIcon = document.createElement('i');
-// resetIcon.setAttribute('class', 'fas fa-redo');
-// reset.appendChild(resetIcon);
-// header.appendChild(reset);
 
 // Create a section with a class of grid
 const grid = document.createElement('section');
@@ -84,7 +74,6 @@ const resetGame = () => {
         grid.removeChild(grid.firstChild);
     }
     createGrid();
-    message.innerHTML = 'Find the matching pairs';
 }
 
 

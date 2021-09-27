@@ -2,7 +2,7 @@
 
 @section('content')
 {{-- <script src="https://use.fontawesome.com/be9f755eb3.js"></script> --}}
-<link rel="stylesheet" href="{{ asset('minigames/memorygame2.css') }}">
+<link rel="stylesheet" href="{{ asset('minigames/memorygame.css') }}">
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
 
 <div class="container pt-3 bg-white">
@@ -41,6 +41,6 @@
     </div>
 </div>
 
-<script src="{{ asset('minigames/memorygame2.js') }}"></script>
+<script src="{{ asset('minigames/memorygame.js') }}"></script>
 
 @endsection
