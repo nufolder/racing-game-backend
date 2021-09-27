@@ -1,17 +1,21 @@
 const cardsArray = [{
         name: 'card01',
+        rider: 'rheza danica ahrens',
         img: 'photo-riders/rheza-danica-ahrens-image-3.png',
     },
     {
         name: 'card02',
+        rider: 'azryan dheyo wahyumaniadi',
         img: 'photo-riders/azryan-dheyo-wahyumaniadi-image-1.png',
     },
     {
         name: 'card03',
+        rider: 'delvintor alfarizi',
         img: 'photo-riders/delvintor-alfarizi-image-3.png',
     },
     {
         name: 'card04',
+        rider: 'mario suryo aji',
         img: 'photo-riders/mario-suryo-aji-image-2.png',
     },
     // 
@@ -52,6 +56,7 @@ const createGrid = () => {
         const item = document.createElement('div');
         item.classList.add('carde');
         item.dataset.name = carde.name;
+        item.dataset.rider = carde.rider;
 
         //create front of card
         const front = document.createElement('div');
@@ -134,10 +139,35 @@ const gameFinished = () => {
 
 const match = () => {
     var selected = document.querySelectorAll('.selected');
+    let getRider = '';
     selected.forEach(card => {
+
+
+        // card.classList.add('animate__animated');
+        // card.classList.add('animate__pulse');
+        // card.classList.add('animate__delay-1s');
         card.classList.add('match');
+        // alert(selected);
+        let element = '';
+        for (let index = 0; index < selected.length; index++) {
+            element = selected[index];
+        }
+        let attributeRider = element.dataset.rider;
+        getRider = attributeRider;
     });
     countMatch++;
+
+    //tampilin nama jika match
+    // console.log(getRider);
+    var myMatch = new bootstrap.Modal(document.getElementById('modalMatch'), {
+        keyboard: false
+    });
+    myMatch.show();
+    $('.nama').text(getRider.toLocaleUpperCase());
+    setTimeout(function() {
+        myMatch.hide();
+    }, 3000);
+
 
     if (countMatch === gameGrid.length / 2) {
         gameFinished();
@@ -175,6 +205,7 @@ grid.addEventListener('click', function(event) {
             if (firstGuess === secondGuess) {
                 setTimeout(match, delay);
                 setTimeout(resetGuesses, delay);
+                // alert('asd');
             } else {
                 setTimeout(resetGuesses, delay);
             }
