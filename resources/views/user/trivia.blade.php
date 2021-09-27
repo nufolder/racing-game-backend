@@ -1,5 +1,5 @@
 @extends('layouts.app-user')
-    <script async src="//www.instagram.com/embed.js"></script>
+
 @section('title')
 <title>Trivia</title>
 @endsection
@@ -129,7 +129,9 @@
                         scrolling="auto">
                     </iframe> --}}
 
-                    <div id="clue-iframe-label" style="display: block; width: 100%; height: 100%; border: none; overflow-y: auto; overflow-x: hidden;" frameborder="0" marginheight="0" marginwidth="0" width="100%" scrolling="auto">
+                    <div id="clue-iframe-label"
+                        style="display: block; width: 100%; height: 100%; border: none; overflow-y: auto; overflow-x: hidden;"
+                        frameborder="0" marginheight="0" marginwidth="0" width="100%" scrolling="auto">
                     </div>
                 </div>
                 <div class="modal-footer">
