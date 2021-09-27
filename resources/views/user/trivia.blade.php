@@ -1,4 +1,8 @@
 @extends('layouts.app-user')
+<<<<<<< HEAD
+=======
+
+>>>>>>> 3026bffb3528aaa30bb45a95bd10f07ab7473f10
 @section('title')
 <title>Trivia</title>
 @endsection

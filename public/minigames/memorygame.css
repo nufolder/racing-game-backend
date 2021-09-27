@@ -1,5 +1,5 @@
 .grid {
-    max-width: 320px;
+    max-width: 620px;
     margin: 0 auto;
     display: -webkit-box;
     display: -ms-flexbox;
@@ -21,8 +21,8 @@
 .carde,
 .front,
 .back {
-    height: 60px;
-    width: 60px;
+    height: 80px;
+    width: 80px;
     -webkit-transition: all .5s ease;
     -o-transition: all .5s ease;
     transition: all .5s ease;
@@ -78,7 +78,7 @@
 
 @media only screen and (min-width: 600px) {
     .grid {
-        max-width: 400px;
+        max-width: 900px;
     }
     .carde {
         margin: 10px;
@@ -86,8 +86,8 @@
     .carde,
     .front,
     .back {
-        height: 80px;
-        width: 80px;
+        height: 125px;
+        width: 125px;
     }
     .message {
         font-size: 2rem;

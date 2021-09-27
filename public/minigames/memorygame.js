@@ -1,18 +1,38 @@
 const cardsArray = [{
         name: 'card01',
+        rider: 'rheza danica ahrens',
+        class: 'ARRC',
         img: 'photo-riders/rheza-danica-ahrens-image-3.png',
     },
     {
         name: 'card02',
+        rider: 'azryan dheyo wahyumaniadi',
+        class: 'ARRC',
         img: 'photo-riders/azryan-dheyo-wahyumaniadi-image-1.png',
     },
     {
         name: 'card03',
+        rider: 'delvintor alfarizi',
+        class: 'MXGP',
         img: 'photo-riders/delvintor-alfarizi-image-3.png',
     },
     {
         name: 'card04',
+        rider: 'mario suryo aji',
+        class: 'CEV',
         img: 'photo-riders/mario-suryo-aji-image-2.png',
+    },
+    {
+        name: 'card05',
+        rider: 'veda ega pratama',
+        class: 'TTC',
+        img: 'photo-riders/veda-ega-pratama-image-1.png',
+    },
+    {
+        name: 'card06',
+        rider: 'irfan ardiansyah',
+        class: 'ARRC',
+        img: 'photo-riders/irfan-ardiansyah-image-2.png',
     },
     // 
 ];
@@ -36,6 +56,7 @@ let delay = 800;
 // Create a section with a class of grid
 const grid = document.createElement('section');
 grid.setAttribute('class', 'grid');
+// grid.setAttribute('class', 'row');
 
 // Append the grid section to the game div
 game.appendChild(grid);
@@ -51,7 +72,10 @@ const createGrid = () => {
         //create card element
         const item = document.createElement('div');
         item.classList.add('carde');
+        // item.classList.add('col-4');
         item.dataset.name = carde.name;
+        item.dataset.rider = carde.rider;
+        item.dataset.class = carde.class;
 
         //create front of card
         const front = document.createElement('div');
@@ -134,10 +158,38 @@ const gameFinished = () => {
 
 const match = () => {
     var selected = document.querySelectorAll('.selected');
+    let getRider = '';
+    let getClass = '';
     selected.forEach(card => {
+
+
+        // card.classList.add('animate__animated');
+        // card.classList.add('animate__pulse');
+        // card.classList.add('animate__delay-1s');
         card.classList.add('match');
+        // alert(selected);
+        let element = '';
+        for (let index = 0; index < selected.length; index++) {
+            element = selected[index];
+        }
+        let attributeRider = element.dataset.rider;
+        let attributeClass = element.dataset.class;
+        getRider = attributeRider;
+        getClass = attributeClass;
     });
     countMatch++;
+
+    //tampilin nama jika match
+    // console.log(getRider);
+    var myMatch = new bootstrap.Modal(document.getElementById('modalMatch'), {
+        keyboard: false
+    });
+    myMatch.show();
+    $('.nama').text(`${getRider.toLocaleUpperCase()} (${getClass})`);
+    setTimeout(function() {
+        myMatch.hide();
+    }, 3000);
+
 
     if (countMatch === gameGrid.length / 2) {
         gameFinished();
@@ -175,6 +227,7 @@ grid.addEventListener('click', function(event) {
             if (firstGuess === secondGuess) {
                 setTimeout(match, delay);
                 setTimeout(resetGuesses, delay);
+                // alert('asd');
             } else {
                 setTimeout(resetGuesses, delay);
             }
