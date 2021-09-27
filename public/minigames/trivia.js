@@ -293,6 +293,7 @@ function checkForAnswer() {
             //set to delay question number till when next question loads
             setTimeout(() => {
                 questionNumber++
+                resetOptionBackground()
             }, 1000)
         } else if (option.checked && option.value !== currentQuestionAnswer) {
             const wrongLabelId = option.labels[0].id
@@ -302,6 +303,7 @@ function checkForAnswer() {
             indexNumber++
             //set to delay question number till when next question loads
             setTimeout(() => {
+                resetOptionBackground()
                 questionNumber++
             }, 1000)
         }
