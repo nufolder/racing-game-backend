@@ -3,6 +3,7 @@
 @section('content')
 {{-- <script src="https://use.fontawesome.com/be9f755eb3.js"></script> --}}
 <link rel="stylesheet" href="{{ asset('minigames/memorygame.css') }}">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
 
 <div class="container pt-3 bg-white">
@@ -36,6 +37,21 @@
                     <div id="game"></div>
 
                 </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Modal -->
+<div class="modal fade" id="modalMatch" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">Match</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <h6 class="nama"></h6>
             </div>
         </div>
     </div>
