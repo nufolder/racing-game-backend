@@ -1,5 +1,5 @@
 @extends('layouts.app-user')
-
+    <script async src="//www.instagram.com/embed.js"></script>
 @section('title')
 <title>Trivia</title>
 @endsection
@@ -110,7 +110,7 @@
 
     {{-- modal --}}
     <div class="modal fade" id="clueModal" aria-labelledby="clueModalLabel" aria-hidden="true">
-        <div class="modal-dialog modal-fullscreen">
+        <div class="modal-dialog modal-dialog modal-fullscreen">
             <div class="modal-content">
                 <div class="modal-header">
                     <h5 class="modal-title" id="exampleModalLabel">Clue Jawaban</h5>
@@ -118,16 +118,19 @@
                 </div>
                 <div class="modal-body">
                     {{-- <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/v64KOxKVLVg" allowfullscreen></iframe> --}}
-                    <iframe
-                        src="https://www.astra-honda.com/article/pembinaan-berjenjang-ahm-siap-antar-pembalap-muda-harumkan-bangsa-di-2021"
+                    {{-- <iframe
+                        src="https://www.instagram.com/p/BcMQdQfAyN3/embed"
                         style="display: block;
                     width: 100%;
+                    height:100%;
                     border: none;
                     overflow-y: auto;
-                    overflow-x: hidden;" frameborder="0" marginheight="0" marginwidth="0" width="100%" height="100%"
+                    overflow-x: hidden;" frameborder="0" marginheight="0" marginwidth="0" width="100%"
                         scrolling="auto">
-                    </iframe>
-                    {{-- <div id="clue-iframe-label"></div> --}}
+                    </iframe> --}}
+
+                    <div id="clue-iframe-label" style="display: block; width: 100%; height: 100%; border: none; overflow-y: auto; overflow-x: hidden;" frameborder="0" marginheight="0" marginwidth="0" width="100%" scrolling="auto">
+                    </div>
                 </div>
                 <div class="modal-footer">
                     <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
