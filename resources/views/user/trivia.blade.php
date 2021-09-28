@@ -1,5 +1,4 @@
 @extends('layouts.app-user')
-
 @section('title')
 <title>Trivia</title>
 @endsection
@@ -126,8 +125,9 @@
                     </iframe> --}}
 
                     <div id="clue-iframe-label"
-                        style=" width: 100%; height: 100%; border: none; overflow-y: auto; overflow-x: hidden;"
-                        frameborder="0" marginheight="0" marginwidth="0" height="100%" width="100%" scrolling="auto">
+                        style=" width: 100%; border: none; overflow-y: auto; overflow-x: hidden;"
+                        frameborder="0" marginheight="0" marginwidth="0" height="100%" width="100%" scrolling="auto"
+                    >
                     </div>
                 </div>
                 <div class="modal-footer">
