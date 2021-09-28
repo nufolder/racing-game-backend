@@ -16,7 +16,7 @@
                     </div>
 
                     <div class="section d-flex justify-content-center embed-responsive embed-responsive-16by9">
-                        <video style="max-width:100%; height:auto" id="myVideo" controls="true"
+                        <video style="max-width:100%; height:auto" id="myVideo" autoplay
                             class="embed-responsive-item">
                             <source src="{{ asset('minigames/YukSemangat.mp4') }}" type="video/mp4">
                             Your browser does not support playing this Video
@@ -33,7 +33,7 @@
                                 crossDomain: true,
                                 crossOrigin: true,
                                 async: true,
-                                
+
                                 url: "/get-video",
                                 success: function(resp) {
                                 console.log("Respond was: ", resp);
@@ -60,6 +60,24 @@
                                 }
                                 });
                             }
+
+                            var video = document.getElementById('myVideo');
+                            var supposedCurrentTime = 0;
+                            video.addEventListener('timeupdate', function() {
+                            if (!video.seeking) {
+                            supposedCurrentTime = video.currentTime;
+                            }
+                            });
+                            video.addEventListener('seeking', function() {
+                            var delta = video.currentTime - supposedCurrentTime;
+                            if (Math.abs(delta) > 0.01) {
+                            console.log("Seeking is disabled");
+                            video.currentTime = supposedCurrentTime;
+                            }
+                            });
+                            video.addEventListener('ended', function() {
+                            supposedCurrentTime = 0;
+                            });
                     </script>
                 </div>
             </div>
