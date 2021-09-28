@@ -111,7 +111,7 @@
     <div class="modal fade" id="clueModal" aria-labelledby="clueModalLabel" aria-hidden="true" role="dialog">
         <div class="modal-dialog modal-xl" role="document">
 
-        {{-- modal content --}}
+            {{-- modal content --}}
             <div class="modal-content">
                 <div class="modal-header">
                     <h5 class="modal-title" id="exampleModalLabel">Clue Jawaban</h5>

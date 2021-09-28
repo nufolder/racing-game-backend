@@ -94,6 +94,7 @@ class RegisterController extends Controller
                 [
                     'racer'         => 'default',
                     'coin_value'    => 1,
+                    'score_value'   => 500,
                     'hills'         => 'assets/assets-default/background_hills.png',
                     'sky'           => 'assets/assets-default/background_sky.png',
                     'trees'         => 'assets/assets-default/background_trees.png',
