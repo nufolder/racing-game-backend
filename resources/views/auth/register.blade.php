@@ -81,7 +81,7 @@
                                         name="password" required autocomplete="off" id="exampleInputPassword1"
                                         placeholder="Password">
                                     @error('password')
-                                    <span class="invalid-feedback" role="alert">
+                                    <span class="invalid-feedback" role="alert" style="color: aliceblue">
                                         <strong>{{ $message }}</strong>
                                     </span>
                                     @enderror
@@ -94,7 +94,7 @@
                                         name="password_confirmation" required autocomplete="off"
                                         placeholder="Konfirmasi Password">
                                     @error('password')
-                                    <span class="invalid-feedback" role="alert">
+                                    <span class="invalid-feedback" role="alert" style="color: aliceblue">
                                         <strong>{{ $message }}</strong>
                                     </span>
                                     @enderror

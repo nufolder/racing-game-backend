@@ -20,7 +20,7 @@
     <script src="https://use.fontawesome.com/be9f755eb3.js"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Questrial&family=Russo+One&display=swap" rel="stylesheet">    
+    <link href="https://fonts.googleapis.com/css2?family=Questrial&family=Russo+One&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="{{ asset('css/custom.css') }}">
 </head>
 
@@ -75,7 +75,7 @@
                             </div>
                             <div class="cta-area">
                                 <button type="submit" class="btn btn-sm btn-primary">
-                                    Login <i class="fa fa-sign-in" aria-hidden="true"></i> 
+                                    Login <i class="fa fa-sign-in" aria-hidden="true"></i>
                                 </button>
                                 @if (Route::has('password.request'))
                                 <div class="pt-3">
