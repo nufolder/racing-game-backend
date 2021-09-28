@@ -6,7 +6,7 @@ const questions = [{
         optionD: "Astra Honda Racing",
         correctOption: "optionC",
         clueLink: "<a href='https://www.astra-honda.com/article/pembinaan-berjenjang-ahm-siap-antar-pembalap-muda-harumkan-bangsa-di-2021'> Klik Disini</a>",
-        clueiFrame: "<iframe src='https://www.astra-honda.com/article/pembinaan-berjenjang-ahm-siap-antar-pembalap-muda-harumkan-bangsa-di-2021' style='display: block; width: 100%; border: none; overflow-y: auto; overflow-x: hidden;' frameborder='0' marginheight='0' marginwidth='0' width='100%' height='100%' scrolling='auto' allowfullscreen='true'></iframe>"
+        clueiFrame: "<iframe src='https://www.astra-honda.com/article/pembinaan-berjenjang-ahm-siap-antar-pembalap-muda-harumkan-bangsa-di-2021' style='display: block; width: 100%; height:75vh; border: none; overflow-y: auto; overflow-x: hidden;' frameborder='0' marginheight='0' marginwidth='0' width='100%' height='100%' scrolling='auto' allowfullscreen='true'></iframe>"
     },
 
     {
@@ -17,7 +17,7 @@ const questions = [{
         optionD: "12 Pebalap",
         correctOption: "optionD",
         clueLink: "<a href='https://www.astra-honda.com/article/pembinaan-berjenjang-ahm-siap-antar-pembalap-muda-harumkan-bangsa-di-2021'> Klik Disini</a>",
-        clueiFrame: "<iframe src='https://www.astra-honda.com/article/pembinaan-berjenjang-ahm-siap-antar-pembalap-muda-harumkan-bangsa-di-2021' style='display: block; width: 100%; border: none; overflow-y: auto; overflow-x: hidden;' frameborder='0' marginheight='0' marginwidth='0' width='100%' height='100%' scrolling='auto' allowfullscreen='true'></iframe>"
+        clueiFrame: "<iframe src='https://www.astra-honda.com/article/pembinaan-berjenjang-ahm-siap-antar-pembalap-muda-harumkan-bangsa-di-2021' style='display: block; width: 100%; height:75vh; border: none; overflow-y: auto; overflow-x: hidden;' frameborder='0' marginheight='0' marginwidth='0' width='100%' height='100%' scrolling='auto' allowfullscreen='true'></iframe>"
     },
 
     {
@@ -28,7 +28,7 @@ const questions = [{
         optionD: "Kejuaraan Asia dan Nasional",
         correctOption: "optionB",
         clueLink: "<a href='https://www.astra-honda.com/article/pembinaan-berjenjang-ahm-siap-antar-pembalap-muda-harumkan-bangsa-di-2021'> Klik Disini</a>",
-        clueiFrame: "<iframe src='https://www.astra-honda.com/article/pembinaan-berjenjang-ahm-siap-antar-pembalap-muda-harumkan-bangsa-di-2021' style='display: block; width: 100%; border: none; overflow-y: auto; overflow-x: hidden;' frameborder='0' marginheight='0' marginwidth='0' width='100%' height='100%' scrolling='auto' allowfullscreen='true'></iframe>"
+        clueiFrame: "<iframe src='https://www.astra-honda.com/article/pembinaan-berjenjang-ahm-siap-antar-pembalap-muda-harumkan-bangsa-di-2021' style='display: block; width: 100%; height:75vh; border: none; overflow-y: auto; overflow-x: hidden;' frameborder='0' marginheight='0' marginwidth='0' width='100%' height='100%' scrolling='auto' allowfullscreen='true'></iframe>"
     },
 
     {
@@ -39,7 +39,7 @@ const questions = [{
         optionD: "Honda Junior Talent",
         correctOption: "optionA",
         clueLink: "<a href='https://www.astra-honda.com/article/pembinaan-berjenjang-ahm-siap-antar-pembalap-muda-harumkan-bangsa-di-2021'> Klik Disini</a>",
-        clueiFrame: "<iframe src='https://www.astra-honda.com/article/pembinaan-berjenjang-ahm-siap-antar-pembalap-muda-harumkan-bangsa-di-2021' style='display: block; width: 100%; border: none; overflow-y: auto; overflow-x: hidden;' frameborder='0' marginheight='0' marginwidth='0' width='100%' height='100%' scrolling='auto' allowfullscreen='true'></iframe>"
+        clueiFrame: "<iframe src='https://www.astra-honda.com/article/pembinaan-berjenjang-ahm-siap-antar-pembalap-muda-harumkan-bangsa-di-2021' style='display: block; width: 100%; height:75vh; border: none; overflow-y: auto; overflow-x: hidden;' frameborder='0' marginheight='0' marginwidth='0' width='100%' height='100%' scrolling='auto' allowfullscreen='true'></iframe>"
     },
 
     {
@@ -50,7 +50,7 @@ const questions = [{
         optionD: "Rheza Danica",
         correctOption: "optionB",
         clueLink: "<a href='https://www.astra-honda.com/article/pembinaan-berjenjang-ahm-siap-antar-pembalap-muda-harumkan-bangsa-di-2021'> Klik Disini</a>",
-        clueiFrame: "<iframe src='https://www.astra-honda.com/article/pembinaan-berjenjang-ahm-siap-antar-pembalap-muda-harumkan-bangsa-di-2021' style='display: block; width: 100%; border: none; overflow-y: auto; overflow-x: hidden;' frameborder='0' marginheight='0' marginwidth='0' width='100%' height='100%' scrolling='auto' allowfullscreen='true'></iframe>"
+        clueiFrame: "<iframe src='https://www.astra-honda.com/article/pembinaan-berjenjang-ahm-siap-antar-pembalap-muda-harumkan-bangsa-di-2021' style='display: block; width: 100%; height:75vh; border: none; overflow-y: auto; overflow-x: hidden;' frameborder='0' marginheight='0' marginwidth='0' width='100%' height='100%' scrolling='auto' allowfullscreen='true'></iframe>"
     },
 
     {
@@ -61,7 +61,7 @@ const questions = [{
         optionD: "Lucky Hendriansya",
         correctOption: "optionA",
         clueLink: "<a href='https://www.astra-honda.com/article/pembinaan-berjenjang-ahm-siap-antar-pembalap-muda-harumkan-bangsa-di-2021'> Klik Disini</a>",
-        clueiFrame: "<iframe src='https://www.astra-honda.com/article/pembinaan-berjenjang-ahm-siap-antar-pembalap-muda-harumkan-bangsa-di-2021' style='display: block; width: 100%; border: none; overflow-y: auto; overflow-x: hidden;' frameborder='0' marginheight='0' marginwidth='0' width='100%' height='100%' scrolling='auto' allowfullscreen='true'></iframe>"
+        clueiFrame: "<iframe src='https://www.astra-honda.com/article/pembinaan-berjenjang-ahm-siap-antar-pembalap-muda-harumkan-bangsa-di-2021' style='display: block; width: 100%; height:75vh; border: none; overflow-y: auto; overflow-x: hidden;' frameborder='0' marginheight='0' marginwidth='0' width='100%' height='100%' scrolling='auto' allowfullscreen='true'></iframe>"
     },
 
     {
@@ -72,7 +72,7 @@ const questions = [{
         optionD: "Herlian Dandi & Arzyan Dheyo",
         correctOption: "optionC",
         clueLink: "<a href='https://www.astra-honda.com/article/pembinaan-berjenjang-ahm-siap-antar-pembalap-muda-harumkan-bangsa-di-2021'> Klik Disini</a>",
-        clueiFrame: "<iframe src='https://www.astra-honda.com/article/pembinaan-berjenjang-ahm-siap-antar-pembalap-muda-harumkan-bangsa-di-2021' style='display: block; width: 100%; border: none; overflow-y: auto; overflow-x: hidden;' frameborder='0' marginheight='0' marginwidth='0' width='100%' height='100%' scrolling='auto' allowfullscreen='true'></iframe>"
+        clueiFrame: "<iframe src='https://www.astra-honda.com/article/pembinaan-berjenjang-ahm-siap-antar-pembalap-muda-harumkan-bangsa-di-2021' style='display: block; width: 100%; height:75vh; border: none; overflow-y: auto; overflow-x: hidden;' frameborder='0' marginheight='0' marginwidth='0' width='100%' height='100%' scrolling='auto' allowfullscreen='true'></iframe>"
     },
 
     {
@@ -83,7 +83,7 @@ const questions = [{
         optionD: "Semua benar",
         correctOption: "optionD",
         clueLink: "<a href='https://www.astra-honda.com/article/pembinaan-berjenjang-ahm-siap-antar-pembalap-muda-harumkan-bangsa-di-2021'> Klik Disini</a>",
-        clueiFrame: "<iframe src='https://www.astra-honda.com/article/pembinaan-berjenjang-ahm-siap-antar-pembalap-muda-harumkan-bangsa-di-2021' style='display: block; width: 100%; border: none; overflow-y: auto; overflow-x: hidden;' frameborder='0' marginheight='0' marginwidth='0' width='100%' height='100%' scrolling='auto' allowfullscreen='true'></iframe>"
+        clueiFrame: "<iframe src='https://www.astra-honda.com/article/pembinaan-berjenjang-ahm-siap-antar-pembalap-muda-harumkan-bangsa-di-2021' style='display: block; width: 100%; height:75vh; border: none; overflow-y: auto; overflow-x: hidden;' frameborder='0' marginheight='0' marginwidth='0' width='100%' height='100%' scrolling='auto' allowfullscreen='true'></iframe>"
     },
 
     {
@@ -94,7 +94,7 @@ const questions = [{
         optionD: "Semua salah",
         correctOption: "optionA",
         clueLink: "<a href='https://www.astra-honda.com/article/pembinaan-berjenjang-ahm-siap-antar-pembalap-muda-harumkan-bangsa-di-2021'> Klik Disini</a>",
-        clueiFrame: "<iframe src='https://www.astra-honda.com/article/pembinaan-berjenjang-ahm-siap-antar-pembalap-muda-harumkan-bangsa-di-2021' style='display: block; width: 100%; border: none; overflow-y: auto; overflow-x: hidden;' frameborder='0' marginheight='0' marginwidth='0' width='100%' height='100%' scrolling='auto' allowfullscreen='true'></iframe>"
+        clueiFrame: "<iframe src='https://www.astra-honda.com/article/pembinaan-berjenjang-ahm-siap-antar-pembalap-muda-harumkan-bangsa-di-2021' style='display: block; width: 100%; height:75vh; border: none; overflow-y: auto; overflow-x: hidden;' frameborder='0' marginheight='0' marginwidth='0' width='100%' height='100%' scrolling='auto' allowfullscreen='true'></iframe>"
     },
 
     {
@@ -105,7 +105,7 @@ const questions = [{
         optionD: "Semua benar",
         correctOption: "optionD",
         clueLink: "<a href='https://www.astra-honda.com/article/pembinaan-berjenjang-ahm-siap-antar-pembalap-muda-harumkan-bangsa-di-2021'> Klik Disini</a>",
-        clueiFrame: "<iframe src='https://www.astra-honda.com/article/pembinaan-berjenjang-ahm-siap-antar-pembalap-muda-harumkan-bangsa-di-2021' style='display: block; width: 100%; border: none; overflow-y: auto; overflow-x: hidden;' frameborder='0' marginheight='0' marginwidth='0' width='100%' height='100%' scrolling='auto' allowfullscreen='true'></iframe>"
+        clueiFrame: "<iframe src='https://www.astra-honda.com/article/pembinaan-berjenjang-ahm-siap-antar-pembalap-muda-harumkan-bangsa-di-2021' style='display: block; width: 100%; height:75vh; border: none; overflow-y: auto; overflow-x: hidden;' frameborder='0' marginheight='0' marginwidth='0' width='100%' height='100%' scrolling='auto' allowfullscreen='true'></iframe>"
     },
 
     {
@@ -116,7 +116,7 @@ const questions = [{
         optionD: "Amazing Mario",
         correctOption: "optionC",
         clueLink: "<a href='https://www.astra-honda.com/riders/super-mario'> Klik Disini</a>",
-        clueiFrame: "<iframe src='https://www.astra-honda.com/riders/super-mario' style='display: block; width: 100%; border: none; overflow-y: auto; overflow-x: hidden;' frameborder='0' marginheight='0' marginwidth='0' width='100%' height='100%' scrolling='auto' allowfullscreen='true'></iframe>"
+        clueiFrame: "<iframe src='https://www.astra-honda.com/riders/super-mario' style='display: block; width: 100%; height:75vh; border: none; overflow-y: auto; overflow-x: hidden;' frameborder='0' marginheight='0' marginwidth='0' width='100%' height='100%' scrolling='auto' allowfullscreen='true'></iframe>"
     },
 
     {
@@ -127,7 +127,7 @@ const questions = [{
         optionD: "Ke-6",
         correctOption: "optionC",
         clueLink: "<a href='https://www.astra-honda.com/article/nyaris-raih-podium-mario-finish-posisi-4-di-cev-estoril'> Klik Disini</a>",
-        clueiFrame: "<iframe src='https://www.astra-honda.com/article/nyaris-raih-podium-mario-finish-posisi-4-di-cev-estoril' style='display: block; width: 100%; border: none; overflow-y: auto; overflow-x: hidden;' frameborder='0' marginheight='0' marginwidth='0' width='100%' height='100%' scrolling='auto' allowfullscreen='true'></iframe>"
+        clueiFrame: "<iframe src='https://www.astra-honda.com/article/nyaris-raih-podium-mario-finish-posisi-4-di-cev-estoril' style='display: block; width: 100%; height:75vh; border: none; overflow-y: auto; overflow-x: hidden;' frameborder='0' marginheight='0' marginwidth='0' width='100%' height='100%' scrolling='auto' allowfullscreen='true'></iframe>"
     },
 
 
@@ -139,7 +139,7 @@ const questions = [{
         optionD: "Sirkuit Catalunya",
         correctOption: "optionD",
         clueLink: "<a href='https://www.astra-honda.com/article/tempati-pole-position-di-cev-barcelona-mario-jalani-balapan-dengan-gigih'> Klik Disini</a>",
-        clueiFrame: "<iframe src='https://www.astra-honda.com/article/tempati-pole-position-di-cev-barcelona-mario-jalani-balapan-dengan-gigih' style='display: block; width: 100%; border: none; overflow-y: auto; overflow-x: hidden;' frameborder='0' marginheight='0' marginwidth='0' width='100%' height='100%' scrolling='auto' allowfullscreen='true'></iframe>"
+        clueiFrame: "<iframe src='https://www.astra-honda.com/article/tempati-pole-position-di-cev-barcelona-mario-jalani-balapan-dengan-gigih' style='display: block; width: 100%; height:75vh; border: none; overflow-y: auto; overflow-x: hidden;' frameborder='0' marginheight='0' marginwidth='0' width='100%' height='100%' scrolling='auto' allowfullscreen='true'></iframe>"
     },
 
     {
@@ -150,7 +150,7 @@ const questions = [{
         optionD: "4 Musim",
         correctOption: "optionC",
         clueLink: "<a href='https://www.astra-honda.com/article/optimis-mario-siap-hadapi-musim-ketiga-fim-cev'> Klik Disini</a>",
-        clueiFrame: "<iframe src='https://www.astra-honda.com/article/optimis-mario-siap-hadapi-musim-ketiga-fim-cev' style='display: block; width: 100%; border: none; overflow-y: auto; overflow-x: hidden;' frameborder='0' marginheight='0' marginwidth='0' width='100%' height='100%' scrolling='auto' allowfullscreen='true'></iframe>"
+        clueiFrame: "<iframe src='https://www.astra-honda.com/article/optimis-mario-siap-hadapi-musim-ketiga-fim-cev' style='display: block; width: 100%; height:75vh; border: none; overflow-y: auto; overflow-x: hidden;' frameborder='0' marginheight='0' marginwidth='0' width='100%' height='100%' scrolling='auto' allowfullscreen='true'></iframe>"
     },
 
     {
@@ -161,7 +161,7 @@ const questions = [{
         optionD: "Semua Benar",
         correctOption: "optionA",
         clueLink: "<a href='https://www.astra-honda.com/article/kebanggaan-bangsa-andi-gilang-membalap-semusim-penuh-di-gp-moto2-2020-1'> Klik Disini</a>",
-        clueiFrame: "<iframe src='https://www.astra-honda.com/article/kebanggaan-bangsa-andi-gilang-membalap-semusim-penuh-di-gp-moto2-2020-1' style='display: block; width: 100%; border: none; overflow-y: auto; overflow-x: hidden;' frameborder='0' marginheight='0' marginwidth='0' width='100%' height='100%' scrolling='auto' allowfullscreen='true'></iframe>"
+        clueiFrame: "<iframe src='https://www.astra-honda.com/article/kebanggaan-bangsa-andi-gilang-membalap-semusim-penuh-di-gp-moto2-2020-1' style='display: block; width: 100%; height:75vh; border: none; overflow-y: auto; overflow-x: hidden;' frameborder='0' marginheight='0' marginwidth='0' width='100%' height='100%' scrolling='auto' allowfullscreen='true'></iframe>"
     },
 
     {
@@ -172,7 +172,7 @@ const questions = [{
         optionD: "Semua Salah",
         correctOption: "optionB",
         clueLink: "<a href='https://www.astra-honda.com/article/ahrt-persembahkan-rekor-baru-di-balap-asia-1'> Klik Disini</a>",
-        clueiFrame: "<iframe src='https://www.astra-honda.com/article/ahrt-persembahkan-rekor-baru-di-balap-asia-1' style='display: block; width: 100%; border: none; overflow-y: auto; overflow-x: hidden;' frameborder='0' marginheight='0' marginwidth='0' width='100%' height='100%' scrolling='auto' allowfullscreen='true'></iframe>"
+        clueiFrame: "<iframe src='https://www.astra-honda.com/article/ahrt-persembahkan-rekor-baru-di-balap-asia-1' style='display: block; width: 100%; height:75vh; border: none; overflow-y: auto; overflow-x: hidden;' frameborder='0' marginheight='0' marginwidth='0' width='100%' height='100%' scrolling='auto' allowfullscreen='true'></iframe>"
     },
 
     {
@@ -183,7 +183,7 @@ const questions = [{
         optionD: "Gerry Salim",
         correctOption: "optionC",
         clueLink: "<a href='https://www.astra-honda.com/article/astra-honda-racing-team-pertahankan-gelar-asia-production-250cc-berkat-kemenangan-rheza-danica-1'> Klik Disini</a>",
-        clueiFrame: "<iframe src='https://www.astra-honda.com/article/astra-honda-racing-team-pertahankan-gelar-asia-production-250cc-berkat-kemenangan-rheza-danica-1' style='display: block; width: 100%; border: none; overflow-y: auto; overflow-x: hidden;' frameborder='0' marginheight='0' marginwidth='0' width='100%' height='100%' scrolling='auto' allowfullscreen='true'></iframe>"
+        clueiFrame: "<iframe src='https://www.astra-honda.com/article/astra-honda-racing-team-pertahankan-gelar-asia-production-250cc-berkat-kemenangan-rheza-danica-1' style='display: block; width: 100%; height:75vh; border: none; overflow-y: auto; overflow-x: hidden;' frameborder='0' marginheight='0' marginwidth='0' width='100%' height='100%' scrolling='auto' allowfullscreen='true'></iframe>"
     },
 
     {
@@ -227,7 +227,7 @@ const questions = [{
         optionD: "CRF250R",
         correctOption: "optionD",
         clueLink: "<a href='https://www.astra-honda.com/article/penampilan-perdana-astra-honda-racing-team-di-kejurnas-motocross-2019'> Klik Disini</a>",
-        clueiFrame: "<iframe src='https://www.astra-honda.com/article/penampilan-perdana-astra-honda-racing-team-di-kejurnas-motocross-2019' style='display: block; width: 100%; border: none; overflow-y: auto; overflow-x: hidden;' frameborder='0' marginheight='0' marginwidth='0' width='100%' height='100%' scrolling='auto' allowfullscreen='true'></iframe>"
+        clueiFrame: "<iframe src='https://www.astra-honda.com/article/penampilan-perdana-astra-honda-racing-team-di-kejurnas-motocross-2019' style='display: block; width: 100%; height:75vh; border: none; overflow-y: auto; overflow-x: hidden;' frameborder='0' marginheight='0' marginwidth='0' width='100%' height='100%' scrolling='auto' allowfullscreen='true'></iframe>"
     }
 ]
 

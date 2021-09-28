@@ -1,8 +1,4 @@
 @extends('layouts.app-user')
-<<<<<<< HEAD
-=======
-
->>>>>>> 3026bffb3528aaa30bb45a95bd10f07ab7473f10
 @section('title')
 <title>Trivia</title>
 @endsection
@@ -129,7 +125,7 @@
                     </iframe> --}}
 
                     <div id="clue-iframe-label"
-                        style=" width: 100%; height: 100%; border: none; overflow-y: auto; overflow-x: hidden;"
+                        style=" width: 100%; border: none; overflow-y: auto; overflow-x: hidden;"
                         frameborder="0" marginheight="0" marginwidth="0" height="100%" width="100%" scrolling="auto"
                     >
                     </div>
