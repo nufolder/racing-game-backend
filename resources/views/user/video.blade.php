@@ -16,7 +16,7 @@
                     </div>
 
                     <div class="section d-flex justify-content-center embed-responsive embed-responsive-16by9">
-                        <video style="max-width:100%; height:auto" id="myVideo" autoplay
+                        <video style="max-width:100%; height:auto" id="myVideo" controls autoplay
                             class="embed-responsive-item">
                             <source src="{{ asset('minigames/YukSemangat.mp4') }}" type="video/mp4">
                             Your browser does not support playing this Video
