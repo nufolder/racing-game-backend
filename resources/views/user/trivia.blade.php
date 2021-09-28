@@ -1,8 +1,5 @@
 @extends('layouts.app-user')
-<<<<<<< HEAD
-=======
 
->>>>>>> 3026bffb3528aaa30bb45a95bd10f07ab7473f10
 @section('title')
 <title>Trivia</title>
 @endsection
@@ -115,7 +112,7 @@
     <div class="modal fade" id="clueModal" aria-labelledby="clueModalLabel" aria-hidden="true" role="dialog">
         <div class="modal-dialog modal-xl" role="document">
 
-        {{-- modal content --}}
+            {{-- modal content --}}
             <div class="modal-content">
                 <div class="modal-header">
                     <h5 class="modal-title" id="exampleModalLabel">Clue Jawaban</h5>
@@ -130,8 +127,7 @@
 
                     <div id="clue-iframe-label"
                         style=" width: 100%; height: 100%; border: none; overflow-y: auto; overflow-x: hidden;"
-                        frameborder="0" marginheight="0" marginwidth="0" height="100%" width="100%" scrolling="auto"
-                    >
+                        frameborder="0" marginheight="0" marginwidth="0" height="100%" width="100%" scrolling="auto">
                     </div>
                 </div>
                 <div class="modal-footer">
