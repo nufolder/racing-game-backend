@@ -1,5 +1,8 @@
 @extends('layouts.app-user')
+<<<<<<< HEAD
+=======
 
+>>>>>>> 3026bffb3528aaa30bb45a95bd10f07ab7473f10
 @section('title')
 <title>Trivia</title>
 @endsection
@@ -109,8 +112,10 @@
     </div>
 
     {{-- modal --}}
-    <div class="modal fade" id="clueModal" aria-labelledby="clueModalLabel" aria-hidden="true">
-        <div class="modal-dialog modal-dialog modal-fullscreen">
+    <div class="modal fade" id="clueModal" aria-labelledby="clueModalLabel" aria-hidden="true" role="dialog">
+        <div class="modal-dialog modal-xl" role="document">
+
+        {{-- modal content --}}
             <div class="modal-content">
                 <div class="modal-header">
                     <h5 class="modal-title" id="exampleModalLabel">Clue Jawaban</h5>
@@ -119,21 +124,14 @@
                 <div class="modal-body">
                     {{-- <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/v64KOxKVLVg" allowfullscreen></iframe> --}}
                     {{-- <iframe
-                        src="https://www.instagram.com/p/BcMQdQfAyN3/embed"
-                        style="display: block;
-                    width: 100%;
-                    height:100%;
-                    border: none;
-                    overflow-y: auto;
-                    overflow-x: hidden;" frameborder="0" marginheight="0" marginwidth="0" width="100%"
-                        scrolling="auto">
+                        src="https://www.instagram.com/p/B5h08zdAzx7/embed/captioned/"
+                        allowtransparency='true' allowfullscreen='true' frameborder='0' height='930' data-instgrm-payload-id='instagram-media-payload-0' scrolling='no' style='background: white; max-width: 540px; width: calc(100% - 2px); border-radius: 3px; border: 1px solid rgb(219, 219, 219); box-shadow: none; display: block; margin: 0px 0px 12px; min-width: 326px; padding: 0px;'>
                     </iframe> --}}
 
-
-
                     <div id="clue-iframe-label"
-                        style="display: block; width: 100%; height: 100%; border: none; overflow-y: auto; overflow-x: hidden;"
-                        frameborder="0" marginheight="0" marginwidth="0" width="100%" scrolling="auto">
+                        style=" width: 100%; height: 100%; border: none; overflow-y: auto; overflow-x: hidden;"
+                        frameborder="0" marginheight="0" marginwidth="0" height="100%" width="100%" scrolling="auto"
+                    >
                     </div>
                 </div>
                 <div class="modal-footer">
