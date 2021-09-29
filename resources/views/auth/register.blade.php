@@ -40,7 +40,7 @@
                             <div class="row">
 
                                 @if (session()->has('message'))
-                                <div class="alert alert-success alert-dismissible fade show" role="alert">
+                                <div class="alert alert-danger alert-dismissible fade show" role="alert">
                                     {{ session('message') }}
                                     <button type="button" class="btn-close" data-bs-dismiss="alert"
                                         aria-label="Close"></button>
@@ -55,7 +55,7 @@
                                         placeholder="Nama">
 
                                     @error('name')
-                                    <span class="invalid-feedback" role="alert">
+                                    <span class="invalid-feedback" role="alert" style="color: aliceblue">
                                         <strong>{{ $message }}</strong>
                                     </span>
                                     @enderror
@@ -68,19 +68,6 @@
                                         name="email" value="{{ old('email') }}" required autocomplete="off" autofocus
                                         placeholder="Email">
                                     @error('email')
-                                    <span class="invalid-feedback" role="alert">
-                                        <strong>{{ $message }}</strong>
-                                    </span>
-                                    @enderror
-                                </div>
-
-                                <div class="form-group pb-2">
-                                    <label class="" for="password">Password</label>
-                                    <input type="password"
-                                        class="form-control form-control-sm @error('password') is-invalid @enderror"
-                                        name="password" required autocomplete="off" id="exampleInputPassword1"
-                                        placeholder="Password">
-                                    @error('password')
                                     <span class="invalid-feedback" role="alert" style="color: aliceblue">
                                         <strong>{{ $message }}</strong>
                                     </span>
@@ -88,6 +75,27 @@
                                 </div>
 
                                 <div class="form-group pb-2">
+                                    <label class="" for="password">Password</label>
+                                    <div class="input-group pb-2" id="show_hide_password">
+                                        <input type="password"
+                                            class="form-control form-control-sm @error('password') is-invalid @enderror"
+                                            name="password" required autocomplete="off" id="password"
+                                            placeholder="Password">
+                                        <div class="input-group-text">
+                                            <div class="input-group-addon">
+                                                <a href=""><i class="text-dark fa fa-eye-slash"
+                                                        aria-hidden="true"></i></a>
+                                            </div>
+                                        </div>
+                                        @error('password')
+                                        <span class="invalid-feedback" role="alert" style="color: aliceblue">
+                                            <strong>{{ $message }}</strong>
+                                        </span>
+                                        @enderror
+                                    </div>
+                                </div>
+
+                                <div class="form-group pb-2" id="show_hide_password_confirmation">
                                     <label class="" for="password-confirm">Konfirmasi Password</label>
                                     <input id="password-confirm" type="password"
                                         class="form-control form-control-sm @error('password') is-invalid @enderror"
@@ -105,6 +113,9 @@
                                     <select
                                         class="form-select form-select-sm @error('motor_cycle') is-invalid @enderror"
                                         name="motor_cycle" id="autoSizingSelect">
+                                        <option value="Tidak ada" {{ old('title') == 'Tidak ada' ? 'selected' : '' }}>
+                                            Tidak ada
+                                        </option>
                                         <option value="Vario" {{ old('title') == 'Vario' ? 'selected' : '' }}>
                                             Vario
                                         </option>
@@ -127,6 +138,9 @@
                                     <select
                                         class="form-select form-select-sm @error('year_motor_cycle') is-invalid @enderror"
                                         name="year_motor_cycle" id="autoSizingSelect">
+                                        <option value="Tidak ada" {{ old('title') == 'Tidak ada' ? 'selected' : '' }}>
+                                            Tidak ada
+                                        </option>
                                         <option value="2015" {{ old('title') == '2015' ? 'selected' : '' }}>
                                             2015
                                         </option>
@@ -172,6 +186,8 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"
         integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous">
     </script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="{{ asset('js/custom.js') }}"></script>
 
 </body>
 
