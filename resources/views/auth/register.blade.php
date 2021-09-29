@@ -174,6 +174,9 @@
                                         <option value="2010" {{ old('year_motor_cycle') == '2010' ? 'selected' : '' }}>
                                             2010
                                         </option>
+                                        <option value="lainnya" {{ old('year_motor_cycle') == 'lainnya' ? 'selected' : '' }}>
+                                            Lainnya
+                                        </option>
                                     </select>
                                     @error('year_motor_cycle')
                                     <span class="invalid-feedback" role="alert">
