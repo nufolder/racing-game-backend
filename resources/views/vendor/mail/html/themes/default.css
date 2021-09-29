@@ -3,14 +3,13 @@
 body,
 body *:not(html):not(style):not(br):not(tr):not(code) {
     box-sizing: border-box;
-    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif,
-        'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol';
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol';
     position: relative;
 }
 
 body {
     -webkit-text-size-adjust: none;
-    background-color: #ffffff;
+    background-color: #ea2117;
     color: #718096;
     height: 100%;
     line-height: 1.4;
@@ -34,6 +33,7 @@ a {
 a img {
     border: none;
 }
+
 
 /* Typography */
 
@@ -74,6 +74,7 @@ img {
     max-width: 100%;
 }
 
+
 /* Layout */
 
 .wrapper {
@@ -95,6 +96,7 @@ img {
     width: 100%;
 }
 
+
 /* Header */
 
 .header {
@@ -109,12 +111,14 @@ img {
     text-decoration: none;
 }
 
+
 /* Logo */
 
 .logo {
     height: 75px;
     width: 75px;
 }
+
 
 /* Body */
 
@@ -144,6 +148,7 @@ img {
     width: 570px;
 }
 
+
 /* Subcopy */
 
 .subcopy {
@@ -155,6 +160,7 @@ img {
 .subcopy p {
     font-size: 14px;
 }
+
 
 /* Footer */
 
@@ -178,6 +184,7 @@ img {
     color: #b0adc5;
     text-decoration: underline;
 }
+
 
 /* Tables */
 
@@ -207,6 +214,7 @@ img {
     max-width: 100vw;
     padding: 32px;
 }
+
 
 /* Buttons */
 
@@ -256,6 +264,7 @@ img {
     border-top: 8px solid #e53e3e;
 }
 
+
 /* Panels */
 
 .panel {
@@ -281,6 +290,7 @@ img {
     margin-bottom: 0;
     padding-bottom: 0;
 }
+
 
 /* Utilities */
 
