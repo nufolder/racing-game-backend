@@ -113,17 +113,17 @@
                                     <select
                                         class="form-select form-select-sm @error('motor_cycle') is-invalid @enderror"
                                         name="motor_cycle" id="autoSizingSelect">
-                                        <option value="Tidak ada" {{ old('title') == 'Tidak ada' ? 'selected' : '' }}>
-                                            Tidak ada
-                                        </option>
                                         <option value="Vario" {{ old('title') == 'Vario' ? 'selected' : '' }}>
                                             Vario
                                         </option>
-                                        <option value="Beat" {{ old('title') == 'Beat' ? 'selected' : '' }}>
+                                        <option value="Beat" {{ old('motor_cycle') == 'Beat' ? 'selected' : '' }}>
                                             Beat
                                         </option>
-                                        <option value="CBR 150" {{ old('title') == 'CBR 150' ? 'selected' : '' }}>
+                                        <option value="CBR 150" {{ old('motor_cycle') == 'CBR 150' ? 'selected' : '' }}>
                                             CBR 150
+                                        </option>
+                                        <option value="Lainnya" {{ old('motor_cycle') == 'Lainnya' ? 'selected' : '' }}>
+                                            Lainnya
                                         </option>
                                     </select>
                                     @error('password')
@@ -134,21 +134,45 @@
                                 </div>
 
                                 <div class="form-group pb-2">
-                                    <label class="" for="autoSizingSelect">Tahun Motor Kamu</label>
+                                    <label class="" for="autoSizingSelectYear">Tahun Motor Kamu</label>
                                     <select
                                         class="form-select form-select-sm @error('year_motor_cycle') is-invalid @enderror"
-                                        name="year_motor_cycle" id="autoSizingSelect">
-                                        <option value="Tidak ada" {{ old('title') == 'Tidak ada' ? 'selected' : '' }}>
-                                            Tidak ada
+                                        name="year_motor_cycle" id="autoSizingSelectYear">
+                                        <option value="2021" {{ old('year_motor_cycle') == '2021' ? 'selected' : '' }}>
+                                            2021
                                         </option>
-                                        <option value="2015" {{ old('title') == '2015' ? 'selected' : '' }}>
-                                            2015
+                                        <option value="2020" {{ old('year_motor_cycle') == '2020' ? 'selected' : '' }}>
+                                            2020
                                         </option>
-                                        <option value="2016" {{ old('title') == '2016' ? 'selected' : '' }}>
+                                        <option value="2019" {{ old('year_motor_cycle') == '2019' ? 'selected' : '' }}>
+                                            2019
+                                        </option>
+                                        <option value="2018" {{ old('year_motor_cycle') == '2018' ? 'selected' : '' }}>
+                                            2018
+                                        </option>
+                                        <option value="2017" {{ old('year_motor_cycle') == '2017' ? 'selected' : '' }}>
+                                            2017
+                                        </option>
+                                        <option value="2016" {{ old('year_motor_cycle') == '2016' ? 'selected' : '' }}>
                                             2016
                                         </option>
-                                        <option value="2017" {{ old('title') == '2017' ? 'selected' : '' }}>
-                                            2017
+                                        <option value="2015" {{ old('year_motor_cycle') == '2015' ? 'selected' : '' }}>
+                                            2015
+                                        </option>
+                                        <option value="2014" {{ old('year_motor_cycle') == '2014' ? 'selected' : '' }}>
+                                            2014
+                                        </option>
+                                        <option value="2013" {{ old('year_motor_cycle') == '2013' ? 'selected' : '' }}>
+                                            2013
+                                        </option>
+                                        <option value="2012" {{ old('year_motor_cycle') == '2012' ? 'selected' : '' }}>
+                                            2012
+                                        </option>
+                                        <option value="2011" {{ old('year_motor_cycle') == '2011' ? 'selected' : '' }}>
+                                            2011
+                                        </option>
+                                        <option value="2010" {{ old('year_motor_cycle') == '2010' ? 'selected' : '' }}>
+                                            2010
                                         </option>
                                     </select>
                                     @error('year_motor_cycle')
