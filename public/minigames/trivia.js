@@ -114,7 +114,7 @@ const questions = [{
         optionB: "Super Mario",
         optionC: "Mario Man",
         optionD: "Amazing Mario",
-        correctOption: "optionC",
+        correctOption: "optionB",
         clueLink: "<a href='https://www.astra-honda.com/riders/super-mario'> Klik Disini</a>",
         clueiFrame: "<iframe src='https://www.astra-honda.com/riders/super-mario' style='display: block; width: 100%; height:75vh; border: none; overflow-y: auto; overflow-x: hidden;' frameborder='0' marginheight='0' marginwidth='0' width='100%' height='100%' scrolling='auto' allowfullscreen='true'></iframe>"
     },
