@@ -15,93 +15,36 @@
                         <h4 class="text-center">Video</h4>
                     </div>
 
-                    <div class="section d-flex justify-content-center embed-responsive embed-responsive-16by9">
-                        <video style="max-width:100%; height:auto" id="myVideo" controls autoplay
-                            class="embed-responsive-item">
-                            <source src="{{ asset('minigames/YukSemangat.mp4') }}" type="video/mp4">
-                            Your browser does not support playing this Video
-                        </video>
+                    <!-- Modal -->
+                    <div class="modal fade" id="myModal" tabindex="-1" aria-labelledby="myModal" aria-hidden="true">
+                        <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h5 class="modal-title" id="exampleModalLabel">Selamat !!</h5>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                        aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body">
+                                    <p class="textfinishvideo"></p>
+                                </div>
+                                <div id="videoredirect" class="modal-footer">
+                                </div>
+                            </div>
+                        </div>
                     </div>
-
-                    <script type='text/javascript'>
-                        document.getElementById('myVideo').addEventListener('ended',myHandler,false);
-                            function myHandler(e) {
-                                console.log(e);
-                                console.log("Video Finish !!");
-                                $.ajax({
-                                method: 'GET',
-                                crossDomain: true,
-                                crossOrigin: true,
-                                async: true,
-
-                                url: "/get-video",
-                                success: function(resp) {
-                                console.log("Respond was: ", resp);
-                                var myModal = new bootstrap.Modal(document.getElementById('myModal'), {
-                                keyboard: false
-                                });
-
-                                myModal.show();
-                                $('.textfinishvideo').text(resp.response);
-                                if (resp.status == 1) {
-                                document.getElementById('videoredirect').innerHTML = `<a href="user" type="button" class="btn btn-secondary">Oke</a>`;
-                                } else {
-                                document.getElementById('videoredirect').innerHTML = `<a type="button" class="btn btn-secondary"
-                                    data-bs-dismiss="modal">Oke</a>`;
-                                }
-                                },
-                                error: function(request, status, error) {
-                                console.log("Respond was: ", resp);
-                                var myModal = new bootstrap.Modal(document.getElementById('myModal'), {
-                                keyboard: false
-                                });
-                                myModal.show();
-                                $('.textfinishvideo').text(resp.response);
-                                }
-                                });
-                            }
-
-                            var video = document.getElementById('myVideo');
-                            var supposedCurrentTime = 0;
-                            video.addEventListener('timeupdate', function() {
-                            if (!video.seeking) {
-                            supposedCurrentTime = video.currentTime;
-                            }
-                            });
-                            video.addEventListener('seeking', function() {
-                            var delta = video.currentTime - supposedCurrentTime;
-                            if (Math.abs(delta) > 0.01) {
-                            console.log("Seeking is disabled");
-                            video.currentTime = supposedCurrentTime;
-                            }
-                            });
-                            video.addEventListener('ended', function() {
-                            supposedCurrentTime = 0;
-                            });
-                    </script>
                 </div>
+
+                <div class="section d-flex justify-content-center embed-responsive embed-responsive-16by9">
+                    <video style="max-width:100%; height:auto" id="myVideo" controls autoplay
+                        class="embed-responsive-item">
+                        <source type="video/mp4">
+                        Your browser does not support playing this Video
+                    </video>
+                </div>
+
             </div>
         </div>
     </div>
-
-    <!-- Modal -->
-    <div class="modal fade" id="myModal" tabindex="-1" aria-labelledby="myModal" aria-hidden="true">
-        <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h5 class="modal-title" id="exampleModalLabel">Selamat !!</h5>
-                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                </div>
-                <div class="modal-body">
-                    <p class="textfinishvideo"></p>
-                </div>
-                <div id="videoredirect" class="modal-footer">
-                </div>
-            </div>
-        </div>
-    </div>
-
-
 </div>
 
 @endsection
