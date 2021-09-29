@@ -58,9 +58,19 @@ class ChanceToPlayRacingController extends Controller
                     'heal' => $race->heal + 1
                 ]
             );
-            return response()->json(['response' => 'Kamu Mendapatkan 1 Heal !!']);
+            return response()->json(
+                [
+                    'response' => 'Kamu Mendapatkan 1 Heal !!',
+                    'status' => 1
+                ]
+            );
         } else {
-            return response()->json(['response' => 'Kamu Telah Memainkan Game ini, Hari ini!!']);
+            return response()->json(
+                [
+                    'response' => 'Kamu Telah Memainkan Game ini, Hari ini!!',
+                    'status' => 0
+                ]
+            );
         }
     }
 
@@ -81,9 +91,19 @@ class ChanceToPlayRacingController extends Controller
                     'heal' => $race->heal + 1
                 ]
             );
-            return response()->json(['response' => 'Kamu Mendapatkan 1 Heal !!']);
+            return response()->json(
+                [
+                    'response' => 'Kamu Mendapatkan 1 Heal !!',
+                    'status' => 1
+                ]
+            );
         } else {
-            return response()->json(['response' => 'Kamu Telah Memainkan Game ini, Hari ini!!']);
+            return response()->json(
+                [
+                    'response' => 'Kamu Telah Memainkan Game ini, Hari ini!!',
+                    'status' => 0
+                ]
+            );
         }
     }
 
@@ -104,9 +124,20 @@ class ChanceToPlayRacingController extends Controller
                     'heal' => $race->heal + 1
                 ]
             );
-            return response()->json(['response' => 'Kamu Mendapatkan 1 Game!!']);
+
+            return response()->json(
+                [
+                    'response' => 'Kamu Mendapatkan 1 Heal !!',
+                    'status' => 1
+                ]
+            );
         } else {
-            return response()->json(['response' => 'Kamu Telah Menonton Video ini, Hari ini!!']);
+            return response()->json(
+                [
+                    'response' => 'Kamu Telah Menonton Video ini, Hari ini!!',
+                    'status' => 0
+                ]
+            );
         }
     }
 
@@ -127,9 +158,19 @@ class ChanceToPlayRacingController extends Controller
                     'heal' => $race->heal + 1
                 ]
             );
-            return response()->json(['response' => 'Kamu Mendapatkan 1 Game!!']);
+            return response()->json(
+                [
+                    'response' => 'Kamu Mendapatkan 1 Heal !!',
+                    'status' => 1
+                ]
+            );
         } else {
-            return response()->json(['response' => 'Kamu share game ini, Hari ini!!']);
+            return response()->json(
+                [
+                    'response' => 'Kamu share game ini, Hari ini!!',
+                    'status' => 0
+                ]
+            );
         }
     }
 }

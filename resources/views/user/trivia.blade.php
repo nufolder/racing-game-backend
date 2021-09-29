@@ -1,5 +1,4 @@
 @extends('layouts.app-user')
-
 @section('title')
 <title>Trivia</title>
 @endsection
@@ -34,6 +33,8 @@
                                             <p>Jawaban yang benar: <span id="right-answers"></span></p>
                                             <p class="textfinishtrivia"></p>
                                         </div>
+                                        <div id="triviaredirect" class="modal-footer">
+                                        </div>
                                     </div>
                                 </div>
                             </div>
@@ -60,42 +61,77 @@
 
                                     </div>
                                     <span>
-                                        <input type="radio" id="option-one" name="option" class="radio"
-                                            value="optionA" />
+                                        <input type="radio" id="option-one" name="option" class="radio" value="optionA"
+                                            onclick="handleNextQuestion()" />
                                         <label for="option-one" class="option" id="option-one-label"></label>
                                     </span>
 
 
                                     <span>
-                                        <input type="radio" id="option-two" name="option" class="radio"
-                                            value="optionB" />
+                                        <input type="radio" id="option-two" name="option" class="radio" value="optionB"
+                                            onclick="handleNextQuestion()" />
                                         <label for="option-two" class="option" id="option-two-label"></label>
                                     </span>
 
                                     <span>
                                         <input type="radio" id="option-three" name="option" class="radio"
-                                            value="optionC" />
+                                            value="optionC" onclick="handleNextQuestion()" />
                                         <label for="option-three" class="option" id="option-three-label"></label>
                                     </span>
 
 
                                     <span>
-                                        <input type="radio" id="option-four" name="option" class="radio"
-                                            value="optionD" />
+                                        <input type="radio" id="option-four" name="option" class="radio" value="optionD"
+                                            onclick="handleNextQuestion()" />
                                         <label for="option-four" class="option" id="option-four-label"></label>
                                     </span>
                                 </div>
 
-                                {{-- <div class="col-12"> --}}
-                                <div class="next-button-container">
+                                {{-- <div class="next-button-container mt-3">
                                     <button onclick="handleNextQuestion()">Next Question</button>
-                                </div>
-                                {{-- </div> --}}
-
-
+                                </div> --}}
                             </div>
+
+                            <p style="align-content: center; justify-content: center" class="mt-5">
+                                Bingung??? Klik untuk mendapatkan Petunjuk!
+
+                                <button type="button" class="btn btn-primary" data-bs-toggle="modal"
+                                    data-bs-target="#clueModal">
+                                    Klik Disini
+                                </button>
+                            </p>
                         </main>
                     </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    {{-- modal --}}
+    <div class="modal fade" id="clueModal" aria-labelledby="clueModalLabel" aria-hidden="true" role="dialog">
+        <div class="modal-dialog modal-xl" role="document">
+
+            {{-- modal content --}}
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Clue Jawaban</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    {{-- <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/v64KOxKVLVg" allowfullscreen></iframe> --}}
+                    {{-- <iframe
+                        src="https://www.instagram.com/p/B5h08zdAzx7/embed/captioned/"
+                        allowtransparency='true' allowfullscreen='true' frameborder='0' height='930' data-instgrm-payload-id='instagram-media-payload-0' scrolling='no' style='background: white; max-width: 540px; width: calc(100% - 2px); border-radius: 3px; border: 1px solid rgb(219, 219, 219); box-shadow: none; display: block; margin: 0px 0px 12px; min-width: 326px; padding: 0px;'>
+                    </iframe> --}}
+
+                    <div id="clue-iframe-label"
+                        style=" width: 100%; border: none; overflow-y: auto; overflow-x: hidden;"
+                        frameborder="0" marginheight="0" marginwidth="0" height="100%" width="100%" scrolling="auto"
+                    >
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
                 </div>
             </div>
         </div>

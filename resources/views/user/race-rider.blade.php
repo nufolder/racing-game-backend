@@ -103,17 +103,18 @@
     </div>
 
     <script>
-        var coin_value_data = parseInt("{{ $uses_rider['coin_value'] }}");
-        var racer_data = "{{ $uses_rider['racer'] }}";
-        var hills_data = "{{ $uses_rider['hills'] }}";
-        var sky_data = "{{ $uses_rider['sky'] }}";
-        var trees_data = "{{ $uses_rider['trees'] }}";
-        var left_data = "{{ $uses_rider['left'] }}";
-        var right_data = "{{ $uses_rider['right'] }}";
-        var straight_data = "{{ $uses_rider['straight'] }}";
-        var up_left_data = "{{ $uses_rider['up_left'] }}";
-        var up_right_data = "{{ $uses_rider['up_right'] }}";
-        var up_straight_data = "{{ $uses_rider['up_straight'] }}";
+        let coin_value_data = parseInt("{{ $uses_rider['coin_value'] }}");
+        let score_value_data = parseInt("{{ $uses_rider['score_value'] }}");
+        let racer_data = "{{ $uses_rider['racer'] }}";
+        let hills_data = "{{ $uses_rider['hills'] }}";
+        let sky_data = "{{ $uses_rider['sky'] }}";
+        let trees_data = "{{ $uses_rider['trees'] }}";
+        let left_data = "{{ $uses_rider['left'] }}";
+        let right_data = "{{ $uses_rider['right'] }}";
+        let straight_data = "{{ $uses_rider['straight'] }}";
+        let up_left_data = "{{ $uses_rider['up_left'] }}";
+        let up_right_data = "{{ $uses_rider['up_right'] }}";
+        let up_straight_data = "{{ $uses_rider['up_straight'] }}";
     </script>
 
     <script src="//ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>

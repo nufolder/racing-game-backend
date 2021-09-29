@@ -134,6 +134,8 @@
             <div class="modal-body">
                 <p class="textfinishshare"></p>
             </div>
+            <div id="shareredirect" class="modal-footer">
+            </div>
         </div>
     </div>
 </div>
@@ -154,6 +156,13 @@
                 var shareModal = new bootstrap.Modal(document.getElementById('shareid'), {
                 keyboard: false
                 });
+                if (resp.status == 1) {
+                document.getElementById('shareredirect').innerHTML = `<a href="user" type="button"
+                    class="btn btn-secondary">Oke</a>`;
+                } else {
+                document.getElementById('shareredirect').innerHTML = `<a type="button" class="btn btn-secondary"
+                    data-bs-dismiss="modal">Oke</a>`;
+                }
                 shareModal.show();
             },
             error: function(request, status, error) {

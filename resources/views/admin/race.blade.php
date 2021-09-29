@@ -7,7 +7,7 @@
 @section('content')
 
 <div class="container p-3 bg-white">
-    <div class="row justify-content-center">
+    <div class="row  justify-content-center">
         <div class="col-md-12">
             @if (session('message'))
             <div class="alert alert-success alert-dismissible fade show" role="alert">
@@ -19,8 +19,19 @@
                 <div class="card-body text-center">
                     <div class="pb-2">
                         <h4 class="text-center">
-                            Admin
+                            Summary Play Race
                         </h4>
+
+                        {{-- <div class="d-flex justify-content-center"> --}}
+                        <ul class="list-group">
+                            <li class="list-group-item d-flex justify-content-between align-items-center">
+                                Summary
+                                <span class="badge bg-primary rounded-pill">{{ $sumrace }} x</span>
+                            </li>
+
+                        </ul>
+                        {{-- </div> --}}
+
                     </div>
                 </div>
             </div>

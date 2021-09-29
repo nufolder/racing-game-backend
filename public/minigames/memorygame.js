@@ -1,269 +1,239 @@
-// imagegames array holds all imagegames
-let imagegame = document.getElementsByClassName("imagegame");
-let imagegames = [...imagegame];
+const cardsArray = [{
+        name: 'card01',
+        rider: 'rheza danica ahrens',
+        class: 'ARRC',
+        img: 'photo-riders/rheza-danica-ahrens-image-3.png',
+    },
+    {
+        name: 'card02',
+        rider: 'azryan dheyo wahyumaniadi',
+        class: 'ARRC',
+        img: 'photo-riders/azryan-dheyo-wahyumaniadi-image-1.png',
+    },
+    {
+        name: 'card03',
+        rider: 'delvintor alfarizi',
+        class: 'MXGP',
+        img: 'photo-riders/delvintor-alfarizi-image-3.png',
+    },
+    {
+        name: 'card04',
+        rider: 'mario suryo aji',
+        class: 'CEV',
+        img: 'photo-riders/mario-suryo-aji-image-2.png',
+    },
+    {
+        name: 'card05',
+        rider: 'veda ega pratama',
+        class: 'TTC',
+        img: 'photo-riders/veda-ega-pratama-image-1.png',
+    },
+    {
+        name: 'card06',
+        rider: 'irfan ardiansyah',
+        class: 'ARRC',
+        img: 'photo-riders/irfan-ardiansyah-image-2.png',
+    },
+    // 
+];
 
-// deck of all imagegames in game
-const deck = document.getElementById("imagegame-deck");
+// Grab the div with an id of root
+const game = document.getElementById('game');
 
-// declaring move variable
-let moves = 0;
-let counter = document.querySelector(".moves");
+//Only allow two cards to be selected at a time
+let count = 0;
+let countMatch = 0;
 
-// declare variables for star icons
-const stars = document.querySelectorAll(".fa-star");
+//if two selected cards are a match and hide them
+let firstGuess = '';
+let secondGuess = '';
 
-// declaring variable of matchedimagegames
-let matchedimagegame = document.getElementsByClassName("match");
+let previousTarget = null;
 
-// stars list
-let starsList = document.querySelectorAll(".stars li");
+//Add delay
+let delay = 800;
 
-// close icon in modal
-let closeicon = document.querySelector(".close");
+// Create a section with a class of grid
+const grid = document.createElement('section');
+grid.setAttribute('class', 'grid');
+// grid.setAttribute('class', 'row');
 
-// declare modal
-let modal = document.getElementById("popup1")
+// Append the grid section to the game div
+game.appendChild(grid);
 
-// array for opened imagegames
-var openedimagegames = [];
+// Duplicate array
+let gameGrid = cardsArray.concat(cardsArray);
 
+const createGrid = () => {
+    // Randomize game grid on each load
+    gameGrid.sort(() => 0.5 - Math.random());
 
-// @description shuffles imagegames
-// @param {array}
-// @returns shuffledarray
-function shuffle(array) {
-    var currentIndex = array.length,
-        temporaryValue, randomIndex;
+    gameGrid.map(carde => {
+        //create card element
+        const item = document.createElement('div');
+        item.classList.add('carde');
+        // item.classList.add('col-4');
+        item.dataset.name = carde.name;
+        item.dataset.rider = carde.rider;
+        item.dataset.class = carde.class;
 
-    while (currentIndex !== 0) {
-        randomIndex = Math.floor(Math.random() * currentIndex);
-        currentIndex -= 1;
-        temporaryValue = array[currentIndex];
-        array[currentIndex] = array[randomIndex];
-        array[randomIndex] = temporaryValue;
-    }
+        //create front of card
+        const front = document.createElement('div');
+        front.classList.add('front');
 
-    return array;
-};
+        //create back of card
+        const back = document.createElement('div');
+        back.classList.add('back');
+        back.style.backgroundImage = `url(${carde.img})`;
 
-
-// @description shuffles imagegames when page is refreshed / loads
-document.body.onload = startGame();
-
-
-// @description function to start a new play 
-function startGame() {
-
-    // empty the openimagegames array
-    openedimagegames = [];
-
-    // shuffle deck
-    imagegames = shuffle(imagegames);
-    // remove all exisiting classes from each imagegame
-    for (var i = 0; i < imagegames.length; i++) {
-        deck.innerHTML = "";
-        [].forEach.call(imagegames, function(item) {
-            deck.appendChild(item);
-        });
-        imagegames[i].classList.remove("show", "open", "match", "disabled");
-    }
-    // reset moves
-    // moves = 0;
-    // counter.innerHTML = moves;
-    // reset rating
-    for (var i = 0; i < stars.length; i++) {
-        stars[i].style.color = "#FFD700";
-        stars[i].style.visibility = "visible";
-    }
-    //reset timer
-    second = 0;
-    minute = 0;
-    hour = 0;
-    var timer = document.querySelector(".timer");
-    // timer.innerHTML = "0 mins 0 secs";
-    clearInterval(interval);
+        grid.appendChild(item);
+        item.appendChild(front);
+        item.appendChild(back);
+    });
 }
 
 
-// @description toggles open and show class to display imagegames
-var displayimagegame = function() {
-    this.classList.toggle("open");
-    this.classList.toggle("show");
-    this.classList.toggle("disabled");
-};
+const resetGame = () => {
+    while (grid.firstChild) {
+        grid.removeChild(grid.firstChild);
+    }
+    createGrid();
+}
 
 
-// @description add opened imagegames to Openedimagegames list and check if imagegames are match or not
-function imagegameOpen() {
-    openedimagegames.push(this);
-    var len = openedimagegames.length;
-    if (len === 2) {
-        moveCounter();
-        if (openedimagegames[0].type === openedimagegames[1].type) {
-            matched();
-        } else {
-            unmatched();
+//Reset guess count after 2
+const resetGuesses = () => {
+    firstGuess = '';
+    secondGuess = '';
+    previousTarget = '';
+    count = 0;
+
+    var selected = document.querySelectorAll('.selected');
+    selected.forEach(card => {
+        card.classList.remove('selected');
+    });
+}
+
+const gameFinished = () => {
+    // countMatch = 0;
+    // message.innerHTML = 'Congratulations!';
+    $.ajax({
+        method: 'GET',
+        crossDomain: true,
+        crossOrigin: true,
+        async: true,
+        contentType: 'application/json',
+        headers: {
+            'Access-Control-Allow-Methods': '*',
+            "Access-Control-Allow-Credentials": true,
+            "Access-Control-Allow-Headers": "Access-Control-Allow-Headers, Origin, X-Requested-With, Content-Type, Accept, Authorization",
+            "Access-Control-Allow-Origin": "*",
+            "Control-Allow-Origin": "*",
+            "cache-control": "no-cache",
+            'Content-Type': 'application/json'
+        },
+        url: "/get-memory-game",
+        success: function(resp) {
+            console.log("Respond was: ", resp)
+            $('.modaltitlememorygame').text('Selamat !!');
+            $('.textfinishmemorygame').text(resp.response);
+            if (resp.status == 1) {
+                document.getElementById('memorygameredirect').innerHTML = `<a href="user" type="button" class="btn btn-secondary">Oke</a>`;
+            } else {
+                document.getElementById('memorygameredirect').innerHTML = `<a type="button" class="btn btn-secondary" data-bs-dismiss="modal">Oke</a>`;
+            }
+            var myModal = new bootstrap.Modal(document.getElementById('memorygameid'), {
+                keyboard: false
+            });
+            myModal.show();
+        },
+        error: function(request, status, error) {
+            console.log("Respond was: ", resp);
+            $('.textfinishmemorygame').text(resp.response);
         }
-    }
-};
-
-
-// @description when imagegames match
-function matched() {
-    openedimagegames[0].classList.add("match", "disabled");
-    openedimagegames[1].classList.add("match", "disabled");
-    openedimagegames[0].classList.remove("show", "open", "no-event");
-    openedimagegames[1].classList.remove("show", "open", "no-event");
-    openedimagegames = [];
+    });
 }
 
 
-// description when imagegames don't match
-function unmatched() {
-    openedimagegames[0].classList.add("unmatched");
-    openedimagegames[1].classList.add("unmatched");
-    disable();
+
+const match = () => {
+    var selected = document.querySelectorAll('.selected');
+    let getRider = '';
+    let getClass = '';
+    selected.forEach(card => {
+
+
+        // card.classList.add('animate__animated');
+        // card.classList.add('animate__pulse');
+        // card.classList.add('animate__delay-1s');
+        card.classList.add('match');
+        // alert(selected);
+        let element = '';
+        for (let index = 0; index < selected.length; index++) {
+            element = selected[index];
+        }
+        let attributeRider = element.dataset.rider;
+        let attributeClass = element.dataset.class;
+        getRider = attributeRider;
+        getClass = attributeClass;
+    });
+    countMatch++;
+
+    //tampilin nama jika match
+    // console.log(getRider);
+    var myMatch = new bootstrap.Modal(document.getElementById('modalMatch'), {
+        keyboard: false
+    });
+    myMatch.show();
+    $('.nama').text(`${getRider.toLocaleUpperCase()} (${getClass})`);
     setTimeout(function() {
-        openedimagegames[0].classList.remove("show", "open", "no-event", "unmatched");
-        openedimagegames[1].classList.remove("show", "open", "no-event", "unmatched");
-        enable();
-        openedimagegames = [];
-    }, 1100);
-}
+        myMatch.hide();
+    }, 3000);
 
 
-// @description disable imagegames temporarily
-function disable() {
-    Array.prototype.filter.call(imagegames, function(imagegame) {
-        imagegame.classList.add('disabled');
-    });
-}
-
-
-// @description enable imagegames and disable matched imagegames
-function enable() {
-    Array.prototype.filter.call(imagegames, function(imagegame) {
-        imagegame.classList.remove('disabled');
-        for (var i = 0; i < matchedimagegame.length; i++) {
-            matchedimagegame[i].classList.add("disabled");
-        }
-    });
-}
-
-
-// @description count player's moves
-function moveCounter() {
-    // moves++;
-    // counter.innerHTML = moves;
-    //start timer on first click
-    if (moves == 1) {
-        second = 0;
-        minute = 0;
-        hour = 0;
-        startTimer();
+    if (countMatch === gameGrid.length / 2) {
+        gameFinished();
     }
-    // setting rates based on moves
-    if (moves > 8 && moves < 12) {
-        for (i = 0; i < 3; i++) {
-            if (i > 1) {
-                stars[i].style.visibility = "collapse";
-            }
-        }
-    } else if (moves > 13) {
-        for (i = 0; i < 3; i++) {
-            if (i > 0) {
-                stars[i].style.visibility = "collapse";
-            }
-        }
-    }
-}
-
-
-// @description game timer
-var second = 0,
-    minute = 0;
-hour = 0;
-var timer = document.querySelector(".timer");
-var interval;
-
-function startTimer() {
-    interval = setInterval(function() {
-        timer.innerHTML = minute + "mins " + second + "secs";
-        second++;
-        if (second == 60) {
-            minute++;
-            second = 0;
-        }
-        if (minute == 60) {
-            hour++;
-            minute = 0;
-        }
-    }, 1000);
-}
-
-
-// @description congratulations when all imagegames match, show modal and moves, time and rating
-function congratulations() {
-    if (matchedimagegame.length == 12) {
-        clearInterval(interval);
-
-        // show congratulations modal
-
-
-        $.ajax({
-            method: 'GET',
-            crossDomain: true,
-            crossOrigin: true,
-            async: true,
-            contentType: 'application/json',
-            headers: {
-                'Access-Control-Allow-Methods': '*',
-                "Access-Control-Allow-Credentials": true,
-                "Access-Control-Allow-Headers": "Access-Control-Allow-Headers, Origin, X-Requested-With, Content-Type, Accept, Authorization",
-                "Access-Control-Allow-Origin": "*",
-                "Control-Allow-Origin": "*",
-                "cache-control": "no-cache",
-                'Content-Type': 'application/json'
-            },
-            url: "/get-memory-game",
-            success: function(resp) {
-                console.log("Respond was: ", resp);
-                modal.classList.add("show");
-                $('.textfinishmemorygame').text(resp.response);
-            },
-            error: function(request, status, error) {
-                console.log("Respond was: ", resp);
-                $('.textfinishmemorygame').text(resp.response);
-                modal.classList.add("show");
-            }
-        });
-
-        //closeicon on modal
-        closeModal();
-    };
-}
-
-
-// @description close icon on modal
-function closeModal() {
-    closeicon.addEventListener("click", function(e) {
-        modal.classList.remove("show");
-        startGame();
-    });
-}
-
-
-// @desciption for user to play Again 
-function playAgain() {
-    modal.classList.remove("show");
-    startGame();
-}
-
-
-// loop to add event listeners to each imagegame
-for (var i = 0; i < imagegames.length; i++) {
-    imagegame = imagegames[i];
-    imagegame.addEventListener("click", displayimagegame);
-    imagegame.addEventListener("click", imagegameOpen);
-    imagegame.addEventListener("click", congratulations);
 };
+
+
+// Add event listener on load
+document.addEventListener('DOMContentLoaded', function() {
+    createGrid();
+});
+
+
+// Add event listener to grid
+grid.addEventListener('click', function(event) {
+    let clicked = event.target;
+
+    // Do not allow the grid section itself to be selected; only select divs inside the grid
+    if (clicked.nodeName === 'SECTION' || clicked === previousTarget || clicked.parentNode.classList.contains('selected') || clicked.parentNode.classList.contains('match')) {
+        return
+    }
+
+    if (count < 2) {
+        count++;
+
+        if (count === 1) {
+            firstGuess = clicked.parentNode.dataset.name;
+            clicked.parentNode.classList.add('selected');
+        } else {
+            secondGuess = clicked.parentNode.dataset.name;
+            clicked.parentNode.classList.add('selected');
+        }
+
+        if (firstGuess !== '' && secondGuess !== '') {
+            if (firstGuess === secondGuess) {
+                setTimeout(match, delay);
+                setTimeout(resetGuesses, delay);
+                // alert('asd');
+            } else {
+                setTimeout(resetGuesses, delay);
+            }
+        }
+
+        // Set previous target to clicked
+        previousTarget = clicked;
+    }
+});

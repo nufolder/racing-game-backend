@@ -5,6 +5,8 @@ namespace App\Http\Controllers\Auth;
 use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
 use App\Providers\RouteServiceProvider;
+use Illuminate\Auth\Events\Registered;
+use Illuminate\Http\JsonResponse;
 use App\User;
 use Illuminate\Foundation\Auth\RegistersUsers;
 use Illuminate\Support\Facades\Hash;
@@ -26,13 +28,27 @@ class RegisterController extends Controller
 
     protected function validator(array $data)
     {
+
+        $messages = [
+            'name.required'         => 'Nama wajib diisi',
+            'name.max'              => 'Nama maksimal 50 huruf',
+            'name.min'              => 'Nama minimal 4 huruf',
+            'email.required'        => 'Email wajib diisi',
+            'email.email'           => 'Email tidak valid',
+            'email.unique'          => 'Email ini sudah aktif, pilih email lain',
+            'email.max'             => 'Email maksimal 100',
+            'password.required'     => 'Password wajib diisi',
+            'password.min'          => 'Password minimal 8 karakter',
+            'password.confirmed'    => 'Password tidak cocok'
+        ];
+
         return Validator::make($data, [
-            'name'              => ['required', 'string', 'max:255'],
-            'email'             => ['required', 'string', 'email', 'max:255', 'unique:users'],
-            'password'          => ['required', 'string', 'min:8', 'confirmed'],
+            'name'              => ['required', 'max:50', 'min:4'],
+            'email'             => ['required', 'email', 'max:100', 'unique:users'],
+            'password'          => ['required', 'min:8', 'confirmed'],
             'motor_cycle'       => ['required'],
             'year_motor_cycle'  => ['required'],
-        ]);
+        ], $messages);
     }
 
     public function register(Request $request)
@@ -42,12 +58,30 @@ class RegisterController extends Controller
             $res = $check_email->get('https://api.debounce.io/v1?api=5f51d3981735e&email=' . $request->email)->getBody();
             $res_decode = json_decode($res);
             $result_check = $res_decode->debounce->send_transactional;
+
             if ($result_check == '0') {
                 $message = 'Email kamu tidak valid, periksa kembali email kamu!';
                 session()->flash('message', $message);
                 return back()->with(['message', $message]);
             }
         }
+
+        $this->validator($request->all())->validate();
+
+        event(new Registered($user = $this->create($request->all())));
+
+        $this->guard()->login($user);
+
+        if ($response = $this->registered($request, $user)) {
+            return $response;
+        }
+
+        // $message = 'Kamu mendapatkan 3 Heal !!';
+        // session()->flash('message', $message);
+
+        return $request->wantsJson()
+            ? new JsonResponse([], 201)
+            : redirect($this->redirectPath());
     }
 
     protected function create(array $data)
@@ -74,6 +108,7 @@ class RegisterController extends Controller
                 [
                     'racer'         => 'default',
                     'coin_value'    => 1,
+                    'score_value'   => 500,
                     'hills'         => 'assets/assets-default/background_hills.png',
                     'sky'           => 'assets/assets-default/background_sky.png',
                     'trees'         => 'assets/assets-default/background_trees.png',

@@ -28,16 +28,19 @@ Route::get('google/callback', 'GoogleController@callback');
 
 Route::middleware(['auth'])->group(function () {
 
-    Route::get('/home', 'HomeController@index')->name('home');
-
+    Route::get('home', 'HomeController@index')->name('home');
 
     Route::middleware(['admin'])->group(function () {
-        Route::get('admin', 'Admin\AdminController@index');
+        Route::get('admin', 'Admin\AdminController@index')->name('admin');
+        Route::get('admin/users', 'Admin\AdminController@users')->name('admin.users');
+        Route::get('admin/minigames', 'Admin\AdminController@minigames')->name('admin.minigames');
+        Route::get('admin/race', 'Admin\AdminController@race')->name('admin.race');
+        Route::get('admin/top50', 'Admin\AdminController@top50')->name('admin.top50');
     });
 
     Route::middleware(['user'])->group(function () {
 
-        Route::get('user', 'UserController@index');
+        Route::get('user', 'UserController@index')->name('admin');
 
         Route::get('check-heal', 'RaceController@checkHeal');
         Route::get('rider', 'RaceController@rider');
