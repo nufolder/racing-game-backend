@@ -16,6 +16,7 @@ class Race extends Model
         'summary_play',
         'character',
         'last_rider',
+        'weekly_winner',
     ];
 
     public function user()
