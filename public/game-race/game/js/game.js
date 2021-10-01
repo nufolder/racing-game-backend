@@ -40,7 +40,7 @@ var playerCarData = {
 var spritesData = {
     BILLBOARD01: { src: 'assets/billboard_01.png' },
     BILLBOARD02: { src: 'assets/billboard_02.png' },
-    BILLBOARD03: { src: 'assets/billboard_03.png' },
+    // BILLBOARD03: { src: 'assets/billboard_03.png' },
     // TREE1: { src: 'assets/tree_01.png' },
     // TREE2: { src: 'assets/tree_02.png' },
     // TREE3: { src: 'assets/tree_03.png' },
@@ -51,10 +51,10 @@ var spritesData = {
     ROCK3: { src: 'assets/rock_03.png' },
     // TRUCK01: { src: 'assets/truck_01.png' },
     // TRUCK02: { src: 'assets/truck_02.png' },
-    JEEP01: { src: 'assets/jeep_01.png' },
-    // CAR04: { src: 'assets/car_04.png' },
-    // CAR03: { src: 'assets/car_03.png' },
-    // CAR02: { src: 'assets/car_02.png' },
+    // JEEP01: { src: 'assets/jeep_01.png' },
+    CAR01: { src: 'assets/car_01.png' },
+    CAR02: { src: 'assets/car_02.png' },
+    CAR03: { src: 'assets/car_03.png' },
     // CAR01: { src: 'assets/car_01.png' },
     NITRO: { src: 'assets/item_power_nitro.png' },
     COIN: { src: 'assets/item_power_coin.png' },
@@ -62,8 +62,8 @@ var spritesData = {
 };
 
 spritesData.PLANTS = [spritesData.ROCK1, spritesData.ROCK2, spritesData.ROCK3];
-spritesData.CARS = [spritesData.JEEP01];
-spritesData.BILLBOARDS = [spritesData.BILLBOARD01, spritesData.BILLBOARD02, spritesData.BILLBOARD03];
+spritesData.CARS = [spritesData.CAR01, spritesData.CAR02, spritesData.CAR03];
+spritesData.BILLBOARDS = [spritesData.BILLBOARD01, spritesData.BILLBOARD02];
 
 //ORIGINAL
 // spritesData.PLANTS = [spritesData.TREE1, spritesData.TREE2, spritesData.TREE3, spritesData.TREE4, spritesData.TREE5, spritesData.ROCK1, spritesData.ROCK2, spritesData.ROCK3];
@@ -592,8 +592,7 @@ function updateGame() {
         }
 
         //old
-        // playerData.score += Math.floor((5 * Math.round(defaultData.speed / 500)) * .03);
-
+        // playerData.score += Math.floor((5 * Math.round(defaultData.speed / 250)) * .03);
         playerData.score += Math.floor((5 * Math.round(defaultData.speed / score_value_data)) * .03);
         updateGameStatus();
     }
