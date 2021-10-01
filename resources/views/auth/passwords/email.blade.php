@@ -6,14 +6,14 @@
 
 @section('content')
 
-<div class="container p-3 auth-area">
+<div class="container p-3 login-area">
     <div class="row justify-content-center">
         <div class="col-md-4">
             <div class="card">
-                <div class="card-body p-5 pb-3">
+                <div class="card-body p-4 pb-3">
                     <div class="pb-2">
-                        <center><img src="{{ asset('images/ahrt-logo.png') }}"></center>
-                        <h3 class="text-center pt-4">Reset Password</h3>
+                        <h1 class="text-center pt-4">Lupa Password</h1>
+                        <p class="text-center text-info">Mohon masukkan alamat email yang terdaftar, kamu akan menerima link untuk membuat password baru lewat email.</p>
                         @if (session('status'))
                         <div class="alert alert-success" role="alert">
                             {{ session('status') }}
@@ -39,8 +39,11 @@
                         </div>
                         <div class="cta-area">
                             <button type="submit" class="btn btn-sm btn-primary">
-                                Submit <i class="fa fa-sign-in" aria-hidden="true"></i>
+                                KIRIM
                             </button>
+                            <div class="pt-3">
+                                Sudah ingat? <a class="text-mute pt-3" href="{{ url('login') }}">Login</a>
+                            </div>
                         </div>
 
                     </form>
