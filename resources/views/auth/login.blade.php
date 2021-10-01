@@ -5,14 +5,14 @@
 @endsection
 
 @section('content')
-<div class="container p-3 auth-area">
+<div class="container p-3 login-area">
     <div class="row justify-content-center">
         <div class="col-md-4">
             <div class="card">
-                <div class="card-body p-5 pb-3">
+                <div class="card-body p-4 pb-3">
                     <div class="pb-2">
-                        <center><img src="{{ asset('images/ahrt-logo.png') }}"></center>
-                        <h1 class="text-center pt-4">Welcome to Amazing Race</h1>
+                        <h1 class="text-center pt-4">Login</h1>
+                        <p class="text-center text-info">Mohon masukkan alamat email yang terdaftar untuk kembali bermain</p>
                     </div>
                     <form method="POST" action="{{ route('login') }}">
                         @csrf
@@ -62,7 +62,7 @@
                         </div>
                         <div class="cta-area">
                             <button type="submit" class="btn btn-sm btn-primary">
-                                Login <i class="fa fa-sign-in" aria-hidden="true"></i>
+                                LOGIN
                             </button>
                             @if (Route::has('password.request'))
                             <div class="pt-3">
@@ -76,7 +76,7 @@
                 </div>
             </div>
 
-            <div class="text-center pb-5">
+            <div class="text-center pb-5 login-text-info">
                 {{-- <button class="btn btn-sm btn-primary" type="button"><i class="bi bi-google"></i> Login
                         with
                         google</button> --}}

@@ -27,24 +27,30 @@
 <body>
 
     <div class="container-fluid p-0">
-        <div class="container homepage mw-800 p-0 pb-5">
-            <center><img src="{{ asset('images/ahrt-logo.png') }}" class="pt-3"></center>
-            <center><img src="{{ asset('images/main-banner.jpg') }}" class="img-fluid"></center>
-            <h1>AMAZING RACE</h1>
-            <p class="p-3">Sed molestie, lacus sed eleifend pharetra, arcu massa fermentum est, at finibus ligula dolor et nulla. Maecenas eget egestas ex, ut tristique sapien. Nulla nec dui vitae neque sodales tristique sed vel enim. Praesent quis odio non leo hendrerit dignissim. Phasellus sed fermentum nisi. Nullam aliquet tristique urna in accumsan.</p>
+        <div class="container homepage mw-600 p-0">
+            <center><img src="{{ asset('images/logo-ahm.jpg') }}" class="img-logo"></center>
+        </div>
+    </div>
+    <center><img src="{{ asset('images/main-banner.jpg') }}" class="w-100 mw-600" ></center>
+    <div class="container-fluid p-0">
+        <div class="container homepage mw-800 p-0 pb-5 bg-red">
+            <p class="py-2 mb-0 px-4 text-center ">Yuk, ikuti gamenya dan menangkan <b>CBR150R</b> serta <b>uang elektronik bagi 4 orang pemenang masing-masing 1 Juta</b> setiap minggunya</p>
+            <div class="text-center pb-3 links"><a href="">LIHAT ATURAN PERMAINAN</a></div>
             @if (Route::has('login'))
             <div class="text-center cta-area">
                 @auth
                 <a href="{{ url('/home') }}" class="btn btn-primary">
-                    Profile
+                    PROFILE
                 </a>
                 @else
                 <a href="{{ route('login') }}" class="btn btn-primary">
-                    Login
+                    LOGIN
                 </a>
                 @endauth
             </div>
             @endif
+            <div class="text-center pt-2 links">Belum punya akun? <a href="">Daftar</a></div>
+            <center><img src="{{ asset('images/logo-ahrt.png') }}" class="img-logo-bottom"></center>            
         </div>
     </div>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"

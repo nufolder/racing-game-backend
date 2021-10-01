@@ -6,14 +6,15 @@
 
 @section('content')
 
-<div class="container p-3 auth-area">
+<div class="container p-3 login-area">
     <div class="row justify-content-center">
         <div class="col-md-4">
             <div class="card">
-                <div class="card-body p-5 pb-3">
+                <div class="card-body p-3 pb-3">
                     <div class="pb-2">
                         <center><img src="{{ asset('images/ahrt-logo.png') }}"></center>
-                        <h3 class="text-center pt-4">Silahkan ganti password</h3>
+                        <h1 class="text-center pt-4">Silahkan ganti password</h1>
+                        <p class="text-center text-info">Mohon masukkan password yang baru</p>                        
                         @if (session('status'))
                         <div class="alert alert-success" role="alert">
                             {{ session('status') }}
