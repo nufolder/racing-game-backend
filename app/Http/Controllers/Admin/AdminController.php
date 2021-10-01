@@ -25,6 +25,32 @@ class AdminController extends Controller
         return view('admin.users', compact('users'));
     }
 
+    public function editUser(Request $request, $id)
+    {
+        $user = User::with('race')->find($id);
+        // return $user;
+        return view('admin.edit-user', compact('user'));
+    }
+
+    public function updateUser(Request $request, $id)
+    {
+        $user = User::with('race')->find($id);
+        // return $user;
+        return view('admin.edit-user', compact('user'));
+    }
+
+    public function weeklyWinner()
+    {
+        $week_win = Race::with('user.chanceToPlayRacing')
+            ->where('weekly_winner', null)
+            ->orderBy('ticket', 'desc')
+            ->limit(10)
+            ->get();
+        // return $week_win;
+
+        return view('admin.weekly-winner', compact('week_win'));
+    }
+
     public function minigames()
     {
         $trivia = ChanceToPlayRacing::orderBy('summary_count', 'DESC')

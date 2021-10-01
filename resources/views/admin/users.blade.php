@@ -37,6 +37,7 @@
                                         <th scope="col">Motor</th>
                                         <th scope="col">Tahun Motor</th>
                                         <th scope="col">Register</th>
+                                        <th scope="col">Aksi</th>
                                     </tr>
                                 </thead>
                                 <tbody>
@@ -48,6 +49,13 @@
                                         <td>{{ $value->motor_cycle }}</td>
                                         <td>{{ $value->year_motor_cycle }}</td>
                                         <td>{{ $value->created_at }}</td>
+                                        <td>
+                                            <a href="{{ url('admin/edit-user/'.$value->id) }}">
+                                                <button class="btn btn-primary btn-sm">
+                                                    Edit
+                                                </button>
+                                            </a>
+                                        </td>
                                     </tr>
                                     @endforeach
                                 </tbody>

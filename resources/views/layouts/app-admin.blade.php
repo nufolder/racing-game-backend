@@ -44,6 +44,11 @@
                         </a>
                     </li>
                     <li class="nav-item">
+                        <a href="{{ url('admin/weekly-winner') }}" class="nav-link">
+                            Weekly Winner
+                        </a>
+                    </li>
+                    <li class="nav-item">
                         <a href="{{ url('admin/minigames') }}" class="nav-link">
                             Minigames
                         </a>
