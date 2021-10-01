@@ -9,10 +9,10 @@
     <div class="row justify-content-center">
         <div class="col-md-4">
             <div class="card">
-                <div class="card-body p-5 pb-3">
-                    <div class="pb-2">
-                        <center><img src="{{ asset('images/ahrt-logo.png') }}"></center>
-                        <h1 class="text-center pt-4">Welcome To Amazing Race</h1>
+                <div class="card-body p-4 pb-3">
+                    <div class="pb-0">
+                        <h1 class="pt-4">Registrasi</h1>
+                        <p class="links">Sudah punya akun? <a href="{{ url('login') }}">Login disini</a></p>
                     </div>
                     <form method="POST" action="{{ route('register') }}">
                         @csrf
@@ -87,7 +87,7 @@
 
                             <div class="form-group pb-2">
                                 <label class="" for="autoSizingSelect">Tipe Motor Kamu Sekarang</label>
-                                <select class="form-select form-select-sm @error('motor_cycle') is-invalid @enderror"
+                                <select class="form-select form-control form-select-sm @error('motor_cycle') is-invalid @enderror"
                                     name="motor_cycle" id="autoSizingSelect">
                                     <option value="Vario" {{ old('title') == 'Vario' ? 'selected' : '' }}>
                                         Vario
@@ -112,7 +112,7 @@
                             <div class="form-group pb-2">
                                 <label class="" for="autoSizingSelectYear">Tahun Motor Kamu</label>
                                 <select
-                                    class="form-select form-select-sm @error('year_motor_cycle') is-invalid @enderror"
+                                    class="form-select form-control form-select-sm @error('year_motor_cycle') is-invalid @enderror"
                                     name="year_motor_cycle" id="autoSizingSelectYear">
                                     <option value="2021" {{ old('year_motor_cycle') == '2021' ? 'selected' : '' }}>
                                         2021
@@ -166,17 +166,11 @@
 
 
                         <div class="cta-area">
-                            <button type="submit" class="pushable">Register</button>
+                            <button type="submit" class="pushable">REGISTER</button>
                         </div>
 
                     </form>
                 </div>
-            </div>
-
-            <div class="text-center pb-5">
-                {{-- <button class="btn btn-sm btn-primary" type="button"><i class="bi bi-google"></i> Register with google</button> --}}
-                Sudah punya akun? <a href="{{ url('login') }}">Login</a>
-
             </div>
 
 

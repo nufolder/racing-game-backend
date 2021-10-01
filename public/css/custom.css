@@ -1,20 +1,52 @@
 html, body{padding:0px; margin:0px; height:100%; width:100%; font-family: 'Questrial', sans-serif; }
 
+h1{font-size: 2rem;}
 h1, h2, h3, h4{font-family: 'Russo One', sans-serif;}
 
+.mw-600{max-width: 600px;}
 .mw-800{max-width: 800px;}
-.homepage{background-color: #ea2117;}
+.bg-red{background-color: #ED1B2F !important;}
+
+.form-control{border-radius: 0px; height: 40px; background-color: #F0EEEF; border: 0px;}
+.form-control ~ .input-group-text{border-radius: 0px; border: 0px;}
+.form-control:focus{border-color: #ED1B2F; box-shadow: 0 0 0 .15rem rgba(237,27,47,.50);}
+
+.homepage{background-color: #FFF;}
+.homepage .img-logo {max-width: 290px; padding-bottom: 30px;}
+.homepage .img-logo-bottom {max-width: 140px; padding-bottom: 30px; padding-top: 30px;}
 .homepage h1{text-align: center; color: #FFF; padding-top: 30px; font-weight: bolder;}
 .homepage p{color: #FFF;}
+.homepage .links{color: #FFF; font-size: 0.9rem;}
+.homepage .links a{color: #FFF; font-size: 0.9rem;}
 .homepage .cta-area{padding: 0px 30px;}
-.homepage .cta-area a{background-color: #FFC312; font-family: 'Russo One', sans-serif; color: #000; font-size: 1.5rem; border: 5px solid #000; border-radius: 8px; padding-top: 8px; padding-bottom: 8px;display: block; width: 100%;}
+.homepage .cta-area a{background-color: #FFC312; font-family: 'Russo One', sans-serif; color: #000; font-size: 1.3	rem; border: 5px solid #000; border-radius: 8px; padding-top: 8px; padding-bottom: 8px;display: block; width: 100%; position: relative;}
+.homepage .cta-area a:after{content: ""; border-radius: 8px; border-top: 5px solid rgba(255,255,255,0.5); position: absolute; width: 100%; height: 100%; left: 0px; top: 0px;}
 
-.auth-area{background-color: #ea2117; color: #FFFFFF; min-height: 100%;}
-.auth-area .card{border: 0px;}
-.auth-area .card .card-body{border: 0px;background-color: #ea2117;}
+.auth-area{background-image: url(../images/top-frame.jpg); background-repeat: no-repeat; background-position: top center; min-height: 100%;}
+.auth-area .card{border: 0px; background-color: transparent;}
+.auth-area .card .card-body{border: 0px;}
+.auth-area .card .card-body .links{font-size: 0.9rem;}
+.auth-area .card .card-body .links a{color: #000;}
 .auth-area .card .card-body .form-group label{font-size: 12px;}
-.auth-area .card .card-body .cta-area{margin-top: 30px; text-align: center;}
-.auth-area .card .card-body .cta-area button{background-color: #FFC312;	font-family: 'Russo One', sans-serif; color: #000; font-size: 1.5rem; border: 5px solid #000; border-radius: 8px; padding-top: 8px; padding-bottom: 8px;display: block; width: 100%;}  
+.auth-area .card .card-body .cta-area{margin-top: 20px; text-align: center;}
+.auth-area .card .card-body .cta-area button{background-color: #FFC312; font-family: 'Russo One', sans-serif; color: #000; font-size: 1.3	rem; border: 5px solid #000; border-radius: 8px; padding-top: 8px; padding-bottom: 8px;display: block; width: 100%; position: relative;}  
+.auth-area .card .card-body .cta-area button:after{content: ""; border-radius: 8px; border-top: 5px solid rgba(255,255,255,0.5); position: absolute; width: 100%; height: 100%; left: 0px; top: 0px;}
 .auth-area a{color: #FFF; text-decoration: underline;}
+
+.login-area{background-color: #ED1B2F; min-height: 100%;}
+.login-area .card{border: 0px; background-color: transparent;}
+.login-area .card h1{color: #FFF;}
+.login-area .card .text-info{color: #FFF !important; font-size: 0.9rem;}
+.login-area .card .card-body{border: 0px;}
+.login-area .card .card-body .links{font-size: 0.9rem;}
+.login-area .card .card-body .links a{color: #000;}
+.login-area .card .card-body label{color: #FFF;}
+.login-area .card .card-body .form-group label{font-size: 12px;}
+.login-area .card .card-body .cta-area{margin-top: 20px; text-align: center;}
+.login-area .card .card-body .cta-area{color: #FFF;}
+.login-area .card .card-body .cta-area button{background-color: #FFC312; font-family: 'Russo One', sans-serif; color: #000; font-size: 1.3	rem; border: 5px solid #000; border-radius: 8px; padding-top: 8px; padding-bottom: 8px;display: block; width: 100%; position: relative;}  
+.login-area .card .card-body .cta-area button:after{content: ""; border-radius: 8px; border-top: 5px solid rgba(255,255,255,0.5); position: absolute; width: 100%; height: 100%; left: 0px; top: 0px;}
+.login-area a{color: #FFF; text-decoration: underline;}
+.login-text-info{color: #FFF}
 
 .dashboard{ background-color: #ea2117;}
