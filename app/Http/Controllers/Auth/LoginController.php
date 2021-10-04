@@ -98,7 +98,7 @@ class LoginController extends Controller
             $checkLogin =  $this->checkLogin();
             // $message = 'Kamu mendapatkan 3 Heal !!';
             session()->flash('message', $checkLogin);
-            return redirect('user');
+            return redirect('home');
         } else {
             Session::flash('error', 'Email atau password salah');
             return redirect()->route('login');
