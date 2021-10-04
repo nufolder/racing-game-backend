@@ -15,6 +15,18 @@
                 <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
             </div>
             @endif
+
+            @if ($errors->any())
+            <div class="alert alert-danger">
+                <ul>
+                    @foreach ($errors->all() as $error)
+                    <li>{{ $error }}</li>
+                    @endforeach
+                </ul>
+                @if ($errors->has('email'))
+                @endif
+            </div>
+            @endif
             <div class="card">
                 <div class="card-body ">
                     <div class="pb-2">
@@ -23,7 +35,8 @@
                             <hr>
                         </h4>
 
-                        <form>
+                        <form method="POST" action="{{ url('admin/update-user/'. $user->id) }}">
+                            @csrf
                             <div class="row">
                                 <div class="col-md-4">
                                     <div class="mb-3">
@@ -39,8 +52,8 @@
                                         <label class="form-label">
                                             Email
                                         </label>
-                                        <input type="email" class="form-control form-control-sm" name="coin"
-                                            value="{{ $user->email}}">
+                                        <input type="email" class="form-control form-control-sm" name="email"
+                                            value="{{ $user->email}}" readonly>
                                     </div>
                                 </div>
                                 <div class="col-md-4">
@@ -48,9 +61,16 @@
                                         <label class="form-label">
                                             Weekly Winner
                                         </label>
-                                        <select class="form-select" aria-label="Default select example">
-                                            <option value="on">on</option>
-                                            <option value="off">off</option>
+                                        <select class="form-select" name="weekly_winner"
+                                            aria-label="Default select example">
+                                            <option {{ $user->race->weekly_winner == "on" ? "selected" : "" }}
+                                                value="on">
+                                                on
+                                            </option>
+                                            <option {{ $user->race->weekly_winner == "off" ? "selected" : "" }}
+                                                value="off">
+                                                off
+                                            </option>
                                         </select>
                                     </div>
                                 </div>

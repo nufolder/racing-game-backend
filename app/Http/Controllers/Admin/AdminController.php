@@ -9,6 +9,7 @@ use Illuminate\Support\Facades\Auth;
 use App\User;
 use App\ChanceToPlayRacing;
 use App\Race;
+use Illuminate\Support\Facades\Validator;
 
 class AdminController extends Controller
 {
@@ -34,15 +35,41 @@ class AdminController extends Controller
 
     public function updateUser(Request $request, $id)
     {
-        $user = User::with('race')->find($id);
-        // return $user;
-        return view('admin.edit-user', compact('user'));
+        // return $id;
+        $validator = Validator::make($request->all(), [
+            'name' => 'required',
+            'weekly_winner' => 'required',
+            'coin' => 'required|integer',
+            'ticket' => 'required|integer',
+            'heal' => 'required|integer',
+        ]);
+
+        if ($validator->fails()) {
+            return back()
+                ->withErrors($validator)
+                ->withInput();
+        }
+
+        $user = User::find($id);
+        $user->name = $request->name;
+        $user->save();
+
+        $race = Race::find($user->id);
+        $race->weekly_winner = $request->weekly_winner;
+        $race->coin = $request->coin;
+        $race->ticket = $request->ticket;
+        $race->heal = $request->heal;
+        $race->save();
+
+        $message = "User telah di update!";
+        session()->flash('message', $message);
+        return redirect('admin/users')->with(['message' => $message]);
     }
 
     public function weeklyWinner()
     {
         $week_win = Race::with('user.chanceToPlayRacing')
-            ->where('weekly_winner', null)
+            ->where('weekly_winner', "on")
             ->orderBy('ticket', 'desc')
             ->limit(10)
             ->get();

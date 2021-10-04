@@ -14,7 +14,7 @@ class AddFieldToRace extends Migration
     public function up()
     {
         Schema::table('race', function (Blueprint $table) {
-            $table->string('weekly_winner')->nullable();
+            $table->string('weekly_winner')->nullable()->default('on');
         });
     }
 
