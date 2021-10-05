@@ -94,7 +94,7 @@ class RaceController extends Controller
     public function endGameCheck($get_ticket, $get_coin)
     {
         $race = Race::where('user_id', Auth::user()->id)->first();
-        $plusticket = $get_ticket / 3000;
+        $plusticket = $get_ticket / 5000;
         if ($plusticket < 1) {
             $result_ticket = 0;
         } else {
