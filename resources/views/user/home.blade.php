@@ -136,7 +136,7 @@
 
                             <div class="tab-pane fade" id="weekly" role="tabpanel" aria-labelledby="weekly-tab">
                                 <div class="mt-3 mb-3" style="text-align: center;">
-                                    (27 September - 13 Oktober)
+                                    (tanggal - tanggal)
                                 </div>
                                 <div class="table-responsive">
                                     <table class="table table-bordered">
@@ -149,14 +149,14 @@
                                         </thead>
 
                                         <tbody>
-                                            @foreach($leaderboard as $key => $value)
+                                            @foreach($week_win as $key => $value)
                                             <tr>
                                                 <td width="2%" class="text-center">{{ $key + 1 }}</td>
                                                 <td width="10%" class="text-left">
                                                     <b>{{ $value->user->name }}</b>
                                                 </td>
                                                 <td width="10%" class="text-left">
-                                                    <b>{{ $value->ticket }}</b>
+                                                    <b>{{ $value->score_weekly ?? '0'}}</b>
                                                 </td>
                                             </tr>
                                             @endforeach
