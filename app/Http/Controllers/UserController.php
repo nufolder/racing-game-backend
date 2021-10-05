@@ -14,8 +14,15 @@ class UserController extends Controller
     {
         $user = User::with('race')->find(Auth::id());
         $leaderboard = Race::with('user')->orderBy('ticket', 'desc')->limit(5)->get();
+        $week_win = Race::with('user.chanceToPlayRacing')
+            ->where('weekly_winner', "on")
+            ->orderBy('ticket', 'desc')
+            ->limit(10)
+            ->get();
         $last_rider = $user->race->last_rider;
 
-        return view('user.home', compact('user', 'last_rider', 'leaderboard'));
+        // dd($week_win);
+
+        return view('user.home', compact('user', 'last_rider', 'leaderboard','week_win'));
     }
 }

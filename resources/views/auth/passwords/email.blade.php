@@ -32,8 +32,8 @@
                                 name="email" value="{{ old('email') }}" required autocomplete="off" autofocus
                                 placeholder="Masukan Email">
                             @if ($errors->first('email'))
-                            <span class="invalid-feedback" role="alert">
-                                <strong>{{ $errors->first('email') }}}</strong>
+                            <span class="invalid-feedback" role="alert" style="color: aliceblue">
+                                <strong>{{ $errors->first('email') }}</strong>
                             </span>
                             @endif
                         </div>

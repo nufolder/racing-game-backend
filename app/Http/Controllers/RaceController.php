@@ -94,7 +94,7 @@ class RaceController extends Controller
     public function endGameCheck($get_ticket, $get_coin)
     {
         $race = Race::where('user_id', Auth::user()->id)->first();
-        $plusticket = $get_ticket / 3000;
+        $plusticket = $get_ticket / 5000;
         if ($plusticket < 1) {
             $result_ticket = 0;
         } else {
@@ -102,15 +102,18 @@ class RaceController extends Controller
         }
 
         $check_ticket   = $race->ticket;
+        $check_weekly   = $race->score_weekly;
         $check_coin     = $race->coin;
 
         $sum_ticket     = $check_ticket + $result_ticket;
+        $sum_weekly     = $check_weekly + $result_ticket;
         $sum_coin       = $check_coin + $get_coin;
         $summary_play   = $race->summary_play + 1;
 
         $race->update(
             [
                 'ticket'        => $sum_ticket,
+                'score_weekly'  => $sum_weekly,
                 'coin'          => $sum_coin,
                 'summary_play'  => $summary_play,
             ]
