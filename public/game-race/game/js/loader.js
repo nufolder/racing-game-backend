@@ -26,7 +26,7 @@ function initPreload(){
 			{src:'assets/smoke_Spritesheet2x1.png', id:'itemSmoke'},
 			{src:'assets/fire_Spritesheet2x1.png', id:'itemFire'},
 			
-			{src:'assets/button_confirm.png', id:'buttonConfirm'},
+			{src:'assets/button_confirm_exit.png', id:'buttonConfirm'},
 			{src:'assets/button_cancel.png', id:'buttonCancel'},
 			{src:'assets/item_confirm.png', id:'itemExit'},
 			

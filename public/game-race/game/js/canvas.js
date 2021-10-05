@@ -306,6 +306,16 @@ function buildGameCanvas(){
         .endStroke();
     resultBackground.alpha = 0.75;
 
+    var confirmBackground = new createjs.Shape();
+    confirmBackground.graphics.beginFill('red')
+        .beginStroke()
+        .moveTo(0, 0)
+        .lineTo(canvasW, 1)
+        .lineTo(canvasW, canvasH)
+        .lineTo(1, canvasH)
+        .endStroke();
+    confirmBackground.alpha = 0.9;
+
 	
 	buttonFacebook = new createjs.Bitmap(loader.getResult('buttonFacebook'));
 	buttonTwitter = new createjs.Bitmap(loader.getResult('buttonTwitter'));
@@ -356,7 +366,7 @@ function buildGameCanvas(){
 	optionsContainer.visible = false;
 	
 	//exit
-	itemExit = new createjs.Bitmap(loader.getResult('itemExit'));
+	// itemExit = new createjs.Bitmap(loader.getResult('itemExit'));
 	
 	buttonConfirm = new createjs.Bitmap(loader.getResult('buttonConfirm'));
 	centerReg(buttonConfirm);
@@ -370,14 +380,14 @@ function buildGameCanvas(){
 	
 	confirmMessageTxt = new createjs.Text();
 	confirmMessageTxt.font = "35px dimitriregular";
-	confirmMessageTxt.color = "#2f2f2f";
+	confirmMessageTxt.color = "#FFFFFF";
 	confirmMessageTxt.textAlign = "center";
 	confirmMessageTxt.textBaseline='alphabetic';
 	confirmMessageTxt.text = exitMessage;
 	confirmMessageTxt.x = canvasW/2;
 	confirmMessageTxt.y = canvasH/100 *38;
 	
-	confirmContainer.addChild(itemExit, buttonConfirm, buttonCancel, confirmMessageTxt);
+	confirmContainer.addChild(confirmBackground, buttonConfirm, buttonCancel, confirmMessageTxt);
 	confirmContainer.visible = false;
 	
 	if(guide){

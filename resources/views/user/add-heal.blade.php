@@ -9,117 +9,104 @@
 <script src="https://code.jquery.com/jquery-3.6.0.min.js"
     integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
 
-<div class="container pt-3 bg-white">
+<div class="add-life">
 
-    <div class="row d-flex justify-content-center">
-        <div class="col-md-8">
-            @if (session('message'))
-            <div class="alert alert-success alert-dismissible fade show" role="alert">
-                {{ session('message') }}
-                <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
-            </div>
-            @endif
-            <div class="card">
-                <div class="card-body">
-                    <div class="pb-2">
-                        <h4 class="text-center">
-                            Tambah Heal
-                        </h4>
+    @if (session('message'))
+    <div class="alert alert-success alert-dismissible fade show" role="alert">
+        {{ session('message') }}
+        <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+    </div>
+    @endif
+    <h1 class="text-center">Tambah Nyawa</h1>
+    <div class="container  ">
+        <div class="item">
+
+            @if ($statusT == false)
+            <a class="disabled">
+                <div class="card h-100 text-dark bg-light mb-3">
+                    <div class="card-body">
+                        <h5 class="card-title text-center">Trivia</h5>
+                        <small class="card-text">Jawab Pertanyaan, akan mendapatkan 1 Heal !</small>
                     </div>
-                    <div class="row ">
-                        <div class="col-6 pb-4">
+                </div>
+            </a>
+            @else
+            <a href="{{ url('trivia') }}">
+                <div class="card h-100 text-white bg-primary mb-3">
+                    <div class="card-body">
+                        <h5 class="card-title text-center">Trivia</h5>
+                        <small class="card-text">Jawab Pertanyaan, akan mendapatkan 1 Heal !</small>
+                    </div>
+                </div>
+            </a>
+            @endif
 
-                            @if ($statusT == false)
-                            <a class="disabled">
-                                <div class="card h-100 text-dark bg-light mb-3">
-                                    <div class="card-body">
-                                        <h5 class="card-title text-center">Trivia</h5>
-                                        <small class="card-text">Jawab Pertanyaan, akan mendapatkan 1 Heal !</small>
-                                    </div>
-                                </div>
-                            </a>
-                            @else
-                            <a href="{{ url('trivia') }}">
-                                <div class="card h-100 text-white bg-primary mb-3">
-                                    <div class="card-body">
-                                        <h5 class="card-title text-center">Trivia</h5>
-                                        <small class="card-text">Jawab Pertanyaan, akan mendapatkan 1 Heal !</small>
-                                    </div>
-                                </div>
-                            </a>
-                            @endif
+        </div>
+        <div class="item">
 
-                        </div>
-                        <div class="col-6 pb-4">
+            @if ($statusM == false)
+            <a class="disabled">
+                <div class="card h-100 text-dark bg-light mb-3">
+                    <div class="card-body">
+                        <h5 class="card-title text-center">Memory Game</h5>
+                        <small>Cari Persamman, akan mendapatkan 1 Heal !</small>
+                    </div>
+                </div>
+            </a>
+            @else
+            <a href="{{ url('memory-game') }}">
+                <div class="card h-100 text-white bg-primary mb-3">
+                    <div class="card-body">
+                        <h5 class="card-title text-center">Memory Game</h5>
+                        <small>Cari Persamaan, akan mendapatkan 1 Heal !</small>
+                    </div>
+                </div>
+            </a>
+            @endif
 
-                            @if ($statusM == false)
-                            <a class="disabled">
-                                <div class="card h-100 text-dark bg-light mb-3">
-                                    <div class="card-body">
-                                        <h5 class="card-title text-center">Memory Game</h5>
-                                        <small>Cari Persamman, akan mendapatkan 1 Heal !</small>
-                                    </div>
-                                </div>
-                            </a>
-                            @else
-                            <a href="{{ url('memory-game') }}">
-                                <div class="card h-100 text-white bg-primary mb-3">
-                                    <div class="card-body">
-                                        <h5 class="card-title text-center">Memory Game</h5>
-                                        <small>Cari Persamaan, akan mendapatkan 1 Heal !</small>
-                                    </div>
-                                </div>
-                            </a>
-                            @endif
+        </div>
+        <div class="item">
+            @if ($statusV == false)
+            <a class="disable">
+                <div class="card h-100 text-dark bg-light mb-3">
+                    <div class="card-body">
+                        <h5 class="card-title text-center">Video</h5>
+                        <small>Tonton video, akan mendapatkan 1 Heal !</small>
+                    </div>
+                </div>
+            </a>
+            @else
+            <a href="{{ url('video') }}">
+                <div class="card h-100 text-white bg-primary mb-3">
+                    <div class="card-body">
+                        <h5 class="card-title text-center">Video</h5>
+                        <small>Tonton video, akan mendapatkan 1 Heal !</small>
+                    </div>
+                </div>
+            </a>
+            @endif
 
-                        </div>
-                        <div class="col-6 pb-4">
-                            @if ($statusV == false)
-                            <a class="disable">
-                                <div class="card h-100 text-dark bg-light mb-3">
-                                    <div class="card-body">
-                                        <h5 class="card-title text-center">Video</h5>
-                                        <small>Tonton video, akan mendapatkan 1 Heal !</small>
-                                    </div>
-                                </div>
-                            </a>
-                            @else
-                            <a href="{{ url('video') }}">
-                                <div class="card h-100 text-white bg-primary mb-3">
-                                    <div class="card-body">
-                                        <h5 class="card-title text-center">Video</h5>
-                                        <small>Tonton video, akan mendapatkan 1 Heal !</small>
-                                    </div>
-                                </div>
-                            </a>
-                            @endif
-
-                        </div>
-                        <div class="col-6 pb-4">
-                            <div class="card h-100 text-dark bg-light mb-3">
-                                <div class="card-body">
-                                    <h5 class="card-title text-center">Share</h5>
-                                    <small>Share event ke facebook atau twitter, akan mendapatkan 1
-                                        Heal !
-                                    </small>
-                                    <div class="d-grid gap-2 pt-2">
-                                        <a id="shareBtn" class="btn btn-sm btn-success">
-                                            Share Facebook
-                                        </a>
-                                        <a href="https://twitter.com/intent/tweet?url={{ url('/') }}" target="_blank"
-                                            class="btn btn-sm btn-success">
-                                            Share twitter
-                                        </a>
-                                    </div>
-                                </div>
-                            </div>
-
-                        </div>
+        </div>
+        <div class="item">
+            <div class="card h-100 text-dark bg-light mb-3">
+                <div class="card-body">
+                    <h5 class="card-title text-center">Share</h5>
+                    <small>Share event ke facebook atau twitter, akan mendapatkan 1
+                        Heal !
+                    </small>
+                    <div class="d-grid gap-2 pt-2">
+                        <a id="shareBtn" class="btn btn-sm btn-success">
+                            Share Facebook
+                        </a>
+                        <a href="https://twitter.com/intent/tweet?url={{ url('/') }}" target="_blank"
+                            class="btn btn-sm btn-success">
+                            Share twitter
+                        </a>
                     </div>
                 </div>
             </div>
-        </div>
 
+        </div>
     </div>
 </div>
 

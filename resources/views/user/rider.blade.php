@@ -6,7 +6,7 @@
 
 @section('content')
 
-<div class="container pt-3 bg-white">
+<div class="container pt-3 bg-white select-class-rider">
 
     <div class="row d-flex justify-content-center">
         <div class="col-md-8">
@@ -20,13 +20,13 @@
                 <div class="card-body">
                     <div class="pb-2">
                         <h4 class="text-center">
-                            Pilih Rider
+                            Pilih Kelas Rider
                         </h4>
                     </div>
 
 
-                    <div class="row">
-                        <div class="col-6">
+                    <div class="row ">
+                        <div class="item">
 
                             @if ($ttc == false)
                             <div class="card text-white bg-secondary mb-3">
@@ -60,7 +60,7 @@
                             @endif
 
                         </div>
-                        <div class="col-6">
+                        <div class="item">
                             @if ($atc == false)
                             <div class="card text-white bg-secondary mb-3">
                                 <div class="card-header text-center">ATC 40 Koin</div>
@@ -90,7 +90,7 @@
                             </div>
                             @endif
                         </div>
-                        <div class="col-6">
+                        <div class="item">
                             @if ($arrc == false)
                             <div class="card h-100 text-white bg-secondary mb-3">
                                 <div class="card-header text-center">ARRC 60 Koin</div>
@@ -120,7 +120,7 @@
                             </div>
                             @endif
                         </div>
-                        <div class="col-6">
+                        <div class="item">
                             @if ($cev == false)
                             <div class="card h-100 text-white bg-secondary mb-3">
                                 <div class="card-header text-center">CEV 80 Koin</div>
