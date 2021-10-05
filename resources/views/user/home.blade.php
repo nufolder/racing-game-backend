@@ -9,7 +9,7 @@
 <div class="container p-3">
     <div class="row justify-content-center">
         <div class="col-md-6">
-            <center><img src="{{ asset('images/logo-smol.png') }}" class="w-50"></center>
+            <center><img src="{{ asset('images/logo-ahm.png') }}" class="w-50"></center>
             @if (session('message'))
             <div class="alert alert-success alert-dismissible fade show" role="alert">
                 {{ session('message') }}
