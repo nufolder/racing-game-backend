@@ -73,9 +73,15 @@ class AdminController extends Controller
             ->orderBy('ticket', 'desc')
             ->limit(10)
             ->get();
-        // return $week_win;
 
-        return view('admin.weekly-winner', compact('week_win'));
+
+        foreach ($week_win as $key => $value) {
+            $namearr[] =  $value->user->name;
+        }
+        // $namearr  = json_encode($namearr);
+        // return $namearr;
+
+        return view('admin.weekly-winner', compact('week_win', 'namearr'));
     }
 
     public function minigames()

@@ -33,7 +33,7 @@
                                     value="{{ old('name') }}" required autocomplete="off" autofocus placeholder="Nama">
 
                                 @error('name')
-                                <span class="invalid-feedback" role="alert" style="color: aliceblue">
+                                <span class="invalid-feedback" role="alert">
                                     <strong>{{ $message }}</strong>
                                 </span>
                                 @enderror
@@ -46,7 +46,7 @@
                                     name="email" value="{{ old('email') }}" required autocomplete="off" autofocus
                                     placeholder="Email">
                                 @error('email')
-                                <span class="invalid-feedback" role="alert" style="color: aliceblue">
+                                <span class="invalid-feedback" role="alert">
                                     <strong>{{ $message }}</strong>
                                 </span>
                                 @enderror
@@ -65,7 +65,7 @@
                                         </div>
                                     </div>
                                     @error('password')
-                                    <span class="invalid-feedback" role="alert" style="color: aliceblue">
+                                    <span class="invalid-feedback" role="alert" >
                                         <strong>{{ $message }}</strong>
                                     </span>
                                     @enderror
@@ -79,7 +79,7 @@
                                     name="password_confirmation" required autocomplete="off"
                                     placeholder="Konfirmasi Password">
                                 @error('password')
-                                <span class="invalid-feedback" role="alert" style="color: aliceblue">
+                                <span class="invalid-feedback" role="alert" >
                                     <strong>{{ $message }}</strong>
                                 </span>
                                 @enderror

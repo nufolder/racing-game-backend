@@ -437,7 +437,7 @@ function goPage(page) {
                 displayCoin: playerData.coin,
                 overwrite: true,
                 onUpdate: function() {
-                    resultScoreTxt.text = "SKOR KAMU " + addCommas(Math.floor(playerData.displayScore)) + "\nDAN MENDAPATKAN TAMBAHAN\n" + Math.floor(playerData.displayScore / 1000) + " TIKET YANG AKAN DIUNDI UNTUK\nMENDAPATKAN CBR 150RR";
+                    resultScoreTxt.text = "SKOR KAMU " + addCommas(Math.floor(playerData.displayScore)) + "\nDAN MENDAPATKAN TAMBAHAN\n" + Math.floor(playerData.displayScore / 5000) + " TIKET YANG AKAN DIUNDI UNTUK\nMENDAPATKAN CBR 150RR";
                     resultCoinTxt.text = "+" + addCommas(Math.floor(playerData.displayCoin)) + " KOIN BISA DIGUNAKAN UNTUK UNLOCK RIDER";
                 }
             });
@@ -593,7 +593,8 @@ function updateGame() {
 
         //old
         // playerData.score += Math.floor((5 * Math.round(defaultData.speed / 250)) * .03);
-        playerData.score += Math.floor((5 * Math.round(defaultData.speed / score_value_data)) * .03);
+        const dataCurrent = score_value_data / 100;
+        playerData.score += Math.floor((dataCurrent * Math.round(defaultData.speed / score_value_data)) * .03);
         updateGameStatus();
     }
 }

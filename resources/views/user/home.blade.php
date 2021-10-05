@@ -96,31 +96,75 @@
                 </div>
                 <div class="modal-body">
                     <div class="content-list">
-                        <div class="table-responsive">
-                            <table class="table table-bordered">
-                                <thead>
-                                    <tr>
-                                        <th scope="co" width="50" style="text-align: center;">#</th>
-                                        <th scope="col">Name</th>
-                                        <th scope="col">Ticket</th>
-                                    </tr>
-                                </thead>
+                        <ul class="nav nav-tabs" id="myTab" role="tablist">
+                            <li class="nav-item" role="presentation">
+                              <a class="nav-link active" id="all-tab" data-bs-toggle="tab" href="#all" role="tab" aria-controls="all" aria-selected="true">All</a>
+                            </li>
+                            <li class="nav-item" role="presentation">
+                              <a class="nav-link" id="weekly-tab" data-bs-toggle="tab" href="#weekly" role="tab" aria-controls="weekly" aria-selected="false">Weekly Leader</a>
+                            </li>
+                        </ul>
 
-                                <tbody>
-                                    @foreach($leaderboard as $key => $value)
-                                    <tr>
-                                        <td width="2%" class="text-center">{{ $key + 1 }}</td>
-                                        <td width="10%" class="text-left">
-                                            <b>{{ $value->user->name }}</b>
-                                        </td>
-                                        <td width="10%" class="text-left">
-                                            <b>{{ $value->ticket }}</b>
-                                        </td>
-                                    </tr>
-                                    @endforeach
-                                </tbody>
-                            </table>
-                        </div>
+                          <div class="tab-content" id="myTabContent">
+                            <div class="tab-pane fade show active" id="all" role="tabpanel" aria-labelledby="all-tab">
+                                <div class="table-responsive">
+                                    <table class="table table-bordered">
+                                        <thead>
+                                            <tr>
+                                                <th scope="co" width="50" style="text-align: center;">#</th>
+                                                <th scope="col">Name</th>
+                                                <th scope="col">Ticket</th>
+                                            </tr>
+                                        </thead>
+
+                                        <tbody>
+                                            @foreach($leaderboard as $key => $value)
+                                            <tr>
+                                                <td width="2%" class="text-center">{{ $key + 1 }}</td>
+                                                <td width="10%" class="text-left">
+                                                    <b>{{ $value->user->name }}</b>
+                                                </td>
+                                                <td width="10%" class="text-left">
+                                                    <b>{{ $value->ticket }}</b>
+                                                </td>
+                                            </tr>
+                                            @endforeach
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+
+                            <div class="tab-pane fade" id="weekly" role="tabpanel" aria-labelledby="weekly-tab">
+                                <div class="mt-3 mb-3" style="text-align: center;">
+                                    (27 September - 13 Oktober)
+                                </div>
+                                <div class="table-responsive">
+                                    <table class="table table-bordered">
+                                        <thead>
+                                            <tr>
+                                                <th scope="co" width="50" style="text-align: center;">#</th>
+                                                <th scope="col">Name</th>
+                                                <th scope="col">Ticket</th>
+                                            </tr>
+                                        </thead>
+
+                                        <tbody>
+                                            @foreach($leaderboard as $key => $value)
+                                            <tr>
+                                                <td width="2%" class="text-center">{{ $key + 1 }}</td>
+                                                <td width="10%" class="text-left">
+                                                    <b>{{ $value->user->name }}</b>
+                                                </td>
+                                                <td width="10%" class="text-left">
+                                                    <b>{{ $value->ticket }}</b>
+                                                </td>
+                                            </tr>
+                                            @endforeach
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                          </div>
                     </div>
                 </div>
             </div>
