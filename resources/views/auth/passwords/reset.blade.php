@@ -6,9 +6,9 @@
 
 @section('content')
 
-<div class="container p-3 login-area">
+<div class="container p-3 login-area mw-600">
     <div class="row justify-content-center">
-        <div class="col-md-4">
+        <div class="col-md-8">
             <div class="card">
                 <div class="card-body p-3 pb-3">
                     <div class="pb-2">

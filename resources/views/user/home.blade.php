@@ -6,10 +6,49 @@
 
 @section('content')
 
-<div class="container p-3">
-    <div class="row justify-content-center">
-        <div class="col-md-6">
-            <center><img src="{{ asset('images/logo-ahm.png') }}" class="w-50"></center>
+<!-- <nav class="navbar navbar-expand-lg navbar-light bg-light" aria-label="Ninth navbar example">
+    <div class="container col-md-7">
+        <a class="navbar-brand" href="{{ url('home') }}">Amazing Race</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarsExample07XL"
+            aria-controls="navbarsExample07XL" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarsExample07XL">
+            <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle active" href="#" id="dropdownMenu2" data-bs-toggle="dropdown"
+                        aria-expanded="false">
+                        
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="dropdownMenu2">
+                        <li>
+                            <a class="dropdown-item" href="{{ route('logout') }}" onclick="event.preventDefault(); document.getElementById('logout-form').submit();"> Logout <i class="fas fa-sign-out-alt"></i> </a>
+                            <form id="logout-form" action="{{ route('logout') }}" method="POST" class="d-none">@csrf</form>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+ -->
+<div class="container p-3 bg-red mw-600 dashboard pb-5">
+    <div class="">
+        <div class="badge-area d-flex">
+            <span class=" badge">                
+                <img src="{{ asset('images/badge-life.png') }}" class="medium-badge">{{ number_format($user->race->heal, 0) }} Nyawa 
+                <a href="{{ url('add-heal') }}"><img src="{{ asset('images/badge-addlife.png') }}" class="medium-badge-right"></a>
+            </span>
+            <span class=" badge ms-auto">
+                <img src="{{ asset('images/badge-coin.png') }}" class="small-badge">{{ number_format($user->race->coin, 0) }}
+            </span>
+            <span class=" badge">
+                <img src="{{ asset('images/badge-ticket.png') }}" class="small-badge">{{ number_format($user->race->ticket, 0) }}
+            </span>
+        </div>
+        <center><img src="{{ asset('images/logo-generasi-juara.png') }}" class="img-fluid py-4 mt-3"></center>
             @if (session('message'))
             <div class="alert alert-success alert-dismissible fade show" role="alert">
                 {{ session('message') }}
@@ -21,67 +60,38 @@
                 {{ session('status') }}
             </div>
             @endif
-            <div class="card dashboard">
-                <div class="card-body text-center">
-                    <div class="pb-2">
-                    </div>
-                    <div class="card mb-3">
-                        <div class="card-body">
-                            <div class="">
-                                <h1 class="text-center">
-                                    <i class="fa fa-user" aria-hidden="true"></i>
-                                    {{ $user->name }}
-                                </h1>
-                            </div>
-                            <span class=" badge bg-secondary">
-                                <i class="fa fa-ticket" aria-hidden="true"></i> Tiket:
-                                {{ number_format($user->race->ticket, 0) }}
-                            </span>
-                            <span class=" badge bg-secondary">
-                                <i class="fa fa-heartbeat" aria-hidden="true"></i> Heal:
-                                {{ number_format($user->race->heal, 0) }}
-                            </span>
-                            <span class=" badge bg-secondary">
-                                <i class="fa fa-gg-circle" aria-hidden="true"></i> Koin:
-                                {{ number_format($user->race->coin, 0) }}
-                            </span>
+            <div class="">
+                <div class="text-center">
 
-                        </div>
-                    </div>
+                    <h1 class="text-center">
+                        <!-- Halo {{ $user->name }}! -->
+                        Halo  {{ Auth::user()->name }}
+                    </h1>
 
-                    <div class="card">
-                        <div class="card-body">
-                            <button type="button" class="btn btn-sm btn-outline-primary" data-bs-toggle="modal"
-                                data-bs-target="#exampleModal">
-                                <i class="fa fa-trophy" aria-hidden="true"></i> Leaderboard
-                            </button>
-                        </div>
+                    <div class="rider-image">
+                        <div class="photo"><img src="{{ asset('images/riders/'.$last_rider.'.png') }}"></div>
+                        <div class="name">{{ $last_rider }}</div>
                     </div>
+                    
+                    <a href="{{ url('race', $last_rider) }}" class="btn btn-red btn-big">START RACE</a>
 
-                    <hr>
-                    <div class="pb-2">
-                        <a href="{{ url('race', $last_rider) }}" class="btn btn-sm btn-primary text-capitalize">
-                            Play {{ $last_rider }} <i class="fa fa-play" aria-hidden="true"></i>
-                        </a>
-                        <span>
-                            <a href="{{ url('add-heal') }}" class="btn btn-sm btn-primary">
-                                <i class="fa fa-plus-circle" aria-hidden="true"></i> Heal
-                            </a>
-                        </span>
-                    </div>
-                    <div class="pb-2">
-                        Atau
-                    </div>
-                    <div>
-                        <a href="{{ url('rider') }}" class="btn btn-lg btn-primary">
+                    <div class="container px-5">
+                        <button type="button" class="btn btn-grey mt-4" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                            <i class="fa fa-trophy" aria-hidden="true"></i> Leader board
+                        </button>
+
+                        <a href="{{ url('rider') }}" class="btn mt-2">
                             Pilih Riders <i class="fa fa-list" aria-hidden="true"></i>
                         </a>
+
+                        <div class="mt-5">
+                            <a class="btn btn-small" href="{{ route('logout') }}" onclick="event.preventDefault(); document.getElementById('logout-form').submit();"> SIGN OUT <i class="fa fa-sign-out"></i> </a>
+                            <form id="logout-form" action="{{ route('logout') }}" method="POST" class="d-none">@csrf</form>
+                        </div>
                     </div>
 
                 </div>
             </div>
-
-        </div>
     </div>
 
 

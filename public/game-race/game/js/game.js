@@ -118,7 +118,7 @@ var statusData = {
     noFuel: { text: 'OUT OF FUEL', color: '#ec3e34', size: 70 },
 }
 
-var exitMessage = 'Are you sure\nyou want to quit?'; //go to main page message
+var exitMessage = 'Yakin ingin keluar?'; //go to main page message
 var resultTitleText = 'GAME\nOVER'; //result text display
 var resultScoreText = 'KAMU MENEMPUH '; //result text display
 var resultCoinText = 'KAMU MENDAPATKAN KOIN :'; //result text display
