@@ -31,7 +31,7 @@ class UnlockClassController extends Controller
                             $arrayRacer,
                             [
                                 'racer'         => 'chessy',
-                                'coin_value'    => 2,
+                                'coin_value'    => 1,
                                 'score_value'   => 400,
                                 'hills'         => 'assets/assets-ttc/background_hills.png',
                                 'sky'           => 'assets/assets-ttc/background_sky.png',
@@ -45,7 +45,7 @@ class UnlockClassController extends Controller
                             ],
                             [
                                 'racer'         => 'veda',
-                                'coin_value'    => 2,
+                                'coin_value'    => 1,
                                 'score_value'   => 400,
                                 'hills'         => 'assets/assets-ttc/background_hills.png',
                                 'sky'           => 'assets/assets-ttc/background_sky.png',
@@ -91,7 +91,7 @@ class UnlockClassController extends Controller
                             $arrayRacer,
                             [
                                 'racer'         => 'fadillah',
-                                'coin_value'    => 3,
+                                'coin_value'    => 1,
                                 'score_value'   => 300,
                                 'hills'         => 'assets/assets-atc/background_hills.png',
                                 'sky'           => 'assets/assets-atc/background_sky.png',
@@ -105,7 +105,7 @@ class UnlockClassController extends Controller
                             ],
                             [
                                 'racer'         => 'azryan',
-                                'coin_value'    => 3,
+                                'coin_value'    => 1,
                                 'score_value'   => 300,
                                 'hills'         => 'assets/assets-atc/background_hills.png',
                                 'sky'           => 'assets/assets-atc/background_sky.png',
@@ -119,7 +119,7 @@ class UnlockClassController extends Controller
                             ],
                             [
                                 'racer'         => 'herlian',
-                                'coin_value'    => 3,
+                                'coin_value'    => 1,
                                 'score_value'   => 300,
                                 'hills'         => 'assets/assets-atc/background_hills.png',
                                 'sky'           => 'assets/assets-atc/background_sky.png',
@@ -133,7 +133,7 @@ class UnlockClassController extends Controller
                             ],
                             [
                                 'racer'         => 'herjun',
-                                'coin_value'    => 3,
+                                'coin_value'    => 1,
                                 'score_value'   => 300,
                                 'hills'         => 'assets/assets-atc/background_hills.png',
                                 'sky'           => 'assets/assets-atc/background_sky.png',
@@ -179,7 +179,7 @@ class UnlockClassController extends Controller
                             $arrayRacer,
                             [
                                 'racer'         => 'adenanta',
-                                'coin_value'    => 4,
+                                'coin_value'    => 1,
                                 'score_value'   => 200,
                                 'hills'         => 'assets/assets-arrc/background_hills.png',
                                 'sky'           => 'assets/assets-arrc/background_sky.png',
@@ -193,7 +193,7 @@ class UnlockClassController extends Controller
                             ],
                             [
                                 'racer'         => 'lucky',
-                                'coin_value'    => 4,
+                                'coin_value'    => 1,
                                 'score_value'   => 200,
                                 'hills'         => 'assets/assets-arrc/background_hills.png',
                                 'sky'           => 'assets/assets-arrc/background_sky.png',
@@ -207,7 +207,7 @@ class UnlockClassController extends Controller
                             ],
                             [
                                 'racer'         => 'irfan',
-                                'coin_value'    => 4,
+                                'coin_value'    => 1,
                                 'score_value'   => 200,
                                 'hills'         => 'assets/assets-arrc/background_hills.png',
                                 'sky'           => 'assets/assets-arrc/background_sky.png',
@@ -221,7 +221,7 @@ class UnlockClassController extends Controller
                             ],
                             [
                                 'racer'         => 'rheza',
-                                'coin_value'    => 4,
+                                'coin_value'    => 1,
                                 'score_value'   => 200,
                                 'hills'         => 'assets/assets-arrc/background_hills.png',
                                 'sky'           => 'assets/assets-arrc/background_sky.png',
@@ -267,7 +267,7 @@ class UnlockClassController extends Controller
                             $arrayRacer,
                             [
                                 'racer'         => 'mario',
-                                'coin_value'    => 5,
+                                'coin_value'    => 1,
                                 'score_value'   => 100,
                                 'hills'         => 'assets/assets-cev/background_hills.png',
                                 'sky'           => 'assets/assets-cev/background_sky.png',

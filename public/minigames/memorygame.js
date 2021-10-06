@@ -188,8 +188,7 @@ const match = () => {
     $('.nama').text(`${getRider.toLocaleUpperCase()} (${getClass})`);
     setTimeout(function() {
         myMatch.hide();
-    }, 3000);
-
+    }, 2000);
 
     if (countMatch === gameGrid.length / 2) {
         gameFinished();

@@ -92,6 +92,7 @@ class RegisterController extends Controller
             'email'             => $data['email'],
             'password'          => Hash::make($data['password']),
             'google_id'         => null,
+            'instagram'         => $data['instagram'],
             'motor_cycle'       => $data['motor_cycle'],
             'year_motor_cycle'  => $data['year_motor_cycle'],
             'role'              => 'user',

@@ -16,6 +16,7 @@ class User extends Authenticatable
         'email',
         'password',
         'google_id',
+        'instagram',
         'motor_cycle',
         'year_motor_cycle',
         'role',

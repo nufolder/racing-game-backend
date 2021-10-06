@@ -13,7 +13,7 @@ class UserSeeder extends Seeder
         $admin                      = new User;
         $admin->name                = 'Admin';
         $admin->email               = 'admin@gmail.com';
-        $admin->password            = Hash::make('admin123');
+        $admin->password            = Hash::make('adminAHRTR2c1ngG4m3');
         $admin->google_id           = null;
         $admin->motor_cycle         = 'CBR 150';
         $admin->year_motor_cycle    = '2017';
@@ -79,7 +79,7 @@ class UserSeeder extends Seeder
 
         $admin_share                  = new ChanceToPlayRacing;
         $admin_share->user_id         = $admin->id;
-        $admin_share->type            = 'login';
+        $admin_share->type            = 'share';
         $admin_share->last_date       = null;
         $admin_share->summary_count   = null;
         $admin_share->save();
