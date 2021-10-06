@@ -1,7 +1,7 @@
 @extends('layouts.app-user')
 
 @section('title')
-<title>Tambah Heal</title>
+<title>Tambah Nyawa</title>
 @endsection
 
 @section('content')
@@ -26,7 +26,7 @@
                 <div class="card h-100 text-dark bg-light mb-3">
                     <div class="card-body">
                         <h5 class="card-title text-center">Trivia</h5>
-                        <small class="card-text">Jawab Pertanyaan, akan mendapatkan 1 Heal !</small>
+                        <small class="card-text">Jawab Pertanyaan, akan mendapatkan 1 Nyawa !</small>
                     </div>
                 </div>
             </a>
@@ -35,7 +35,7 @@
                 <div class="card h-100 text-white bg-primary mb-3">
                     <div class="card-body">
                         <h5 class="card-title text-center">Trivia</h5>
-                        <small class="card-text">Jawab Pertanyaan, akan mendapatkan 1 Heal !</small>
+                        <small class="card-text">Jawab Pertanyaan, akan mendapatkan 1 Nyawa !</small>
                     </div>
                 </div>
             </a>
@@ -49,7 +49,7 @@
                 <div class="card h-100 text-dark bg-light mb-3">
                     <div class="card-body">
                         <h5 class="card-title text-center">Memory Game</h5>
-                        <small>Cari Persamman, akan mendapatkan 1 Heal !</small>
+                        <small>Cari Persamaan, akan mendapatkan 1 Nyawa !</small>
                     </div>
                 </div>
             </a>
@@ -58,7 +58,7 @@
                 <div class="card h-100 text-white bg-primary mb-3">
                     <div class="card-body">
                         <h5 class="card-title text-center">Memory Game</h5>
-                        <small>Cari Persamaan, akan mendapatkan 1 Heal !</small>
+                        <small>Cari Persamaan, akan mendapatkan 1 Nyawa !</small>
                     </div>
                 </div>
             </a>
@@ -71,7 +71,7 @@
                 <div class="card h-100 text-dark bg-light mb-3">
                     <div class="card-body">
                         <h5 class="card-title text-center">Video</h5>
-                        <small>Tonton video, akan mendapatkan 1 Heal !</small>
+                        <small>Tonton video, akan mendapatkan 1 Nyawa !</small>
                     </div>
                 </div>
             </a>
@@ -80,7 +80,7 @@
                 <div class="card h-100 text-white bg-primary mb-3">
                     <div class="card-body">
                         <h5 class="card-title text-center">Video</h5>
-                        <small>Tonton video, akan mendapatkan 1 Heal !</small>
+                        <small>Tonton video, akan mendapatkan 1 Nyawa !</small>
                     </div>
                 </div>
             </a>
@@ -92,7 +92,7 @@
                 <div class="card-body">
                     <h5 class="card-title text-center">Share</h5>
                     <small>Share event ke facebook atau twitter, akan mendapatkan 1
-                        Heal !
+                        Nyawa !
                     </small>
                     <div class="d-grid gap-2 pt-2">
                         <a id="shareBtn" class="btn btn-sm btn-success">

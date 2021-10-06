@@ -23,6 +23,11 @@
         body {
             font-family: 'Hammersmith One', sans-serif;
         }
+
+        td {
+            font-size: 13px;
+            text-align: start;
+        }
     </style>
 </head>
 

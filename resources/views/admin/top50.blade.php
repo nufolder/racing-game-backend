@@ -4,11 +4,6 @@
 <title>Admin</title>
 @endsection
 
-<style>
-    td {
-        font-size: 13px;
-    }
-</style>
 
 @section('content')
 

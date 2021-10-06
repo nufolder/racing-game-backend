@@ -36,6 +36,7 @@ Route::middleware(['auth'])->group(function () {
         Route::get('admin/edit-user/{id}', 'Admin\AdminController@editUser')->name('admin.usersedit');
         Route::post('admin/update-user/{id}', 'Admin\AdminController@updateUser')->name('admin.usersupdate');
         Route::get('admin/weekly-winner', 'Admin\AdminController@weeklyWinner')->name('admin.weeklywinner');
+        Route::post('admin/reset-weekly-winner', 'Admin\AdminController@resetWeeklyWinner')->name('admin.resetweeklywinner');
         Route::get('admin/minigames', 'Admin\AdminController@minigames')->name('admin.minigames');
         Route::get('admin/race', 'Admin\AdminController@race')->name('admin.race');
         Route::get('admin/top50', 'Admin\AdminController@top50')->name('admin.top50');

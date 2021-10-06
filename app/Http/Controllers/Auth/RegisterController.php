@@ -76,7 +76,7 @@ class RegisterController extends Controller
             return $response;
         }
 
-        // $message = 'Kamu mendapatkan 3 Heal !!';
+        // $message = 'Kamu mendapatkan 3 Nyawa !!';
         // session()->flash('message', $message);
 
         return $request->wantsJson()

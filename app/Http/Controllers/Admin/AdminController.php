@@ -70,18 +70,29 @@ class AdminController extends Controller
     {
         $week_win = Race::with('user.chanceToPlayRacing')
             ->where('weekly_winner', "on")
-            ->orderBy('ticket', 'desc')
+            ->orderBy('score_weekly', 'desc')
             ->limit(10)
             ->get();
-
 
         foreach ($week_win as $key => $value) {
             $namearr[] =  $value->user->name;
         }
-        // $namearr  = json_encode($namearr);
-        // return $namearr;
 
         return view('admin.weekly-winner', compact('week_win', 'namearr'));
+    }
+
+    public function resetWeeklyWinner()
+    {
+        $race = Race::orderBy('ticket', 'desc')->get();
+
+        foreach ($race as $key => $value) {
+            $value->score_weekly = null;
+            $value->save();
+        }
+        $message = 'Score weekly has been reset!';
+        session()->flash('message', $message);
+        // return $message;
+        return back()->with(['message', $message]);
     }
 
     public function minigames()

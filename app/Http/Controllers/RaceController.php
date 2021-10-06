@@ -60,7 +60,7 @@ class RaceController extends Controller
                 );
                 return view('user.race-rider', compact('uses_rider'));
             } else {
-                $message = 'Heal anda 0 !';
+                $message = 'Nyawa anda 0 !';
                 session()->flash('message', $message);
                 return back()->with(['message', $message]);
             }
@@ -85,7 +85,7 @@ class RaceController extends Controller
             return response()->json(['response' => 'heal - 1', 'status' => 'ok']);
         } else {
             $redirect = url('user');
-            $message = 'Heal anda 0 !';
+            $message = 'Nyawa anda 0 !';
             session()->flash('message', $message);
             return response()->json(['response' => $redirect, 'status' => 'no', 'message' => $message]);
         }
