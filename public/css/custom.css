@@ -1,15 +1,29 @@
-html, body{padding:0px; margin:0px; height:100%; width:100%; font-family: 'Questrial', sans-serif; }
-
+html, body{padding:0px; margin:0px; height:100%; width:100%; font-family: 'Montserrat', sans-serif; }
 h1{font-size: 2rem;}
 h1, h2, h3, h4{font-family: 'Russo One', sans-serif;}
+
+.alert{width: 90%; font-family: 'Russo One';}
+.modal .modal-content{width: 90%; position: relative;}
+.modal .modal-content button{border: 0px; background-color: transparent; position: absolute; top: -15px; right: -20px;}
+.modal .modal-content button img{max-width: 30px;}
+
+.modal#memorygameid .modal-body{text-align: center;}
+.modal#memorygameid #memorygameredirect{padding: 0px 30px 10px;}
+.modal#modalMatch .modal-body{text-align: center;}
+.modal#modalMatch .modal-body .notes{color: #FFC312;}
+.modal#modalMatch .modal-body .nama{color: #000000; font-weight: bold; text-transform: capitalize; font-size: 1.75rem;}
+.modal#modalMatch .modal-body .kelas{color: #414141; font-size: 0.7rem; text-transform: uppercase; font-weight: bold;}
 
 .mw-600{max-width: 600px;}
 .mw-800{max-width: 800px;}
 .bg-red{background-color: #ED1B2F !important;}
 
-.btn{background-color: #FFC312; font-family: 'Russo One', sans-serif; color: #000; font-size: 1.3	rem; border: 5px solid #000; border-radius: 8px; padding-top: 8px; padding-bottom: 8px;display: block; width: 100%; position: relative; text-transform: uppercase;}
+.btn{background-color: #FFC312; font-family: 'Russo One', sans-serif; color: #000; font-size: 1.3rem; border: 5px solid #000; border-radius: 8px; padding-top: 8px; padding-bottom: 8px;display: block; width: 100%; position: relative; text-transform: uppercase;}
+.btn-round{border-radius: 30px;}
 .btn:before{content: ""; border-radius: 6px; border-top: 4px solid rgba(255,255,255,0.5); position: absolute; width: 100%; height: 100%; left: 0px; top: 0px;}
 .btn:after{content: ""; border-radius: 3px; border-bottom: 3px solid rgba(50,50,50,0.5); position: absolute; width: 100%; height: 100%; left: 0px; bottom: 0px;}
+.btn.btn-round:before{content: ""; border-radius: 6px; border-top: 4px solid rgba(255,255,255,0.5); position: absolute; width: 85%; height: 100%; left: 50%; transform: translateX(-50%); top: 0px;}
+.btn.btn-round:after{content: ""; border-radius: 3px; border-bottom: 3px solid rgba(50,50,50,0.5); position: absolute; width: 85%; height: 100%; left: 50%;  transform: translateX(-50%); bottom: 0px;}
 .btn-big{font-size: 1.5rem;}
 .btn-small{font-size: 0.8rem; display: inline;}
 .btn-red{background-color: #ED1B2F; color: #FFF;}
@@ -70,3 +84,20 @@ h1, h2, h3, h4{font-family: 'Russo One', sans-serif;}
 .dashboard .rider-image .name{color: #FFF; text-align: center; font-size: 1.5rem; text-transform: capitalize; font-family: 'Montserrat';}
 
 .add-life{background-color: #ea2117; min-height: 100%;}
+.add-life h1{color: #FFF; padding-top: 15px; padding-bottom: 15px;}
+.add-life .item{ padding: 15px; padding-bottom: 0PX;}
+.add-life .item a{background-color: #FFF; display: block; padding: 15px;}
+.add-life .item .item-share{background-color: #FFF; font-family: 'Russo One', sans-serif; color: #000; font-size: 1.3	rem; border: 5px solid #000; border-radius: 8px; padding-top: 15px; padding-bottom: 15px;display: block; width: 100%; position: relative; text-transform: uppercase; }
+.add-life .item .item-share a{padding: 0px; background-color: transparent;}
+.add-life .item .item-share a img{width: 40px;}
+
+.select-class-rider{background-color: #ea2117; text-align: center;}
+.select-class-rider .card{border: 3px solid #000; margin-bottom: 20px; position: relative;}
+.select-class-rider .card.not-active:after{content: ""; width: 100%; height: 100%; background-color: rgba(0,0,0,50%); position: absolute; top: 0px; left: 0px;}
+.select-class-rider .item .card-body{padding-bottom: 0px;}
+.select-class-rider .item .card-body img{}
+.select-class-rider .item .card-body p{text-transform: uppercase; padding-bottom: 0px; margin-bottom: 0px; font-family: 'Russo One', sans-serif; font-size: 0.75rem;}
+.select-class-rider .item .cta-area a{margin-bottom: -25px; max-width: 90%; z-index: 9;}
+.select-class-rider .item .cta-area img{max-width: 30px; padding-right: 10px;}
+
+.memory-game{min-height: 100%; padding-bottom: 150px;}

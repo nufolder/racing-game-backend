@@ -20,7 +20,7 @@ function initPreload(){
 	loader = new createjs.LoadQueue(false);
 	manifest=[
 			{src:'assets/background.png', id:'background'},
-			{src:'assets/logo.png', id:'logo'},
+			{src:'assets/logo-generasi-juara.png', id:'logo'},
 			{src:'assets/button_start.png', id:'buttonStart'},
 			
 			{src:'assets/smoke_Spritesheet2x1.png', id:'itemSmoke'},
@@ -44,7 +44,10 @@ function initPreload(){
 			{src:'assets/button_sound_on.png', id:'buttonSoundOn'},
 			{src:'assets/button_sound_off.png', id:'buttonSoundOff'},
 			{src:'assets/button_exit.png', id:'buttonExit'},
-			{src:'assets/button_settings.png', id:'buttonSettings'}];
+			{src:'assets/button_settings.png', id:'buttonSettings'},
+			{src:'assets/badge_life.png', id:'badgeLife'},
+			{src:'assets/badge_ticket.png', id:'badgeTicket'},
+			{src:'assets/badge_coin.png', id:'badgeCoin'}];
 	
 	for(var key in spritesData) {
 		if(spritesData[key].src != undefined)

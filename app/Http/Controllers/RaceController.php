@@ -82,7 +82,7 @@ class RaceController extends Controller
                     'heal' => $min,
                 ]
             );
-            return response()->json(['response' => 'heal - 1', 'status' => 'ok']);
+            return response()->json(['response' => 'heal - 1', 'status' => 'ok', 'life' => $race->heal]);
         } else {
             $redirect = url('user');
             $message = 'Heal anda 0 !';

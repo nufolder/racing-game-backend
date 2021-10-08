@@ -1,13 +1,13 @@
 const cardsArray = [{
         name: 'card01',
         rider: 'rheza danica ahrens',
-        class: 'ARRC',
+        class: 'Asian Road Racing Championship',
         img: 'photo-riders/rheza-danica-ahrens-image-3.png',
     },
     {
         name: 'card02',
         rider: 'azryan dheyo wahyumaniadi',
-        class: 'ARRC',
+        class: 'Asian Road Racing Championship',
         img: 'photo-riders/azryan-dheyo-wahyumaniadi-image-1.png',
     },
     {
@@ -19,19 +19,19 @@ const cardsArray = [{
     {
         name: 'card04',
         rider: 'mario suryo aji',
-        class: 'CEV',
+        class: 'Junior Motor CEV',
         img: 'photo-riders/mario-suryo-aji-image-2.png',
     },
     {
         name: 'card05',
         rider: 'veda ega pratama',
-        class: 'TTC',
+        class: 'Thailand Talent Cup',
         img: 'photo-riders/veda-ega-pratama-image-1.png',
     },
     {
         name: 'card06',
         rider: 'irfan ardiansyah',
-        class: 'ARRC',
+        class: 'Asian Road Racing Championship',
         img: 'photo-riders/irfan-ardiansyah-image-2.png',
     },
     // 
@@ -135,12 +135,12 @@ const gameFinished = () => {
         url: "/get-memory-game",
         success: function(resp) {
             console.log("Respond was: ", resp)
-            $('.modaltitlememorygame').text('Selamat !!');
+            $('.modaltitlememorygame').text('Selesai!');
             $('.textfinishmemorygame').text(resp.response);
             if (resp.status == 1) {
-                document.getElementById('memorygameredirect').innerHTML = `<a href="user" type="button" class="btn btn-secondary">Oke</a>`;
+                document.getElementById('memorygameredirect').innerHTML = `<a href="user" type="button" class="btn">Oke</a>`;
             } else {
-                document.getElementById('memorygameredirect').innerHTML = `<a type="button" class="btn btn-secondary" data-bs-dismiss="modal">Oke</a>`;
+                document.getElementById('memorygameredirect').innerHTML = `<a type="button" class="btn" data-bs-dismiss="modal">Oke</a>`;
             }
             var myModal = new bootstrap.Modal(document.getElementById('memorygameid'), {
                 keyboard: false
@@ -185,7 +185,8 @@ const match = () => {
         keyboard: false
     });
     myMatch.show();
-    $('.nama').text(`${getRider.toLocaleUpperCase()} (${getClass})`);
+    $('.nama').text(`${getRider}`);
+    $('.kelas').text(`KELAS ${getClass}`);
     setTimeout(function() {
         myMatch.hide();
     }, 3000);

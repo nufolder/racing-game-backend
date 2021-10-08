@@ -1,54 +1,49 @@
 @extends('layouts.app-user')
 
 @section('content')
-{{-- <script src="https://use.fontawesome.com/be9f755eb3.js"></script> --}}
 <link rel="stylesheet" href="{{ asset('minigames/memorygame.css') }}">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
 
-<div class="container pt-3 bg-white">
-    <div class="row d-flex justify-content-center">
-        <div class="col-md-8">
-            <div class="card">
-                <div class="card-body">
-                    <div class="pb-2">
-                        <h4 class="text-center">Memory Game</h4>
-                    </div>
+<div class="container pt-3 bg-red memory-game">
+        <div class="col-md-12">
+        <div class="p-3">
+            <img src="{{ asset('images/logo-generasi-juara.png') }}" class="img-fluid">
+            <h1 class="text-center mt-3 text-white">
+                <!-- <a href="" data-bs-toggle="modal" data-bs-target="#memorygameid"> -->
+                    Uji Memori Kamu
+                <!-- </a> -->
+            </h1>
+        </div>
 
-                    <div class="modal fade" id="memorygameid" tabindex="-1" aria-labelledby="myModal"
-                        aria-hidden="true">
-                        <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
-                            <div class="modal-content">
-                                <div class="modal-header">
-                                    <h5 class="modal-title modaltitlememorygame" id="exampleModalLabel">
-                                        Congratulations</h5>
-                                    <button type="button" onclick="resetGame();" class="btn-close"
-                                        data-bs-dismiss="modal" aria-label="Close"></button>
-                                </div>
-                                <div class="modal-body">
-                                    <p class="textfinishmemorygame"></p>
-                                </div>
-                                <div id="memorygameredirect" class="modal-footer">
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+        <div id="game"></div>
 
-                    <div id="game"></div>
+        </div>
+</div>
 
-                </div>
+<!-- Modal -->
+<div class="modal fade" id="memorygameid" tabindex="-1" aria-labelledby="myModal" aria-hidden="true" data-bs-backdrop="static">
+    <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable justify-content-center">
+        <div class="modal-content">
+            <div class="modal-body">
+                <!-- <button type="button" onclick="resetGame();" data-bs-dismiss="modal"><img src="{{ asset('images/ico-close.png') }}"></button> -->
+                <h5 class="modal-title modaltitlememorygame" id="exampleModalLabel">Selesai!</h5>
+                <p class="textfinishmemorygame"></p>
+            </div>
+            <div id="memorygameredirect">
             </div>
         </div>
     </div>
 </div>
 
-<!-- Modal -->
 <div class="modal fade" id="modalMatch" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-    <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-dialog modal-dialog-centered justify-content-center">
         <div class="modal-content">
-            <div class="modal-header">
-                <h5 class="modal-title nama" id="exampleModalLabel">Match</h5>
-                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            <div class="modal-body">
+                <div class="notes">Kamu berhasil mencocokkan</div>
+                <div class="nama" id="exampleModalLabel"></div>
+                <div class="kelas" id="exampleModalLabel1"></div>
+                <button type="button" data-bs-dismiss="modal" aria-label="Close"><img src="{{ asset('images/ico-close.png') }}"></button>
             </div>
         </div>
     </div>
