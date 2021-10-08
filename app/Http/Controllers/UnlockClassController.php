@@ -68,7 +68,7 @@ class UnlockClassController extends Controller
                         $message = 'Kelas TTC telah di unlock !!';
                     }
                 } else {
-                    $message = 'Coin anda tidak cukup';
+                    $message = 'Coin Anda Tidak Cukup';
                 }
                 break;
 
@@ -156,7 +156,7 @@ class UnlockClassController extends Controller
                         $message = 'Kelas ATC telah di unlock !!';
                     }
                 } else {
-                    $message = 'Coin anda tidak cukup';
+                    $message = 'Coin Anda Tidak Cukup';
                 }
                 break;
 
@@ -244,7 +244,7 @@ class UnlockClassController extends Controller
                         $message = 'Kelas ARRC telah di unlock !!';
                     }
                 } else {
-                    $message = 'Coin anda tidak cukup';
+                    $message = 'Coin Anda Tidak Cukup';
                 }
                 break;
 
@@ -290,7 +290,7 @@ class UnlockClassController extends Controller
                         $message = 'Kelas CEV telah di unlock !!';
                     }
                 } else {
-                    $message = 'Coin anda tidak cukup';
+                    $message = 'Coin Anda Tidak Cukup';
                 }
                 break;
 

@@ -21,8 +21,8 @@
 .carde,
 .front,
 .back {
-    height: 80px;
-    width: 80px;
+    height: 90px;
+    width: 90px;
     -webkit-transition: all .5s ease;
     -o-transition: all .5s ease;
     transition: all .5s ease;
@@ -42,9 +42,16 @@
 }
 
 .front {
-    background: #1E3746;
+    background: #FFC312;
     overflow: hidden;
+    background-image: url('ico-helmet.png');
+    background-repeat: no-repeat;
+    background-position: center center;
+    border: 5px solid #000;
 }
+.front:before{content: ""; border-radius: 6px; border-top: 4px solid rgba(255,255,255,0.5); position: absolute; width: 100%; height: 100%; left: 0px; top: 0px;}
+.front:after{content: ""; border-radius: 3px; border-bottom: 3px solid rgba(50,50,50,0.5); position: absolute; width: 100%; height: 100%; left: 0px; bottom: 0px;}
+
 
 .back {
     -webkit-transform: rotateY(180deg);
@@ -53,6 +60,7 @@
     background-size: 100%;
     background-repeat: no-repeat;
     background-position: 50% 50%;
+    border: 3px solid #000;
 }
 
 .selected {

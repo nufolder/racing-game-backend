@@ -90,6 +90,11 @@ var coinData = {
         coin: coin_value_data
     } //collect coin score
 
+var lifeData = {
+        text: '[NUMBER]', //score display text
+        life: 0
+    } //collect coin score
+let lifeCounter = 0;
 var fuelData = {
     text: 'FUEL:', //fuel display text
     total: 100, //total fuel
@@ -183,7 +188,7 @@ var roadLengthData = {
     curve: { none: 0, easy: 2, medium: 4, hard: 6 }
 };
 
-var playerData = { score: 0, displayScore: 0, coin: 0, displayCoin: 0 };
+var playerData = { score: 0, displayScore: 0, coin: 0, displayCoin: 0, life: 0 };
 var gameData = { paused: true, nitroMode: false, nitroTimer: 0, fuel: 0, fuelUpdate: false, accel: false, penalty: false, penaltyTime: 0, brakeSound: false, accelSound: false, stopSound: false, ended: false };
 var keyData = { left: false, right: false, accelerate: false, brake: false };
 
@@ -485,6 +490,12 @@ function startGameCheck() {
         url: "/start-game-check",
         success: function(resp) {
             console.log("Respond was: ", resp)
+            // console.log(resp.life);
+            // lifeData.text.replace('[NUMBER]', addCommas(resp.life));
+            lifeCounter = resp.life;
+            lifeData.life = resp.life + 1;
+            updateGameStatus(); 
+
             if (resp.status == 'no') {
                 location.href = resp.response;
             }
@@ -1447,6 +1458,7 @@ function updateGameStatus() {
     //score
     scoreTxt.text = scoreShadowTxt.text = scoreData.text.replace('[NUMBER]', addCommas(playerData.score));
     coinTxt.text = coinShadowTxt.text = coinData.text.replace('[NUMBER]', addCommas(playerData.coin));
+    lifeTxt.text = lifeData.text.replace('[NUMBER]', addCommas(lifeData.life));
 
     //fuel
     var fuelPercent = (gameData.fuel / fuelData.total) * fuelData.bar.width - (fuelData.bar.space * 2);

@@ -10,6 +10,8 @@ var canvasH=0;
  * START GAME CANVAS - This is the function that runs to setup game canvas
  * 
  */
+
+ 
 function initGameCanvas(w,h){
 	var gameCanvas = document.getElementById("gameCanvas");
 	gameCanvas.width = w;
@@ -51,6 +53,8 @@ function buildGameCanvas(){
 	
 	bg = new createjs.Bitmap(loader.getResult('background'));
 	logo = new createjs.Bitmap(loader.getResult('logo'));
+	logo.x = canvasW/2 - 234;
+	logo.y = canvasH/2 - 200;
 	
 	buttonStart = new createjs.Bitmap(loader.getResult('buttonStart'));
 	centerReg(buttonStart);
@@ -132,8 +136,17 @@ function buildGameCanvas(){
 	scoreTxt.textAlign = "left";
 	scoreTxt.textBaseline='alphabetic';
 	scoreTxt.text = scoreData.text;
-	scoreTxt.x = canvasW/100 * 2;
-	scoreTxt.y = canvasH/100 * 5;
+	scoreTxt.x = canvasW/100 * 5;
+	scoreTxt.y = canvasH/100 * 5;	
+    var scoreBackground = new createjs.Shape();
+    scoreBackground.graphics.beginFill('red')
+        .beginStroke()
+        .drawRoundRect (canvasW/100 * 1, canvasH/100 * 2, 280,40,20 )
+        .endStroke();
+    badgeTicket = new createjs.Bitmap(loader.getResult('badgeTicket'));
+	badgeTicket.x = canvasW/100 * 0.5 
+	badgeTicket.y = canvasH/100 * 2.5;
+
 	
 	scoreShadowTxt = new createjs.Text();
 	scoreShadowTxt.font = "30px dimitri_swankregular";
@@ -150,9 +163,34 @@ function buildGameCanvas(){
 	coinTxt.textAlign = "left";
 	coinTxt.textBaseline='alphabetic';
 	coinTxt.text = coinData.text;
-	coinTxt.x = canvasW/100 * 2;
+	coinTxt.x = canvasW/100 * 5;
 	coinTxt.y = canvasH/100 * 10;
-	
+    var coinBackground = new createjs.Shape();
+    coinBackground.graphics.beginFill('red')
+        .beginStroke()
+        .drawRoundRect (canvasW/100 * 1, canvasH/100 * 7, 180,40,20 )
+        .endStroke();
+    badgeCoin = new createjs.Bitmap(loader.getResult('badgeCoin'));
+	badgeCoin.x = canvasW/100 * 0.5 
+	badgeCoin.y = canvasH/100 * 7.5;
+
+	lifeTxt = new createjs.Text();
+	lifeTxt.font = "30px dimitriregular";
+	lifeTxt.color = "#FFFFFF";
+	lifeTxt.textAlign = "left";
+	lifeTxt.textBaseline='alphabetic';
+	lifeTxt.text = lifeData.text;
+	lifeTxt.x = canvasW/100 * 6;
+	lifeTxt.y = canvasH/100 * 15;
+    var lifeBackground = new createjs.Shape();
+    lifeBackground.graphics.beginFill('red')
+        .beginStroke()
+        .drawRoundRect (canvasW/100 * 1, canvasH/100 * 12, 100,40,20 )
+        .endStroke();
+    lifeBadge = new createjs.Bitmap(loader.getResult('badgeLife'));
+	lifeBadge.x = canvasW/100 * 0.5 
+	lifeBadge.y = canvasH/100 * 12.5;
+
 	coinShadowTxt = new createjs.Text();
 	coinShadowTxt.font = "30px dimitri_swankregular";
 	coinShadowTxt.color = "#ed2633";
@@ -248,7 +286,7 @@ function buildGameCanvas(){
 	
 	//result
 	resultTitleTxt = new createjs.Text();
-	resultTitleTxt.font = "120px dimitriregular";
+	resultTitleTxt.font = "italic 120px dimitriregular";
 	resultTitleTxt.color = "#333333";
 	resultTitleTxt.textAlign = "center";
 	resultTitleTxt.textBaseline='alphabetic';
@@ -259,7 +297,7 @@ function buildGameCanvas(){
 	resultTitleTxt.lineHeight = 100;
 	
 	resultTitleShadowTxt = new createjs.Text();
-	resultTitleShadowTxt.font = "120px dimitri_swankregular";
+	resultTitleShadowTxt.font = "italic 120px dimitri_swankregular";
 	resultTitleShadowTxt.color = "#FFC312";
 	resultTitleShadowTxt.textAlign = "center";
 	resultTitleShadowTxt.textBaseline='alphabetic';
@@ -398,7 +436,7 @@ function buildGameCanvas(){
 	mainContainer.addChild(logo, buttonStart);
 	gameStatusContainer.addChild(gameStatusShadowTxt, gameStatusTxt);
 	gameContainer.addChild(smokeAnimate, fireAnimate, gameStatusContainer, statusContainer, instructionShadowTxt, instructionTxt, itemTouchLeft, itemTouchRight);
-	statusContainer.addChild(scoreShadowTxt, scoreTxt, coinShadowTxt, coinTxt);
+	statusContainer.addChild(scoreBackground, badgeTicket, badgeCoin, scoreShadowTxt, scoreTxt, coinBackground,badgeCoin,  coinShadowTxt, coinTxt, lifeBackground, lifeTxt, lifeBadge);
 	resultContainer.addChild(resultBackground, resultTitleShadowTxt, resultTitleTxt, resultScoreTxt, resultCoinTxt, buttonRestart, buttonOut);
 	
 	if(shareEnable){
