@@ -60,7 +60,7 @@ class ChanceToPlayRacingController extends Controller
             );
             return response()->json(
                 [
-                    'response' => 'Kamu Mendapatkan 1 Heal !!',
+                    'response' => 'Kamu Mendapatkan 1 Nyawa !!',
                     'status' => 1
                 ]
             );
@@ -93,7 +93,7 @@ class ChanceToPlayRacingController extends Controller
             );
             return response()->json(
                 [
-                    'response' => 'Kamu Mendapatkan 1 Heal !!',
+                    'response' => 'Kamu Mendapatkan 1 Nyawa !!',
                     'status' => 1
                 ]
             );
@@ -127,7 +127,7 @@ class ChanceToPlayRacingController extends Controller
 
             return response()->json(
                 [
-                    'response' => 'Kamu Mendapatkan 1 Heal !!',
+                    'response' => 'Kamu Mendapatkan 1 Nyawa !!',
                     'status' => 1
                 ]
             );
@@ -160,7 +160,7 @@ class ChanceToPlayRacingController extends Controller
             );
             return response()->json(
                 [
-                    'response' => 'Kamu Mendapatkan 1 Heal !!',
+                    'response' => 'Kamu Mendapatkan 1 Nyawa !!',
                     'status' => 1
                 ]
             );

@@ -62,7 +62,7 @@ class LoginController extends Controller
                     'heal' => 3
                 ]
             );
-            return 'Kamu Mendapatkan 3 Heal !!';
+            return 'Kamu Mendapatkan 3 Nyawa !!';
         } else {
             return '';
         }
@@ -96,7 +96,7 @@ class LoginController extends Controller
 
         if (Auth::check()) {
             $checkLogin =  $this->checkLogin();
-            // $message = 'Kamu mendapatkan 3 Heal !!';
+            // $message = 'Kamu mendapatkan 3 Nyawa !!';
             session()->flash('message', $checkLogin);
             return redirect('home');
         } else {

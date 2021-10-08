@@ -95,7 +95,7 @@
                                 <div class="col-md-4">
                                     <div class="mb-3">
                                         <label class="form-label">
-                                            Heal
+                                            Nyawa
                                         </label>
                                         <input type="text" class="form-control form-control-sm" name="heal"
                                             value="{{ $user->race->heal }}">

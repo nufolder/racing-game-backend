@@ -65,7 +65,7 @@
                                         </div>
                                     </div>
                                     @error('password')
-                                    <span class="invalid-feedback" role="alert" >
+                                    <span class="invalid-feedback" role="alert">
                                         <strong>{{ $message }}</strong>
                                     </span>
                                     @enderror
@@ -79,7 +79,7 @@
                                     name="password_confirmation" required autocomplete="off"
                                     placeholder="Konfirmasi Password">
                                 @error('password')
-                                <span class="invalid-feedback" role="alert" >
+                                <span class="invalid-feedback" role="alert">
                                     <strong>{{ $message }}</strong>
                                 </span>
                                 @enderror
@@ -87,7 +87,8 @@
 
                             <div class="form-group pb-2">
                                 <label class="" for="autoSizingSelect">Tipe Motor Kamu Sekarang</label>
-                                <select class="form-select form-control form-select-sm @error('motor_cycle') is-invalid @enderror"
+                                <select
+                                    class="form-select form-control form-select-sm @error('motor_cycle') is-invalid @enderror"
                                     name="motor_cycle" id="autoSizingSelect">
                                     <option value="Vario" {{ old('title') == 'Vario' ? 'selected' : '' }}>
                                         Vario
@@ -160,6 +161,13 @@
                                     <strong>{{ $message }}</strong>
                                 </span>
                                 @enderror
+                            </div>
+
+                            <div class="form-group pb-2">
+                                <label class="" for="name">Instagram</label>
+                                <input id="name" type="text" class="form-control form-control-sm" name="instagram"
+                                    value="{{ old('instagram') }}" required autocomplete="off" autofocus
+                                    placeholder="@username">
                             </div>
                         </div>
 

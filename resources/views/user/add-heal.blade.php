@@ -1,7 +1,7 @@
 @extends('layouts.app-user')
 
 @section('title')
-<title>Tambah Heal</title>
+<title>Tambah Nyawa</title>
 @endsection
 
 @section('content')
@@ -42,6 +42,7 @@
             </a>
         </div>
 
+
         @if ($statusM == false)
         <div class="item disabled">
             <a href="" class="btn">
@@ -56,6 +57,7 @@
                     <div class="col-8">
                         <h5 class="card-title text-center">GAME</h5>
                         <small class="card-text">UJI MEMORI KAMU DAN DAPATKAN NYAWA +1</small>
+
                     </div>
                 </div>
             </a>
@@ -66,6 +68,7 @@
             <a href="" class="btn">
         @else
         <div class="item">
+
             <a href="{{ url('video') }}" class="btn">
         @endif
                 <div class="row">
@@ -75,12 +78,14 @@
                     <div class="col-8">
                         <h5 class="card-title text-center">VIDEO</h5>
                         <small class="card-text">TONTON VIDEO DAN DAPATKAN NYAWA +1</small>
+
                     </div>
                 </div>
             </a>
         </div>
 
         <div class="item">
+
             <div class="item-share">
                 <div class="d-flex flex-wrap ">
                     <div class="col-5 d-flex flex-wrap justify-content-between px-3 align-items-center">
@@ -89,6 +94,7 @@
                     </div>
                     <div class="col-7">
                         <small class="card-text">bagikan melalui sosmed kamu DAN dapatkan nyawa +1</small>
+
                     </div>
                 </div>
             </div>
