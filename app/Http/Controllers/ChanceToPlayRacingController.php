@@ -67,7 +67,7 @@ class ChanceToPlayRacingController extends Controller
         } else {
             return response()->json(
                 [
-                    'response' => 'Kamu Telah Memainkan Game ini, Hari ini!!',
+                    'response' => 'Tapi kamu telah memainkan game Memory hari ini, dan tidak mendapatkan Nyawa',
                     'status' => 0
                 ]
             );

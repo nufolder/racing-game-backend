@@ -17,96 +17,92 @@
         <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
     </div>
     @endif
+    <div class="p-3">
+        <img src="{{ asset('images/logo-generasi-juara.png') }}" class="img-fluid">
+    </div>
     <h1 class="text-center">Tambah Nyawa</h1>
-    <div class="container  ">
+    <div class="container bg-red pb-5">
+
+        @if ($statusT == false)
+        <div class="item disabled">
+            <a href="" class="btn">
+        @else
         <div class="item">
-
-            @if ($statusT == false)
-            <a class="disabled">
-                <div class="card h-100 text-dark bg-light mb-3">
-                    <div class="card-body">
-                        <h5 class="card-title text-center">Trivia</h5>
-                        <small class="card-text">Jawab Pertanyaan, akan mendapatkan 1 Nyawa !</small>
+            <a href="{{ url('trivia') }}" class="btn">
+        @endif
+                <div class="row">
+                    <div class="col-4">
+                        <img src="images/ico-trivia.png" class="img-fluid"> 
+                    </div>
+                    <div class="col-8">
+                        <h5 class="card-title text-center">TRIVIA</h5>
+                        <small class="card-text">JAWAB TRIVIA DAN DAPATKAN NYAWA +1</small>
                     </div>
                 </div>
             </a>
-            @else
-            <a href="{{ url('trivia') }}">
-                <div class="card h-100 text-white bg-primary mb-3">
-                    <div class="card-body">
-                        <h5 class="card-title text-center">Trivia</h5>
-                        <small class="card-text">Jawab Pertanyaan, akan mendapatkan 1 Nyawa !</small>
-                    </div>
-                </div>
-            </a>
-            @endif
-
         </div>
+
+
+        @if ($statusM == false)
+        <div class="item disabled">
+            <a href="" class="btn">
+        @else
         <div class="item">
+            <a href="{{ url('memory-game') }}" class="btn">
+        @endif
+                <div class="row">
+                    <div class="col-4">
+                        <img src="images/ico-game.png" class="img-fluid"> 
+                    </div>
+                    <div class="col-8">
+                        <h5 class="card-title text-center">GAME</h5>
+                        <small class="card-text">UJI MEMORI KAMU DAN DAPATKAN NYAWA +1</small>
 
-            @if ($statusM == false)
-            <a class="disabled">
-                <div class="card h-100 text-dark bg-light mb-3">
-                    <div class="card-body">
-                        <h5 class="card-title text-center">Memory Game</h5>
-                        <small>Cari Persamaan, akan mendapatkan 1 Nyawa !</small>
                     </div>
                 </div>
             </a>
-            @else
-            <a href="{{ url('memory-game') }}">
-                <div class="card h-100 text-white bg-primary mb-3">
-                    <div class="card-body">
-                        <h5 class="card-title text-center">Memory Game</h5>
-                        <small>Cari Persamaan, akan mendapatkan 1 Nyawa !</small>
-                    </div>
-                </div>
-            </a>
-            @endif
-
         </div>
-        <div class="item">
-            @if ($statusV == false)
-            <a class="disable">
-                <div class="card h-100 text-dark bg-light mb-3">
-                    <div class="card-body">
-                        <h5 class="card-title text-center">Video</h5>
-                        <small>Tonton video, akan mendapatkan 1 Nyawa !</small>
-                    </div>
-                </div>
-            </a>
-            @else
-            <a href="{{ url('video') }}">
-                <div class="card h-100 text-white bg-primary mb-3">
-                    <div class="card-body">
-                        <h5 class="card-title text-center">Video</h5>
-                        <small>Tonton video, akan mendapatkan 1 Nyawa !</small>
-                    </div>
-                </div>
-            </a>
-            @endif
 
-        </div>
+        @if ($statusV == false)
+        <div class="item disabled">
+            <a href="" class="btn">
+        @else
         <div class="item">
-            <div class="card h-100 text-dark bg-light mb-3">
-                <div class="card-body">
-                    <h5 class="card-title text-center">Share</h5>
-                    <small>Share event ke facebook atau twitter, akan mendapatkan 1
-                        Nyawa !
-                    </small>
-                    <div class="d-grid gap-2 pt-2">
-                        <a id="shareBtn" class="btn btn-sm btn-success">
-                            Share Facebook
-                        </a>
-                        <a href="https://twitter.com/intent/tweet?url={{ url('/') }}" target="_blank"
-                            class="btn btn-sm btn-success">
-                            Share twitter
-                        </a>
+
+            <a href="{{ url('video') }}" class="btn">
+        @endif
+                <div class="row">
+                    <div class="col-4">
+                        <img src="images/ico-video.png" class="img-fluid"> 
+                    </div>
+                    <div class="col-8">
+                        <h5 class="card-title text-center">VIDEO</h5>
+                        <small class="card-text">TONTON VIDEO DAN DAPATKAN NYAWA +1</small>
+
+                    </div>
+                </div>
+            </a>
+        </div>
+
+        <div class="item">
+
+            <div class="item-share">
+                <div class="d-flex flex-wrap ">
+                    <div class="col-5 d-flex flex-wrap justify-content-between px-3 align-items-center">
+                        <a id="shareBtn"><img src="{{ asset('images/btn-facebook.png') }}"></a>
+                        <a href="https://twitter.com/intent/tweet?url={{ url('/') }}" target="_blank" ><img src="{{ asset('images/btn-twitter.png') }}"></a>
+                    </div>
+                    <div class="col-7">
+                        <small class="card-text">bagikan melalui sosmed kamu DAN dapatkan nyawa +1</small>
+
                     </div>
                 </div>
             </div>
-
         </div>
+        <div class="mt-4">
+            <center><a href="{{ url('home') }}" class="btn w-50">HOME</a></center>
+        </div>
+
     </div>
 </div>
 
