@@ -42,7 +42,7 @@
                 <div class="col-6 item p-2">
                     <div class="card @if ($atc == false) {{ 'not-active' }} @endif">
                         <div class="card-body">
-                            <p class="card-text text-center small">asia<br>talent cup</p>
+                            <p class="card-text text-center small">asia talent cup</p>
                             <img src="{{ asset('images/logo-atc.jpg') }}" class="img-fluid">
                         </div>
                         <div class="cta-area text-center bg-transparent border-light">
