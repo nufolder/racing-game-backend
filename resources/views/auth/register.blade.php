@@ -87,7 +87,7 @@
 
                             <div class="form-group pb-2">
                                 <label class="" for="autoSizingSelect">Tipe Motor Kamu Sekarang</label>
-                                <select
+                                <select onchange="checkSelectType(this);"
                                     class="form-select form-control form-select-sm @error('motor_cycle') is-invalid @enderror"
                                     name="motor_cycle" id="autoSizingSelect">
                                     <option value="Vario" {{ old('title') == 'Vario' ? 'selected' : '' }}>
@@ -99,10 +99,19 @@
                                     <option value="CBR 150" {{ old('motor_cycle') == 'CBR 150' ? 'selected' : '' }}>
                                         CBR 150
                                     </option>
-                                    <option value="Lainnya" {{ old('motor_cycle') == 'Lainnya' ? 'selected' : '' }}>
+                                    <option id="opSelect" value=""
+                                        {{ old('motor_cycle') == 'Lainnya' ? 'selected' : '' }}>
                                         Lainnya
                                     </option>
                                 </select>
+
+                                <div id="ifSel" style="display: none;">
+                                    <label class="mt-2">Tipe Motor</label>
+                                    <input oninput="liveInputType()" class="form-control form-control-sm"
+                                        type="text" /><br />
+                                </div>
+
+
                                 @error('password')
                                 <span class="invalid-feedback" role="alert">
                                     <strong>{{ $message }}</strong>
@@ -151,11 +160,14 @@
                                     <option value="2010" {{ old('year_motor_cycle') == '2010' ? 'selected' : '' }}>
                                         2010
                                     </option>
-                                    <option value="lainnya"
-                                        {{ old('year_motor_cycle') == 'lainnya' ? 'selected' : '' }}>
-                                        Lainnya
-                                    </option>
                                 </select>
+
+                                <div id="ifSelYear" style="display: none;">
+                                    <label class="mt-2">Tahun Motor</label>
+                                    <input oninput="liveInputYear()" class="form-control form-control-sm"
+                                        type="text" /><br />
+                                </div>
+
                                 @error('year_motor_cycle')
                                 <span class="invalid-feedback" role="alert">
                                     <strong>{{ $message }}</strong>
@@ -164,10 +176,26 @@
                             </div>
 
                             <div class="form-group pb-2">
-                                <label class="" for="name">Instagram</label>
-                                <input id="name" type="text" class="form-control form-control-sm" name="instagram"
-                                    value="{{ old('instagram') }}" required autocomplete="off" autofocus
-                                    placeholder="@username">
+                                <label class="" for="instagram">Instagram</label>
+                                <input id="instagram" type="text" class="form-control form-control-sm" name="instagram"
+                                    value="{{ old('instagram') }}" autocomplete="off" autofocus placeholder="@username">
+                                @error('instagram')
+                                <span class="invalid-feedback" role="alert">
+                                    <strong>{{ $message }}</strong>
+                                </span>
+                                @enderror
+                            </div>
+
+                            <div class="form-group pb-2">
+                                <label class="" for="phone_number">Nomor Handphone</label>
+                                <input id="phone_number" type="text" class="form-control form-control-sm"
+                                    name="phone_number" value="{{ old('phone_number') }}" autocomplete="off" autofocus
+                                    placeholder="0812312312">
+                                @error('phone_number')
+                                <span class="invalid-feedback" role="alert">
+                                    <strong>{{ $message }}</strong>
+                                </span>
+                                @enderror
                             </div>
                         </div>
 
