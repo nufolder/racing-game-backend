@@ -102,3 +102,18 @@ const ranVideoArr = ["minigames/YukSemangat.mp4", "minigames/SkuadAHRT.mp4"];
 const randomVal = Math.floor(Math.random() * ranVideoArr.length);
 let mp4Vid = document.getElementById("myVideo");
 mp4Vid.src = ranVideoArr[randomVal];
+
+function checkSelectType(thatSel) {
+    const node = document.getElementById("ifSel");
+    if (thatSel.options[thatSel.selectedIndex].text == "Lainnya") {
+        node.style.display = "block";
+    } else {
+        node.style.display = "none";
+    }
+}
+
+function liveInputType() {
+    document.getElementById("opSelect").value = document.getElementById(
+        "ifSel"
+    ).value;
+}
