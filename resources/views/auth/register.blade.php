@@ -164,10 +164,26 @@
                             </div>
 
                             <div class="form-group pb-2">
-                                <label class="" for="name">Instagram</label>
-                                <input id="name" type="text" class="form-control form-control-sm" name="instagram"
-                                    value="{{ old('instagram') }}" required autocomplete="off" autofocus
-                                    placeholder="@username">
+                                <label class="" for="instagram">Instagram</label>
+                                <input id="instagram" type="text" class="form-control form-control-sm" name="instagram"
+                                    value="{{ old('instagram') }}" autocomplete="off" autofocus placeholder="@username">
+                                @error('instagram')
+                                <span class="invalid-feedback" role="alert">
+                                    <strong>{{ $message }}</strong>
+                                </span>
+                                @enderror
+                            </div>
+
+                            <div class="form-group pb-2">
+                                <label class="" for="phone_number">Nomor Handphone</label>
+                                <input id="phone_number" type="text" class="form-control form-control-sm"
+                                    name="phone_number" value="{{ old('phone_number') }}" autocomplete="off" autofocus
+                                    placeholder="0812312312">
+                                @error('phone_number')
+                                <span class="invalid-feedback" role="alert">
+                                    <strong>{{ $message }}</strong>
+                                </span>
+                                @enderror
                             </div>
                         </div>
 

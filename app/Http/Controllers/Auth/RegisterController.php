@@ -39,7 +39,8 @@ class RegisterController extends Controller
             'email.max'             => 'Email maksimal 100',
             'password.required'     => 'Password wajib diisi',
             'password.min'          => 'Password minimal 8 karakter',
-            'password.confirmed'    => 'Password tidak cocok'
+            'password.confirmed'    => 'Password tidak cocok',
+            // 'phone_number.integer'  => 'No HP harus angka',
         ];
 
         return Validator::make($data, [
@@ -48,6 +49,7 @@ class RegisterController extends Controller
             'password'          => ['required', 'min:8', 'confirmed'],
             'motor_cycle'       => ['required'],
             'year_motor_cycle'  => ['required'],
+            // 'phone_number'      => ['integer'],
         ], $messages);
     }
 
@@ -86,12 +88,13 @@ class RegisterController extends Controller
 
     protected function create(array $data)
     {
-        // dd($data['email']);
+        // dd($data['phone_number']);
         $user =  User::create([
             'name'              => $data['name'],
             'email'             => $data['email'],
             'password'          => Hash::make($data['password']),
             'google_id'         => null,
+            'phone_number'      => $data['phone_number'],
             'instagram'         => $data['instagram'],
             'motor_cycle'       => $data['motor_cycle'],
             'year_motor_cycle'  => $data['year_motor_cycle'],
