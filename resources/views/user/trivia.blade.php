@@ -18,19 +18,18 @@
                         </div>
                         <main>
 
-                            <div class="modal fade" id="score-modal" tabindex="-1" aria-labelledby="myModal"
+                            <div class="modal fade closemodal" id="score-modal" tabindex="-1" aria-labelledby="myModal"
                                 aria-hidden="true">
                                 <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
                                     <div class="modal-content">
                                         <div class="modal-header">
-                                            <h5 class="modal-title modaltitletrivia" id="exampleModalLabel">
-                                                Congratulations</h5>
+                                            <h5 class="modal-title modaltitletrivia" id="exampleModalLabel"></h5>
                                             <button type="button" onclick="closeScoreModal()" class="btn-close"
                                                 data-bs-dismiss="modal" aria-label="Close"></button>
                                         </div>
                                         <div class="modal-body">
-                                            <p>Jawaban yang salah: <span id="wrong-answers"></span></p>
-                                            <p>Jawaban yang benar: <span id="right-answers"></span></p>
+                                            <small>Jawaban yang salah: <span id="wrong-answers"></span></small>
+                                            <small>Jawaban yang benar: <span id="right-answers"></span></small>
                                             <p class="textfinishtrivia"></p>
                                         </div>
                                         <div id="triviaredirect" class="modal-footer">
@@ -118,16 +117,9 @@
                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
                 <div class="modal-body">
-                    {{-- <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/v64KOxKVLVg" allowfullscreen></iframe> --}}
-                    {{-- <iframe
-                        src="https://www.instagram.com/p/B5h08zdAzx7/embed/captioned/"
-                        allowtransparency='true' allowfullscreen='true' frameborder='0' height='930' data-instgrm-payload-id='instagram-media-payload-0' scrolling='no' style='background: white; max-width: 540px; width: calc(100% - 2px); border-radius: 3px; border: 1px solid rgb(219, 219, 219); box-shadow: none; display: block; margin: 0px 0px 12px; min-width: 326px; padding: 0px;'>
-                    </iframe> --}}
-
                     <div id="clue-iframe-label"
-                        style=" width: 100%; border: none; overflow-y: auto; overflow-x: hidden;"
-                        frameborder="0" marginheight="0" marginwidth="0" height="100%" width="100%" scrolling="auto"
-                    >
+                        style=" width: 100%; border: none; overflow-y: auto; overflow-x: hidden;" frameborder="0"
+                        marginheight="0" marginwidth="0" height="100%" width="100%" scrolling="auto">
                     </div>
                 </div>
                 <div class="modal-footer">
