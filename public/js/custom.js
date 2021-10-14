@@ -84,8 +84,8 @@ firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
 
 let player;
 function onYouTubeIframeAPIReady() {
-    //random videp
-    const ranVideoIDArr = ["6TLlG-cREMY", "nTLABQpbZF8"];
+    //random video
+    const ranVideoIDArr = ["6TLlG-cREMY", "QoKwdxeL-JM", "_smL9s_6GF4"];
     const randomVal = Math.floor(Math.random() * ranVideoIDArr.length);
 
     player = new YT.Player("player", {
