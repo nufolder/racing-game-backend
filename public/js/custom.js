@@ -30,13 +30,7 @@ $("#show_hide_password a").on("click", function(event) {
     }
 });
 
-//video
-let videoInit = document.getElementById("myVideo");
-videoInit.addEventListener("ended", myHandler, false);
-
-function myHandler(e) {
-    console.log(e);
-    console.log("Video Finish !!");
+function videoEnd() {
     $.ajax({
         method: "GET",
         crossDomain: true,
@@ -48,6 +42,7 @@ function myHandler(e) {
             let myModal = new bootstrap.Modal(
                 document.getElementById("myModal"),
                 {
+                    backdrop: "static",
                     keyboard: false
                 }
             );
@@ -61,8 +56,8 @@ function myHandler(e) {
             } else {
                 document.getElementById(
                     "videoredirect"
-                ).innerHTML = `<a type="button" class="btn btn-secondary"
-                data-bs-dismiss="modal">Oke</a>`;
+                ).innerHTML = `<a href="user" type="button" class="btn btn-secondary"
+                >Oke</a>`;
             }
         },
         error: function(request, status, error) {
@@ -70,6 +65,7 @@ function myHandler(e) {
             let myModal = new bootstrap.Modal(
                 document.getElementById("myModal"),
                 {
+                    backdrop: "static",
                     keyboard: false
                 }
             );
@@ -79,29 +75,47 @@ function myHandler(e) {
     });
 }
 
-//disable seeking video
-let supposedCurrentTime = 0;
-videoInit.addEventListener("timeupdate", function() {
-    if (!videoInit.seeking) {
-        supposedCurrentTime = videoInit.currentTime;
-    }
-});
-videoInit.addEventListener("seeking", function() {
-    let delta = videoInit.currentTime - supposedCurrentTime;
-    if (Math.abs(delta) > 0.01) {
-        console.log("Seeking is disabled");
-        videoInit.currentTime = supposedCurrentTime;
-    }
-});
-videoInit.addEventListener("ended", function() {
-    supposedCurrentTime = 0;
-});
+//VIDEO
+const tag = document.createElement("script");
 
-//random video
-const ranVideoArr = ["minigames/YukSemangat.mp4", "minigames/SkuadAHRT.mp4"];
-const randomVal = Math.floor(Math.random() * ranVideoArr.length);
-let mp4Vid = document.getElementById("myVideo");
-mp4Vid.src = ranVideoArr[randomVal];
+tag.src = "https://www.youtube.com/iframe_api";
+const firstScriptTag = document.getElementsByTagName("script")[0];
+firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+
+let player;
+function onYouTubeIframeAPIReady() {
+    //random videp
+    const ranVideoIDArr = ["6TLlG-cREMY", "nTLABQpbZF8"];
+    const randomVal = Math.floor(Math.random() * ranVideoIDArr.length);
+
+    player = new YT.Player("player", {
+        height: "390",
+        width: "640",
+        videoId: ranVideoIDArr[randomVal],
+        playerVars: {
+            playsinline: 1,
+            controls: 0,
+            showinfo: 0,
+            rel: 0,
+            fs: 0,
+            disablekb: 1
+        },
+        events: {
+            onReady: onPlayerReady,
+            onStateChange: onPlayerStateChange
+        }
+    });
+}
+
+function onPlayerReady(event) {
+    event.target.playVideo();
+}
+
+function onPlayerStateChange(event) {
+    if (event.data == 0) {
+        videoEnd();
+    }
+}
 
 function checkSelectType(thatSel) {
     const node = document.getElementById("ifSel");
