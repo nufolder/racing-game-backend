@@ -24,7 +24,12 @@ Auth::routes();
 
 Route::get('google', 'GoogleController@redirect');
 Route::get('google/callback', 'GoogleController@callback');
-
+Route::get('privacy-policy', function () {
+    return view('user.privacy-policy');
+});
+Route::get('terms-conditions', function () {
+    return view('user.syarat-ketentuan');
+});
 
 Route::middleware(['auth'])->group(function () {
 
