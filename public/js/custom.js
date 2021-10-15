@@ -90,7 +90,7 @@ videoInit.addEventListener('ended', myHandler, false);
 function myHandler(e) {
     console.log(e);
     console.log("Video Finish !!");
-})
+}
 function videoEnd() {
     $.ajax({
         method: "GET",
