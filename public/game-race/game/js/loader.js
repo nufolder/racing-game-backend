@@ -150,3 +150,12 @@ function toggleLoader(con){
 	}
 }
 
+var myTip = [
+    "Quick Tip: AHRT adalah",
+    "Quick Tip: MARIO adalah",
+    "Quick Tip: ARRC adalah",
+    "Quick Tip: TTC adalah"
+  ];
+
+var randomItem = myTip[Math.floor(Math.random()*myTip.length)];
+document.getElementById("tip").innerHTML = randomItem;
