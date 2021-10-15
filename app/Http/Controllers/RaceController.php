@@ -60,6 +60,7 @@ class RaceController extends Controller
                 );
                 return view('user.race-rider', compact('uses_rider'));
             } else {
+
                 $message = 'Nyawa Anda sudah Habis. Mainkan <a href="'.url('add-heal').'">misi harian</a> untuk tambah nyawa';
                 session()->flash('message', $message);
                 return back()->with(['message', $message]);
@@ -85,7 +86,7 @@ class RaceController extends Controller
             return response()->json(['response' => 'heal - 1', 'status' => 'ok', 'life' => $race->heal]);
         } else {
             $redirect = url('user');
-            $message = 'Nyawa Anda sudah Habis. Mainkan misi harian untuk tambah nyawa';
+            $message = 'Nyawa Anda sudah Habis. Mainkan <a href="'.url('add-heal').'">misi harian</a> untuk tambah nyawa';
             session()->flash('message', $message);
             return response()->json(['response' => $redirect, 'status' => 'no', 'message' => $message]);
         }

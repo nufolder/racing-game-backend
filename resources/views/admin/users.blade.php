@@ -4,11 +4,6 @@
 <title>Admin</title>
 @endsection
 
-<style>
-    td {
-        font-size: 13px;
-    }
-</style>
 
 @section('content')
 
@@ -37,18 +32,30 @@
                                         <th scope="col">Motor</th>
                                         <th scope="col">Tahun Motor</th>
                                         <th scope="col">Register</th>
+                                        <th scope="col">Weekly Winner</th>
                                         <th scope="col">Aksi</th>
                                     </tr>
                                 </thead>
                                 <tbody>
                                     @foreach ($users as $key =>$value)
                                     <tr>
-                                        <td scope="row">{{ $key + $users->firstItem() }}</td>
+                                        <td scope="row" style="text-align:center;">{{ $key + $users->firstItem() }}</td>
                                         <td>{{ $value->name }}</td>
                                         <td>{{ $value->email }}</td>
                                         <td>{{ $value->motor_cycle }}</td>
                                         <td>{{ $value->year_motor_cycle }}</td>
                                         <td>{{ $value->created_at }}</td>
+                                        <td style="text-align:center;">
+                                            @if ($value->race->weekly_winner == 'off')
+                                            <span class="badge bg-danger rounded-pill">
+                                                off
+                                            </span>
+                                            @else
+                                            <span class="badge bg-primary rounded-pill">
+                                                on
+                                            </span>
+                                            @endif
+                                        </td>
                                         <td>
                                             <a href="{{ url('admin/edit-user/'.$value->id) }}">
                                                 <button class="btn btn-primary btn-sm">

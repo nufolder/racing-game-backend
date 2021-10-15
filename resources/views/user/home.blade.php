@@ -20,7 +20,7 @@
                 <li class="nav-item dropdown">
                     <a class="nav-link dropdown-toggle active" href="#" id="dropdownMenu2" data-bs-toggle="dropdown"
                         aria-expanded="false">
-                        
+
                     </a>
                     <ul class="dropdown-menu" aria-labelledby="dropdownMenu2">
                         <li>
@@ -74,7 +74,7 @@
                         <div class="photo"><img src="{{ asset('images/riders/'.$last_rider.'.png') }}"></div>
                         <div class="name">{{ $last_rider }}</div>
                     </div>
-                    
+
                     <a href="{{ url('race', $last_rider) }}" class="btn btn-red btn-big">START RACE</a>
 
                     <div class="container px-5">
@@ -148,7 +148,7 @@
 
                             <div class="tab-pane fade" id="weekly" role="tabpanel" aria-labelledby="weekly-tab">
                                 <div class="mt-3 mb-3" style="text-align: center;">
-                                    (tanggal - tanggal)
+                                    {{-- (tanggal - tanggal) --}}
                                 </div>
                                 <div class="table-responsive">
                                     <table class="table table-bordered">
@@ -156,7 +156,7 @@
                                             <tr>
                                                 <th scope="co" width="50" style="text-align: center;">#</th>
                                                 <th scope="col">Name</th>
-                                                <th scope="col">Ticket</th>
+                                                <th scope="col">Score Weekly</th>
                                             </tr>
                                         </thead>
 

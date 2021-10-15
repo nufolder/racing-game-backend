@@ -189,8 +189,7 @@ const match = () => {
     $('.kelas').text(`KELAS ${getClass}`);
     setTimeout(function() {
         myMatch.hide();
-    }, 3000);
-
+    }, 2000);
 
     if (countMatch === gameGrid.length / 2) {
         gameFinished();

@@ -76,7 +76,7 @@ class RegisterController extends Controller
             return $response;
         }
 
-        // $message = 'Kamu mendapatkan 3 Heal !!';
+        // $message = 'Kamu mendapatkan 3 Nyawa !!';
         // session()->flash('message', $message);
 
         return $request->wantsJson()
@@ -92,6 +92,7 @@ class RegisterController extends Controller
             'email'             => $data['email'],
             'password'          => Hash::make($data['password']),
             'google_id'         => null,
+            'instagram'         => $data['instagram'],
             'motor_cycle'       => $data['motor_cycle'],
             'year_motor_cycle'  => $data['year_motor_cycle'],
             'role'              => 'user',
