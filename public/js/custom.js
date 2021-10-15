@@ -35,7 +35,7 @@ $("#show_hide_password a").on("click", function(event) {
     }
 });
 
-var myModalEl = document.getElementById('ttc')
+var myModalEl = document.getElementById('ttc');
 myModalEl.addEventListener('shown.bs.modal', function (event) {
     $('#carousel-ttc').slick({
       slidesToShow: 1,
@@ -47,7 +47,7 @@ myModalEl.addEventListener('shown.bs.modal', function (event) {
     });
 })
 
-var myModalEl = document.getElementById('atc')
+var myModalEl = document.getElementById('atc');
 myModalEl.addEventListener('shown.bs.modal', function (event) {
     $('#carousel-atc').slick({
       slidesToShow: 1,
@@ -59,7 +59,7 @@ myModalEl.addEventListener('shown.bs.modal', function (event) {
     });
 })
 
-var myModalEl = document.getElementById('arrc')
+var myModalEl = document.getElementById('arrc');
 myModalEl.addEventListener('shown.bs.modal', function (event) {
     $('#carousel-arrc').slick({
       slidesToShow: 1,
@@ -71,7 +71,7 @@ myModalEl.addEventListener('shown.bs.modal', function (event) {
     });
 })
 
-var myModalEl = document.getElementById('cev')
+var myModalEl = document.getElementById('cev');
 myModalEl.addEventListener('shown.bs.modal', function (event) {
     $('#carousel-cev').slick({
       slidesToShow: 1,
