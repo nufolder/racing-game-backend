@@ -38,22 +38,24 @@
     <div class="">
         <div class="badge-area d-flex">
             <span class=" badge">                
-                <img src="{{ asset('images/badge-life.png') }}" class="medium-badge">{{ number_format($user->race->heal, 0) }} Nyawa 
+                <img src="{{ asset('images/badge-life.png') }}" class="medium-badge" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Nyawa">{{ number_format($user->race->heal, 0) }} 
                 <a href="{{ url('add-heal') }}"><img src="{{ asset('images/badge-addlife.png') }}" class="medium-badge-right"></a>
             </span>
             <span class=" badge ms-auto">
-                <img src="{{ asset('images/badge-coin.png') }}" class="small-badge">{{ number_format($user->race->coin, 0) }}
+                <img src="{{ asset('images/badge-coin.png') }}" class="small-badge" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Koin untuk unlock kelas">{{ number_format($user->race->coin, 0) }}
             </span>
             <span class=" badge">
-                <img src="{{ asset('images/badge-ticket.png') }}" class="small-badge">{{ number_format($user->race->ticket, 0) }}
+                <img src="{{ asset('images/badge-ticket.png') }}" class="small-badge" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Tiket untuk ditukar undian">{{ number_format($user->race->ticket, 0) }}
             </span>
         </div>
         <center><img src="{{ asset('images/logo-generasi-juara.png') }}" class="img-fluid py-4 mt-3"></center>
             @if (session('message'))
+            <center>
             <div class="alert alert-success alert-dismissible fade show" role="alert">
-                {{ session('message') }}
+                {!! Session::get('message') !!}
                 <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
             </div>
+            </center>
             @endif
             @if (session('status'))
             <div class="alert alert-success" role="alert">

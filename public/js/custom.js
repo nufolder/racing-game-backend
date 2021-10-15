@@ -1,3 +1,8 @@
+var tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'))
+var tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
+  return new bootstrap.Tooltip(tooltipTriggerEl)
+})
+
 //show password login
 $("#login_show_hide_password a").on('click', function(event) {
     event.preventDefault();
@@ -28,6 +33,53 @@ $("#show_hide_password a").on('click', function(event) {
     }
 });
 
+var myModalEl = document.getElementById('ttc')
+myModalEl.addEventListener('shown.bs.modal', function (event) {
+    $('#carousel-ttc').slick({
+      slidesToShow: 1,
+      autoplay: false,
+      infinite: false,
+      arrows: true,
+      adaptiveHeight: true,
+      slidesToScroll: 1    
+    });
+})
+
+var myModalEl = document.getElementById('atc')
+myModalEl.addEventListener('shown.bs.modal', function (event) {
+    $('#carousel-atc').slick({
+      slidesToShow: 1,
+      autoplay: false,
+      infinite: false,
+      arrows: true,
+      adaptiveHeight: true,
+      slidesToScroll: 1    
+    });
+})
+
+var myModalEl = document.getElementById('arrc')
+myModalEl.addEventListener('shown.bs.modal', function (event) {
+    $('#carousel-arrc').slick({
+      slidesToShow: 1,
+      autoplay: false,
+      infinite: false,
+      arrows: true,
+      adaptiveHeight: true,
+      slidesToScroll: 1    
+    });
+})
+
+var myModalEl = document.getElementById('cev')
+myModalEl.addEventListener('shown.bs.modal', function (event) {
+    $('#carousel-cev').slick({
+      slidesToShow: 1,
+      autoplay: false,
+      infinite: false,
+      arrows: true,
+      adaptiveHeight: true,
+      slidesToScroll: 1    
+    });
+})
 
 //video
 let videoInit = document.getElementById('myVideo');
