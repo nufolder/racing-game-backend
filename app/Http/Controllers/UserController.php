@@ -16,7 +16,7 @@ class UserController extends Controller
         $leaderboard = Race::with('user')->orderBy('ticket', 'desc')->limit(5)->get();
         $week_win = Race::with('user.chanceToPlayRacing')
             ->where('weekly_winner', "on")
-            ->orderBy('ticket', 'desc')
+            ->orderBy('score_weekly', 'desc')
             ->limit(10)
             ->get();
         $last_rider = $user->race->last_rider;
