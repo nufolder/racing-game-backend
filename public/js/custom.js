@@ -35,8 +35,8 @@ $("#show_hide_password a").on("click", function(event) {
     }
 });
 
-var myModalEl = document.getElementById('ttc');
-myModalEl.addEventListener('shown.bs.modal', function (event) {
+var myModal1 = document.getElementById('ttc');
+myModal1.addEventListener('shown.bs.modal', function (event) {
     $('#carousel-ttc').slick({
       slidesToShow: 1,
       autoplay: false,
@@ -47,8 +47,8 @@ myModalEl.addEventListener('shown.bs.modal', function (event) {
     });
 })
 
-var myModalEl = document.getElementById('atc');
-myModalEl.addEventListener('shown.bs.modal', function (event) {
+var myModal2 = document.getElementById('atc');
+myModal2.addEventListener('shown.bs.modal', function (event) {
     $('#carousel-atc').slick({
       slidesToShow: 1,
       autoplay: false,
@@ -59,8 +59,8 @@ myModalEl.addEventListener('shown.bs.modal', function (event) {
     });
 })
 
-var myModalEl = document.getElementById('arrc');
-myModalEl.addEventListener('shown.bs.modal', function (event) {
+var myModal3 = document.getElementById('arrc');
+myModal3.addEventListener('shown.bs.modal', function (event) {
     $('#carousel-arrc').slick({
       slidesToShow: 1,
       autoplay: false,
@@ -71,8 +71,8 @@ myModalEl.addEventListener('shown.bs.modal', function (event) {
     });
 })
 
-var myModalEl = document.getElementById('cev');
-myModalEl.addEventListener('shown.bs.modal', function (event) {
+var myModal4 = document.getElementById('cev');
+myModal4.addEventListener('shown.bs.modal', function (event) {
     $('#carousel-cev').slick({
       slidesToShow: 1,
       autoplay: false,
