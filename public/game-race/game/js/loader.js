@@ -3,38 +3,38 @@
 ////////////////////////////////////////////////////////////
 
  /*!
- * 
+ *
  * START CANVAS PRELOADER - This is the function that runs to preload canvas asserts
- * 
+ *
  */
 function initPreload(){
 	toggleLoader(true);
-	
+
 	checkMobileEvent();
-	
+
 	$(window).resize(function(){
 		resizeGameFunc();
 	});
 	resizeGameFunc();
-	
+
 	loader = new createjs.LoadQueue(false);
 	manifest=[
 			{src:'assets/background.png', id:'background'},
 			{src:'assets/logo-generasi-juara.png', id:'logo'},
 			{src:'assets/button_start.png', id:'buttonStart'},
-			
+
 			{src:'assets/smoke_Spritesheet2x1.png', id:'itemSmoke'},
 			{src:'assets/fire_Spritesheet2x1.png', id:'itemFire'},
-			
+
 			{src:'assets/button_confirm_exit.png', id:'buttonConfirm'},
 			{src:'assets/button_cancel.png', id:'buttonCancel'},
 			{src:'assets/item_confirm.png', id:'itemExit'},
-			
+
 			{src:'assets/touch_up.png', id:'itemTouchUp'},
 			{src:'assets/touch_down.png', id:'itemTouchDown'},
 			{src:'assets/touch_left.png', id:'itemTouchLeft'},
 			{src:'assets/touch_right.png', id:'itemTouchRight'},
-			
+
 			{src:'assets/button_restart.png', id:'buttonRestart'},
 			{src:'assets/exit-button.png', id:'buttonOut'},
 			{src:'assets/button_facebook.png', id:'buttonFacebook'},
@@ -48,32 +48,32 @@ function initPreload(){
 			{src:'assets/badge_life.png', id:'badgeLife'},
 			{src:'assets/badge_ticket.png', id:'badgeTicket'},
 			{src:'assets/badge_coin.png', id:'badgeCoin'}];
-	
+
 	for(var key in spritesData) {
 		if(spritesData[key].src != undefined)
 			manifest.push({src:spritesData[key].src, id:key});
 	}
-	
+
 	for(var key in backgroundData) {
 		if(backgroundData[key].src != undefined)
 			manifest.push({src:backgroundData[key].src, id:key});
 	}
-	
+
 	for(var key in playerCarData) {
 		if(playerCarData[key].src != undefined)
 			manifest.push({src:playerCarData[key].src, id:key});
 	}
-	
+
 	soundOn = true;
 	if($.browser.mobile || isTablet){
 		if(!enableMobileSound){
 			soundOn=false;
 		}
 	}
-	
+
 	if(soundOn){
 		manifest.push({src:'assets/sounds/music.ogg', id:'musicGame'});
-		
+
 		manifest.push({src:'assets/sounds/click.ogg', id:'soundClick'});
 		manifest.push({src:'assets/sounds/collect_fuel.ogg', id:'soundCollectFuel'});
 		manifest.push({src:'assets/sounds/collect_turbo.ogg', id:'soundCollectTurbo'});
@@ -84,14 +84,14 @@ function initPreload(){
 		manifest.push({src:'assets/sounds/engineloop.ogg', id:'soundEngine'});
 		manifest.push({src:'assets/sounds/tick.ogg', id:'soundTick'});
 		manifest.push({src:'assets/sounds/tickOver.ogg', id:'soundTickOver'});
-		
+
 		manifest.push({src:'assets/sounds/slowDown.ogg', id:'soundSlowDown'});
 		manifest.push({src:'assets/sounds/speedUp.ogg', id:'soundSpeedUp'});
-		
+
 		createjs.Sound.alternateExtensions = ["mp3"];
 		loader.installPlugin(createjs.Sound);
 	}
-	
+
 	loader.addEventListener("complete", handleComplete);
 	loader.addEventListener("fileload", fileComplete);
 	loader.addEventListener("error",handleFileError);
@@ -100,9 +100,9 @@ function initPreload(){
 }
 
 /*!
- * 
+ *
  * CANVAS FILE COMPLETE EVENT - This is the function that runs to update when file loaded complete
- * 
+ *
  */
 function fileComplete(evt) {
 	var item = evt.item;
@@ -110,27 +110,27 @@ function fileComplete(evt) {
 }
 
 /*!
- * 
+ *
  * CANVAS FILE HANDLE EVENT - This is the function that runs to handle file error
- * 
+ *
  */
 function handleFileError(evt) {
 	console.log("error ", evt);
 }
 
 /*!
- * 
+ *
  * CANVAS PRELOADER UPDATE - This is the function that runs to update preloder progress
- * 
+ *
  */
 function handleProgress() {
-	$('#mainLoader span').html(Math.round(loader.progress/1*100)+'%');
+	$('#mainLoader span').html(Math.round(loader.progress/1*200)+'%');
 }
 
 /*!
- * 
+ *
  * CANVAS PRELOADER COMPLETE - This is the function that runs when preloader is complete
- * 
+ *
  */
 function handleComplete() {
 	toggleLoader(false);
@@ -138,9 +138,9 @@ function handleComplete() {
 };
 
 /*!
- * 
+ *
  * TOGGLE LOADER - This is the function that runs to display/hide loader
- * 
+ *
  */
 function toggleLoader(con){
 	if(con){
@@ -149,3 +149,4 @@ function toggleLoader(con){
 		$('#mainLoader').hide();
 	}
 }
+
