@@ -48,7 +48,7 @@
                         <div class="cta-area text-center bg-transparent border-light">
                             <center>
                             @if ($atc == false)
-                            <a href="{{ url('unlock/class/ttc') }}" class="btn btn-round"><img src="{{ asset('images/badge-coin.png') }}">40</a>
+                            <a href="{{ url('unlock/class/atc') }}" class="btn btn-round"><img src="{{ asset('images/badge-coin.png') }}">40</a>
                             @else
                             <a class="btn btn-round" data-bs-toggle="modal" data-bs-target="#atc">Pilih</a>
                             @endif
@@ -58,7 +58,7 @@
                 </div>
 
                 <div class="col-6 item p-2">
-                    <div class="card @if ($cev == false) {{ 'not-active' }} @endif">
+                    <div class="card @if ($arrc == false) {{ 'not-active' }} @endif">
                         <div class="card-body">
                             <p class="card-text text-center small">asia road racing championship</p>
                             <!-- <img src="{{ asset('images/logo-arrc.jpg') }}" class="img-fluid"> -->
