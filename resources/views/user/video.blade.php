@@ -34,12 +34,8 @@
                     </div>
                 </div>
 
-                <div class="section d-flex justify-content-center embed-responsive embed-responsive-16by9">
-                    <video style="max-width:100%; height:auto" id="myVideo" controls autoplay
-                        class="embed-responsive-item">
-                        <source type="video/mp4">
-                        Your browser does not support playing this Video
-                    </video>
+                <div class="section d-flex justify-content-center embed-responsive embed-responsive-16by9 mb-4">
+                    <div id="player"></div>
                 </div>
 
             </div>

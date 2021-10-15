@@ -26,105 +26,110 @@
         @if ($statusT == false)
         <div class="item disabled">
             <a href="" class="btn">
-        @else
-        <div class="item">
-            <a href="{{ url('trivia') }}" class="btn">
-        @endif
-                <div class="row">
-                    <div class="col-4">
-                        <img src="images/ico-trivia.png" class="img-fluid"> 
-                    </div>
-                    <div class="col-8">
-                        <h5 class="card-title text-center">TRIVIA</h5>
-                        <small class="card-text">JAWAB TRIVIA DAN DAPATKAN NYAWA +1</small>
+                @else
+                <div class="item">
+                    <a href="{{ url('trivia') }}" class="btn">
+                        @endif
+                        <div class="row">
+                            <div class="col-4">
+                                <img src="images/ico-trivia.png" class="img-fluid">
+                            </div>
+                            <div class="col-8">
+                                <h5 class="card-title text-center">TRIVIA</h5>
+                                <small class="card-text">JAWAB TRIVIA DAN DAPATKAN NYAWA +1</small>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+
+
+                @if ($statusM == false)
+                <div class="item disabled">
+                    <a href="" class="btn">
+                        @else
+                        <div class="item">
+                            <a href="{{ url('memory-game') }}" class="btn">
+                                @endif
+                                <div class="row">
+                                    <div class="col-4">
+                                        <img src="images/ico-game.png" class="img-fluid">
+                                    </div>
+                                    <div class="col-8">
+                                        <h5 class="card-title text-center">GAME</h5>
+                                        <small class="card-text">UJI MEMORI KAMU DAN DAPATKAN NYAWA +1</small>
+
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+
+                        @if ($statusV == false)
+                        <div class="item disabled">
+                            <a href="" class="btn">
+                                @else
+                                <div class="item">
+
+                                    <a href="{{ url('video') }}" class="btn">
+                                        @endif
+                                        <div class="row">
+                                            <div class="col-4">
+                                                <img src="images/ico-video.png" class="img-fluid">
+                                            </div>
+                                            <div class="col-8">
+                                                <h5 class="card-title text-center">VIDEO</h5>
+                                                <small class="card-text">TONTON VIDEO DAN DAPATKAN NYAWA +1</small>
+
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+
+                                <div class="item">
+
+                                    <div class="item-share">
+                                        <div class="d-flex flex-wrap ">
+                                            <div
+                                                class="col-5 d-flex flex-wrap justify-content-between px-3 align-items-center">
+                                                <a id="shareBtn"><img src="{{ asset('images/btn-facebook.png') }}"></a>
+                                                <a href="https://twitter.com/intent/tweet?url={{ url('/') }}"
+                                                    target="_blank"><img
+                                                        src="{{ asset('images/btn-twitter.png') }}"></a>
+                                            </div>
+                                            <div class="col-7">
+                                                <small class="card-text">bagikan melalui sosmed kamu DAN dapatkan nyawa
+                                                    +1</small>
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="mt-4">
+                                    <center><a href="{{ url('home') }}" class="btn w-50">HOME</a></center>
+                                </div>
+
+                        </div>
+                </div>
+
+                <!-- Modal -->
+                <div class="modal fade" id="shareid" tabindex="-1" aria-labelledby="shareid" aria-hidden="true">
+                    <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title" id="textfinishshare">Congratulations</h5>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                    aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body">
+                                <p class="textfinishshare"></p>
+                            </div>
+                            <div id="shareredirect" class="modal-footer">
+                            </div>
+                        </div>
                     </div>
                 </div>
-            </a>
-        </div>
 
-
-        @if ($statusM == false)
-        <div class="item disabled">
-            <a href="" class="btn">
-        @else
-        <div class="item">
-            <a href="{{ url('memory-game') }}" class="btn">
-        @endif
-                <div class="row">
-                    <div class="col-4">
-                        <img src="images/ico-game.png" class="img-fluid"> 
-                    </div>
-                    <div class="col-8">
-                        <h5 class="card-title text-center">GAME</h5>
-                        <small class="card-text">UJI MEMORI KAMU DAN DAPATKAN NYAWA +1</small>
-
-                    </div>
-                </div>
-            </a>
-        </div>
-
-        @if ($statusV == false)
-        <div class="item disabled">
-            <a href="" class="btn">
-        @else
-        <div class="item">
-
-            <a href="{{ url('video') }}" class="btn">
-        @endif
-                <div class="row">
-                    <div class="col-4">
-                        <img src="images/ico-video.png" class="img-fluid"> 
-                    </div>
-                    <div class="col-8">
-                        <h5 class="card-title text-center">VIDEO</h5>
-                        <small class="card-text">TONTON VIDEO DAN DAPATKAN NYAWA +1</small>
-
-                    </div>
-                </div>
-            </a>
-        </div>
-
-        <div class="item">
-
-            <div class="item-share">
-                <div class="d-flex flex-wrap ">
-                    <div class="col-5 d-flex flex-wrap justify-content-between px-3 align-items-center">
-                        <a id="shareBtn"><img src="{{ asset('images/btn-facebook.png') }}"></a>
-                        <a href="https://twitter.com/intent/tweet?url={{ url('/') }}" target="_blank" ><img src="{{ asset('images/btn-twitter.png') }}"></a>
-                    </div>
-                    <div class="col-7">
-                        <small class="card-text">bagikan melalui sosmed kamu DAN dapatkan nyawa +1</small>
-
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="mt-4">
-            <center><a href="{{ url('home') }}" class="btn w-50">HOME</a></center>
-        </div>
-
-    </div>
-</div>
-
-<!-- Modal -->
-<div class="modal fade" id="shareid" tabindex="-1" aria-labelledby="shareid" aria-hidden="true">
-    <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
-        <div class="modal-content">
-            <div class="modal-header">
-                <h5 class="modal-title" id="textfinishshare">Congratulations</h5>
-                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-            </div>
-            <div class="modal-body">
-                <p class="textfinishshare"></p>
-            </div>
-            <div id="shareredirect" class="modal-footer">
-            </div>
-        </div>
-    </div>
-</div>
-
-<script>
-    function runShare() {
+                <script>
+                    function runShare() {
         $.ajax({
             method: 'GET',
             crossDomain: true,
@@ -154,10 +159,10 @@
             }
         });
     }
-</script>
+                </script>
 
-<script>
-    document.getElementById('shareBtn').onclick = function() {
+                <script>
+                    document.getElementById('shareBtn').onclick = function() {
         FB.ui({
             method: 'share',
             href: '{{ url("/") }}',
@@ -170,10 +175,10 @@
                 }
         });
     }
-</script>
+                </script>
 
-<script>
-    function loguser(event) {
+                <script>
+                    function loguser(event) {
         if (event) {
             runShare();
         }
@@ -189,6 +194,6 @@
     twttr.ready(function (twttr) {
     twttr.events.bind('tweet', loguser);
     });
-</script>
+                </script>
 
-@endsection
+                @endsection
