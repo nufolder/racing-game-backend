@@ -22,10 +22,10 @@
 
             <div class="row ">
                 <div class="col-6 item p-2">
-                    <div class="card @if ($atc == false) {{ 'not-active' }} @endif">
+                    <div class="card @if ($ttc == false) {{ 'not-active' }} @endif">
                         <div class="card-body">
                             <p class="card-text text-center small">thailand talent cup</p>
-                            <img src="{{ asset('images/logo-ttc.jpg') }}" class="img-fluid">
+                            <!-- <img src="{{ asset('images/logo-ttc.jpg') }}" class="img-fluid"> -->
                         </div>
                         <div class="cta-area text-center bg-transparent border-light">
                             <center>
@@ -42,13 +42,13 @@
                 <div class="col-6 item p-2">
                     <div class="card @if ($atc == false) {{ 'not-active' }} @endif">
                         <div class="card-body">
-                            <p class="card-text text-center small">asia talent cup</p>
-                            <img src="{{ asset('images/logo-atc.jpg') }}" class="img-fluid">
+                            <p class="card-text text-center small">asia<br>talent cup</p>
+                            <!-- <img src="{{ asset('images/logo-atc.jpg') }}" class="img-fluid"> -->
                         </div>
                         <div class="cta-area text-center bg-transparent border-light">
                             <center>
                             @if ($atc == false)
-                            <a href="{{ url('unlock/class/ttc') }}" class="btn btn-round"><img src="{{ asset('images/badge-coin.png') }}">40</a>
+                            <a href="{{ url('unlock/class/atc') }}" class="btn btn-round"><img src="{{ asset('images/badge-coin.png') }}">40</a>
                             @else
                             <a class="btn btn-round" data-bs-toggle="modal" data-bs-target="#atc">Pilih</a>
                             @endif
@@ -58,10 +58,10 @@
                 </div>
 
                 <div class="col-6 item p-2">
-                    <div class="card @if ($atc == false) {{ 'not-active' }} @endif">
+                    <div class="card @if ($arrc == false) {{ 'not-active' }} @endif">
                         <div class="card-body">
                             <p class="card-text text-center small">asia road racing championship</p>
-                            <img src="{{ asset('images/logo-arrc.jpg') }}" class="img-fluid">
+                            <!-- <img src="{{ asset('images/logo-arrc.jpg') }}" class="img-fluid"> -->
                         </div>
                         <div class="cta-area text-center bg-transparent border-light">
                             <center>
@@ -75,15 +75,15 @@
                     </div>
                 </div>
                 <div class="col-6 item p-2">
-                    <div class="card @if ($atc == false) {{ 'not-active' }} @endif">
+                    <div class="card @if ($cev == false) {{ 'not-active' }} @endif">
                         <div class="card-body">
                             <p class="card-text text-center small">Junior motor<br>CEV</p>
-                            <img src="{{ asset('images/logo-cev.jpg') }}" class="img-fluid">
+                            <!-- <img src="{{ asset('images/logo-cev.jpg') }}" class="img-fluid"> -->
                         </div>
                         <div class="cta-area text-center bg-transparent border-light">
                             <center>
                             @if ($cev == false)
-                            <a href="{{ url('unlock/class/arrc') }}" class="btn btn-round"><img src="{{ asset('images/badge-coin.png') }}">80</a>
+                            <a href="{{ url('unlock/class/cev') }}" class="btn btn-round"><img src="{{ asset('images/badge-coin.png') }}">80</a>
                             @else
                             <a class="btn btn-round" data-bs-toggle="modal" data-bs-target="#cev">Pilih</a>
                             @endif
