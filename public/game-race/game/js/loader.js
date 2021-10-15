@@ -124,7 +124,7 @@ function handleFileError(evt) {
  *
  */
 function handleProgress() {
-	$('#mainLoader span').html(Math.round(loader.progress/1*200)+'%');
+	$('#mainLoader span').html(Math.round(loader.progress/1*100)+'%');
 }
 
 /*!

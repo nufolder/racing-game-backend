@@ -43,7 +43,7 @@ myModal1.addEventListener('shown.bs.modal', function (event) {
       infinite: false,
       arrows: true,
       adaptiveHeight: true,
-      slidesToScroll: 1    
+      slidesToScroll: 1
     });
 })
 
@@ -55,7 +55,7 @@ myModal2.addEventListener('shown.bs.modal', function (event) {
       infinite: false,
       arrows: true,
       adaptiveHeight: true,
-      slidesToScroll: 1    
+      slidesToScroll: 1
     });
 })
 
@@ -67,7 +67,7 @@ myModal3.addEventListener('shown.bs.modal', function (event) {
       infinite: false,
       arrows: true,
       adaptiveHeight: true,
-      slidesToScroll: 1    
+      slidesToScroll: 1
     });
 })
 
@@ -79,7 +79,7 @@ myModal4.addEventListener('shown.bs.modal', function (event) {
       infinite: false,
       arrows: true,
       adaptiveHeight: true,
-      slidesToScroll: 1    
+      slidesToScroll: 1
     });
 })
 
@@ -197,7 +197,7 @@ var myTip = [
     "Quick Tip: AHRT adalah",
     "Quick Tip: MARIO adalah",
     "Quick Tip: ARRC adalah",
-    "Quick Tip: TTC adalah",
+    "Quick Tip: TTC adalah"
   ];
 
 var randomItem = myTip[Math.floor(Math.random()*myTip.length)];
