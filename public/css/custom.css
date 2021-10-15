@@ -2,8 +2,9 @@ html, body{padding:0px; margin:0px; height:100%; width:100%; font-family: 'Monts
 h1{font-size: 2rem;}
 h1, h2, h3, h4{font-family: 'Russo One', sans-serif;}
 
-.alert{width: 90%; font-family: 'Russo One';}
-.modal .modal-content{width: 90%; position: relative;}
+.alert{width: 90%; font-family: 'Montserrat';}
+.alert a{color: #0f5132; }
+.modal .modal-content{width: 100%; position: relative;}
 .modal .modal-content button{border: 0px; background-color: transparent; position: absolute; top: -15px; right: -20px;}
 .modal .modal-content button img{max-width: 30px;}
 
@@ -75,7 +76,7 @@ h1, h2, h3, h4{font-family: 'Russo One', sans-serif;}
 .dashboard h1{color: #FFF; text-transform: capitalize; margin-bottom: 30px;}
 .dashboard .badge{background-color: #FFF; border: 3px solid #000; border-radius: 25px; color: #000000; font-family: 'Russo One', sans-serif; font-weight: 300; font-size: 1rem; padding: 4px 10px 3px 5px; position: relative;}
 .dashboard .badge-area .badge{margin-left: 5px;}
-.dashboard .badge-area .badge:first-child{padding-left: 30px; padding-right: 20px; margin-left: 0px;}
+.dashboard .badge-area .badge:first-child{padding-left: 40px; padding-right: 30px; margin-left: 0px;}
 .dashboard .badge img.small-badge{max-width: 30px; padding-right: 10px; margin-top: -1px;}
 .dashboard .badge img.medium-badge{max-width: 45px; padding-right: 10px; position: absolute; left: -10px; top: -5px;}
 .dashboard .badge img.medium-badge-right{max-width: 25px; position: absolute; right: -10px; top: 0px;}
@@ -96,8 +97,29 @@ h1, h2, h3, h4{font-family: 'Russo One', sans-serif;}
 .select-class-rider .card.not-active:after{content: ""; width: 100%; height: 100%; background-color: rgba(0,0,0,50%); position: absolute; top: 0px; left: 0px;}
 .select-class-rider .item .card-body{padding-bottom: 0px;}
 .select-class-rider .item .card-body img{}
-.select-class-rider .item .card-body p{text-transform: uppercase; padding-bottom: 0px; margin-bottom: 0px; font-family: 'Russo One', sans-serif; font-size: 0.75rem;}
+.select-class-rider .item .card-body p{text-transform: uppercase; padding-bottom: 0px; margin-bottom: 0px; font-family: 'Russo One', sans-serif; font-size: 1rem; height: 150px; display: flex; justify-content: center; align-items: center;}
 .select-class-rider .item .cta-area a{margin-bottom: -25px; max-width: 90%; z-index: 9;}
 .select-class-rider .item .cta-area img{max-width: 30px; padding-right: 10px;}
 
+.modal.select-rider .modal-content{overflow: visible;}
+.modal.select-rider .modal-content .modal-body{overflow: visible;}
+.modal.select-rider .modal-content .modal-body .ico-close{top: 0px; right: -3px; z-index: 9;}
+.modal.select-rider .carousel-item .card{border: 0px;}
+.modal.select-rider .card-body{padding: 0px 30px 30px 30px;}
+.modal.select-rider .card-details{text-align: left;}
+.modal.select-rider .card-details .name{font-family: 'Montserrat'; font-size: 20px; font-weight: bold; text-transform: uppercase; text-align: center;}
+.modal.select-rider .card-details .age{font-family: 'Montserrat'; font-size: 12px; font-weight: bold; text-transform: uppercase; text-align: center;}
+.modal.select-rider .card-details .achievement{font-size: 12px; padding-top: 15px;}
+.modal.select-rider .card-details .achievement ul{padding-left: 15px;}
+.modal.select-rider .card-details .benefit{background-color: #ED1B2F; color: #FFF; text-align: center; padding: 15px; font-weight: bold;}
+.modal.select-rider .card-details .benefit-details{font-size: 10px; margin-bottom: 20px; padding-top: 10px;}
+.modal.select-rider .slick-slider button{z-index: 9999; background-color: #FFC312; width: 40px; height: 40px; border-radius: 50%;color: #FFF; border: 2px solid #000}
+.modal.select-rider .slick-slider button.slick-disabled{background-color: #CCC;}
+.modal.select-rider .slick-slider button.slick-disabled:hover{cursor: default;}
+.modal.select-rider .slick-slider button.slick-prev{top: 370px; left: -10px;}
+.modal.select-rider .slick-slider button.slick-next{top: 370px; left: auto; right: -10px; }
+.modal.select-rider .slick-slider .slick-prev::before, .modal.select-rider .slick-slider .slick-next::before{color: #000; font-size: 12px; font-family: 'Russo One'; opacity: 1;}
+.modal.select-rider .slick-slider .slick-prev::before{content: "PREV"; }
+.modal.select-rider .slick-slider .slick-next::before{content: "NEXT"; }
 .memory-game{min-height: 100%; padding-bottom: 150px;}
+
