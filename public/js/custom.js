@@ -1,7 +1,9 @@
-var tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'))
-var tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
-  return new bootstrap.Tooltip(tooltipTriggerEl)
-})
+var tooltipTriggerList = [].slice.call(
+    document.querySelectorAll('[data-bs-toggle="tooltip"]')
+);
+var tooltipList = tooltipTriggerList.map(function(tooltipTriggerEl) {
+    return new bootstrap.Tooltip(tooltipTriggerEl);
+});
 
 //show password login
 $("#login_show_hide_password a").on("click", function(event) {
@@ -35,62 +37,56 @@ $("#show_hide_password a").on("click", function(event) {
     }
 });
 
-var myModal1 = document.getElementById('ttc');
-myModal1.addEventListener('shown.bs.modal', function (event) {
-    $('#carousel-ttc').slick({
-      slidesToShow: 1,
-      autoplay: false,
-      infinite: false,
-      arrows: true,
-      adaptiveHeight: true,
-      slidesToScroll: 1
+var myModal1 = document.getElementById("ttc");
+myModal1.addEventListener("shown.bs.modal", function(event) {
+    $("#carousel-ttc").slick({
+        slidesToShow: 1,
+        autoplay: false,
+        infinite: false,
+        arrows: true,
+        adaptiveHeight: true,
+        slidesToScroll: 1
     });
-})
+});
 
-var myModal2 = document.getElementById('atc');
-myModal2.addEventListener('shown.bs.modal', function (event) {
-    $('#carousel-atc').slick({
-      slidesToShow: 1,
-      autoplay: false,
-      infinite: false,
-      arrows: true,
-      adaptiveHeight: true,
-      slidesToScroll: 1
+var myModal2 = document.getElementById("atc");
+myModal2.addEventListener("shown.bs.modal", function(event) {
+    $("#carousel-atc").slick({
+        slidesToShow: 1,
+        autoplay: false,
+        infinite: false,
+        arrows: true,
+        adaptiveHeight: true,
+        slidesToScroll: 1
     });
-})
+});
 
-var myModal3 = document.getElementById('arrc');
-myModal3.addEventListener('shown.bs.modal', function (event) {
-    $('#carousel-arrc').slick({
-      slidesToShow: 1,
-      autoplay: false,
-      infinite: false,
-      arrows: true,
-      adaptiveHeight: true,
-      slidesToScroll: 1
+var myModal3 = document.getElementById("arrc");
+myModal3.addEventListener("shown.bs.modal", function(event) {
+    $("#carousel-arrc").slick({
+        slidesToShow: 1,
+        autoplay: false,
+        infinite: false,
+        arrows: true,
+        adaptiveHeight: true,
+        slidesToScroll: 1
     });
-})
+});
 
-var myModal4 = document.getElementById('cev');
-myModal4.addEventListener('shown.bs.modal', function (event) {
-    $('#carousel-cev').slick({
-      slidesToShow: 1,
-      autoplay: false,
-      infinite: false,
-      arrows: true,
-      adaptiveHeight: true,
-      slidesToScroll: 1
+var myModal4 = document.getElementById("cev");
+myModal4.addEventListener("shown.bs.modal", function(event) {
+    $("#carousel-cev").slick({
+        slidesToShow: 1,
+        autoplay: false,
+        infinite: false,
+        arrows: true,
+        adaptiveHeight: true,
+        slidesToScroll: 1
     });
-})
+});
 
 //video
-let videoInit = document.getElementById('myVideo');
-videoInit.addEventListener('ended', myHandler, false);
 
-function myHandler(e) {
-    console.log(e);
-    console.log("Video Finish !!");
-}
 function videoEnd() {
     $.ajax({
         method: "GET",
