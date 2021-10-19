@@ -110,27 +110,28 @@
     </div>
 
     {{-- modal --}}
-    <div class="modal fade" id="clueModal" aria-labelledby="clueModalLabel" aria-hidden="true" role="dialog">
-        <div class="modal-dialog modal-xl" role="document">
+    <div class="modal fade" id="clueModal" tabindex="-1" aria-labelledby="clueModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
 
-            {{-- modal content --}}
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h5 class="modal-title" id="exampleModalLabel">Clue Jawaban</h5>
-                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                </div>
-                <div class="modal-body">
-                    <div id="clue-iframe-label"
-                        style=" width: 100%; border: none; overflow-y: auto; overflow-x: hidden;" frameborder="0"
-                        marginheight="0" marginwidth="0" height="100%" width="100%" scrolling="auto">
-                    </div>
-                </div>
-                <div class="modal-footer">
-                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+          <div class="modal-content">
+
+            <div class="modal-header">
+                <h5 class="modal-title" id="clueModalLabel">Clue Jawaban</h5>
+            </div>
+            <div class="modal-body">
+                <div id="clue-iframe-label"
+                    style=" width: 100%; border: none; overflow-y: auto; overflow-x: hidden;" frameborder="0"
+                    marginheight="0" marginwidth="0" height="100%" width="100%" scrolling="auto">
                 </div>
             </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal" style="color: white">Close</button>
+            </div>
+
+          </div>
+
         </div>
-    </div>
+      </div>
     <script src="{{ asset('minigames/trivia.js') }}"></script>
 </body>
 @endsection
