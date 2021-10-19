@@ -125,7 +125,7 @@ function handleFileError(evt) {
  *
  */
 function handleProgress() {
-	$('#mainLoader span').html(Math.round(loader.progress/1*200)+'%');
+	$('#mainLoader span').html(Math.round(loader.progress/1*100)+'%');
 }
 
 /*!
@@ -151,3 +151,12 @@ function toggleLoader(con){
 	}
 }
 
+var myTip = [
+    "Quick Tip: AHRT adalah",
+    "Quick Tip: MARIO adalah",
+    "Quick Tip: ARRC adalah",
+    "Quick Tip: TTC adalah"
+  ];
+
+var randomItem = myTip[Math.floor(Math.random()*myTip.length)];
+document.getElementById("tip").innerHTML = randomItem;

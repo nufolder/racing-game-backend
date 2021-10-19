@@ -1,7 +1,9 @@
-var tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'))
-var tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
-  return new bootstrap.Tooltip(tooltipTriggerEl)
-})
+var tooltipTriggerList = [].slice.call(
+    document.querySelectorAll('[data-bs-toggle="tooltip"]')
+);
+var tooltipList = tooltipTriggerList.map(function(tooltipTriggerEl) {
+    return new bootstrap.Tooltip(tooltipTriggerEl);
+});
 
 //show password login
 $("#login_show_hide_password a").on("click", function(event) {
@@ -92,13 +94,7 @@ if(myModal4){
 }
 
 //video
-let videoInit = document.getElementById('myVideo');
-videoInit.addEventListener('ended', myHandler, false);
 
-function myHandler(e) {
-    console.log(e);
-    console.log("Video Finish !!");
-}
 function videoEnd() {
     $.ajax({
         method: "GET",
@@ -200,13 +196,3 @@ function liveInputType() {
         "ifSel"
     ).value;
 }
-
-var myTip = [
-    "Quick Tip: AHRT adalah",
-    "Quick Tip: MARIO adalah",
-    "Quick Tip: ARRC adalah",
-    "Quick Tip: TTC adalah",
-  ];
-
-var randomItem = myTip[Math.floor(Math.random()*myTip.length)];
-document.getElementById("tip").innerHTML = randomItem;
