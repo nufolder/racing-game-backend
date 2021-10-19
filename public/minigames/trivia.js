@@ -405,7 +405,7 @@ function resetOptionBackground() {
     const options = document.getElementsByName("option");
     options.forEach(option => {
         document.getElementById(option.labels[0].id).style.backgroundColor = "";
-        document.getElementById(option.labels[0].id).style.color = "white";
+        document.getElementById(option.labels[0].id).style.color = "black";
     });
 }
 
