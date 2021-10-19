@@ -13,7 +13,7 @@
             <div class="p-3">
                 <img src="{{ asset('images/logo-generasi-juara.png') }}" class="img-fluid">
                 <h1 class="text-center mt-3 text-white">
-                    Trivia
+                    Yuk! jawab pertanyaan ini:
                 </h1>
             </div>
             <main>
@@ -39,12 +39,13 @@
 
                 <div class="row justify-content-center">
 
-                    <div class="col-md-6 mb-3 text-center">
-                        <div class="d-inline p-2 bg-dark rounded-pill text-white" style="margin-right:12px;">
-                            Skor : <span id="player-score"></span> / 5
+                    <div class="col-md-6 col-9 mb-3 text-center">
+
+                        <div class="progress" id="progressid">
                         </div>
-                        <div class="d-inline p-2 bg-dark rounded-pill text-white">
-                            Pertanyaan ke : <span id="question-number"></span> / 5
+
+                        <div class="d-inline p-2 text-white" style="margin-right:12px;font-size:21px;font-weight: 900;">
+                            Skor : <span id="player-score"></span> / 5
                         </div>
 
                     </div>
@@ -58,7 +59,7 @@
                         <div class="col-md-12 text-center pt-2" id="option-modal">
 
                             <div class="">
-                                <h5 style="padding: 12px;color:white;">Pilih Jawaban kamu</h5>
+                                <h6 style="padding: 12px;color:white;">Pilih salah satu:</h6>
                                 {{-- <hr> --}}
                             </div>
 
@@ -95,7 +96,8 @@
                                 </div> --}}
                     <div class="col-md-6 mb-3 text-center mt-5">
                         <div class="text-white text-small">
-                            Butuh Petunjuk? <a href="#" data-bs-toggle="modal" data-bs-target="#clueModal" style="color: white !important">Klik Disini</a>
+                            Butuh Petunjuk? <a href="#" data-bs-toggle="modal" data-bs-target="#clueModal"
+                                style="color: white !important">Klik Disini</a>
                         </div>
 
                         {{-- <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#clueModal">

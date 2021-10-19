@@ -29,24 +29,20 @@ body {
 }
 
 .game-details-container h6 {
-    font-size: 1.2rem;
+    font-size: 1.1rem;
 }
 
 .game-question-container {
     width: 80%;
-    height: 8rem;
+    height: 7rem;
     display: flex;
     align-items: center;
     justify-content: center;
-    border: 2px solid black;
-    border-radius: 25px;
-    border-color: black;
-    background-color: #ffc312;
-    color: black;
+    color: white;
 }
 
 .game-question-container h6 {
-    font-size: 1.1rem;
+    font-size: 1.2rem;
     text-align: center;
     padding: 3px;
 }
@@ -67,9 +63,10 @@ body {
     border-radius: 12px;
     overflow: hidden;
     margin-bottom: 14px;
-    border-color: black;
+    border-color: #ffff;
     background-color: #ffff;
     color: black;
+    text-align: center;
 }
 
 span label {
@@ -122,7 +119,7 @@ input[type="radio"]:checked ~ .option {
 }
 
 .next-button-container button:hover {
-    background-color: #007bff;
+    background-color: #4e9f3d;
 }
 
 @media (min-width: 300px) and (max-width: 350px) {
