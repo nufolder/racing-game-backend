@@ -38,7 +38,7 @@ var playerCarData = {
     straight: { src: straight_data },
     up_left: { src: up_left_data },
     up_right: { src: up_right_data },
-    up_straight: { src: up_straight_data }
+    up_straight: { src: up_straight_data },    
 };
 
 //world assets
@@ -353,7 +353,7 @@ function buildGameButton() {
 
     buttonSettings.cursor = "pointer";
     buttonSettings.addEventListener("click", function(evt) {
-        toggleOption();
+        // toggleOption();
     });
 
     buttonConfirm.cursor = "pointer";

@@ -91,6 +91,8 @@ h1, h2, h3, h4{font-family: 'Russo One', sans-serif;}
 .add-life .item .item-share{background-color: #FFF; font-family: 'Russo One', sans-serif; color: #000; font-size: 1.3	rem; border: 5px solid #000; border-radius: 8px; padding-top: 15px; padding-bottom: 15px;display: block; width: 100%; position: relative; text-transform: uppercase; }
 .add-life .item .item-share a{padding: 0px; background-color: transparent;}
 .add-life .item .item-share a img{width: 40px;}
+.add-life .item  .texting h5{background-color: red; border-radius: 10px; font-size: 1rem; display: inline-block; padding: 5px 15px; border: 2px solid #000; color: #FFF;} 
+.add-life .item  .texting .card-text{font-size: 13px;}
 
 .select-class-rider{background-color: #ea2117; text-align: center;}
 .select-class-rider .card{border: 3px solid #000; margin-bottom: 20px; position: relative;}

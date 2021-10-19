@@ -104,7 +104,7 @@
                                     </div>
                                     <div class="benefit">Tiket x2</div>
                                     <div class="benefit-details">Skill berfungsi untuk mendapatkan skor lebih besar pada setiap game dan akan berpengaruh pada perolehan jumlah tiket yang didapat.</div>
-                                    <div class="pt-3 px-5"><a href="{{ url('race/azryan') }}" class="btn btn-sm btn-primary">GO!!</a></div>
+                                    <div class="pt-3 px-5"><a href="{{ url('race/herlian') }}" class="btn btn-sm btn-primary">GO!!</a></div>
                                 </div>
                             </div>
                         </div>
@@ -179,7 +179,7 @@
                                     </div>
                                     <div class="benefit">Tiket x6</div>
                                     <div class="benefit-details">Skill berfungsi untuk mendapatkan skor lebih besar pada setiap game dan akan berpengaruh pada perolehan jumlah tiket yang didapat.</div>
-                                    <div class="pt-3 px-5"><a href="{{ url('race/azryan') }}" class="btn btn-sm btn-primary">GO!!</a></div>
+                                    <div class="pt-3 px-5"><a href="{{ url('race/herlian') }}" class="btn btn-sm btn-primary">GO!!</a></div>
                                 </div>
                             </div>
                         </div>
@@ -203,7 +203,7 @@
                                     </div>
                                     <div class="benefit">Tiket x6</div>
                                     <div class="benefit-details">Skill berfungsi untuk mendapatkan skor lebih besar pada setiap game dan akan berpengaruh pada perolehan jumlah tiket yang didapat.</div>
-                                    <div class="pt-3 px-5"><a href="{{ url('race/azryan') }}" class="btn btn-sm btn-primary">GO!!</a></div>
+                                    <div class="pt-3 px-5"><a href="{{ url('race/mario') }}" class="btn btn-sm btn-primary">GO!!</a></div>
                                 </div>
                             </div>
                         </div>
@@ -225,17 +225,23 @@
                             <img src="{{ asset('photo-riders/rider-mario.jpg') }}" class="card-img-top">
                             <div class="card-body">
                                 <div class="card-details ">
-                                    <div class="name">Fadillah arbi aditama</div>
-                                    <div class="age">16 Tahun</div>
+                                    <div class="name">Mario Suryo Aji</div>
+                                    <div class="age"><span>Super Mario</span> - 17 Tahun</div>
                                     <div class="achievement">
                                         <ul>
-                                            <li>2019 - Astra Honda Racing School</li>
-                                            <li>2018 - Astra Honda Racing School</li>
+                                            <li>2020 - 16th Position Overall Standing CEV Moto 3 Junior World Championship</li>
+                                            <li>2020 - 11th Position Overall Standing Red Bull Rookies Cup</li>
+                                            <li>2019 - 18th Position Overall Standing CEV Moto 3 Junior World Championship</li>
+                                            <li>2019 - 16th Position Overall Standing Red Bull Rookies Cup</li>
+                                            <li>2018 - 5th Position Overall Standing Asia Talent Cup</li>
+                                            <li>2018 - 6th Position Overall Standing ARRC AP250</li>
+                                            <li>2017 - 3rd Position Race 1 Rd. 5 Thailand Talent Cup</li>
+                                            <li>2017 - 2nd Position Race 2 Rd. 5 Thailand Talent Cup</li>
                                         </ul>
                                     </div>
-                                    <div class="benefit">Tiket x4</div>
+                                    <div class="benefit">Tiket x6</div>
                                     <div class="benefit-details">Skill berfungsi untuk mendapatkan skor lebih besar pada setiap game dan akan berpengaruh pada perolehan jumlah tiket yang didapat.</div>
-                                    <div class="pt-3 px-5"><a href="{{ url('race/fadillah') }}" class="btn btn-sm btn-primary">GO!!</a></div>
+                                    <div class="pt-3 px-5"><a href="{{ url('race/mario') }}" class="btn btn-sm btn-primary">GO!!</a></div>
                                 </div>
                             </div>
                         </div>

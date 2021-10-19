@@ -49,39 +49,39 @@ myModal1.addEventListener("shown.bs.modal", function(event) {
     });
 });
 
-var myModal2 = document.getElementById("atc");
-myModal2.addEventListener("shown.bs.modal", function(event) {
-    $("#carousel-atc").slick({
-        slidesToShow: 1,
-        autoplay: false,
-        infinite: false,
-        arrows: true,
-        adaptiveHeight: true,
-        slidesToScroll: 1
+var myModal2 = document.getElementById('atc');
+myModal2.addEventListener('shown.bs.modal', function (event) {
+    $('#carousel-atc').slick({
+      slidesToShow: 1,
+      autoplay: false,
+      infinite: false,
+      arrows: true,
+      adaptiveHeight: true,
+      slidesToScroll: 1    
     });
 });
 
-var myModal3 = document.getElementById("arrc");
-myModal3.addEventListener("shown.bs.modal", function(event) {
-    $("#carousel-arrc").slick({
-        slidesToShow: 1,
-        autoplay: false,
-        infinite: false,
-        arrows: true,
-        adaptiveHeight: true,
-        slidesToScroll: 1
+var myModal3 = document.getElementById('arrc');
+myModal3.addEventListener('shown.bs.modal', function (event) {
+    $('#carousel-arrc').slick({
+      slidesToShow: 1,
+      autoplay: false,
+      infinite: false,
+      arrows: true,
+      adaptiveHeight: true,
+      slidesToScroll: 1    
     });
 });
 
-var myModal4 = document.getElementById("cev");
-myModal4.addEventListener("shown.bs.modal", function(event) {
-    $("#carousel-cev").slick({
-        slidesToShow: 1,
-        autoplay: false,
-        infinite: false,
-        arrows: true,
-        adaptiveHeight: true,
-        slidesToScroll: 1
+var myModal4 = document.getElementById('cev');
+myModal4.addEventListener('shown.bs.modal', function (event) {
+    $('#carousel-cev').slick({
+      slidesToShow: 1,
+      autoplay: false,
+      infinite: false,
+      arrows: true,
+      adaptiveHeight: true,
+      slidesToScroll: 1    
     });
 });
 

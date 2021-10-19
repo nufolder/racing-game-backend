@@ -47,6 +47,7 @@ function initPreload(){
 			{src:'assets/button_settings.png', id:'buttonSettings'},
 			{src:'assets/badge_life.png', id:'badgeLife'},
 			{src:'assets/badge_ticket.png', id:'badgeTicket'},
+			{src: 'assets/riders/'+racer_data+'.png', id: 'playerPhoto'},
 			{src:'assets/badge_coin.png', id:'badgeCoin'}];
 
 	for(var key in spritesData) {
