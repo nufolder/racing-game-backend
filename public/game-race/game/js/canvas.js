@@ -147,7 +147,19 @@ function buildGameCanvas(){
 	badgeTicket.x = canvasW/100 * 0.5 
 	badgeTicket.y = canvasH/100 * 2.5;
 
-	
+	playerPhoto = new createjs.Bitmap(loader.getResult('playerPhoto'));
+	centerReg(playerPhoto);
+	playerPhoto.x = canvasW/100 * 73;
+	playerPhoto.y = canvasW/100 * 10;
+	playerName = new createjs.Text();
+	playerName.font = "20px dimitriregular";
+	playerName.color = "#000000";
+	playerName.textAlign = "center";
+	playerName.textBaseline='alphabetic';
+	playerName.text = racer_data;
+	playerName.x = playerPhoto.x;
+	playerName.y = playerPhoto.y + 70;	
+
 	scoreShadowTxt = new createjs.Text();
 	scoreShadowTxt.font = "30px dimitri_swankregular";
 	scoreShadowTxt.color = "#ed2633";
@@ -393,15 +405,17 @@ function buildGameCanvas(){
 	centerReg(buttonExit);
 	buttonSettings = new createjs.Bitmap(loader.getResult('buttonSettings'));
 	centerReg(buttonSettings);
+	buttonSettings.visible = false;
 	
-	createHitarea(buttonFullscreen);
+	// createHitarea(buttonFullscreen);
 	createHitarea(buttonSoundOn);
 	createHitarea(buttonSoundOff);
-	createHitarea(buttonExit);
-	createHitarea(buttonSettings);
+	// createHitarea(buttonExit);
+	// createHitarea(buttonSettings);
 	optionsContainer = new createjs.Container();
-	optionsContainer.addChild(buttonFullscreen, buttonSoundOn, buttonSoundOff, buttonExit);
-	optionsContainer.visible = false;
+	// optionsContainer.addChild(buttonFullscreen, buttonSoundOn, buttonSoundOff, buttonExit);
+	optionsContainer.addChild(buttonSoundOn, buttonSoundOff);
+	optionsContainer.visible = true;
 	
 	//exit
 	// itemExit = new createjs.Bitmap(loader.getResult('itemExit'));
@@ -434,7 +448,7 @@ function buildGameCanvas(){
 	}
 	
 	mainContainer.addChild(logo, buttonStart);
-	gameStatusContainer.addChild(gameStatusShadowTxt, gameStatusTxt);
+	gameStatusContainer.addChild(gameStatusShadowTxt, gameStatusTxt, playerPhoto, playerName);
 	gameContainer.addChild(smokeAnimate, fireAnimate, gameStatusContainer, statusContainer, instructionShadowTxt, instructionTxt, itemTouchLeft, itemTouchRight);
 	statusContainer.addChild(scoreBackground, badgeTicket, badgeCoin, scoreShadowTxt, scoreTxt, coinBackground,badgeCoin,  coinShadowTxt, coinTxt, lifeBackground, lifeTxt, lifeBadge);
 	resultContainer.addChild(resultBackground, resultTitleShadowTxt, resultTitleTxt, resultScoreTxt, resultCoinTxt, buttonRestart, buttonOut);
@@ -460,9 +474,14 @@ function resizeCanvas(){
 		statusContainer.x = offset.x;
 		statusContainer.y = offset.y;
 		
-		buttonSettings.x = (canvasW - offset.x) - 60;
-		buttonSettings.y = offset.y + 45;
+		buttonSettings.x = (canvasW - offset.x) - 40;
+		buttonSettings.y = offset.y - 20;
 		
+		playerPhoto.x = (canvasW - offset.x)-65;
+		playerPhoto.y = offset.y + 130;
+		playerName.x = playerPhoto.x;
+		playerName.y = playerPhoto.y + 70;
+
 		var distanceNum = 60;
 		if(curPage != 'game'){
 			buttonExit.visible = false;

@@ -34,9 +34,9 @@
                             <div class="col-4">
                                 <img src="images/ico-trivia.png" class="img-fluid">
                             </div>
-                            <div class="col-8">
+                            <div class="col-8 texting">
                                 <h5 class="card-title text-center">TRIVIA</h5>
-                                <small class="card-text">JAWAB TRIVIA DAN DAPATKAN NYAWA +1</small>
+                                <p class="card-text">JAWAB TRIVIA DAN DAPATKAN NYAWA +1</p>
                             </div>
                         </div>
                     </a>
@@ -54,9 +54,9 @@
                                     <div class="col-4">
                                         <img src="images/ico-game.png" class="img-fluid">
                                     </div>
-                                    <div class="col-8">
+                                    <div class="col-8 texting">
                                         <h5 class="card-title text-center">GAME</h5>
-                                        <small class="card-text">UJI MEMORI KAMU DAN DAPATKAN NYAWA +1</small>
+                                        <p class="card-text">UJI MEMORI KAMU DAN DAPATKAN NYAWA +1</p>
 
                                     </div>
                                 </div>
@@ -75,9 +75,9 @@
                                             <div class="col-4">
                                                 <img src="images/ico-video.png" class="img-fluid">
                                             </div>
-                                            <div class="col-8">
+                                            <div class="col-8 texting">
                                                 <h5 class="card-title text-center">VIDEO</h5>
-                                                <small class="card-text">TONTON VIDEO DAN DAPATKAN NYAWA +1</small>
+                                                <p class="card-text">TONTON VIDEO DAN DAPATKAN NYAWA +1</p>
 
                                             </div>
                                         </div>
@@ -95,9 +95,8 @@
                                                     target="_blank"><img
                                                         src="{{ asset('images/btn-twitter.png') }}"></a>
                                             </div>
-                                            <div class="col-7">
-                                                <small class="card-text">bagikan melalui sosmed kamu DAN dapatkan nyawa
-                                                    +1</small>
+                                            <div class="col-7 texting">
+                                                <p class="card-text text-center">bagikan melalui sosmed kamu DAN dapatkan nyawa +1</p>
 
                                             </div>
                                         </div>

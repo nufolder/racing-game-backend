@@ -45,7 +45,7 @@ myModal1.addEventListener('shown.bs.modal', function (event) {
       adaptiveHeight: true,
       slidesToScroll: 1    
     });
-})
+});
 
 var myModal2 = document.getElementById('atc');
 myModal2.addEventListener('shown.bs.modal', function (event) {
@@ -57,7 +57,7 @@ myModal2.addEventListener('shown.bs.modal', function (event) {
       adaptiveHeight: true,
       slidesToScroll: 1    
     });
-})
+});
 
 var myModal3 = document.getElementById('arrc');
 myModal3.addEventListener('shown.bs.modal', function (event) {
@@ -69,7 +69,7 @@ myModal3.addEventListener('shown.bs.modal', function (event) {
       adaptiveHeight: true,
       slidesToScroll: 1    
     });
-})
+});
 
 var myModal4 = document.getElementById('cev');
 myModal4.addEventListener('shown.bs.modal', function (event) {
@@ -81,7 +81,7 @@ myModal4.addEventListener('shown.bs.modal', function (event) {
       adaptiveHeight: true,
       slidesToScroll: 1    
     });
-})
+});
 
 //video
 let videoInit = document.getElementById('myVideo');
