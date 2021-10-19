@@ -1,7 +1,9 @@
-var tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'))
-var tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
-  return new bootstrap.Tooltip(tooltipTriggerEl)
-})
+var tooltipTriggerList = [].slice.call(
+    document.querySelectorAll('[data-bs-toggle="tooltip"]')
+);
+var tooltipList = tooltipTriggerList.map(function(tooltipTriggerEl) {
+    return new bootstrap.Tooltip(tooltipTriggerEl);
+});
 
 //show password login
 $("#login_show_hide_password a").on("click", function(event) {
@@ -35,15 +37,15 @@ $("#show_hide_password a").on("click", function(event) {
     }
 });
 
-var myModal1 = document.getElementById('ttc');
-myModal1.addEventListener('shown.bs.modal', function (event) {
-    $('#carousel-ttc').slick({
-      slidesToShow: 1,
-      autoplay: false,
-      infinite: false,
-      arrows: true,
-      adaptiveHeight: true,
-      slidesToScroll: 1    
+var myModal1 = document.getElementById("ttc");
+myModal1.addEventListener("shown.bs.modal", function(event) {
+    $("#carousel-ttc").slick({
+        slidesToShow: 1,
+        autoplay: false,
+        infinite: false,
+        arrows: true,
+        adaptiveHeight: true,
+        slidesToScroll: 1
     });
 });
 
@@ -84,13 +86,7 @@ myModal4.addEventListener('shown.bs.modal', function (event) {
 });
 
 //video
-let videoInit = document.getElementById('myVideo');
-videoInit.addEventListener('ended', myHandler, false);
 
-function myHandler(e) {
-    console.log(e);
-    console.log("Video Finish !!");
-}
 function videoEnd() {
     $.ajax({
         method: "GET",
@@ -192,13 +188,3 @@ function liveInputType() {
         "ifSel"
     ).value;
 }
-
-var myTip = [
-    "Quick Tip: AHRT adalah",
-    "Quick Tip: MARIO adalah",
-    "Quick Tip: ARRC adalah",
-    "Quick Tip: TTC adalah",
-  ];
-
-var randomItem = myTip[Math.floor(Math.random()*myTip.length)];
-document.getElementById("tip").innerHTML = randomItem;
