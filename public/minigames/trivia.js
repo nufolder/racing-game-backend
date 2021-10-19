@@ -314,12 +314,12 @@ function NextQuestion(index) {
     const currentQuestion = shuffledQuestions[index];
     // document.getElementById("question-number").innerHTML = questionNumber;
     document.getElementById("player-score").innerHTML = playerScore;
-    const pro = questionNumber * 20;
+    const pro = questionNumber * 20 - 20;
     document.getElementById(
         "progressid"
     ).innerHTML = `<div class="progress-bar bg-warning" role="progressbar" style="width: ${pro}%"
-                                aria-valuenow="${pro}" aria-valuemin="0" aria-valuemax="100">
-                            </div>`;
+                        aria-valuenow="${pro}" aria-valuemin="0" aria-valuemax="100">
+                    </div>`;
     console.log(typeof pro);
     document.getElementById("display-question").innerHTML =
         currentQuestion.question;
