@@ -99,8 +99,7 @@
                         </div>
 
 
-                        <button type="button" class="btn btn-primary" data-bs-toggle="modal"
-                            data-bs-target="#clueModal">
+                        <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#clueModal">
                             Klik Disini
                         </button>
                     </div>
