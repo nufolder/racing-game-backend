@@ -5,7 +5,11 @@ h1, h2, h3, h4{font-family: 'Russo One', sans-serif;}
 .alert{width: 90%; font-family: 'Montserrat';}
 .alert a{color: #0f5132; }
 .modal .modal-content{width: 100%; position: relative;}
-.modal .modal-content button{border: 0px; background-color: transparent; position: absolute; top: -15px; right: -20px;}
+.modal .modal-content button{border: 0px;
+    background-color: #ed1a2f;
+    position: absolute;
+    bottom: -13px;
+    right: -4px;}
 .modal .modal-content button img{max-width: 30px;}
 
 .modal#memorygameid .modal-body{text-align: center;}
@@ -52,7 +56,7 @@ h1, h2, h3, h4{font-family: 'Russo One', sans-serif;}
 .auth-area .card .card-body .links a{color: #000;}
 .auth-area .card .card-body .form-group label{font-size: 12px;}
 .auth-area .card .card-body .cta-area{margin-top: 20px; text-align: center;}
-.auth-area .card .card-body .cta-area button{background-color: #FFC312; font-family: 'Russo One', sans-serif; color: #000; font-size: 1.3	rem; border: 5px solid #000; border-radius: 8px; padding-top: 8px; padding-bottom: 8px;display: block; width: 100%; position: relative;}  
+.auth-area .card .card-body .cta-area button{background-color: #FFC312; font-family: 'Russo One', sans-serif; color: #000; font-size: 1.3	rem; border: 5px solid #000; border-radius: 8px; padding-top: 8px; padding-bottom: 8px;display: block; width: 100%; position: relative;}
 .auth-area .card .card-body .cta-area button:after{content: ""; border-radius: 8px; border-top: 5px solid rgba(255,255,255,0.5); position: absolute; width: 100%; height: 100%; left: 0px; top: 0px;}
 .auth-area a{color: #FFF; text-decoration: underline;}
 
@@ -67,7 +71,7 @@ h1, h2, h3, h4{font-family: 'Russo One', sans-serif;}
 .login-area .card .card-body .form-group label{font-size: 12px;}
 .login-area .card .card-body .cta-area{margin-top: 20px; text-align: center;}
 .login-area .card .card-body .cta-area{color: #FFF;}
-.login-area .card .card-body .cta-area button{background-color: #FFC312; font-family: 'Russo One', sans-serif; color: #000; font-size: 1.3	rem; border: 5px solid #000; border-radius: 8px; padding-top: 8px; padding-bottom: 8px;display: block; width: 100%; position: relative;}  
+.login-area .card .card-body .cta-area button{background-color: #FFC312; font-family: 'Russo One', sans-serif; color: #000; font-size: 1.3	rem; border: 5px solid #000; border-radius: 8px; padding-top: 8px; padding-bottom: 8px;display: block; width: 100%; position: relative;}
 .login-area .card .card-body .cta-area button:after{content: ""; border-radius: 8px; border-top: 5px solid rgba(255,255,255,0.5); position: absolute; width: 100%; height: 100%; left: 0px; top: 0px;}
 .login-area a{color: #FFF; text-decoration: underline;}
 .login-text-info{color: #FFF}
@@ -91,7 +95,7 @@ h1, h2, h3, h4{font-family: 'Russo One', sans-serif;}
 .add-life .item .item-share{background-color: #FFF; font-family: 'Russo One', sans-serif; color: #000; font-size: 1.3	rem; border: 5px solid #000; border-radius: 8px; padding-top: 15px; padding-bottom: 15px;display: block; width: 100%; position: relative; text-transform: uppercase; }
 .add-life .item .item-share a{padding: 0px; background-color: transparent;}
 .add-life .item .item-share a img{width: 40px;}
-.add-life .item  .texting h5{background-color: red; border-radius: 10px; font-size: 1rem; display: inline-block; padding: 5px 15px; border: 2px solid #000; color: #FFF;} 
+.add-life .item  .texting h5{background-color: red; border-radius: 10px; font-size: 1rem; display: inline-block; padding: 5px 15px; border: 2px solid #000; color: #FFF;}
 .add-life .item  .texting .card-text{font-size: 13px;}
 
 .select-class-rider{background-color: #ea2117; text-align: center;}
