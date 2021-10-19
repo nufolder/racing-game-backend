@@ -95,13 +95,12 @@
                                 </div> --}}
                     <div class="col-md-6 mb-3 text-center mt-5">
                         <div class="text-white text-small">
-                            Bingung??? Klik untuk mendapatkan Petunjuk!
+                            Butuh Petunjuk? <a href="#" data-bs-toggle="modal" data-bs-target="#clueModal" style="color: white !important">Klik Disini</a>
                         </div>
 
-
-                        <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#clueModal">
+                        {{-- <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#clueModal">
                             Klik Disini
-                        </button>
+                        </button> --}}
                     </div>
                 </div>
 

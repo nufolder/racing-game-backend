@@ -64,11 +64,11 @@ body {
     width: 45%;
     height: 3rem;
     border: 2px solid black;
-    border-radius: 20px;
+    border-radius: 12px;
     overflow: hidden;
     margin-bottom: 14px;
     border-color: black;
-    background-color: #ffc312;
+    background-color: #ffff;
     color: black;
 }
 
