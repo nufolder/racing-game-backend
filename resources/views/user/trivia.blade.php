@@ -132,6 +132,7 @@
 
         </div>
       </div>
+
     <script src="{{ asset('minigames/trivia.js') }}"></script>
 </body>
 @endsection
