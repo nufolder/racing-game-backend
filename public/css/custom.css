@@ -8,7 +8,7 @@ h1, h2, h3, h4{font-family: 'Russo One', sans-serif;}
 .modal .modal-content button{border: 0px;
     background-color: #ed1a2f;
     position: absolute;
-    bottom: -13px;
+    /* bottom: -13px; */
     right: -4px;}
 .modal .modal-content button img{max-width: 30px;}
 
@@ -109,7 +109,7 @@ h1, h2, h3, h4{font-family: 'Russo One', sans-serif;}
 
 .modal.select-rider .modal-content{overflow: visible;}
 .modal.select-rider .modal-content .modal-body{overflow: visible;}
-.modal.select-rider .modal-content .modal-body .ico-close{top: 0px; right: -3px; z-index: 9;}
+.modal.select-rider .modal-content .modal-body .ico-close{top: 0px; right: 0px; z-index: 9;}
 .modal.select-rider .carousel-item .card{border: 0px;}
 .modal.select-rider .card-body{padding: 0px 30px 30px 30px;}
 .modal.select-rider .card-details{text-align: left;}
