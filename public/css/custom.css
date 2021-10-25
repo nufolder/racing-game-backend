@@ -17,6 +17,8 @@ h1, h2, h3, h4{font-family: 'Russo One', sans-serif;}
 
 .mw-600{max-width: 600px;}
 .mw-800{max-width: 800px;}
+.minheight{min-height: 100%; height: 100%; overflow: scroll;}
+.minh{min-height: 100%;}
 .bg-red{background-color: #ED1B2F !important;}
 
 .btn{background-color: #FFC312; font-family: 'Russo One', sans-serif; color: #000; font-size: 1.3rem; border: 5px solid #000; border-radius: 8px; padding-top: 8px; padding-bottom: 8px;display: block; width: 100%; position: relative; text-transform: uppercase;}
@@ -113,7 +115,8 @@ h1, h2, h3, h4{font-family: 'Russo One', sans-serif;}
 .modal.select-rider .card-details .age{font-family: 'Montserrat'; font-size: 12px; font-weight: bold; text-transform: uppercase; text-align: center;}
 .modal.select-rider .card-details .achievement{font-size: 12px; padding-top: 15px;}
 .modal.select-rider .card-details .achievement ul{padding-left: 15px;}
-.modal.select-rider .card-details .benefit{background-color: #ED1B2F; color: #FFF; text-align: center; padding: 15px; font-weight: bold;}
+.modal.select-rider .card-details .benefit{display: flex; justify-content: center;}
+.modal.select-rider .card-details .benefit img{height: 25px; padding-left: 10px;}
 .modal.select-rider .card-details .benefit-details{font-size: 10px; margin-bottom: 20px; padding-top: 10px;}
 .modal.select-rider .slick-slider button{z-index: 9999; background-color: #FFC312; width: 40px; height: 40px; border-radius: 50%;color: #FFF; border: 2px solid #000}
 .modal.select-rider .slick-slider button.slick-disabled{background-color: #CCC;}

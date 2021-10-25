@@ -34,7 +34,7 @@
     </div>
 </nav>
  -->
-<div class="container p-3 bg-red mw-600 dashboard pb-5">
+<div class="container p-3 bg-red mw-600 dashboard pb-5 minh">
     <div class="">
         <div class="badge-area d-flex">
             <span class=" badge">                

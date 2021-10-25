@@ -51,7 +51,7 @@
 
 <body>
 
-    <div class="container p-0">
+    <div class="container p-0 minheight">
         @yield('content')
     </div>
 
