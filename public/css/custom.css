@@ -6,7 +6,7 @@ h1, h2, h3, h4{font-family: 'Russo One', sans-serif;}
 .alert a{color: #0f5132; }
 .modal .modal-content{width: 100%; position: relative;}
 .modal .modal-content button{border: 0px;
-    background-color: #ed1a2f;
+    background-color: transparent;
     position: absolute;
     /* bottom: -13px; */
     right: -4px;}
@@ -109,7 +109,7 @@ h1, h2, h3, h4{font-family: 'Russo One', sans-serif;}
 
 .modal.select-rider .modal-content{overflow: visible;}
 .modal.select-rider .modal-content .modal-body{overflow: visible;}
-.modal.select-rider .modal-content .modal-body .ico-close{top: 0px; right: 0px; z-index: 9;}
+.modal.select-rider .modal-content .modal-body .ico-close{top: -13px; right: -13px;z-index: 9;}
 .modal.select-rider .carousel-item .card{border: 0px;}
 .modal.select-rider .card-body{padding: 0px 30px 30px 30px;}
 .modal.select-rider .card-details{text-align: left;}
@@ -127,5 +127,7 @@ h1, h2, h3, h4{font-family: 'Russo One', sans-serif;}
 .modal.select-rider .slick-slider .slick-prev::before, .modal.select-rider .slick-slider .slick-next::before{color: #000; font-size: 12px; font-family: 'Russo One'; opacity: 1;}
 .modal.select-rider .slick-slider .slick-prev::before{content: "PREV"; }
 .modal.select-rider .slick-slider .slick-next::before{content: "NEXT"; }
+
 .memory-game{min-height: 100%; padding-bottom: 150px;}
+.modal.memory-game .modal-content .modal-body .ico-close{top: -13px; right: -13px;z-index: 9;}
 
