@@ -312,8 +312,15 @@ let indexNumber = 0;
 function NextQuestion(index) {
     handleQuestions();
     const currentQuestion = shuffledQuestions[index];
-    document.getElementById("question-number").innerHTML = questionNumber;
+    // document.getElementById("question-number").innerHTML = questionNumber;
     document.getElementById("player-score").innerHTML = playerScore;
+    const pro = questionNumber * 20 - 20;
+    document.getElementById(
+        "progressid"
+    ).innerHTML = `<div class="progress-bar bg-warning" role="progressbar" style="width: ${pro}%"
+                        aria-valuenow="${pro}" aria-valuemin="0" aria-valuemax="100">
+                    </div>`;
+    console.log(typeof pro);
     document.getElementById("display-question").innerHTML =
         currentQuestion.question;
     document.getElementById("option-one-label").innerHTML =
@@ -356,7 +363,7 @@ function checkForAnswer() {
     options.forEach(option => {
         if (option.checked === true && option.value === currentQuestionAnswer) {
             document.getElementById(correctOption).style.backgroundColor =
-                "green";
+                "#4E9F3D";
             playerScore++;
             indexNumber++;
             //set to delay question number till when next question loads
@@ -367,7 +374,7 @@ function checkForAnswer() {
             const wrongLabelId = option.labels[0].id;
             document.getElementById(wrongLabelId).style.backgroundColor = "red";
             document.getElementById(correctOption).style.backgroundColor =
-                "green";
+                "#4E9F3D";
             wrongAttempt++;
             indexNumber++;
             //set to delay question number till when next question loads

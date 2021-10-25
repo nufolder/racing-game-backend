@@ -36,14 +36,14 @@
     </div>
 </div>
 
-<div class="modal fade" id="modalMatch" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+<div class="modal fade memory-game" id="modalMatch" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
     <div class="modal-dialog modal-dialog-centered justify-content-center">
         <div class="modal-content">
             <div class="modal-body">
                 <div class="notes">Kamu berhasil mencocokkan</div>
                 <div class="nama" id="exampleModalLabel"></div>
                 <div class="kelas" id="exampleModalLabel1"></div>
-                <button type="button" data-bs-dismiss="modal" aria-label="Close"><img src="{{ asset('images/ico-close.png') }}"></button>
+                <button type="button" class="ico-close" data-bs-dismiss="modal" aria-label="Close"><img src="{{ asset('images/ico-close.png') }}"></button>
             </div>
         </div>
     </div>
