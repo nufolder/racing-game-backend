@@ -1,15 +1,13 @@
-<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-    <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+<div class="modal fade modal-leaderboard" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered ">
         <div class="modal-content" style="margin-left: 5%;">
-            <div class="modal-header">
-                <h5 class="modal-title" id="exampleModalLabel">Leaderboard</h5>
-                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-            </div>
             <div class="modal-body">
+                <div class="modal-title">Leaderboard</div>
+                
                 <div class="content-list">
-                    <ul class="nav nav-tabs" id="myTab" role="tablist">
+                    <ul class="nav nav-tabs nav-justified" id="myTab" role="tablist">
                         <li class="nav-item" role="presentation">
-                          <a class="nav-link active" id="all-tab" data-bs-toggle="tab" href="#all" role="tab" aria-controls="all" aria-selected="true">All</a>
+                          <a class="nav-link active" id="all-tab" data-bs-toggle="tab" href="#all" role="tab" aria-controls="all" aria-selected="true">Global</a>
                         </li>
                         <li class="nav-item" role="presentation">
                           <a class="nav-link" id="weekly-tab" data-bs-toggle="tab" href="#weekly" role="tab" aria-controls="weekly" aria-selected="false">Weekly Leader</a>
@@ -18,13 +16,13 @@
 
                       <div class="tab-content" id="myTabContent">
                         <div class="tab-pane fade show active" id="all" role="tabpanel" aria-labelledby="all-tab">
-                            <div class="table-responsive">
+                            <div class="table-responsive mt-3">
                                 <table class="table table-bordered">
                                     <thead>
                                         <tr>
                                             <th scope="co" width="50" style="text-align: center;">#</th>
-                                            <th scope="col">Name</th>
-                                            <th scope="col">Ticket</th>
+                                            <th scope="col">Nama</th>
+                                            <th scope="col">Tiket</th>
                                         </tr>
                                     </thead>
 
@@ -76,6 +74,9 @@
                             </div>
                         </div>
                       </div>
+                </div>
+                <div class="mt-4">
+                    <button type="button" class="btn" data-bs-dismiss="modal" aria-label="Close">TUTUP</button>
                 </div>
             </div>
         </div>
