@@ -131,6 +131,26 @@ h1, h2, h3, h4{font-family: 'Russo One', sans-serif;}
 .modal.select-rider .slick-slider .slick-prev::before{content: "PREV"; }
 .modal.select-rider .slick-slider .slick-next::before{content: "NEXT"; }
 
+.modal-header{padding: 5px 10px;}
+.modal-header h5.modal-title{font-weight: bold; font-size: 1.1rem;}
+#clueModal.modal .modal-content button{right: 2px;}
+
+.modal-leaderboard {}
+.modal-leaderboard .modal-title{background-color: #ED1B2F; font-family: 'Russo One', sans-serif; color: #FFF; font-size: 1.2rem; border: 3px solid #000; border-radius: 8px; padding-top: 8px; padding-bottom: 8px;display: block; width: 100%; position: relative; text-transform: uppercase;; text-align: center; margin-top: -40px; margin-bottom: 10px;}
+.modal-leaderboard .nav-tabs .nav-link{border: 0px; border-bottom: 3px solid #E0DDDD; color: #4a4a4a;}
+.modal-leaderboard .nav-tabs .nav-link.active{border: 0px; border-bottom: 3px solid #ED1B2F;}
+.modal-leaderboard .modal-content .content-list .nav-item {font-size: 14px;}
+.modal-leaderboard .modal-content .tab-content{font-size: 14px; font-weight: lighter;}
+.modal-leaderboard .modal-content .tab-content table tr td, .modal-leaderboard .modal-content .tab-content table tr th{border: 0px;}
+.modal-leaderboard .modal-content .tab-content table tr th{border: 0px; border-bottom: 1px solid #000; border-top: 1px solid #FFF;}
+.modal-leaderboard .modal-content button{position: relative; border: 5px solid #000; background-color: #FFC312;}
+
+.modal-video .modal-header{border: 0px;}
+.modal-video .modal-header{text-align: center; display: block;}
+.modal-video .modal-header .modal-title{text-align: center; color: #FFC312;}
+.modal-video .modal-body{text-align: center; color: #000; font-weight: bold;}
+.modal-video .modal-footer{border: 0px;s}
+
 .memory-game{min-height: 100%; padding-bottom: 150px;}
 .modal.memory-game .modal-content .modal-body .ico-close{top: -13px; right: -13px;z-index: 9;}
 
