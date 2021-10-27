@@ -49,7 +49,7 @@ class RaceController extends Controller
 
         $character = json_decode($race->character, true);
         $uses_rider = $this->searchRacer($rider, $character);
-        // return $uses_rider;
+        // return $character;
         // $coin_value = $uses_rider['coin_value'];
 
         if ($uses_rider != null) {
