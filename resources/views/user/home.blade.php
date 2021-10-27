@@ -37,8 +37,8 @@
 <div class="container p-3 bg-red mw-600 dashboard pb-5 minh">
     <div class="">
         <div class="badge-area d-flex">
-            <span class=" badge">                
-                <img src="{{ asset('images/badge-life.png') }}" class="medium-badge" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Nyawa">{{ number_format($user->race->heal, 0) }} 
+            <span class=" badge">
+                <img src="{{ asset('images/badge-life.png') }}" class="medium-badge" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Nyawa">{{ number_format($user->race->heal, 0) }}
                 <a href="{{ url('add-heal') }}"><img src="{{ asset('images/badge-addlife.png') }}" class="medium-badge-right"></a>
             </span>
             <span class=" badge ms-auto">

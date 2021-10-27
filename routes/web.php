@@ -24,11 +24,14 @@ Auth::routes();
 
 Route::get('google', 'GoogleController@redirect');
 Route::get('google/callback', 'GoogleController@callback');
-Route::get('privacy-policy', function () {
+Route::get('kebijakan-privasi', function () {
     return view('user.privacy-policy');
 });
-Route::get('terms-conditions', function () {
+Route::get('syarat-dan-ketentuan', function () {
     return view('user.syarat-ketentuan');
+});
+Route::get('aturan-permainan', function () {
+    return view('user.aturan-permainan');
 });
 
 Route::middleware(['auth'])->group(function () {
