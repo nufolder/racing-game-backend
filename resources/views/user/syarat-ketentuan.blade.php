@@ -14,13 +14,13 @@
             <h6 class="list-policy">Persyaratan Umum</h6>
             <ol>
                 <li class="list-policy mb-3">
-                    <span style="color: #ffc210;">Kompetisi permainan</span> ini terbuka untuk umum.
+                    Kompetisi permainan ini terbuka untuk umum.
                 </li>
                 <li class="list-policy mb-3">
-                    <span style="color: #ffc210;">Tidak ada biaya apapun untuk mengikuti kompetisi permainan ini.</span>
+                    Tidak ada biaya apapun untuk mengikuti kompetisi permainan ini.
                 </li>
                 <li class="list-policy mb-3">
-                    <span style="color: #ffc210;">Kompetisi permainan</span> ini tidak berlaku untuk karyawan dan atau anggota keluarga dari agensi PT. Astra Honda Motor.
+                    Kompetisi permainan ini tidak berlaku untuk karyawan dan atau anggota keluarga dari agensi PT. Astra Honda Motor.
                 </li>
                 <li class="list-policy mb-3">
                     Peserta diwajibkan memfollow akun Instagram <a href="https://www.instagram.com/astrahondaracingteam/" target="_blank" style="color: #ffc210;">@astrahondaracingteam</a>
@@ -29,19 +29,19 @@
             <h6 class="list-policy">Mekanisme</h6>
             <ol>
                 <li class="list-policy mb-3">
-                    <span style="color: #ffc210;">Peserta wajib mendaftarkan diri berupa nama, nomor handphone dan alamat email sebelum mengikuti kompetisi permainan </span>
+                    Peserta wajib mendaftarkan diri berupa nama, nomor handphone dan alamat email sebelum mengikuti kompetisi permainan
                 </li>
                 <li class="list-policy mb-3">
-                    <span style="color: #ffc210;">Kompetisi ini mewajibkan peserta mengikuti permainan Generasi Juara </span> yang telah disediakan panitia pada situs generasijuara.com
+                    Kompetisi ini mewajibkan peserta mengikuti permainan Generasi Juara  yang telah disediakan panitia pada situs generasijuara.com
                 </li>
                 <li class="list-policy mb-3">
-                    Peserta akan mengikuti kompetisi permainan dengan “fuel” sebagai <span style="color: #ffc210;">kesempatan bermain per harinya </span> dan mengumpulkan tiket sebagai syarat mengikuti undian grand prize <span style="color: #ffc210;"> 1 unit Honda CBR150R. </span>
+                    Peserta akan mengikuti kompetisi permainan dengan “fuel” sebagai kesempatan bermain per harinya  dan mengumpulkan tiket sebagai syarat mengikuti undian grand prize  1 unit Honda CBR150R.
                 </li>
                 <li class="list-policy mb-3">
-                    <span style="color: #ffc210;">Peserta bisa mendapatkan hadiah mingguan berupa uang elektronik sebesar @ Rp1.000.000 bagi 4 orang pemenang yang akan ditentukan dari skor tertinggi di leaderboard mingguan. </span>
+                    Peserta bisa mendapatkan hadiah mingguan berupa uang elektronik sebesar @ Rp1.000.000 bagi 4 orang pemenang yang akan ditentukan dari skor tertinggi di leaderboard mingguan.
                 </li>
                 <li class="list-policy mb-3">
-                    <span style="color: #ffc210;">Tiket undian grand prize </span> akan didapatkan oleh peserta setelah menyelesaikan satu sesi balapan dari permainan Generasi Juara.
+                    Tiket undian grand prize  akan didapatkan oleh peserta setelah menyelesaikan satu sesi balapan dari permainan Generasi Juara.
                 </li>
                 <li class="list-policy mb-3">
                     Selain akan mendapatkan tiket, peserta dapat mengumpulkan koin saat game balapan berlangsung. Koin yang dikumpulkan dapat digunakan untuk mendapatkan karakter baru (pebalap Astra Honda Racing Team).
@@ -53,7 +53,7 @@
             <h6 class="list-policy">Hadiah Mingguan</h6>
             <ol>
                 <li class="list-policy mb-3">
-                    Setiap minggunya akan ada <span style="color: #ffc210;">4 (empat) orang peserta</span> yang berkesempatan memenangkan uang elektronik sebesar @Rp 250.000 <span style="color: #ffc210;">yang akan dikirimkan melalui nomor hp peserta yang didaftarkan.</span> Peserta hanya bisa memenangkan hadiah mingguan sebanyak satu kali.
+                    Setiap minggunya akan ada 4 (empat) orang peserta yang berkesempatan memenangkan uang elektronik sebesar @Rp 250.000 yang akan dikirimkan melalui nomor hp peserta yang didaftarkan. Peserta hanya bisa memenangkan hadiah mingguan sebanyak satu kali.
                 </li>
             </ol>
             <h6 class="list-policy">Hadiah Utama</h6>
@@ -68,7 +68,7 @@
                     Nama yang digunakan peserta tidak mengandung unsur pornografi, SARA
                 </li>
                 <li class="list-policy mb-3">
-                    PT Astra Honda Motor dibebaskan dari tuntutan pihak ketiga dan konsekuensi hukum apapun terhadap <span style="color: #ffc210;">materi desain yang ditampilkan di dalam permainan.</span>
+                    PT Astra Honda Motor dibebaskan dari tuntutan pihak ketiga dan konsekuensi hukum apapun terhadap materi desain yang ditampilkan di dalam permainan.
                 </li>
                 <li class="list-policy mb-3">
                     Dengan mengakses generasijuara.com, Anda menyetujui Ketentuan Penggunaan ini. Jika Anda tidak setuju dengan Ketentuan Penggunaan ini, mohon untuk tidak mengakses generasijuara.com.
@@ -110,19 +110,19 @@
             <h6 class="list-policy">Periode Kompetisi & Hadiah</h6>
             <ol>
                 <li class="list-policy mb-3">
-                    Periode: 10 November - <span style="color: #ffc210;">10 Desember 2021</span>
+                    Periode: 10 November - 10 Desember 2021
                 </li>
                 <li class="list-policy mb-3">
                     Pengumuman pemenang mingguan akan diumumkan setiap awal pekan melalui situs generasijuara.com setiap pekannya
                 </li>
                 <li class="list-policy mb-3">
-                    Pemenang hadiah utama akan diumumkan setelah diundi di akhir periode <span style="color: #ffc210;">(10 Desember)</span>
+                    Pemenang hadiah utama akan diumumkan setelah diundi di akhir periode 10 Desember)
                 </li>
                 <li class="list-policy mb-3">
-                    Pemenang Hadiah Utama (1 unit CBR150R tipe <span style="color: #ffc210;">CBS, Varian Warna: Honda Racing Red) untuk 1 orang pemenang.</span>
+                    Pemenang Hadiah Utama (1 unit CBR150R tipe CBS, Varian Warna: Honda Racing Red) untuk 1 orang pemenang.
                 </li>
                 <li class="list-policy mb-3">
-                    Juara mingguan (Uang elektronik sebesar <span style="color: #ffc210;">Rp 250.000 </span>) <span style="color: #ffc210;">untuk 4 (empat) orang pemenang</span>
+                    Juara mingguan (Uang elektronik sebesar Rp 250.000 ) untuk 4 (empat) orang pemenang
                 </li>
             </ol>
         </ol>
