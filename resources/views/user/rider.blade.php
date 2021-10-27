@@ -6,7 +6,7 @@
 
 @section('content')
 
-<div class="container pt-3 select-class-rider mw-600">
+<div class="container pt-3 select-class-rider mw-600 minh">
 
     <div class="row d-flex justify-content-center">
             @if (session('message'))

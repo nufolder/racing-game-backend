@@ -1,6 +1,6 @@
 <!-- ttc -->
 <div class="modal fade select-rider" id="ttc" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-    <div class="modal-dialog  modal-dialog-centered modal-dialog-scrollable">
+    <div class="modal-dialog  modal-dialog-centered">
         <div class="modal-content">
             <div class="modal-body p-0">
                 <button type="button" class="ico-close" data-bs-dismiss="modal" aria-label="Close"><img src="{{ asset('images/ico-close.png') }}"></button>
@@ -16,8 +16,8 @@
                                             <li>2019 - Astra Honda Racing School</li>
                                         </ul>
                                     </div>
-                                    <div class="benefit">Tiket x2</div>
-                                    <div class="benefit-details">Skill berfungsi untuk mendapatkan skor lebih besar pada setiap game dan akan berpengaruh pada perolehan jumlah tiket yang didapat.</div>
+                                    <div class="benefit">Power* <img src="{{ asset('images/level-1.jpg') }}"></div>
+                                    <div class="benefit-details">Power berfungsi untuk mendapatkan skor lebih besar pada setiap game dan akan berpengaruh pada perolehan jumlah tiket yang didapat.</div>
                                     <div class="pt-3 px-5"><a href="{{ url('race/chessy') }}" class="btn btn-sm btn-primary">GO!!</a></div>
                                 </div>
                             </div>
@@ -33,8 +33,8 @@
                                             <li>2019 - Astra Honda Racing School</li>
                                         </ul>
                                     </div>
-                                    <div class="benefit">Tiket x2</div>
-                                    <div class="benefit-details">Skill berfungsi untuk mendapatkan skor lebih besar pada setiap game dan akan berpengaruh pada perolehan jumlah tiket yang didapat.</div>
+                                    <div class="benefit">Power* <img src="{{ asset('images/level-1.jpg') }}"></div>
+                                    <div class="benefit-details">Power berfungsi untuk mendapatkan skor lebih besar pada setiap game dan akan berpengaruh pada perolehan jumlah tiket yang didapat.</div>
                                     <div class="pt-3 px-5"><a href="{{ url('race/veda') }}" class="btn btn-sm btn-primary">GO!!</a></div>
                                 </div>
                             </div>
@@ -49,7 +49,7 @@
 
 <!-- atc -->
 <div class="modal fade select-rider" id="atc" tabindex="-1" aria-labelledby="exampleModalLabel2" aria-hidden="true">
-    <div class="modal-dialog  modal-dialog-centered modal-dialog-scrollable">
+    <div class="modal-dialog  modal-dialog-centered ">
         <div class="modal-content">
             <div class="modal-body p-0">
                 <button type="button" class="ico-close" data-bs-dismiss="modal" aria-label="Close"><img src="{{ asset('images/ico-close.png') }}"></button>
@@ -66,8 +66,8 @@
                                             <li>2018 - Astra Honda Racing School</li>
                                         </ul>
                                     </div>
-                                    <div class="benefit">Tiket x4</div>
-                                    <div class="benefit-details">Skill berfungsi untuk mendapatkan skor lebih besar pada setiap game dan akan berpengaruh pada perolehan jumlah tiket yang didapat.</div>
+                                    <div class="benefit">Power* <img src="{{ asset('images/level-2.jpg') }}"></div>
+                                    <div class="benefit-details">Power berfungsi untuk mendapatkan skor lebih besar pada setiap game dan akan berpengaruh pada perolehan jumlah tiket yang didapat.</div>
                                     <div class="pt-3 px-5"><a href="{{ url('race/fadillah') }}" class="btn btn-sm btn-primary">GO!!</a></div>
                                 </div>
                             </div>
@@ -84,8 +84,8 @@
                                             <li>2019 - Astra Honda Racing School</li>
                                         </ul>
                                     </div>
-                                    <div class="benefit">Tiket x2</div>
-                                    <div class="benefit-details">Skill berfungsi untuk mendapatkan skor lebih besar pada setiap game dan akan berpengaruh pada perolehan jumlah tiket yang didapat.</div>
+                                    <div class="benefit">Power* <img src="{{ asset('images/level-2.jpg') }}"></div>
+                                    <div class="benefit-details">Power berfungsi untuk mendapatkan skor lebih besar pada setiap game dan akan berpengaruh pada perolehan jumlah tiket yang didapat.</div>
                                     <div class="pt-3 px-5"><a href="{{ url('race/azryan') }}" class="btn btn-sm btn-primary">GO!!</a></div>
                                 </div>
                             </div>
@@ -102,8 +102,8 @@
                                             <li>2019 - Astra Honda Racing School</li>
                                         </ul>
                                     </div>
-                                    <div class="benefit">Tiket x2</div>
-                                    <div class="benefit-details">Skill berfungsi untuk mendapatkan skor lebih besar pada setiap game dan akan berpengaruh pada perolehan jumlah tiket yang didapat.</div>
+                                    <div class="benefit">Power* <img src="{{ asset('images/level-2.jpg') }}"></div>
+                                    <div class="benefit-details">Power berfungsi untuk mendapatkan skor lebih besar pada setiap game dan akan berpengaruh pada perolehan jumlah tiket yang didapat.</div>
                                     <div class="pt-3 px-5"><a href="{{ url('race/herlian') }}" class="btn btn-sm btn-primary">GO!!</a></div>
                                 </div>
                             </div>
@@ -135,8 +135,8 @@
                                             <li>2018 - Astra Honda Racing School CBR150R</li>
                                         </ul>
                                     </div>
-                                    <div class="benefit">Tiket x6</div>
-                                    <div class="benefit-details">Skill berfungsi untuk mendapatkan skor lebih besar pada setiap game dan akan berpengaruh pada perolehan jumlah tiket yang didapat.</div>
+                                    <div class="benefit">Power* <img src="{{ asset('images/level-3.jpg') }}"></div>
+                                    <div class="benefit-details">Power berfungsi untuk mendapatkan skor lebih besar pada setiap game dan akan berpengaruh pada perolehan jumlah tiket yang didapat.</div>
                                     <div class="pt-3 px-5"><a href="{{ url('race/fadillah') }}" class="btn btn-sm btn-primary">GO!!</a></div>
                                 </div>
                             </div>
@@ -157,8 +157,8 @@
                                             <li>2017 - 2nd Position Race 2 Rd. 3 Thailand Talent Cup</li>
                                         </ul>
                                     </div>
-                                    <div class="benefit">Tiket x6</div>
-                                    <div class="benefit-details">Skill berfungsi untuk mendapatkan skor lebih besar pada setiap game dan akan berpengaruh pada perolehan jumlah tiket yang didapat.</div>
+                                    <div class="benefit">Power* <img src="{{ asset('images/level-3.jpg') }}"></div>
+                                    <div class="benefit-details">Power berfungsi untuk mendapatkan skor lebih besar pada setiap game dan akan berpengaruh pada perolehan jumlah tiket yang didapat.</div>
                                     <div class="pt-3 px-5"><a href="{{ url('race/azryan') }}" class="btn btn-sm btn-primary">GO!!</a></div>
                                 </div>
                             </div>
@@ -177,8 +177,8 @@
                                             <li>2016 - Astra Honda Racing School 250cc 2016</li>
                                         </ul>
                                     </div>
-                                    <div class="benefit">Tiket x6</div>
-                                    <div class="benefit-details">Skill berfungsi untuk mendapatkan skor lebih besar pada setiap game dan akan berpengaruh pada perolehan jumlah tiket yang didapat.</div>
+                                    <div class="benefit">Power* <img src="{{ asset('images/level-3.jpg') }}"></div>
+                                    <div class="benefit-details">Power berfungsi untuk mendapatkan skor lebih besar pada setiap game dan akan berpengaruh pada perolehan jumlah tiket yang didapat.</div>
                                     <div class="pt-3 px-5"><a href="{{ url('race/herlian') }}" class="btn btn-sm btn-primary">GO!!</a></div>
                                 </div>
                             </div>
@@ -201,8 +201,8 @@
                                             <li>2017 - 2nd Position Race 2 Rd. 5 Thailand Talent Cup</li>
                                         </ul>
                                     </div>
-                                    <div class="benefit">Tiket x6</div>
-                                    <div class="benefit-details">Skill berfungsi untuk mendapatkan skor lebih besar pada setiap game dan akan berpengaruh pada perolehan jumlah tiket yang didapat.</div>
+                                    <div class="benefit">Power* <img src="{{ asset('images/level-3.jpg') }}"></div>
+                                    <div class="benefit-details">Power berfungsi untuk mendapatkan skor lebih besar pada setiap game dan akan berpengaruh pada perolehan jumlah tiket yang didapat.</div>
                                     <div class="pt-3 px-5"><a href="{{ url('race/mario') }}" class="btn btn-sm btn-primary">GO!!</a></div>
                                 </div>
                             </div>
@@ -216,7 +216,7 @@
 
 <!-- cev -->
 <div class="modal fade select-rider" id="cev" tabindex="-1" aria-labelledby="exampleModalLabel3" aria-hidden="true">
-    <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+    <div class="modal-dialog modal-dialog-centered">
         <div class="modal-content">
             <div class="modal-body">
                 <button type="button" class="ico-close" data-bs-dismiss="modal" aria-label="Close"><img src="{{ asset('images/ico-close.png') }}"></button>
@@ -239,8 +239,8 @@
                                             <li>2017 - 2nd Position Race 2 Rd. 5 Thailand Talent Cup</li>
                                         </ul>
                                     </div>
-                                    <div class="benefit">Tiket x6</div>
-                                    <div class="benefit-details">Skill berfungsi untuk mendapatkan skor lebih besar pada setiap game dan akan berpengaruh pada perolehan jumlah tiket yang didapat.</div>
+                                    <div class="benefit">Power* <img src="{{ asset('images/level-4.jpg') }}"></div>
+                                    <div class="benefit-details">Power berfungsi untuk mendapatkan skor lebih besar pada setiap game dan akan berpengaruh pada perolehan jumlah tiket yang didapat.</div>
                                     <div class="pt-3 px-5"><a href="{{ url('race/mario') }}" class="btn btn-sm btn-primary">GO!!</a></div>
                                 </div>
                             </div>

@@ -6,9 +6,9 @@ h1, h2, h3, h4{font-family: 'Russo One', sans-serif;}
 .alert a{color: #0f5132; }
 .modal .modal-content{width: 100%; position: relative;}
 .modal .modal-content button{border: 0px;
-    background-color: #ed1a2f;
+    background-color: transparent;
     position: absolute;
-    bottom: -13px;
+    /* bottom: -13px; */
     right: -4px;}
 .modal .modal-content button img{max-width: 30px;}
 
@@ -21,6 +21,8 @@ h1, h2, h3, h4{font-family: 'Russo One', sans-serif;}
 
 .mw-600{max-width: 600px;}
 .mw-800{max-width: 800px;}
+.minheight{min-height: 100%; height: 100%; overflow: scroll;}
+.minh{min-height: 100%;}
 .bg-red{background-color: #ED1B2F !important;}
 
 .btn{background-color: #FFC312; font-family: 'Russo One', sans-serif; color: #000; font-size: 1.3rem; border: 5px solid #000; border-radius: 8px; padding-top: 8px; padding-bottom: 8px;display: block; width: 100%; position: relative; text-transform: uppercase;}
@@ -109,7 +111,7 @@ h1, h2, h3, h4{font-family: 'Russo One', sans-serif;}
 
 .modal.select-rider .modal-content{overflow: visible;}
 .modal.select-rider .modal-content .modal-body{overflow: visible;}
-.modal.select-rider .modal-content .modal-body .ico-close{top: 0px; right: -3px; z-index: 9;}
+.modal.select-rider .modal-content .modal-body .ico-close{top: -13px; right: -13px;z-index: 9;}
 .modal.select-rider .carousel-item .card{border: 0px;}
 .modal.select-rider .card-body{padding: 0px 30px 30px 30px;}
 .modal.select-rider .card-details{text-align: left;}
@@ -117,7 +119,8 @@ h1, h2, h3, h4{font-family: 'Russo One', sans-serif;}
 .modal.select-rider .card-details .age{font-family: 'Montserrat'; font-size: 12px; font-weight: bold; text-transform: uppercase; text-align: center;}
 .modal.select-rider .card-details .achievement{font-size: 12px; padding-top: 15px;}
 .modal.select-rider .card-details .achievement ul{padding-left: 15px;}
-.modal.select-rider .card-details .benefit{background-color: #ED1B2F; color: #FFF; text-align: center; padding: 15px; font-weight: bold;}
+.modal.select-rider .card-details .benefit{display: flex; justify-content: center;}
+.modal.select-rider .card-details .benefit img{height: 25px; padding-left: 10px;}
 .modal.select-rider .card-details .benefit-details{font-size: 10px; margin-bottom: 20px; padding-top: 10px;}
 .modal.select-rider .slick-slider button{z-index: 9999; background-color: #FFC312; width: 40px; height: 40px; border-radius: 50%;color: #FFF; border: 2px solid #000}
 .modal.select-rider .slick-slider button.slick-disabled{background-color: #CCC;}
@@ -127,5 +130,27 @@ h1, h2, h3, h4{font-family: 'Russo One', sans-serif;}
 .modal.select-rider .slick-slider .slick-prev::before, .modal.select-rider .slick-slider .slick-next::before{color: #000; font-size: 12px; font-family: 'Russo One'; opacity: 1;}
 .modal.select-rider .slick-slider .slick-prev::before{content: "PREV"; }
 .modal.select-rider .slick-slider .slick-next::before{content: "NEXT"; }
+
+.modal-header{padding: 5px 10px;}
+.modal-header h5.modal-title{font-weight: bold; font-size: 1.1rem;}
+#clueModal.modal .modal-content button{right: 2px;}
+
+.modal-leaderboard {}
+.modal-leaderboard .modal-title{background-color: #ED1B2F; font-family: 'Russo One', sans-serif; color: #FFF; font-size: 1.2rem; border: 3px solid #000; border-radius: 8px; padding-top: 8px; padding-bottom: 8px;display: block; width: 100%; position: relative; text-transform: uppercase;; text-align: center; margin-top: -40px; margin-bottom: 10px;}
+.modal-leaderboard .nav-tabs .nav-link{border: 0px; border-bottom: 3px solid #E0DDDD; color: #4a4a4a;}
+.modal-leaderboard .nav-tabs .nav-link.active{border: 0px; border-bottom: 3px solid #ED1B2F;}
+.modal-leaderboard .modal-content .content-list .nav-item {font-size: 14px;}
+.modal-leaderboard .modal-content .tab-content{font-size: 14px; font-weight: lighter;}
+.modal-leaderboard .modal-content .tab-content table tr td, .modal-leaderboard .modal-content .tab-content table tr th{border: 0px;}
+.modal-leaderboard .modal-content .tab-content table tr th{border: 0px; border-bottom: 1px solid #000; border-top: 1px solid #FFF;}
+.modal-leaderboard .modal-content button{position: relative; border: 5px solid #000; background-color: #FFC312;}
+
+.modal-video .modal-header{border: 0px;}
+.modal-video .modal-header{text-align: center; display: block;}
+.modal-video .modal-header .modal-title{text-align: center; color: #FFC312;}
+.modal-video .modal-body{text-align: center; color: #000; font-weight: bold;}
+.modal-video .modal-footer{border: 0px;s}
+
 .memory-game{min-height: 100%; padding-bottom: 150px;}
+.modal.memory-game .modal-content .modal-body .ico-close{top: -13px; right: -13px;z-index: 9;}
 

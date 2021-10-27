@@ -93,11 +93,13 @@
 
                     {{-- <div class="next-button-container mt-3">
                                     <button onclick="handleNextQuestion()">Next Question</button>
-                                </div> --}}
+                         </div> --}}
                     <div class="col-md-6 mb-3 text-center mt-5">
                         <div class="text-white text-small">
-                            Butuh Petunjuk? <a href="#" data-bs-toggle="modal" data-bs-target="#clueModal"
-                                style="color: white !important">Klik Disini</a>
+                            Butuh Petunjuk? <a href="#" data-bs-toggle="modal" data-bs-target="#clueModal" style="color: white !important">Klik Disini</a>
+                        </div>
+                        <div class="text-white text-small mt-4 px-5">
+                            <a href="{{ url('user') }}" class="btn">HOME</a>
                         </div>
 
                         {{-- <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#clueModal">
@@ -119,6 +121,7 @@
 
             <div class="modal-header">
                 <h5 class="modal-title" id="clueModalLabel">Clue Jawaban</h5>
+                <button type="button" class="ico-close" data-bs-dismiss="modal" aria-label="Close"><img src="{{ asset('images/ico-close.png') }}"></button>                
             </div>
             <div class="modal-body">
                 <div id="clue-iframe-label"
