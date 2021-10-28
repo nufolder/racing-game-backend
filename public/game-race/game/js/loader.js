@@ -152,10 +152,12 @@ function toggleLoader(con){
 }
 
 var myTip = [
-    "Quick Tip: AHRT adalah",
-    "Quick Tip: MARIO adalah",
-    "Quick Tip: ARRC adalah",
-    "Quick Tip: TTC adalah"
+    "Kumpulkan tiket untuk 1 Unit Honda CBR150",
+    "Kumpulkan koin untuk karakter AHRT",
+    "80 koin untuk karakter Super Mario",
+    "Chessy rider AHRT paling muda",
+    "1 tiket sama dengan 5.000 score",
+    "Tambah nyawa dengan memainkan mini games"
   ];
 
 var randomItem = myTip[Math.floor(Math.random()*myTip.length)];
