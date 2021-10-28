@@ -154,3 +154,6 @@ h1, h2, h3, h4{font-family: 'Russo One', sans-serif;}
 .memory-game{min-height: 100%; padding-bottom: 150px;}
 .modal.memory-game .modal-content .modal-body .ico-close{top: -13px; right: -13px;z-index: 9;}
 
+
+.list-policy{color: white;}
+

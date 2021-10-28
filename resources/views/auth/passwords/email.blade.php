@@ -13,9 +13,10 @@
                 <div class="card-body p-4 pb-3">
                     <div class="pb-2">
                         <h1 class="text-center pt-4">Lupa Password</h1>
-                        <p class="text-center text-info">Mohon masukkan alamat email yang terdaftar, kamu akan menerima link untuk membuat password baru lewat email.</p>
+                        <p class="text-center text-info">Mohon masukkan alamat email yang terdaftar, kamu akan menerima
+                            link untuk membuat password baru lewat email.</p>
                         @if (session('status'))
-                        <div class="alert alert-success" role="alert">
+                        <div class="alert text-info" role="alert">
                             {{ session('status') }}
                         </div>
                         @endif

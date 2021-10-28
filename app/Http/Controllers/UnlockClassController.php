@@ -232,6 +232,20 @@ class UnlockClassController extends Controller
                                 'up_left'       => 'assets/assets-arrc/car_up_left.png',
                                 'up_right'      => 'assets/assets-arrc/car_up_right.png',
                                 'up_straight'   => 'assets/assets-arrc/car_up_straight.png',
+                            ],
+                            [
+                                'racer'         => 'herjun-arrc',
+                                'coin_value'    => 1,
+                                'score_value'   => 200,
+                                'hills'         => 'assets/assets-arrc/background_hills.png',
+                                'sky'           => 'assets/assets-arrc/background_sky.png',
+                                'trees'         => 'assets/assets-arrc/background_trees.png',
+                                'left'          => 'assets/assets-arrc/car_left.png',
+                                'right'         => 'assets/assets-arrc/car_right.png',
+                                'straight'      => 'assets/assets-arrc/car_straight.png',
+                                'up_left'       => 'assets/assets-arrc/car_up_left.png',
+                                'up_right'      => 'assets/assets-arrc/car_up_right.png',
+                                'up_straight'   => 'assets/assets-arrc/car_up_straight.png',
                             ]
                         );
                         $coinLeft = $race->coin - 60;
