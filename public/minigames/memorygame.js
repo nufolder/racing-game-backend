@@ -189,7 +189,7 @@ const match = () => {
     });
     myMatch.show();
     $(".nama").text(`${getRider}`);
-    $(".kelas").text(`KELAS ${getClass}`);
+    $(".kelas").text(`${getClass}`);
     setTimeout(function() {
         myMatch.hide();
     }, 2000);

@@ -8,7 +8,7 @@
 <div class="container p-3 bg-red mw-600 dashboard pb-5 minh">
 
     <center><img src="{{ asset('images/logo-generasi-juara.png') }}" class="img-fluid py-4 mt-3"></center>
-    <h1 class="text-center mt-3 text-white">Aturan ermainan</h1>
+    <h1 class="text-center mt-3 text-white">Aturan Permainan</h1>
     <p class="privacy-policy">
         <ol class="content">
             <li class="list-policy mb-3">
