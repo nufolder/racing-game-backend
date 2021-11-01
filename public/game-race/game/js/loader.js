@@ -152,6 +152,12 @@ function toggleLoader(con){
 }
 
 var myTip = [
+    "Kumpulkan tiket untuk 1 Unit Honda CBR150",
+    "Kumpulkan koin untuk karakter AHRT",
+    "80 koin untuk karakter Super Mario",
+    "Chessy rider AHRT paling muda",
+    "1 tiket sama dengan 5.000 score",
+    "Tambah nyawa dengan memainkan mini games",
     '"Super Mario" adalah julukan untuk Mario Suryo Aji',
     "Mario merupakan jebolan Astra Honda Racing School tahun 2016",
     "Mario mendapatkan pole position saat balapan di seri Catalunya tahun 2021",
