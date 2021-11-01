@@ -157,7 +157,17 @@ var myTip = [
     "80 koin untuk karakter Super Mario",
     "Chessy rider AHRT paling muda",
     "1 tiket sama dengan 5.000 score",
-    "Tambah nyawa dengan memainkan mini games"
+    "Tambah nyawa dengan memainkan mini games",
+    '"Super Mario" adalah julukan untuk Mario Suryo Aji',
+    "Mario merupakan jebolan Astra Honda Racing School tahun 2016",
+    "Mario mendapatkan pole position saat balapan di seri Catalunya tahun 2021",
+    "Mario debut Moto3 di tahun 2021 melalui kesempatan wildcard",
+    '"The Silent Boy" adalah julukan untuk Rheza Danica',
+    "Rheza berhasil menjuarai ARRC kelas AP250 di tahun 2018",
+    "CBR250RR sudah dua kali mengantarkan pebalap Indonesia menjadi juara Asia",
+    "Delvintor Alfarizi pernah menjadi juara nasional motocross termuda",
+    "Gerry Salim adalah pebalap Indonesia pertama yang menjuarai ARRC kelas AP250",
+    "Usia maksimal bergabung di Astra Honda Racing School adalah 16 tahun"
   ];
 
 var randomItem = myTip[Math.floor(Math.random()*myTip.length)];
