@@ -1,11 +1,12 @@
 <!-- ttc -->
-<div class="modal fade select-rider" id="ttc" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+<div class="modal fade select-rider" id="ttc_atc" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
     <div class="modal-dialog  modal-dialog-centered">
         <div class="modal-content">
             <div class="modal-body p-0">
                 <button type="button" class="ico-close" data-bs-dismiss="modal" aria-label="Close"><img
                         src="{{ asset('images/ico-close.png') }}"></button>
-                <div id="carousel-ttc">
+                <div id="carousel-ttc_atc">
+
                     <div>
                         <img src="{{ asset('photo-riders/rider-chessy.jpg') }}" class="card-img-top"
                             alt="Chessy Meilandri">
@@ -46,22 +47,6 @@
                             </div>
                         </div>
                     </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
-
-
-
-<!-- atc -->
-<div class="modal fade select-rider" id="atc" tabindex="-1" aria-labelledby="exampleModalLabel2" aria-hidden="true">
-    <div class="modal-dialog  modal-dialog-centered ">
-        <div class="modal-content">
-            <div class="modal-body p-0">
-                <button type="button" class="ico-close" data-bs-dismiss="modal" aria-label="Close"><img
-                        src="{{ asset('images/ico-close.png') }}"></button>
-                <div id="carousel-atc">
                     <div>
                         <img src="{{ asset('photo-riders/rider-fadillah.jpg') }}" class="card-img-top"
                             alt="Chessy Meilandri">
@@ -147,6 +132,7 @@
                             </div>
                         </div>
                     </div>
+
                 </div>
             </div>
         </div>
@@ -154,14 +140,17 @@
 </div>
 
 
-<!-- arrc -->
-<div class="modal fade select-rider" id="arrc" tabindex="-1" aria-labelledby="exampleModalLabel2" aria-hidden="true">
-    <div class="modal-dialog  modal-dialog-centered">
+
+<!-- atc -->
+<div class="modal fade select-rider" id="arrc_ap250" tabindex="-1" aria-labelledby="exampleModalLabel2"
+    aria-hidden="true">
+    <div class="modal-dialog  modal-dialog-centered ">
         <div class="modal-content">
             <div class="modal-body p-0">
                 <button type="button" class="ico-close" data-bs-dismiss="modal" aria-label="Close"><img
                         src="{{ asset('images/ico-close.png') }}"></button>
-                <div id="carousel-arrc">
+                <div id="carousel-arrc_ap250">
+
                     <div>
                         <img src="{{ asset('photo-riders/rider-herjun-arrc.jpg') }}" class="card-img-top"
                             alt="Chessy Meilandri">
@@ -231,6 +220,24 @@
                             </div>
                         </div>
                     </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<!-- arrc -->
+<div class="modal fade select-rider" id="arrc_ss600" tabindex="-1" aria-labelledby="exampleModalLabel2"
+    aria-hidden="true">
+    <div class="modal-dialog  modal-dialog-centered">
+        <div class="modal-content">
+            <div class="modal-body p-0">
+                <button type="button" class="ico-close" data-bs-dismiss="modal" aria-label="Close"><img
+                        src="{{ asset('images/ico-close.png') }}"></button>
+                <div id="carousel-arrc_ss600">
+
                     <div>
                         <img src="{{ asset('photo-riders/rider-rheza.jpg') }}" class="card-img-top">
                         <div class="card-body">
@@ -284,6 +291,7 @@
                             </div>
                         </div>
                     </div>
+
                 </div>
             </div>
         </div>

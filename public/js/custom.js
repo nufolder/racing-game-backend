@@ -37,10 +37,10 @@ $("#show_hide_password a").on("click", function(event) {
     }
 });
 
-var myModal1 = document.getElementById("ttc");
+var myModal1 = document.getElementById("ttc_atc");
 if (myModal1) {
     myModal1.addEventListener("shown.bs.modal", function(event) {
-        $("#carousel-ttc").slick({
+        $("#carousel-ttc_atc").slick({
             slidesToShow: 1,
             autoplay: false,
             infinite: false,
@@ -51,10 +51,10 @@ if (myModal1) {
     });
 }
 
-var myModal2 = document.getElementById("atc");
+var myModal2 = document.getElementById("arrc_ap250");
 if (myModal2) {
     myModal2.addEventListener("shown.bs.modal", function(event) {
-        $("#carousel-atc").slick({
+        $("#carousel-arrc_ap250").slick({
             slidesToShow: 1,
             autoplay: false,
             infinite: false,
@@ -65,10 +65,10 @@ if (myModal2) {
     });
 }
 
-var myModal3 = document.getElementById("arrc");
+var myModal3 = document.getElementById("arrc_ss600");
 if (myModal3) {
     myModal3.addEventListener("shown.bs.modal", function(event) {
-        $("#carousel-arrc").slick({
+        $("#carousel-arrc_ss600").slick({
             slidesToShow: 1,
             autoplay: false,
             infinite: false,
