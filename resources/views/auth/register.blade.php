@@ -90,14 +90,74 @@
                                 <select onchange="checkSelectType(this);"
                                     class="form-select form-control form-select-sm @error('motor_cycle') is-invalid @enderror"
                                     name="motor_cycle" id="autoSizingSelect">
-                                    <option value="Vario" {{ old('title') == 'Vario' ? 'selected' : '' }}>
-                                        Vario
+                                    <option value="BeAT" {{ old('motor_cycle') == 'BeAT' ? 'selected' : '' }}>
+                                        BeAT
                                     </option>
-                                    <option value="Beat" {{ old('motor_cycle') == 'Beat' ? 'selected' : '' }}>
-                                        Beat
+                                    <option value="BeAT Street" {{ old('motor_cycle') == 'BeAT Street' ? 'selected' : '' }}>
+                                        BeAT Street
                                     </option>
-                                    <option value="CBR 150" {{ old('motor_cycle') == 'CBR 150' ? 'selected' : '' }}>
-                                        CBR 150
+                                    <option value="Genio" {{ old('motor_cycle') == 'Genio' ? 'selected' : '' }}>
+                                        Genio
+                                    </option>
+                                    <option value="Scoopy" {{ old('motor_cycle') == 'Scoopy' ? 'selected' : '' }}>
+                                        Scoopy
+                                    </option>
+                                    <option value="Vario 125" {{ old('motor_cycle') == 'Vario 125' ? 'selected' : '' }}>
+                                        Vario 125
+                                    </option>
+                                    <option value="Vario 150" {{ old('motor_cycle') == 'Vario 150' ? 'selected' : '' }}>
+                                        Vario 150
+                                    </option>
+                                    <option value="PCX" {{ old('motor_cycle') == 'PCX' ? 'selected' : '' }}>
+                                        PCX
+                                    </option>
+                                    <option value="ADV 150" {{ old('motor_cycle') == 'ADV 150' ? 'selected' : '' }}>
+                                        ADV 150
+                                    </option>
+                                    <option value="PCX e:HEV" {{ old('motor_cycle') == 'PCX e:HEV' ? 'selected' : '' }}>
+                                        PCX e:HEV
+                                    </option>
+                                    <option value="Forza" {{ old('motor_cycle') == 'Forza' ? 'selected' : '' }}>
+                                        Forza
+                                    </option>
+                                    <option value="CB150 Verza" {{ old('motor_cycle') == 'CB150 Verza' ? 'selected' : '' }}>
+                                        CB150 Verza
+                                    </option>
+                                    <option value="Sonic 150R" {{ old('motor_cycle') == 'Sonic 150R' ? 'selected' : '' }}>
+                                        Sonic 150R
+                                    </option>
+                                    <option value="CB150R Streetfire" {{ old('motor_cycle') == 'CB150R Streetfire' ? 'selected' : '' }}>
+                                        CB150R Streetfire
+                                    </option>
+                                    <option value="CRF150L" {{ old('motor_cycle') == 'CRF150L' ? 'selected' : '' }}>
+                                        CRF150L
+                                    </option>
+                                    <option value="CBR150R" {{ old('motor_cycle') == 'CBR150R' ? 'selected' : '' }}>
+                                        CBR150R
+                                    </option>
+                                    <option value="CBR250RR" {{ old('motor_cycle') == 'CBR250RR' ? 'selected' : '' }}>
+                                        CBR250RR
+                                    </option>
+                                    <option value="Monkey" {{ old('motor_cycle') == 'Monkey' ? 'selected' : '' }}>
+                                        Monkey
+                                    </option>
+                                    <option value="CRF250 RALLY" {{ old('motor_cycle') == 'CRF250 RALLY' ? 'selected' : '' }}>
+                                        CRF250 RALLY
+                                    </option>
+                                    <option value="Revo X" {{ old('motor_cycle') == 'Revo X' ? 'selected' : '' }}>
+                                        Revo X
+                                    </option>
+                                    <option value="Supra X 125 FI" {{ old('motor_cycle') == 'Supra X 125 FI' ? 'selected' : '' }}>
+                                        Supra X 125 FI
+                                    </option>
+                                    <option value="GTR 150" {{ old('motor_cycle') == 'GTR 150' ? 'selected' : '' }}>
+                                        GTR 150
+                                    </option>
+                                    <option value="Supercub C125" {{ old('motor_cycle') == 'Supercub C125' ? 'selected' : '' }}>
+                                        Supercub C125
+                                    </option>
+                                    <option value="CT125" {{ old('motor_cycle') == 'CT125' ? 'selected' : '' }}>
+                                        CT125
                                     </option>
                                     <option id="opSelect" value=""
                                         {{ old('motor_cycle') == 'Lainnya' ? 'selected' : '' }}>
