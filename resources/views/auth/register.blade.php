@@ -257,6 +257,18 @@
                                 </span>
                                 @enderror
                             </div>
+
+                            <div class="form-group pb-2">
+                                <input type="checkbox" name="newsletter">
+                                <label>Saya bersedia untuk mengikuti kabar terbaru dari Aktivitas Racing</label><br/>
+                                <label>Honda</label>
+                                <br/>
+                                @error('newsletter')
+                                <span class="invalid-feedback" role="alert">
+                                    <strong>{{ $message }}</strong>
+                                </span>
+                                @enderror
+                            </div>
                         </div>
 
 

@@ -21,6 +21,7 @@ class User extends Authenticatable
         'motor_cycle',
         'year_motor_cycle',
         'role',
+        'newsletter'
     ];
 
     protected $hidden = [
