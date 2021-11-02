@@ -60,7 +60,7 @@
                             </div>
                         </div>
 
-
+                        <h4 class="mt-5">Top 10 yang akan di undi weekly winner</h4>
 
                         <div class="table-responsive">
                             <table class="table table-responsive table-sm table-bordered">
@@ -69,8 +69,8 @@
                                         <th scope="col" style="text-align: center;">#</th>
                                         <th scope="col">Nama</th>
                                         <th scope="col">Email</th>
-                                        <th scope="col">Ticket</th>
-                                        <th scope="col">Coin</th>
+                                        <th scope="col">Tiket</th>
+                                        <th scope="col">Koin</th>
                                         <th scope="col">
                                             Score Weekly
 
@@ -122,10 +122,9 @@
                 <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
             </div>
             <div class="modal-footer">
-                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
                 <form action="{{ url('admin/reset-weekly-winner') }}" method="post">
                     @csrf
-                    <button type="submit" class="btn btn-primary">Submit</button>
+                    <button type="submit" class="btn btn-primary d-flex flex-grow-1">Reset Score</button>
                 </form>
             </div>
         </div>
@@ -140,9 +139,10 @@
                 <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
             </div>
             <div class="modal-footer">
-                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                <button type="submit" onclick="generator()" class="btn btn-primary"
-                    data-bs-dismiss="modal">Submit</button>
+                <button type="submit" onclick="generator()" class="btn btn-primary d-flex flex-grow-1"
+                    data-bs-dismiss="modal">
+                    Generate Weekly Winner
+                </button>
             </div>
         </div>
     </div>

@@ -48,6 +48,7 @@ Route::middleware(['auth'])->group(function () {
         Route::get('admin/minigames', 'Admin\AdminController@minigames')->name('admin.minigames');
         Route::get('admin/race', 'Admin\AdminController@race')->name('admin.race');
         Route::get('admin/top50', 'Admin\AdminController@top50')->name('admin.top50');
+        Route::get('admin/grand-winner', 'Admin\AdminController@grandWinner')->name('admin.grandwinner');
     });
 
     Route::middleware(['user'])->group(function () {

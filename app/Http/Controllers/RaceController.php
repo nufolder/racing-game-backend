@@ -22,25 +22,25 @@ class RaceController extends Controller
     {
         $race = Race::where('user_id', Auth::user()->id)->first();
         $checkRacer = json_decode($race->character);
-        $ttc    = false;
-        $atc    = false;
-        $arrc   = false;
-        $cev    = false;
+        $ttc_atc    = false;
+        $arrc_ap250 = false;
+        $arrc_ss600 = false;
+        $cev        = false;
         foreach ($checkRacer as $v) {
             if ($v->racer == 'chessy') {
-                $ttc = true;
-            }
-            if ($v->racer == 'fadillah') {
-                $atc = true;
+                $ttc_atc = true;
             }
             if ($v->racer == 'adenanta') {
-                $arrc = true;
+                $arrc_ap250 = true;
+            }
+            if ($v->racer == 'irfan') {
+                $arrc_ss600 = true;
             }
             if ($v->racer == 'mario') {
                 $cev = true;
             }
         }
-        return view('user.rider', compact('ttc', 'atc', 'arrc', 'cev'));
+        return view('user.rider', compact('ttc_atc', 'arrc_ap250', 'arrc_ss600', 'cev'));
     }
 
     public function raceRider($rider)

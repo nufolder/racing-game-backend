@@ -68,6 +68,11 @@
                             Player Top50
                         </a>
                     </li>
+                    <li class="nav-item">
+                        <a href="{{ url('admin/grand-winner') }}" class="nav-link">
+                            Grand Winner
+                        </a>
+                    </li>
                 </ul>
 
                 <ul class="navbar-nav ms-auto mb-2 mb-lg-0">

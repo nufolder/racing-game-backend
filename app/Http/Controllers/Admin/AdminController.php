@@ -81,6 +81,20 @@ class AdminController extends Controller
         return view('admin.weekly-winner', compact('week_win', 'namearr'));
     }
 
+    public function grandWinner()
+    {
+        $top_five_ticket = Race::with('user.chanceToPlayRacing')
+            ->orderBy('ticket', 'desc')
+            ->limit(10)
+            ->get();
+
+        foreach ($top_five_ticket as $key => $value) {
+            $toprr[] =  $value->user;
+        }
+
+        return view('admin.grand-winner', compact('top_five_ticket', 'toprr'));
+    }
+
     public function resetWeeklyWinner()
     {
         $race = Race::orderBy('ticket', 'desc')->get();

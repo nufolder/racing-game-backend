@@ -11,24 +11,24 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>Generasi Juara</title>
 
-    <meta name="Title" content="Speed Racer" />
+    <meta name="Title" content="Generasi Juara" />
     <meta name="description"
-        content="Speed Racer is a HTML5 game where you can drive through the forest world, collecting the powers along the road to help extend the fuel, race with turbo mode and collect coin to get high score!">
-    <meta name="keywords" content="speed, racer, racing, car, vehicle, world, fuel, coin, turbo, nitro">
+        content="Game balap motor dengan karakter Astra Honda Racing Team, kumpulkan tiketnya untuk mendapatkan 1 Unit Honda CBR150 di akhir periode, akan ada juga pemenang mingguan, yang akan diundi setiap minggunya!!">
+    <meta name="keywords" content="generasi, racer, racing, juara, ahrt, astra honda, cbr, balap, motor, honda">
 
     <!-- for Facebook -->
-    <meta property="og:title" content="Speed Racer" />
-    <meta property="og:site_name" content="Speed Racer" />
+    <meta property="og:title" content="Generasi Juara" />
+    <meta property="og:site_name" content="Generasi Juara" />
     <meta property="og:image" content="{{ asset('game-race/game/share.jpg') }}" />
     <meta property="og:url" content="{{ url('/') }}" />
     <meta property="og:description"
-        content="Speed Racer is a HTML5 game where you can drive through the forest world, collecting the powers along the road to help extend the fuel, race with turbo mode and collect coin to get high score!">
+        content="Game balap motor dengan karakter Astra Honda Racing Team, kumpulkan tiketnya untuk mendapatkan 1 Unit Honda CBR150 di akhir periode, akan ada juga pemenang mingguan, yang akan diundi setiap minggunya!!">
 
     <!-- for Twitter -->
-    <meta name="twitter:card" content="summary" />
-    <meta name="twitter:title" content="Speed Racer" />
+    <meta name="twitter:card" content="Generasi Juara" />
+    <meta name="twitter:title" content="Generasi Juara" />
     <meta name="twitter:description"
-        content="Speed Racer is a HTML5 game where you can drive through the forest world, collecting the powers along the road to help extend the fuel, race with turbo mode and collect coin to get high score!" />
+        content="Game balap motor dengan karakter Astra Honda Racing Team, kumpulkan tiketnya untuk mendapatkan 1 Unit Honda CBR150 di akhir periode, akan ada juga pemenang mingguan, yang akan diundi setiap minggunya!!" />
     <meta name="twitter:image" content="{{ asset('game-race/game/share.jpg') }}" />
 
     <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">

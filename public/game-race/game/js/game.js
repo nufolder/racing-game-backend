@@ -38,7 +38,7 @@ var playerCarData = {
     straight: { src: straight_data },
     up_left: { src: up_left_data },
     up_right: { src: up_right_data },
-    up_straight: { src: up_straight_data },    
+    up_straight: { src: up_straight_data },
 };
 
 //world assets
@@ -484,7 +484,7 @@ function goPage(page) {
                         addCommas(Math.floor(playerData.displayScore)) +
                         "\nDAN MENDAPATKAN TAMBAHAN\n" +
                         Math.floor(playerData.displayScore / 5000) +
-                        " TIKET YANG AKAN DIUNDI UNTUK\nMENDAPATKAN CBR 150RR";
+                        " TIKET YANG AKAN DIUNDI UNTUK\nMENDAPATKAN CBR 150R";
                     resultCoinTxt.text =
                         "+" +
                         addCommas(Math.floor(playerData.displayCoin)) +

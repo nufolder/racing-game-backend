@@ -37,7 +37,7 @@
         <div class="container homepage mw-600 p-0 pb-5 bg-red">
             <p class="py-2 mb-0 px-4 text-center ">Yuk, ikuti gamenya dan menangkan <b>CBR150R</b> serta <b>uang
                     elektronik bagi 4 orang pemenang masing-masing 1 Juta</b> setiap minggunya</p>
-            <div class="text-center pb-3 links"><a href="">LIHAT ATURAN PERMAINAN</a></div>
+            <div class="text-center pb-3 links"><a href="{{'aturan-permainan'}}">LIHAT ATURAN PERMAINAN</a></div>
             @if (Route::has('login'))
             <div class="text-center cta-area">
                 @auth

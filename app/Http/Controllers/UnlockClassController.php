@@ -12,7 +12,7 @@ class UnlockClassController extends Controller
     {
         $race = Race::where('user_id', Auth::user()->id)->first();
         switch ($class) {
-            case 'ttc':
+            case 'ttc_atc':
                 if ($race->coin >= 20) {
 
                     $checkRacer = json_decode($race->character);
@@ -24,7 +24,7 @@ class UnlockClassController extends Controller
                     }
 
                     if ($found) {
-                        $message = 'Kelas TTC telah di unlock sebelumnya !!';
+                        $message = 'Kelas TTC dan ATC telah di unlock sebelumnya !!';
                     } else {
                         $arrayRacer = json_decode($race->character);
                         array_push(
@@ -56,43 +56,11 @@ class UnlockClassController extends Controller
                                 'up_left'       => 'assets/assets-ttc/car_up_left.png',
                                 'up_right'      => 'assets/assets-ttc/car_up_right.png',
                                 'up_straight'   => 'assets/assets-ttc/car_up_straight.png',
-                            ]
-                        );
-                        $coinLeft = $race->coin - 20;
-                        $race->update(
-                            [
-                                'coin' => $coinLeft,
-                                'character' => $arrayRacer,
-                            ]
-                        );
-                        $message = 'Kelas TTC telah di unlock !!';
-                    }
-                } else {
-                    $message = 'Coin Anda Tidak Cukup';
-                }
-                break;
-
-            case 'atc':
-                if ($race->coin >= 40) {
-
-                    $checkRacer = json_decode($race->character);
-                    $found = false;
-                    foreach ($checkRacer as $v) {
-                        if ($v->racer == 'fadillah') {
-                            $found = true;
-                        }
-                    }
-
-                    if ($found) {
-                        $message = 'Kelas ATC telah di unlock sebelumnya !!';
-                    } else {
-                        $arrayRacer = json_decode($race->character);
-                        array_push(
-                            $arrayRacer,
+                            ],
                             [
                                 'racer'         => 'fadillah',
                                 'coin_value'    => 1,
-                                'score_value'   => 300,
+                                'score_value'   => 350,
                                 'hills'         => 'assets/assets-atc/background_hills.png',
                                 'sky'           => 'assets/assets-atc/background_sky.png',
                                 'trees'         => 'assets/assets-atc/background_trees.png',
@@ -106,7 +74,7 @@ class UnlockClassController extends Controller
                             [
                                 'racer'         => 'azryan',
                                 'coin_value'    => 1,
-                                'score_value'   => 300,
+                                'score_value'   => 350,
                                 'hills'         => 'assets/assets-atc/background_hills.png',
                                 'sky'           => 'assets/assets-atc/background_sky.png',
                                 'trees'         => 'assets/assets-atc/background_trees.png',
@@ -120,7 +88,7 @@ class UnlockClassController extends Controller
                             [
                                 'racer'         => 'herlian',
                                 'coin_value'    => 1,
-                                'score_value'   => 300,
+                                'score_value'   => 350,
                                 'hills'         => 'assets/assets-atc/background_hills.png',
                                 'sky'           => 'assets/assets-atc/background_sky.png',
                                 'trees'         => 'assets/assets-atc/background_trees.png',
@@ -134,7 +102,7 @@ class UnlockClassController extends Controller
                             [
                                 'racer'         => 'herjun',
                                 'coin_value'    => 1,
-                                'score_value'   => 300,
+                                'score_value'   => 350,
                                 'hills'         => 'assets/assets-atc/background_hills.png',
                                 'sky'           => 'assets/assets-atc/background_sky.png',
                                 'trees'         => 'assets/assets-atc/background_trees.png',
@@ -153,15 +121,15 @@ class UnlockClassController extends Controller
                                 'character' => $arrayRacer,
                             ]
                         );
-                        $message = 'Kelas ATC telah di unlock !!';
+                        $message = 'Kelas TTC dan ATC telah di unlock !!';
                     }
                 } else {
                     $message = 'Coin Anda Tidak Cukup';
                 }
                 break;
 
-            case 'arrc':
-                if ($race->coin >= 60) {
+            case 'arrc_ap250':
+                if ($race->coin >= 40) {
 
                     $checkRacer = json_decode($race->character);
                     $found = false;
@@ -172,7 +140,7 @@ class UnlockClassController extends Controller
                     }
 
                     if ($found) {
-                        $message = 'Kelas ARRC telah di unlock sebelumnya !!';
+                        $message = 'Kelas ARRC AP250 telah di unlock sebelumnya !!';
                     } else {
                         $arrayRacer = json_decode($race->character);
                         array_push(
@@ -180,7 +148,7 @@ class UnlockClassController extends Controller
                             [
                                 'racer'         => 'adenanta',
                                 'coin_value'    => 1,
-                                'score_value'   => 200,
+                                'score_value'   => 250,
                                 'hills'         => 'assets/assets-arrc/background_hills.png',
                                 'sky'           => 'assets/assets-arrc/background_sky.png',
                                 'trees'         => 'assets/assets-arrc/background_trees.png',
@@ -194,7 +162,7 @@ class UnlockClassController extends Controller
                             [
                                 'racer'         => 'lucky',
                                 'coin_value'    => 1,
-                                'score_value'   => 200,
+                                'score_value'   => 250,
                                 'hills'         => 'assets/assets-arrc/background_hills.png',
                                 'sky'           => 'assets/assets-arrc/background_sky.png',
                                 'trees'         => 'assets/assets-arrc/background_trees.png',
@@ -205,6 +173,52 @@ class UnlockClassController extends Controller
                                 'up_right'      => 'assets/assets-arrc/car_up_right.png',
                                 'up_straight'   => 'assets/assets-arrc/car_up_straight.png',
                             ],
+                            [
+                                'racer'         => 'herjun-arrc',
+                                'coin_value'    => 1,
+                                'score_value'   => 250,
+                                'hills'         => 'assets/assets-arrc/background_hills.png',
+                                'sky'           => 'assets/assets-arrc/background_sky.png',
+                                'trees'         => 'assets/assets-arrc/background_trees.png',
+                                'left'          => 'assets/assets-arrc/car_left.png',
+                                'right'         => 'assets/assets-arrc/car_right.png',
+                                'straight'      => 'assets/assets-arrc/car_straight.png',
+                                'up_left'       => 'assets/assets-arrc/car_up_left.png',
+                                'up_right'      => 'assets/assets-arrc/car_up_right.png',
+                                'up_straight'   => 'assets/assets-arrc/car_up_straight.png',
+                            ]
+                        );
+                        $coinLeft = $race->coin - 60;
+                        $race->update(
+                            [
+                                'coin' => $coinLeft,
+                                'character' => $arrayRacer,
+                            ]
+                        );
+                        $message = 'Kelas ARRC AP250 telah di unlock !!';
+                    }
+                } else {
+                    $message = 'Coin Anda Tidak Cukup';
+                }
+                break;
+
+                case 'arrc_ss600':
+                if ($race->coin >= 60) {
+
+                    $checkRacer = json_decode($race->character);
+                    $found = false;
+                    foreach ($checkRacer as $v) {
+                        if ($v->racer == 'irfan') {
+                            $found = true;
+                        }
+                    }
+
+                    if ($found) {
+                        $message = 'Kelas ARRC SS600 telah di unlock sebelumnya !!';
+                    } else {
+                        $arrayRacer = json_decode($race->character);
+                        array_push(
+                            $arrayRacer,
                             [
                                 'racer'         => 'irfan',
                                 'coin_value'    => 1,
@@ -232,30 +246,16 @@ class UnlockClassController extends Controller
                                 'up_left'       => 'assets/assets-arrc/car_up_left.png',
                                 'up_right'      => 'assets/assets-arrc/car_up_right.png',
                                 'up_straight'   => 'assets/assets-arrc/car_up_straight.png',
-                            ],
-                            [
-                                'racer'         => 'herjun-arrc',
-                                'coin_value'    => 1,
-                                'score_value'   => 200,
-                                'hills'         => 'assets/assets-arrc/background_hills.png',
-                                'sky'           => 'assets/assets-arrc/background_sky.png',
-                                'trees'         => 'assets/assets-arrc/background_trees.png',
-                                'left'          => 'assets/assets-arrc/car_left.png',
-                                'right'         => 'assets/assets-arrc/car_right.png',
-                                'straight'      => 'assets/assets-arrc/car_straight.png',
-                                'up_left'       => 'assets/assets-arrc/car_up_left.png',
-                                'up_right'      => 'assets/assets-arrc/car_up_right.png',
-                                'up_straight'   => 'assets/assets-arrc/car_up_straight.png',
                             ]
                         );
-                        $coinLeft = $race->coin - 60;
+                        $coinLeft = $race->coin - 20;
                         $race->update(
                             [
                                 'coin' => $coinLeft,
                                 'character' => $arrayRacer,
                             ]
                         );
-                        $message = 'Kelas ARRC telah di unlock !!';
+                        $message = 'Kelas ARRC SS600 telah di unlock !!';
                     }
                 } else {
                     $message = 'Coin Anda Tidak Cukup';
