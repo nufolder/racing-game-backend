@@ -24,7 +24,7 @@
             <div class="col-6 item p-2">
                 <div class="card @if ($ttc_atc == false) {{ 'not-active' }} @endif">
                     <div class="card-body">
-                        <p class="card-text text-center small">thailand talent cup</p>
+                        <p class="card-text text-center small">asia & thailand talent cup</p>
                         <!-- <img src="{{ asset('images/logo-ttc.jpg') }}" class="img-fluid"> -->
                     </div>
                     <div class="cta-area text-center bg-transparent border-light">
@@ -80,7 +80,7 @@
             <div class="col-6 item p-2">
                 <div class="card @if ($cev == false) {{ 'not-active' }} @endif">
                     <div class="card-body">
-                        <p class="card-text text-center small">Junior motor<br>CEV</p>
+                        <p class="card-text text-center small">CEV Moto3 Junior World Championship</p>
                         <!-- <img src="{{ asset('images/logo-cev.jpg') }}" class="img-fluid"> -->
                     </div>
                     <div class="cta-area text-center bg-transparent border-light">
