@@ -193,9 +193,9 @@ function checkSelectType(thatSel) {
 
 function liveInputType() {
     document.getElementById("opSelect").value = document.getElementById(
-        "ifSel"
+        "ifInput"
     ).value;
 }
 
-const val = document.getElementById("player-score");
-console.log(val);
+// const val = document.getElementById("player-score");
+// console.log(val);

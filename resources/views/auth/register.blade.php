@@ -93,7 +93,8 @@
                                     <option value="BeAT" {{ old('motor_cycle') == 'BeAT' ? 'selected' : '' }}>
                                         BeAT
                                     </option>
-                                    <option value="BeAT Street" {{ old('motor_cycle') == 'BeAT Street' ? 'selected' : '' }}>
+                                    <option value="BeAT Street"
+                                        {{ old('motor_cycle') == 'BeAT Street' ? 'selected' : '' }}>
                                         BeAT Street
                                     </option>
                                     <option value="Genio" {{ old('motor_cycle') == 'Genio' ? 'selected' : '' }}>
@@ -120,13 +121,16 @@
                                     <option value="Forza" {{ old('motor_cycle') == 'Forza' ? 'selected' : '' }}>
                                         Forza
                                     </option>
-                                    <option value="CB150 Verza" {{ old('motor_cycle') == 'CB150 Verza' ? 'selected' : '' }}>
+                                    <option value="CB150 Verza"
+                                        {{ old('motor_cycle') == 'CB150 Verza' ? 'selected' : '' }}>
                                         CB150 Verza
                                     </option>
-                                    <option value="Sonic 150R" {{ old('motor_cycle') == 'Sonic 150R' ? 'selected' : '' }}>
+                                    <option value="Sonic 150R"
+                                        {{ old('motor_cycle') == 'Sonic 150R' ? 'selected' : '' }}>
                                         Sonic 150R
                                     </option>
-                                    <option value="CB150R Streetfire" {{ old('motor_cycle') == 'CB150R Streetfire' ? 'selected' : '' }}>
+                                    <option value="CB150R Streetfire"
+                                        {{ old('motor_cycle') == 'CB150R Streetfire' ? 'selected' : '' }}>
                                         CB150R Streetfire
                                     </option>
                                     <option value="CRF150L" {{ old('motor_cycle') == 'CRF150L' ? 'selected' : '' }}>
@@ -141,33 +145,35 @@
                                     <option value="Monkey" {{ old('motor_cycle') == 'Monkey' ? 'selected' : '' }}>
                                         Monkey
                                     </option>
-                                    <option value="CRF250 RALLY" {{ old('motor_cycle') == 'CRF250 RALLY' ? 'selected' : '' }}>
+                                    <option value="CRF250 RALLY"
+                                        {{ old('motor_cycle') == 'CRF250 RALLY' ? 'selected' : '' }}>
                                         CRF250 RALLY
                                     </option>
                                     <option value="Revo X" {{ old('motor_cycle') == 'Revo X' ? 'selected' : '' }}>
                                         Revo X
                                     </option>
-                                    <option value="Supra X 125 FI" {{ old('motor_cycle') == 'Supra X 125 FI' ? 'selected' : '' }}>
+                                    <option value="Supra X 125 FI"
+                                        {{ old('motor_cycle') == 'Supra X 125 FI' ? 'selected' : '' }}>
                                         Supra X 125 FI
                                     </option>
                                     <option value="GTR 150" {{ old('motor_cycle') == 'GTR 150' ? 'selected' : '' }}>
                                         GTR 150
                                     </option>
-                                    <option value="Supercub C125" {{ old('motor_cycle') == 'Supercub C125' ? 'selected' : '' }}>
+                                    <option value="Supercub C125"
+                                        {{ old('motor_cycle') == 'Supercub C125' ? 'selected' : '' }}>
                                         Supercub C125
                                     </option>
                                     <option value="CT125" {{ old('motor_cycle') == 'CT125' ? 'selected' : '' }}>
                                         CT125
                                     </option>
-                                    <option id="opSelect" value=""
-                                        {{ old('motor_cycle') == 'Lainnya' ? 'selected' : '' }}>
+                                    <option id="opSelect" {{ old('motor_cycle') == 'Lainnya' ? 'selected' : '' }}>
                                         Lainnya
                                     </option>
                                 </select>
 
                                 <div id="ifSel" style="display: none;">
                                     <label class="mt-2">Tipe Motor</label>
-                                    <input oninput="liveInputType()" class="form-control form-control-sm"
+                                    <input id="ifInput" oninput="liveInputType()" class="form-control form-control-sm"
                                         type="text" /><br />
                                 </div>
 
@@ -260,9 +266,9 @@
 
                             <div class="form-group pb-2">
                                 <input type="checkbox" name="newsletter">
-                                <label>Saya bersedia untuk mengikuti kabar terbaru dari Aktivitas Racing</label><br/>
+                                <label>Saya bersedia untuk mengikuti kabar terbaru dari Aktivitas Racing</label><br />
                                 <label>Honda</label>
-                                <br/>
+                                <br />
                                 @error('newsletter')
                                 <span class="invalid-feedback" role="alert">
                                     <strong>{{ $message }}</strong>

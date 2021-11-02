@@ -122,10 +122,9 @@
                 <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
             </div>
             <div class="modal-footer">
-                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
                 <form action="{{ url('admin/reset-weekly-winner') }}" method="post">
                     @csrf
-                    <button type="submit" class="btn btn-primary">Submit</button>
+                    <button type="submit" class="btn btn-primary d-flex flex-grow-1">Reset Score</button>
                 </form>
             </div>
         </div>
@@ -140,9 +139,9 @@
                 <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
             </div>
             <div class="modal-footer">
-                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                <button type="submit" onclick="generator()" class="btn btn-primary"
-                    data-bs-dismiss="modal">Submit</button>
+                <button type="submit" onclick="generator()" class="btn btn-primary d-flex flex-grow-1"
+                    data-bs-dismiss="modal">Generate
+                    Weekly Winner</button>
             </div>
         </div>
     </div>
