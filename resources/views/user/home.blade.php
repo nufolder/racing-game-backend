@@ -119,6 +119,10 @@
             </div>
             <div class="modal-body">
                 <p id="htmlInject"></p>
+                <small>
+                    Mainkan terus game Generasi Juara dan dapatkan hadiah mingguan & grand prize CBR 150R di akhir
+                    periode!
+                </small>
             </div>
             <div class="modal-footer">
             </div>
