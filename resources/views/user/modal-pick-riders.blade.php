@@ -141,7 +141,7 @@
 
 
 
-<!-- atc -->
+<!-- arrc AP250-->
 <div class="modal fade select-rider" id="arrc_ap250" tabindex="-1" aria-labelledby="exampleModalLabel2"
     aria-hidden="true">
     <div class="modal-dialog  modal-dialog-centered ">
@@ -152,8 +152,7 @@
                 <div id="carousel-arrc_ap250">
 
                     <div>
-                        <img src="{{ asset('photo-riders/rider-herjun-arrc.jpg') }}" class="card-img-top"
-                            alt="Chessy Meilandri">
+                        <img src="{{ asset('photo-riders/rider-herjun-arrc.jpg') }}" class="card-img-top" alt="Chessy Meilandri">
                         <div class="card-body">
                             <div class="card-details ">
                                 <div class="name">Herjun atna firdaus</div>
@@ -174,7 +173,7 @@
                         </div>
                     </div>
                     <div>
-                        <img src="{{ asset('photo-riders/rider-azryan.jpg') }}" class="card-img-top">
+                        <img src="{{ asset('photo-riders/rider-adenanta.jpg') }}" class="card-img-top">
                         <div class="card-body">
                             <div class="card-details ">
                                 <div class="name">M. adenanta putra</div>
@@ -198,7 +197,7 @@
                         </div>
                     </div>
                     <div>
-                        <img src="{{ asset('photo-riders/rider-herlian.jpg') }}" class="card-img-top">
+                        <img src="{{ asset('photo-riders/rider-lucky.jpg') }}" class="card-img-top">
                         <div class="card-body">
                             <div class="card-details ">
                                 <div class="name">Lucky Hendriansya</div>
