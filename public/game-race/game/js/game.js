@@ -534,7 +534,7 @@ function startGameCheck() {
         contentType: "application/json",
         url: "/start-game-check",
         success: function(resp) {
-            console.log("Respond was: ", resp);
+            // console.log("Respond was: ", resp);
             // console.log(resp.life);
             // lifeData.text.replace('[NUMBER]', addCommas(resp.life));
             lifeCounter = resp.life;
@@ -610,10 +610,10 @@ function saveGame(score, coin) {
         contentType: "application/json",
         url: "/end-game-check/" + score + "/" + coin,
         success: function(resp) {
-            console.log("Respond was: ", resp);
+            // console.log("Respond was: ", resp);
         },
         error: function(resp, status, error) {
-            console.log("Respond was: ", resp.response);
+            // console.log("Respond was: ", resp.response);
         }
     });
 }
@@ -2122,7 +2122,7 @@ function toggleOption() {
  *
  */
 function share(action) {
-    gtag("event", "click", { event_category: "share", event_label: action });
+    // gtag("event", "click", { event_category: "share", event_label: action });
 
     var loc = location.href;
     loc = loc.substring(0, loc.lastIndexOf("/") + 1);
