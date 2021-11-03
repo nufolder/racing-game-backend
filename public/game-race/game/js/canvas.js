@@ -448,8 +448,8 @@ function buildGameCanvas(){
 	}
 	
 	mainContainer.addChild(logo, buttonStart);
-	gameStatusContainer.addChild(gameStatusShadowTxt, gameStatusTxt, playerPhoto, playerName);
-	gameContainer.addChild(smokeAnimate, fireAnimate, gameStatusContainer, statusContainer, instructionShadowTxt, instructionTxt, itemTouchLeft, itemTouchRight);
+	gameStatusContainer.addChild(gameStatusShadowTxt, gameStatusTxt);
+	gameContainer.addChild(smokeAnimate, fireAnimate, gameStatusContainer, statusContainer, instructionShadowTxt, instructionTxt, itemTouchLeft, itemTouchRight, playerPhoto, playerName);
 	statusContainer.addChild(scoreBackground, badgeTicket, badgeCoin, scoreShadowTxt, scoreTxt, coinBackground,badgeCoin,  coinShadowTxt, coinTxt, lifeBackground, lifeTxt, lifeBadge);
 	resultContainer.addChild(resultBackground, resultTitleShadowTxt, resultTitleTxt, resultScoreTxt, resultCoinTxt, buttonRestart, buttonOut);
 	
