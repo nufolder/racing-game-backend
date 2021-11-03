@@ -96,7 +96,7 @@ class RegisterController extends Controller
             'google_id'         => null,
             'phone_number'      => $data['phone_number'],
             'instagram'         => $data['instagram'],
-            'newsletter'         => $data['newsletter'] ?? 'off',
+            'newsletter'        => $data['newsletter'] ?? 'off',
             'motor_cycle'       => $data['motor_cycle'],
             'year_motor_cycle'  => $data['year_motor_cycle'],
             'role'              => 'user',

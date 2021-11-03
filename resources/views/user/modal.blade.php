@@ -1,20 +1,23 @@
-<div class="modal fade modal-leaderboard" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+<div class="modal fade modal-leaderboard" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+    aria-hidden="true">
     <div class="modal-dialog modal-dialog-centered ">
         <div class="modal-content" style="margin-left: 5%;">
             <div class="modal-body">
                 <div class="modal-title">Leaderboard</div>
-                
+
                 <div class="content-list">
                     <ul class="nav nav-tabs nav-justified" id="myTab" role="tablist">
                         <li class="nav-item" role="presentation">
-                          <a class="nav-link active" id="all-tab" data-bs-toggle="tab" href="#all" role="tab" aria-controls="all" aria-selected="true">Global</a>
+                            <a class="nav-link active" id="all-tab" data-bs-toggle="tab" href="#all" role="tab"
+                                aria-controls="all" aria-selected="true">Global</a>
                         </li>
                         <li class="nav-item" role="presentation">
-                          <a class="nav-link" id="weekly-tab" data-bs-toggle="tab" href="#weekly" role="tab" aria-controls="weekly" aria-selected="false">Weekly Leader</a>
+                            <a class="nav-link" id="weekly-tab" data-bs-toggle="tab" href="#weekly" role="tab"
+                                aria-controls="weekly" aria-selected="false">Weekly Leader</a>
                         </li>
                     </ul>
 
-                      <div class="tab-content" id="myTabContent">
+                    <div class="tab-content" id="myTabContent">
                         <div class="tab-pane fade show active" id="all" role="tabpanel" aria-labelledby="all-tab">
                             <div class="table-responsive mt-3">
                                 <table class="table table-bordered">
@@ -48,6 +51,9 @@
                                 {{-- (tanggal - tanggal) --}}
                             </div>
                             <div class="table-responsive">
+                                <div id="showWWW">
+
+                                </div>
                                 <table class="table table-bordered">
                                     <thead>
                                         <tr>
@@ -73,7 +79,7 @@
                                 </table>
                             </div>
                         </div>
-                      </div>
+                    </div>
                 </div>
                 <div class="mt-4">
                     <button type="button" class="btn" data-bs-dismiss="modal" aria-label="Close">TUTUP</button>

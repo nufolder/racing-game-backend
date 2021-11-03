@@ -197,5 +197,22 @@ function liveInputType() {
     ).value;
 }
 
+let showCurrentWin = new bootstrap.Modal(
+    document.getElementById("showCurrentWin"),
+    {
+        keyboard: false
+    }
+);
+document.getElementById("htmlInject").innerHTML = `<h3>${week_win}</h3>`;
+document.getElementById(
+    "showWWW"
+).innerHTML = `<h6 class="text-center pt-2 pb-1">Pemenang minggu ini: <h5 class="text-center">${week_win}</h5></h6>`;
+
+if (localStorage.getItem("curr") != week_win) {
+    localStorage.setItem("curr", week_win);
+    console.log(localStorage.getItem("popState"));
+    showCurrentWin.show();
+}
+
 // const val = document.getElementById("player-score");
 // console.log(val);
