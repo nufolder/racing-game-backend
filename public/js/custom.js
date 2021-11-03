@@ -205,8 +205,8 @@ let showCurrentWin = new bootstrap.Modal(
 );
 document.getElementById("htmlInject").innerHTML = `<h3>${week_win}</h3>`;
 
-if (localStorage.getItem("popState") != week_win) {
-    localStorage.setItem("popState", week_win);
+if (localStorage.getItem("curr") != week_win) {
+    localStorage.setItem("curr", week_win);
     console.log(localStorage.getItem("popState"));
     showCurrentWin.show();
 }
