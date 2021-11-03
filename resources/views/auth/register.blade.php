@@ -265,29 +265,56 @@
                             </div>
 
                             <div class="form-group pb-2">
-                                <input type="checkbox" name="newsletter">
-                                <label>Saya bersedia untuk mengikuti kabar terbaru dari Aktivitas Racing</label><br />
-                                <label>Honda</label>
-                                <br />
-                                @error('newsletter')
-                                <span class="invalid-feedback" role="alert">
-                                    <strong>{{ $message }}</strong>
-                                </span>
-                                @enderror
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" name="newsletter">
+                                    <label class="form-check-label" style="margin-top: 3px;" for="flexCheckChecked">
+                                        Saya bersedia untuk mengikuti kabar terbaru dari Aktivitas Racing Honda
+                                    </label>
+                                    @error('newsletter')
+                                    <span class="invalid-feedback" role="alert">
+                                        <strong>{{ $message }}</strong>
+                                    </span>
+                                    @enderror
+                                </div>
+                            </div>
+
+                            <div class="form-group pb-2">
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" value="" id="terms_and_conditions" onclick="terms_changed(this)" name="newsletter">
+                                    <label class="form-check-label" style="margin-top: 3px;" for="flexCheckChecked">
+                                        Saya menyetujui <a href="{{url('syarat-dan-ketentuan')}}" style="color: #ec1a30"> syarat dan ketentuan</a> yang berlaku
+                                    </label>
+                                    @error('newsletter')
+                                    <span class="invalid-feedback" role="alert">
+                                        <strong>{{ $message }}</strong>
+                                    </span>
+                                    @enderror
+                                </div>
                             </div>
                         </div>
 
 
-
                         <div class="cta-area">
-                            <button type="submit" class="pushable">REGISTER</button>
+                            <button type="submit" id="submit_button" class="pushable" disabled>REGISTER</button>
                         </div>
 
                     </form>
                 </div>
             </div>
-
-
         </div>
     </div>
 </div>
+
+<script type="text/javascript">
+    function terms_changed(termsCheckBox){
+    //If the checkbox has been checked
+    if(termsCheckBox.checked){
+        //Set the disabled property to FALSE and enable the button.
+        document.getElementById("submit_button").disabled = false;
+    } else{
+        //Otherwise, disable the submit button.
+        document.getElementById("submit_button").disabled = true;
+    }
+}
+</script>
+@endsection
