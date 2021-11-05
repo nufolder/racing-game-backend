@@ -2,13 +2,13 @@ const cardsArray = [
     {
         name: "card01",
         rider: "Rheza Danica Ahrens",
-        class: "Asian Road Racing Championship",
+        class: "Asia Road Racing Championship",
         img: "photo-riders/rheza-danica-ahrens-image-3.png"
     },
     {
         name: "card02",
         rider: "M. Adenanta Putra",
-        class: "Asian Road Racing Championship AP250",
+        class: "Asia Road Racing Championship AP250",
         img: "photo-riders/m-adenanta-putra-image-1.png"
     },
     {
@@ -26,13 +26,13 @@ const cardsArray = [
     {
         name: "card05",
         rider: "Lucky Herdiansya",
-        class: "Asian Road Racing Championship AP250",
+        class: "Asia Road Racing Championship AP250",
         img: "photo-riders/lucky-hendriansya-image-1.png"
     },
     {
         name: "card06",
         rider: "Irfan Ardiansyah",
-        class: "Asian Road Racing Championship SS600",
+        class: "Asia Road Racing Championship SS600",
         img: "photo-riders/irfan-ardiansyah-image-2.png"
     }
     //
