@@ -2,7 +2,7 @@ const cardsArray = [
     {
         name: "card01",
         rider: "Rheza Danica Ahrens",
-        class: "Asia Road Racing Championship",
+        class: "Asia Road Racing Championship SS600",
         img: "photo-riders/rheza-danica-ahrens-image-3.png"
     },
     {
