@@ -37,7 +37,15 @@ class ChanceToPlayRacingController extends Controller
             $statusV = false;
         }
 
-        return view('user.add-heal', compact('statusT', 'statusM', 'statusV'));
+        $checkS = ChanceToPlayRacing::where('user_id', Auth::user()->id)
+            ->where('type', 'share')->first();
+        if ($checkS->last_date == null || $checkS->last_date != \Carbon\Carbon::now()->format('Y-m-d')) {
+            $statusS = true;
+        } else {
+            $statusS = false;
+        }
+
+        return view('user.add-heal', compact('statusT', 'statusM', 'statusV', 'statusS'));
     }
 
 

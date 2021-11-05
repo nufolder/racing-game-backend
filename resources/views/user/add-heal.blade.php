@@ -117,8 +117,24 @@
         </div>
         @endif
 
+        @if ($statusS == false)
+        <div class="item ">
+            <div class="item-share" style="background-color: #FFBF86">
+                <div class="d-flex flex-wrap ">
+                    <div class="col-5 d-flex flex-wrap justify-content-between px-3 align-items-center">
+                        <a><img src="{{ asset('images/btn-facebook.png') }}"></a>
+                        <a><img src="{{ asset('images/btn-twitter.png') }}"></a>
+                    </div>
+                    <div class="col-7 texting">
+                        <p class="card-text text-center">
+                            KAMU TELAH SHARE GAME HARI INI
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        @else
         <div class="item">
-
             <div class="item-share">
                 <div class="d-flex flex-wrap ">
                     <div class="col-5 d-flex flex-wrap justify-content-between px-3 align-items-center">
@@ -127,12 +143,15 @@
                                 src="{{ asset('images/btn-twitter.png') }}"></a>
                     </div>
                     <div class="col-7 texting">
-                        <p class="card-text text-center">bagikan melalui sosmed kamu DAN
-                            dapatkan nyawa +1</p>
+                        <p class="card-text text-center">
+                            BAGIKAN MELALUI SOSMED DAN DAPATKAN NYAWA +1
+                        </p>
                     </div>
                 </div>
             </div>
         </div>
+        @endif
+
         <div class="mt-4">
             <center><a href="{{ url('home') }}" class="btn w-50">HOME</a></center>
         </div>
@@ -141,12 +160,12 @@
 </div>
 
 <!-- Modal -->
-<div class="modal fade" id="shareid" tabindex="-1" aria-labelledby="shareid" aria-hidden="true">
+<div class="modal fade modal-video" id="shareid" tabindex="-1" aria-labelledby="shareid" aria-hidden="true">
     <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
         <div class="modal-content">
             <div class="modal-header">
-                <h5 class="modal-title" id="textfinishshare">Congratulations</h5>
-                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                <h5 class="modal-title" id="exampleModalLabel">Selamat !!</h5>
+                <button type="button" class="ico-close" data-bs-dismiss="modal" aria-label="Close"></button>
             </div>
             <div class="modal-body">
                 <p class="textfinishshare"></p>
@@ -171,6 +190,7 @@
                 $('.modaltitleshare').text('Selamat !!');
                 $('.textfinishshare').text(resp.response);
                 var shareModal = new bootstrap.Modal(document.getElementById('shareid'), {
+                backdrop: "static",
                 keyboard: false
                 });
                 if (resp.status == 1) {
@@ -191,7 +211,7 @@
 </script>
 
 <script>
-    document.getElementById('shareBtn').onclick = function() {
+    document.getElementById('shareBtn').onclick = () => {
         FB.ui({
             method: 'share',
             href: '{{ url("/") }}',
