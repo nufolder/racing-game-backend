@@ -20,7 +20,7 @@ const cardsArray = [
     {
         name: "card04",
         rider: "Mario Suryo Aji",
-        class: "Junior Motor CEV",
+        class: "Junior World Championship CEV Moto3",
         img: "photo-riders/mario-suryo-aji-image-2.png"
     },
     {
