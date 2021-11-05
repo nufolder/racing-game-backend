@@ -83,12 +83,12 @@ span label {
     padding: 12px;
 }
 
-span label:hover {
+/* span label:hover {
     -ms-transform: scale(1.12);
     -webkit-transform: scale(1.12);
     transform: scale(1.12);
     color: black;
-}
+} */
 
 input[type="radio"] {
     position: relative;
