@@ -131,7 +131,7 @@
 </div>
 
 <script>
-    const week_win = "Ade Putra";
+    const week_win = "";
 </script>
 
 
