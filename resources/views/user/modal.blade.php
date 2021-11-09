@@ -93,7 +93,7 @@
 
                                 </div>
                                 <table class="table table-bordered">
-                                    <thead>
+                                    {{-- <thead>
                                         <tr>
                                             <th scope="co" width="50" style="text-align: center;">#</th>
                                             <th scope="col">Name</th>
@@ -101,15 +101,31 @@
                                     </thead>
 
                                     <tbody>
-                                        @foreach($week_win->slice(0, 4) as $key => $value)
                                         <tr>
-                                            <td width="2%" class="text-center">{{ $key + 1 }}</td>
+                                            <td width="2%" class="text-center">1</td>
                                             <td width="10%" class="text-left">
-                                                <b>{{ $value->user->name }}</b>
+                                                <b>Dava Eranda</b>
                                             </td>
                                         </tr>
-                                        @endforeach
-                                    </tbody>
+                                        <tr>
+                                            <td width="2%" class="text-center">2</td>
+                                            <td width="10%" class="text-left">
+                                                <b>Puspa</b>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td width="2%" class="text-center">3</td>
+                                            <td width="10%" class="text-left">
+                                                <b>Bobby</b>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td width="2%" class="text-center">4</td>
+                                            <td width="10%" class="text-left">
+                                                <b>Cynthia</b>
+                                            </td>
+                                        </tr>
+                                    </tbody> --}}
                                 </table>
                             </div>
                         </div>
