@@ -41,7 +41,7 @@ h1, h2, h3, h4{font-family: 'Russo One', sans-serif;}
 .form-control:focus{border-color: #ED1B2F; box-shadow: 0 0 0 .15rem rgba(237,27,47,.50);}
 
 .homepage{background-color: #FFF;}
-.homepage .img-logo {max-width: 290px; padding-bottom: 30px;}
+.homepage .img-logo {max-width: 325px; padding-bottom: 30px;}
 .homepage .img-logo-bottom {max-width: 140px; padding-bottom: 30px; padding-top: 30px;}
 .homepage h1{text-align: center; color: #FFF; padding-top: 30px; font-weight: bolder;}
 .homepage p{color: #FFF;}

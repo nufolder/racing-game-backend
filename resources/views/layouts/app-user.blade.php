@@ -26,6 +26,16 @@
         src="https://connect.facebook.net/id_ID/sdk.js#xfbml=1&version=v12.0&appId=362366455568540&autoLogAppEvents=1"
         nonce="uG413eTb">
     </script> --}}
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-148413997-4"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'UA-148413997-4');
+    </script>
+
     <script>
         window.fbAsyncInit = function() {
         FB.init({
