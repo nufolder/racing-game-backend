@@ -2124,8 +2124,9 @@ function toggleOption() {
 function share(action) {
     // gtag("event", "click", { event_category: "share", event_label: action });
 
-    var loc = location.href;
-    loc = loc.substring(0, loc.lastIndexOf("/") + 1);
+    // var loc = location.href;
+    var loc = "https://generasijuara.com";
+    // loc = loc.substring(0, loc.lastIndexOf("/") + 1);
 
     var title = "";
     var text = "";
