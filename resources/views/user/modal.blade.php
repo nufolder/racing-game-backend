@@ -63,7 +63,7 @@
                                         <tr>
                                             <th scope="co" width="50" style="text-align: center;">#</th>
                                             <th scope="col">Name</th>
-                                            <th scope="col">Score Weekly</th>
+                                            <th scope="col">Ticket Weekly</th>
                                         </tr>
                                     </thead>
 

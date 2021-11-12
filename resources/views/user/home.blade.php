@@ -115,7 +115,7 @@
                 <button type="button" class="ico-close" data-bs-dismiss="modal" aria-label="Close">
                     <img src="{{ asset('images/ico-close.png') }}">
                 </button>
-                <h5 class="modal-title">Pemenang Mingguan !!</h5>
+                {{-- <h5 class="modal-title">Pemenang Mingguan !!</h5> --}}
             </div>
             <div class="modal-body">
                 <p id="htmlInject"></p>
