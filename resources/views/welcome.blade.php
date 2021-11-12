@@ -10,14 +10,30 @@
 
     <title>Generasi Juara</title>
 
+    <meta name="description" content="Jadilah top leader buat memenangkan Grand Prize CBR150R dan uang elektronik setiap minggunya!">
+    <meta name="author" content="Astra Honda Racing Team">
+
+    <!-- facebook -->
+    <meta property="og:url" content="{{ url()->full() }}" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Generasi Juara" />
+    <meta property="og:description" content="Jadilah top leader buat memenangkan Grand Prize CBR150R dan uang elektronik setiap minggunya!" />
+    <meta property="og:image" content="{{ asset('images/generasijuara.jpg') }}" />
+
+    <!-- twitter -->
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:url" content="{{ url()->full() }}">
+    <meta name="twitter:title" content="Generasi Juara">
+    <meta name="twitter:description" content="Jadilah top leader buat memenangkan Grand Prize CBR150R dan uang elektronik setiap minggunya!">
+    <meta name="twitter:image" content="{{ asset('images/generasijuara.jpg') }}">
+
     <!-- Fonts -->
     <link rel="dns-prefetch" href="//fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css?family=Nunito" rel="stylesheet">
 
     <!-- Styles -->
     <!-- Bootstrap CSS -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Questrial&family=Russo+One&display=swap" rel="stylesheet">

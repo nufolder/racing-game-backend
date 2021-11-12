@@ -146,7 +146,7 @@ var shareEnable = true; //toggle share
 var shareText = "SHARE SKOR KAMU "; //social share message
 var shareTitle = "Highscore on Speed Racer Game is [SCORE]PTS."; //social share score title
 var shareMessage =
-    "Saya mendapatkan [SCORE], ikutan untuk memenangkan CBR Sport "; //social share score message
+    "Saya mendapatkan [SCORE], ikutan untuk memenangkan Honda CBR150R  "; //social share score message
 
 /*!
  *
