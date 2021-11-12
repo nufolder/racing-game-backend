@@ -145,8 +145,7 @@ var resultCoinText = "KAMU MENDAPATKAN KOIN :"; //result text display
 var shareEnable = true; //toggle share
 var shareText = "SHARE SKOR KAMU "; //social share message
 var shareTitle = "Highscore on Speed Racer Game is [SCORE]PTS."; //social share score title
-var shareMessage =
-    "Saya mendapatkan [SCORE], ikutan untuk memenangkan Honda CBR150R  "; //social share score message
+var shareMessage = "Saya mendapatkan [SCORE]. Jadilah top leader buat memenangkan Grand Prize CBR150R dan uang elektronik setiap minggunya!"; //social share score message
 
 /*!
  *
