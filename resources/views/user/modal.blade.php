@@ -93,7 +93,7 @@
 
                                 </div>
                                 <table class="table table-bordered">
-                                    {{-- <thead>
+                                    <thead>
                                         <tr>
                                             <th scope="co" width="50" style="text-align: center;">#</th>
                                             <th scope="col">Name</th>
@@ -104,28 +104,28 @@
                                         <tr>
                                             <td width="2%" class="text-center">1</td>
                                             <td width="10%" class="text-left">
-                                                <b>Dava Eranda</b>
+                                                <b>Suhada</b>
                                             </td>
                                         </tr>
                                         <tr>
                                             <td width="2%" class="text-center">2</td>
                                             <td width="10%" class="text-left">
-                                                <b>Puspa</b>
+                                                <b>Arif Fachran Nurhaidar</b>
                                             </td>
                                         </tr>
                                         <tr>
                                             <td width="2%" class="text-center">3</td>
                                             <td width="10%" class="text-left">
-                                                <b>Bobby</b>
+                                                <b>Zul fadli</b>
                                             </td>
                                         </tr>
                                         <tr>
                                             <td width="2%" class="text-center">4</td>
                                             <td width="10%" class="text-left">
-                                                <b>Cynthia</b>
+                                                <b>Budi</b>
                                             </td>
                                         </tr>
-                                    </tbody> --}}
+                                    </tbody>
                                 </table>
                             </div>
                         </div>

@@ -118,6 +118,8 @@
                 {{-- <h5 class="modal-title">Pemenang Mingguan !!</h5> --}}
             </div>
             <div class="modal-body">
+                <h3>Pemenang Minggu Ini</h3>
+                <hr>
                 <p id="htmlInject"></p>
                 <small>
                     Mainkan terus game Generasi Juara dan dapatkan hadiah mingguan & grand prize CBR 150R di akhir
@@ -131,7 +133,7 @@
 </div>
 
 <script>
-    const week_win = "";
+    const week_win = "1. Suhada <br> 2. Arif Fachran Nurhaidar <br> 3. Zul fadli <br> 4. Budi";
 </script>
 
 
