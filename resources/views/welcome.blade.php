@@ -10,21 +10,24 @@
 
     <title>Generasi Juara</title>
 
-    <meta name="description" content="Jadilah top leader buat memenangkan Grand Prize CBR150R dan uang elektronik setiap minggunya!">
+    <meta name="description"
+        content="Jadilah top leader buat memenangkan Grand Prize CBR150R dan uang elektronik setiap minggunya!">
     <meta name="author" content="Astra Honda Racing Team">
 
     <!-- facebook -->
     <meta property="og:url" content="{{ url()->full() }}" />
     <meta property="og:type" content="website" />
     <meta property="og:title" content="Generasi Juara" />
-    <meta property="og:description" content="Jadilah top leader buat memenangkan Grand Prize CBR150R dan uang elektronik setiap minggunya!" />
+    <meta property="og:description"
+        content="Jadilah top leader buat memenangkan Grand Prize CBR150R dan uang elektronik setiap minggunya!" />
     <meta property="og:image" content="{{ asset('images/generasijuara.jpg') }}" />
 
     <!-- twitter -->
     <meta name="twitter:card" content="summary">
     <meta name="twitter:url" content="{{ url()->full() }}">
     <meta name="twitter:title" content="Generasi Juara">
-    <meta name="twitter:description" content="Jadilah top leader buat memenangkan Grand Prize CBR150R dan uang elektronik setiap minggunya!">
+    <meta name="twitter:description"
+        content="Jadilah top leader buat memenangkan Grand Prize CBR150R dan uang elektronik setiap minggunya!">
     <meta name="twitter:image" content="{{ asset('images/generasijuara.jpg') }}">
 
     <!-- Fonts -->
@@ -33,7 +36,8 @@
 
     <!-- Styles -->
     <!-- Bootstrap CSS -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Questrial&family=Russo+One&display=swap" rel="stylesheet">
@@ -51,8 +55,8 @@
     <center><img src="{{ asset('images/main-banner.jpg') }}" class="w-100 mw-600"></center>
     <div class="container-fluid p-0">
         <div class="container homepage mw-600 p-0 pb-5 bg-red">
-            <p class="py-2 mb-0 px-4 text-center ">Yuk, ikuti gamenya dan menangkan <b>CBR150R</b> serta <b>uang
-                    elektronik bagi 4 orang pemenang masing-masing 1 Juta</b> setiap minggunya</p>
+            <p class="py-2 mb-0 px-4 text-center ">Yuk, ikuti gamenya dan menangkan <b>CBR150R</b> serta <b>
+                    total 1 juta uang elektronik bagi 4 orang pemenang</b> setiap minggunya</p>
             <div class="text-center pb-3 links"><a href="{{'aturan-permainan'}}">LIHAT ATURAN PERMAINAN</a></div>
             @if (Route::has('login'))
             <div class="text-center cta-area">
