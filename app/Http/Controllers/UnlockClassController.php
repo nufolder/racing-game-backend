@@ -188,7 +188,7 @@ class UnlockClassController extends Controller
                                 'up_straight'   => 'assets/assets-arrc/car_up_straight.png',
                             ]
                         );
-                        $coinLeft = $race->coin - 60;
+                        $coinLeft = $race->coin - 40;
                         $race->update(
                             [
                                 'coin' => $coinLeft,
@@ -202,7 +202,7 @@ class UnlockClassController extends Controller
                 }
                 break;
 
-                case 'arrc_ss600':
+            case 'arrc_ss600':
                 if ($race->coin >= 60) {
 
                     $checkRacer = json_decode($race->character);
@@ -248,7 +248,7 @@ class UnlockClassController extends Controller
                                 'up_straight'   => 'assets/assets-arrc/car_up_straight.png',
                             ]
                         );
-                        $coinLeft = $race->coin - 20;
+                        $coinLeft = $race->coin - 60;
                         $race->update(
                             [
                                 'coin' => $coinLeft,
