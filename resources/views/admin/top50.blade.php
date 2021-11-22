@@ -29,6 +29,7 @@
                                         <th scope="col">#</th>
                                         <th scope="col">Nama</th>
                                         <th scope="col">Email</th>
+                                        <th scope="col">Summary Play</th>
                                         <th scope="col">Ticket</th>
                                         <th scope="col">Coin</th>
                                     </tr>
@@ -36,11 +37,12 @@
                                 <tbody>
                                     @foreach ($top50 as $key =>$value)
                                     <tr>
-                                        <td scope="row">{{ $key + 1 }}</td>
+                                        <td scope="row" class="text-center">{{ $key + 1 }}</td>
                                         <td>{{ $value->user->name }}</td>
                                         <td>{{ $value->user->email }}</td>
-                                        <td>{{ $value->ticket }}</td>
-                                        <td>{{ $value->coin }}</td>
+                                        <td class="text-center">{{ $value->summary_play }}</td>
+                                        <td class="text-center">{{ $value->ticket }}</td>
+                                        <td class="text-center">{{ $value->coin }}</td>
                                     </tr>
                                     @endforeach
                                 </tbody>
