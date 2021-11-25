@@ -62,8 +62,8 @@
                                     <thead>
                                         <tr>
                                             <th scope="co" width="50" style="text-align: center;">#</th>
-                                            <th scope="col">Name</th>
-                                            <th scope="col">Ticket Weekly</th>
+                                            <th scope="col">Nama</th>
+                                            <th scope="col">Tiket Weekly</th>
                                         </tr>
                                     </thead>
 
@@ -96,7 +96,7 @@
                                     <thead>
                                         <tr>
                                             <th scope="co" width="50" style="text-align: center;">#</th>
-                                            <th scope="col">Name</th>
+                                            <th scope="col">Nama</th>
                                         </tr>
                                     </thead>
 
@@ -104,25 +104,25 @@
                                         <tr>
                                             <td width="2%" class="text-center">1</td>
                                             <td width="10%" class="text-left">
-                                                <b>Suhada</b>
+                                                <b>Ryan Maulana</b>
                                             </td>
                                         </tr>
                                         <tr>
                                             <td width="2%" class="text-center">2</td>
                                             <td width="10%" class="text-left">
-                                                <b>Arif Fachran Nurhaidar</b>
+                                                <b>Gilang aditya</b>
                                             </td>
                                         </tr>
                                         <tr>
                                             <td width="2%" class="text-center">3</td>
                                             <td width="10%" class="text-left">
-                                                <b>Zul fadli</b>
+                                                <b>Riska Putu Dima</b>
                                             </td>
                                         </tr>
                                         <tr>
                                             <td width="2%" class="text-center">4</td>
                                             <td width="10%" class="text-left">
-                                                <b>Budi</b>
+                                                <b>Wahyu wibowo</b>
                                             </td>
                                         </tr>
                                     </tbody>
