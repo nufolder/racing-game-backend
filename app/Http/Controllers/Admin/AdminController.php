@@ -85,7 +85,7 @@ class AdminController extends Controller
     {
         $top_five_ticket = Race::with('user.chanceToPlayRacing')
             ->orderBy('ticket', 'desc')
-            ->limit(10)
+            ->limit(5)
             ->get();
 
         foreach ($top_five_ticket as $key => $value) {
