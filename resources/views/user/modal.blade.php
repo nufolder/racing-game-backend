@@ -104,25 +104,25 @@
                                         <tr>
                                             <td width="2%" class="text-center">1</td>
                                             <td width="10%" class="text-left">
-                                                <b>Ryan Maulana</b>
+                                                <b>M.Arif Budiman</b>
                                             </td>
                                         </tr>
                                         <tr>
                                             <td width="2%" class="text-center">2</td>
                                             <td width="10%" class="text-left">
-                                                <b>Gilang aditya</b>
+                                                <b>Setyo iqbal pambudi</b>
                                             </td>
                                         </tr>
                                         <tr>
                                             <td width="2%" class="text-center">3</td>
                                             <td width="10%" class="text-left">
-                                                <b>Riska Putu Dima</b>
+                                                <b>Andre Marpaung</b>
                                             </td>
                                         </tr>
                                         <tr>
                                             <td width="2%" class="text-center">4</td>
                                             <td width="10%" class="text-left">
-                                                <b>Wahyu wibowo</b>
+                                                <b>Mario</b>
                                             </td>
                                         </tr>
                                     </tbody>
