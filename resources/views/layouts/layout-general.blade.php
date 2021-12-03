@@ -23,19 +23,20 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Questrial&family=Russo+One&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="{{ asset('css/custom.css') }}">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <!-- Global site tag (gtag.js) - Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-CZEPDXL3TF"></script>
     <script>
-      window.dataLayer = window.dataLayer || [];
+        window.dataLayer = window.dataLayer || [];
       function gtag(){dataLayer.push(arguments);}
       gtag('js', new Date());
 
       gtag('config', 'G-CZEPDXL3TF');
-    </script>    
+    </script>
     <!-- Global site tag (gtag.js) - Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-148413997-4"></script>
     <script>
-      window.dataLayer = window.dataLayer || [];
+        window.dataLayer = window.dataLayer || [];
       function gtag(){dataLayer.push(arguments);}
       gtag('js', new Date());
 
@@ -54,7 +55,7 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"
         integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous">
     </script>
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
     <script src="{{ asset('js/custom.js') }}"></script>
 
 </body>
