@@ -133,7 +133,7 @@
 </div>
 
 <script>
-    const week_win = "1. M.Arif Budiman <br> 2. Setyo iqbal pambudi <br> 3. Andre Marpaung <br> 4. Mario";
+    const week_win = "1. M.Arif Budiman <br> 2. Setyo iqbal pambudi <br> 3. Andre Marpaung";
 </script>
 
 

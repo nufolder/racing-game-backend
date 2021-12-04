@@ -17,7 +17,7 @@
                         </li>
                         <li class="nav-item" role="presentation">
                             <a class="nav-link" id="weekly-tab" data-bs-toggle="tab" href="#weekly-winner" role="tab"
-                                aria-controls="weekly" aria-selected="false">Weekly Winner</a>
+                                aria-controls="weekly" aria-selected="false">Weekly Winners</a>
                         </li>
                     </ul>
 
@@ -119,12 +119,7 @@
                                                 <b>Andre Marpaung</b>
                                             </td>
                                         </tr>
-                                        <tr>
-                                            <td width="2%" class="text-center">4</td>
-                                            <td width="10%" class="text-left">
-                                                <b>Mario</b>
-                                            </td>
-                                        </tr>
+
                                     </tbody>
                                 </table>
                             </div>
