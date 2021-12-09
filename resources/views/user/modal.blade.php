@@ -104,19 +104,25 @@
                                         <tr>
                                             <td width="2%" class="text-center">1</td>
                                             <td width="10%" class="text-left">
-                                                <b>M.Arif Budiman</b>
+                                                <b>Rizky Maulana</b>
                                             </td>
                                         </tr>
                                         <tr>
                                             <td width="2%" class="text-center">2</td>
                                             <td width="10%" class="text-left">
-                                                <b>Setyo iqbal pambudi</b>
+                                                <b>Satria AF Kamil</b>
                                             </td>
                                         </tr>
                                         <tr>
                                             <td width="2%" class="text-center">3</td>
                                             <td width="10%" class="text-left">
-                                                <b>Andre Marpaung</b>
+                                                <b>Benediktus Sebastian Hutauruk</b>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td width="2%" class="text-center">3</td>
+                                            <td width="10%" class="text-left">
+                                                <b>Muhammad Riza Nurhadi</b>
                                             </td>
                                         </tr>
 

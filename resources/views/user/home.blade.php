@@ -133,7 +133,7 @@
 </div>
 
 <script>
-    const week_win = "1. M.Arif Budiman <br> 2. Setyo iqbal pambudi <br> 3. Andre Marpaung";
+    const week_win = "1. Rizky Maulana <br> 2. Satria AF Kamil <br> 3. Benediktus Sebastian Hutauruk <br> 4. Muhammad Riza Nurhadi";
 </script>
 
 
