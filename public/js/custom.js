@@ -203,13 +203,15 @@ let showCurrentWin = new bootstrap.Modal(
         keyboard: false
     }
 );
-document.getElementById("htmlInject").innerHTML = `<h3>${week_win}</h3>`;
-document.getElementById("showWWW").innerHTML = ``;
 
-if (localStorage.getItem("curr") != week_win) {
-    localStorage.setItem("curr", week_win);
-    showCurrentWin.show();
-}
+// document.getElementById("htmlInject").innerHTML = `<h3>${week_win}</h3>`;
+// document.getElementById("showWWW").innerHTML = ``;
+
+// if (localStorage.getItem("curr") != week_win) {
+//     localStorage.setItem("curr", week_win);
+//     showCurrentWin.show();
+// }
+showCurrentWin.show();
 
 // const val = document.getElementById("player-score");
 // console.log(val);

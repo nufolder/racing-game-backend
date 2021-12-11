@@ -57,7 +57,7 @@ Route::middleware(['auth'])->group(function () {
 
         Route::get('check-heal', 'RaceController@checkHeal');
         Route::get('rider', 'RaceController@rider');
-        Route::get('race/{rider}', 'RaceController@raceRider');
+        // Route::get('race/{rider}', 'RaceController@raceRider');
         Route::get('start-game-check', 'RaceController@startGameCheck');
         Route::get('end-game-check/{get_ticket}/{get_coin}', 'RaceController@endGameCheck');
 

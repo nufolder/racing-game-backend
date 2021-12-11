@@ -79,17 +79,22 @@
                     <div class="name">{{ $last_rider }}</div>
                 </div>
 
-                <a href="{{ url('race', $last_rider) }}" class="btn btn-red btn-big">START RACE</a>
+                {{-- <a href="{{ url('race', $last_rider) }}" class="btn btn-red btn-big">START RACE</a> --}}
 
                 <div class="container px-5">
+                    {{-- <h4 style="color:#FFC312;"> --}}
+                    <h4 class="text-white text-decoration-underline">
+                        Nantikan Pengumuman Pemenang Grand Prize hari Selasa, 14 Desember 2021!
+                    </h4>
                     <button type="button" class="btn btn-grey mt-4" data-bs-toggle="modal"
                         data-bs-target="#exampleModal">
                         <i class="fa fa-trophy" aria-hidden="true"></i> Leader board
                     </button>
 
-                    <a href="{{ url('rider') }}" class="btn mt-2">
-                        Pilih Riders <i class="fa fa-list" aria-hidden="true"></i>
-                    </a>
+                    {{-- <a href="{{ url('rider') }}" class="btn mt-2">
+                    Pilih Riders <i class="fa fa-list" aria-hidden="true"></i>
+                    </a> --}}
+
 
                     <div class="mt-5">
                         <a class="btn btn-small" href="{{ route('logout') }}"
@@ -115,16 +120,20 @@
                 <button type="button" class="ico-close" data-bs-dismiss="modal" aria-label="Close">
                     <img src="{{ asset('images/ico-close.png') }}">
                 </button>
-                {{-- <h5 class="modal-title">Pemenang Mingguan !!</h5> --}}
             </div>
             <div class="modal-body">
-                <h3>Pemenang Minggu Ini</h3>
-                <hr>
-                <p id="htmlInject"></p>
-                <small>
+                {{-- <h3>Pemenang Minggu Ini</h3>
+                <hr> --}}
+                {{-- <p id="htmlInject"></p> --}}
+                <h3>
+                    Terima Kasih untuk Partisipasinya. Aktivasi Generasi Juara telah Ditutup. Nantikan Pengumuman
+                    Pemenang Grand Prize hari
+                    Selasa, 14 Desember 2021!
+                </h3>
+                {{-- <small>
                     Mainkan terus game Generasi Juara dan dapatkan hadiah mingguan & grand prize CBR 150R di akhir
                     periode!
-                </small>
+                </small> --}}
             </div>
             <div class="modal-footer">
             </div>

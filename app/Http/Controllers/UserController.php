@@ -13,7 +13,7 @@ class UserController extends Controller
     public function index()
     {
         $user = User::with('race')->find(Auth::id());
-        $leaderboard = Race::with('user')->orderBy('ticket', 'desc')->limit(5)->get();
+        $leaderboard = Race::with('user')->orderBy('ticket', 'desc')->limit(20)->get();
         $week_win = Race::with('user.chanceToPlayRacing')
             ->where('weekly_winner', "on")
             ->orderBy('score_weekly', 'desc')
@@ -23,6 +23,6 @@ class UserController extends Controller
 
         // dd($week_win);
 
-        return view('user.home', compact('user', 'last_rider', 'leaderboard','week_win'));
+        return view('user.home', compact('user', 'last_rider', 'leaderboard', 'week_win'));
     }
 }
