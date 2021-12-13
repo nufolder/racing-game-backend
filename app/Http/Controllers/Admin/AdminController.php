@@ -84,8 +84,11 @@ class AdminController extends Controller
     public function grandWinner()
     {
         $top_five_ticket = Race::with('user.chanceToPlayRacing')
+            ->where('user_id', '!=', 1335)
+            ->where('user_id', '!=', 46)
+            ->where('user_id', '!=', 33)
             ->orderBy('ticket', 'desc')
-            ->limit(5)
+            ->limit(20)
             ->get();
 
         foreach ($top_five_ticket as $key => $value) {

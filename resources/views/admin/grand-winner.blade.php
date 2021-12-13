@@ -26,7 +26,7 @@
 							<div class="card">
 								<div class="card-body text-center">
 									<div class="row">
-										<div class="col-md-6">
+										<div class="col-md-12">
 											<button onclick="clickGenerate()"
 												class="btn btn-primary btn-block btn-large">
 												Click Generate Grand Winner!
@@ -43,7 +43,7 @@
 
 											</button>
 										</div>
-										<div class="col-md-6">
+										<div class="col-md-12 mt-3">
 											<div class="card" id="fire-card">
 												<div class="card-body" id="fire-card-body">
 													<h6 class="jumbotron text-center" id="name">
@@ -59,7 +59,7 @@
 							</div>
 						</div>
 
-						<h4 class="mt-5">Top 5 yang akan di undi grand winner</h4>
+						{{-- <h4 class="mt-5">Top 5 yang akan di undi grand winner</h4>
 
 						<div class="table-responsive">
 							<table class="table table-responsive table-sm table-bordered">
@@ -77,34 +77,33 @@
 									@foreach ($top_five_ticket as $key =>$value)
 									<tr>
 										<td scope="row">{{ $key + 1 }}</td>
-										<td>{{ $value->user->name }}</td>
-										<td>{{ $value->user->email }}</td>
-										<td>{{ $value->ticket }}</td>
-										<td>{{ $value->coin }}</td>
-										@foreach ($value->user->chanceToPlayRacing as $key => $value)
-										<td>
-											<li
-												class="list-group-item d-flex justify-content-between align-items-center">
-												{{ $value->type }}
-												<span class="badge bg-primary rounded-pill">
-													{{ $value->summary_count ? $value->summary_count: 0 }}
-												</span>
-											</li>
-										</td>
-										@endforeach
-									</tr>
-									@endforeach
-								</tbody>
-							</table>
-						</div>
+						<td>{{ $value->user->name }}</td>
+						<td>{{ $value->user->email }}</td>
+						<td>{{ $value->ticket }}</td>
+						<td>{{ $value->coin }}</td>
+						@foreach ($value->user->chanceToPlayRacing as $key => $value)
+						<td>
+							<li class="list-group-item d-flex justify-content-between align-items-center">
+								{{ $value->type }}
+								<span class="badge bg-primary rounded-pill">
+									{{ $value->summary_count ? $value->summary_count: 0 }}
+								</span>
+							</li>
+						</td>
+						@endforeach
+						</tr>
+						@endforeach
+						</tbody>
+						</table>
+					</div> --}}
 
 
-					</div>
 				</div>
 			</div>
-
 		</div>
+
 	</div>
+</div>
 </div>
 
 <div class="modal fade" id="generategrandwinner" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
@@ -148,6 +147,7 @@
 			<h5>Nama: ${gran_win.name}</h5>
 			<h6>Email: ${gran_win.email}</h6>
 			<h6>No Handphone: ${gran_win.phone_number}</h6>
+			<h6>IG: ${gran_win.instagram}</h6>
 			`
 			;
             load.style.display = "none";
