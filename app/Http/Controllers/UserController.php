@@ -13,7 +13,11 @@ class UserController extends Controller
     public function index()
     {
         $user = User::with('race')->find(Auth::id());
-        $leaderboard = Race::with('user')->orderBy('ticket', 'desc')->limit(20)->get();
+        $leaderboard = Race::with('user')
+            ->where('user_id', '!=', 1335)
+            ->where('user_id', '!=', 46)
+            ->where('user_id', '!=', 33)
+            ->orderBy('ticket', 'desc')->limit(20)->get();
         $week_win = Race::with('user.chanceToPlayRacing')
             ->where('weekly_winner', "on")
             ->orderBy('score_weekly', 'desc')
