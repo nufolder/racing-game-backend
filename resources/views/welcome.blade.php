@@ -58,7 +58,7 @@
             <h4 class="py-2 mb-0 px-4 text-center text-white text-decoration-underline">
                 Aktivasi Generasi Juara telah Ditutup. Nantikan Pengumuman
                 Pemenang Grand Prize hari
-                Selasa, 14 Desember 2021!
+                Rabu, 15 Desember 2021!
             </h4>
             <p class="py-2 mb-0 px-4 text-center ">Yuk, ikuti gamenya dan menangkan <b>CBR150R</b> serta <b>
                     total 1 juta uang elektronik bagi 4 orang pemenang</b> setiap minggunya</p>

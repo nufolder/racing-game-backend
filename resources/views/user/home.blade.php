@@ -84,7 +84,7 @@
                 <div class="container px-5">
                     {{-- <h4 style="color:#FFC312;"> --}}
                     <h4 class="text-white text-decoration-underline">
-                        Nantikan Pengumuman Pemenang Grand Prize hari Selasa, 14 Desember 2021!
+                        Nantikan Pengumuman Pemenang Grand Prize hari Rabu, 15 Desember 2021!
                     </h4>
                     <button type="button" class="btn btn-grey mt-4" data-bs-toggle="modal"
                         data-bs-target="#exampleModal">
@@ -128,7 +128,7 @@
                 <h3>
                     Terima Kasih untuk Partisipasinya. Aktivasi Generasi Juara telah Ditutup. Nantikan Pengumuman
                     Pemenang Grand Prize hari
-                    Selasa, 14 Desember 2021!
+                    Rabu, 15 Desember 2021!
                 </h3>
                 {{-- <small>
                     Mainkan terus game Generasi Juara dan dapatkan hadiah mingguan & grand prize CBR 150R di akhir
