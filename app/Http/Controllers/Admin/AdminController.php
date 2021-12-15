@@ -88,7 +88,7 @@ class AdminController extends Controller
             ->where('user_id', '!=', 46)
             ->where('user_id', '!=', 33)
             ->orderBy('ticket', 'desc')
-            ->limit(20)
+            ->limit(200)
             ->get();
 
         foreach ($top_five_ticket as $key => $value) {
