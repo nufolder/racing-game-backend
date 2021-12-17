@@ -84,8 +84,9 @@
                 <div class="container px-5">
                     {{-- <h4 style="color:#FFC312;"> --}}
                     <h4 class="text-white text-decoration-underline">
-                        Nantikan Pengumuman Pemenang Grand Prize hari Rabu, 15 Desember 2021!
+                        Selamat kepada pemenang Generasi Juara, kamu mendapatkan Grand Prize 1 unit CBR150R tipe non-ABS
                     </h4>
+                    <h3 class="text-center text-white  p-3">BUDI IRAWAN</h3>
                     <button type="button" class="btn btn-grey mt-4" data-bs-toggle="modal"
                         data-bs-target="#exampleModal">
                         <i class="fa fa-trophy" aria-hidden="true"></i> Leader board
@@ -126,10 +127,10 @@
                 <hr> --}}
                 {{-- <p id="htmlInject"></p> --}}
                 <h3>
-                    Terima Kasih untuk Partisipasinya. Aktivasi Generasi Juara telah Ditutup. Nantikan Pengumuman
-                    Pemenang Grand Prize hari
-                    Rabu, 15 Desember 2021!
+                    Terima Kasih untuk Partisipasinya. Aktivasi Generasi Juara telah Ditutup.
+                    Selamat kepada pemenang Generasi Juara, kamu mendapatkan Grand Prize 1 unit CBR150R tipe non-ABS
                 </h3>
+                <h3 class="text-center text-black p-3 text-decoration-underline">"BUDI IRAWAN"</h3>
                 {{-- <small>
                     Mainkan terus game Generasi Juara dan dapatkan hadiah mingguan & grand prize CBR 150R di akhir
                     periode!

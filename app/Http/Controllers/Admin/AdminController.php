@@ -157,7 +157,7 @@ class AdminController extends Controller
 
     public function top50()
     {
-        $top50 = Race::with('user')->orderBy('ticket', 'desc')->limit(50)->get();
+        $top50 = Race::with('user')->orderBy('ticket', 'desc')->limit(200)->get();
         return view('admin.top50', compact('top50'));
     }
 }

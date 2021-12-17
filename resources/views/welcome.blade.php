@@ -56,13 +56,17 @@
     <div class="container-fluid p-0">
         <div class="container homepage mw-600 p-0 pb-5 bg-red">
             <h4 class="py-2 mb-0 px-4 text-center text-white text-decoration-underline">
-                Aktivasi Generasi Juara telah Ditutup. Nantikan Pengumuman
-                Pemenang Grand Prize hari
-                Rabu, 15 Desember 2021!
+                Aktivasi Generasi Juara telah Ditutup.
+                Selamat kepada pemenang Generasi Juara, kamu mendapatkan Grand Prize 1 unit CBR150R tipe non-ABS
             </h4>
-            <p class="py-2 mb-0 px-4 text-center ">Yuk, ikuti gamenya dan menangkan <b>CBR150R</b> serta <b>
-                    total 1 juta uang elektronik bagi 4 orang pemenang</b> setiap minggunya</p>
-            <div class="text-center pb-3 links"><a href="{{'aturan-permainan'}}">LIHAT ATURAN PERMAINAN</a></div>
+            <h3 class="text-center text-white  p-3">BUDI IRAWAN</h3>
+            {{-- <p class="py-2 mb-0 px-4 text-center ">Yuk, ikuti gamenya dan menangkan <b>CBR150R</b> serta <b>
+                    total 1 juta uang elektronik bagi 4 orang pemenang</b> setiap minggunya</p> --}}
+            <div class="text-center pb-3 links">
+                <a href="{{'aturan-permainan'}}">
+                    LIHAT ATURAN PERMAINAN
+                </a>
+            </div>
             @if (Route::has('login'))
             <div class="text-center cta-area">
                 @auth
